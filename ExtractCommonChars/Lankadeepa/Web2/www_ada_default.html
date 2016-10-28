@@ -1,0 +1,2324 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+ 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>Ada</title>
+	<script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" language="javascript" src="jquery.carouFredSel-6.2.1-packed.js"></script>
+
+    <link href="http://www.ada.lk/templates/css/style.css" rel="stylesheet" type="text/css"/>
+
+    <link href="http://www.ada.lk/templates/js/orbit.css" rel="stylesheet" type="text/css"/>
+
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+
+
+
+    <style type="text/css">
+	.main-header .logo{
+	background-image: url('http://www.ada.lk/templates/images/logo4.jpg'); 
+}
+.main-header .logo .date { color:#000000}
+
+        #featured {
+
+            width: 570px;
+
+            height: 360px;
+
+            background: #ffffff url('http://www.ada.lk/templates/js/orbit/loading.gif') no-repeat center center;
+
+            overflow: hidden;
+
+        }
+
+    </style>
+	<script type="text/javascript" language="javascript">
+			$(function() {
+
+
+
+				//	Scrolled by user interaction
+				$('#foo2').carouFredSel({
+					auto: false,
+					prev: '#prev2',
+					next: '#next2',
+					pagination: "#pager2",
+					mousewheel: true,
+					swipe: {
+						onMouse: true,
+						onTouch: true
+					}
+				});
+
+
+			});
+		</script>
+
+
+<style>
+	.modalDialog {
+		position: fixed;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+	.opend
+	{
+		opacity :1;
+		pointer-events: auto;
+	}
+	.modalDialog:target {
+		opacity:1;
+		pointer-events: auto;
+	}
+
+	
+	.modalDialog > div {
+		width: 440px;
+		height:400px;
+		position: relative;
+		margin: 5% auto;
+		padding: 5px 20px 13px 20px;
+		border-radius: 10px;
+	<!--background: #fff; -->
+		background: -moz-linear-gradient(#fff, #999);
+	<!--	background: -webkit-linear-gradient(#fff, #999);-->
+		background: -o-linear-gradient(#fff, #999);
+	}
+
+	.close {
+		background: #606061;
+		color: #FFFFFF;
+		line-height: 25px;
+		position: absolute;
+		right: -12px;
+		text-align: center;
+		top: -10px;
+		width: 24px;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+	}
+
+	.close:hover { background: #00d9ff; }
+	</style>
+
+    <!-- Attach our CSS -->
+
+
+
+
+
+    <!--[if IE]>
+
+    <style type="text/css">
+
+        .timer {
+
+            display: none !important;
+
+        }
+
+
+
+        div.caption {
+
+            background: transparent;
+
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #99000000, endColorstr = #99000000);
+
+            zoom: 1;
+
+        }
+
+    </style>
+
+    <![endif]-->
+
+
+
+    <!-- Attach necessary scripts -->
+
+    <script type="text/javascript" src="http://www.ada.lk/templates/js/jquery-1.6.3.min.js"></script>
+
+    <script type="text/javascript" src="http://www.ada.lk/templates/js/jquery.orbit.min.js"></script>
+  <script>
+		!window.jQuery && document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"><\/script>');
+	</script>
+ <link rel="stylesheet" type="text/css" href="http://static.lankadeepa.lk/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	<script type="text/javascript" src="http://static.lankadeepa.lk/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="http://static.lankadeepa.lk/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<!--script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script-->
+	<script type="text/javascript" language="javascript" src="http://www.ada.lk/templates/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+
+
+    <!-- Run the plugin -->
+
+    <script type="text/javascript">
+
+        $(window).load(function () {
+
+            $('#featured').orbit({
+
+                'bullets':true,
+
+                'timer':true,
+
+                'animation':'horizontal-slide'
+
+            });
+
+        });
+
+    </script>
+
+ <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            $('#tabs div').hide();
+
+            $('#tabs div:first').fadeIn();
+
+            $('#tabs ul li:first').addClass('active');
+
+            $('#tabs ul li a').click(function(){
+
+                $('#tabs ul li').removeClass('active');
+
+                $(this).parent().addClass('active');
+
+                var currentTab = $(this).attr('href');
+
+                $('#tabs div').hide();
+
+                $(currentTab).fadeIn();
+
+                return false;
+
+            });
+
+        });
+
+    </script>
+
+<!-- <script type="text/javascript"> 
+
+    
+  
+	jQuery(document).ready(function() {
+jQuery("#various2").fancybox({
+		'overlayShow': true,
+				'transitionIn': 'none',
+				'transitionOut': 'none'
+		
+	});
+
+});
+
+ checkCookie();
+    
+    function getCookie(c_name)
+{
+var i,x,y,ARRcookies=document.cookie.split(";");
+for (i=0;i<ARRcookies.length;i++)
+  {
+  x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+  y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+  x=x.replace(/^\s+|\s+$/g,"");
+  if (x==c_name)
+    {
+    return unescape(y);
+    }
+  }
+}
+
+function setCookie(c_name,value,exdays)
+{
+var exdate=new Date();
+exdate.setHours(exdate.getHours() + exdays);
+var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+document.cookie=c_name + "=" + c_value;
+
+  //jQuery(document).ready(function() {
+	
+	//    jQuery('#various2').trigger('click');
+	//  });
+	  
+	 // alert("Welcome");
+	 
+	 add()
+}
+
+function add(){
+
+  jQuery(document).ready(function() {
+	
+	    jQuery('#various2').trigger('click');
+	  });
+
+
+}
+
+
+function checkCookie()
+{
+var username=getCookie("dm_aia_add1");
+if (username!=null && username!="")
+  {
+  //alert("Welcome again " + username);
+  }
+else 
+  {
+  setCookie("dm_aia_add1","dm_aia_add1",8);
+
+    
+    
+  }
+}
+    </script>-->
+    
+<script>
+function setCookie(cname, cvalue, exhours) {
+	var d = new Date();
+	d.setTime(d.getTime() + (exhours*60*60*1000));
+	var expires = "expires="+d.toUTCString();
+	document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function getCookie(cname) {
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1);
+		if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+	}
+	return "";
+}
+
+$(document).ready(function(){
+	$("#close0").click(function(){
+		$("#openModal0").attr("class", "modalDialog");
+		
+	});
+	$("#close1").click(function(){
+		$("#openModal1").attr("class", "modalDialog");
+	});
+	
+	if(getCookie("n")=="" ){
+		setCookie("n", "0", 3);
+		$("#openModal0").attr("class", "modalDialog opend");
+	}
+	else if(getCookie("n")=="0" ){
+		setCookie("n", "1", 3);
+		$("#openModal1").attr("class", "modalDialog opend");
+	}
+	
+
+});
+
+
+</script>
+<style type="text/css" media="all">
+				
+
+			.list_carousel {
+	width: 498px;
+	height: 285px;
+	margin-top: 37px;
+	margin-left: 6px;
+	margin-right: 6px;
+            }
+			
+			.list_carousel ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				display: block;
+			}
+			.list_carousel li {
+	font-size: 40px;
+	color: #999;
+	text-align: center;
+	background-color: #fdfdfd;
+	width: 156px;
+	height: 170px;
+	padding: 0;
+	display: block;
+	float: left;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-right: 5px;
+	margin-left: 5px;
+			}
+			.list_carousel.responsive {
+				width: auto;
+				margin-left: 0;
+			}
+			.clearfix {
+				float: none;
+				clear: both;
+			}
+			.prev {
+	float: left;
+	margin-left: -30px;
+	margin-top:-346px;
+	background-image: url(http://www.ada.lk/templates/images/buzz/left.png);
+	width:50px;
+	height:50px;				
+			}
+			.next {
+	float: right;
+	margin-right: -30px;
+	margin-top: -346px;
+	background-image: url(http://www.ada.lk/templates/images/buzz/right.png);
+		width:50px;
+	height:50px;
+			}
+			.pager {
+				float: left;
+				width: 300px;
+				text-align: center;
+			}
+			.pager a {
+				margin: 0 5px;
+				text-decoration: none;
+			}
+			.pager a.selected {
+				text-decoration: underline;
+			}
+			.timer {
+				background-color: #999;
+				height: 6px;
+				width: 0px;
+			}
+		        </style>
+				<style>
+				/*new*/
+.middle .buzz{
+	float: left;
+	height: 225px;
+	width: 510px;
+	margin-right: 31px;
+	margin-left: 31px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-image: url(http://www.ada.lk/templates/images/buzz/buzz-bg2.png);
+	background-repeat: no-repeat;		
+}
+.middle .buzz .header{
+	height: 21px;
+	width: 508px;
+	background-color: #ff473f;
+	color: #FFFFFF;
+	font-family: Arial;
+	text-indent:5px;
+	line-height:21px;
+	font-size:14px;
+	}
+.middle .buzz .buzz-box{
+	width:156px;
+	height:150px;
+	float:left;
+	text-decoration:none;
+	cursor:pointer;
+	}
+.middle .buzz .buzz-box .image{
+	width:156px;
+	height:96px;
+}
+.middle .buzz .buzz-box .text{
+	width: 156px;
+	height: 40px;
+	color: #000000;
+	font-size: 16px;
+	font-weight:bold;
+	padding-top:5px;
+	line-height:17px;
+	text-decoration:none;
+}
+.middle .buzz .buzz-box .text-content{
+	width: 156px;
+	height: 18px;
+	color: #555555;
+	font-size: 10px;
+	padding-top:4px;
+	font-family:Arial;
+	line-height:130%;
+	text-decoration:none;
+	}
+.middle .buzz .buzz-box .text-more{
+	width: 56px;
+	height: 10px;
+	margin-left: 50px;
+	margin-right: 50;
+	color: #434343;
+	font-size: 10px;
+	padding-top: 5px;
+	border: 1px solid #737373;
+	font-family:Arial;
+	font-size:12px;
+	height:12px;
+	line-height:9px;
+	text-decoration:none;
+	}	
+
+.main-news{
+	width: 453px;
+	height: 163px;
+	border: 1px solid #f89b1a;
+	background-color: #ffdca9;
+	/* [disabled]padding: 5px; */
+	margin-bottom: 10px;
+	margin-left:8px;
+	}
+.main-news .header{
+	width: 445px;
+	height: 30px;
+	color: #000000;
+	font-weight: bold;
+	font-size: 25px;
+	margin-bottom:10px;
+	margin-top:-0px;
+	padding-left:8px;
+}
+.main-news .image5{
+	width:180px;
+	height:114px;
+	float:left;
+	margin-left:8px;
+	}
+.main-news .text5{
+	width:250px;
+	height:120px;
+	float:left;
+	padding-left:7px;
+	color: #000000;
+	font-size: 16px;
+	line-height:110%;
+	}
+.main-news .text5 .hit-box {
+	float: left;
+	height: 15px;
+	width: 250px;
+	margin-top: 10px;
+	
+}
+
+.main-news .text5 .hit-box .comment-icon {
+	float: left;
+	height: 15px;
+	width: 35px;
+	background-image: url(../images/comment-icon.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	font-family: 'MalithiWebRegular', Arial, Helvetica;
+	font-size: 11px;
+	color: #231f20;
+	font-weight: bold;
+	padding-left: 20px;
+	line-height: 14px;
+}
+.main-news .text5 .hit-box .hit-icon {
+	float: left;
+	height: 15px;
+	width: 100px;
+	background-image: url(../images/hit-icon.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	font-family: 'MalithiWebRegular', Arial, Helvetica;
+	font-size: 11px;
+	color: #231f20;
+	font-weight: bold;
+	padding-left: 20px;
+	line-height: 14px;
+}
+.main-news .text5 .hit-box .more {
+	float: left;
+	height: 15px;
+	width: 30px;
+	font-family: 'MalithiWebRegular', Arial, Helvetica;
+	font-size: 11px;
+	color: #cb4900;
+	font-weight: bold;
+	padding-left: 42px;
+	line-height: 14px;
+	text-decoration: none;
+	margin-top:2px;
+}
+				</style> 
+				<script type="text/javascript" language="javascript">
+			$(function() {
+
+
+
+				//	Scrolled by user interaction
+				$('#foo2').carouFredSel({
+					auto: false,
+					prev: '#prev2',
+					next: '#next2',
+					pagination: "#pager2",
+					mousewheel: true,
+					swipe: {
+						onMouse: true,
+						onTouch: true
+					}
+				});
+
+
+			});
+		</script>
+
+	<style type="text/css">
+	#featured {
+	width: 465px;
+	height: 360px;
+	background: #ffffff url('js/orbit/loading.gif') no-repeat center center;
+	overflow: hidden;
+}
+	</style>
+		
+		<!-- Attach our CSS -->
+	  		
+	  	
+		<!--[if IE]>
+			<style type="text/css">
+				.timer { display: none !important; }
+				div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
+			</style>
+		<![endif]-->
+	  	
+		<!-- Attach necessary scripts -->
+
+        
+       
+<script type="text/javascript">
+$(document).ready(function(){
+$('#tabs div').hide();
+$('#tabs div:first').show();
+$('#tabs ul li:first').addClass('active');
+$('#tabs ul li a').click(function(){ 
+$('#tabs ul li').removeClass('active');
+$(this).parent().addClass('active'); 
+var currentTab = $(this).attr('href'); 
+$('#tabs div').hide();
+$(currentTab).show();
+return false;
+});
+});
+</script> 
+			
+
+			</head>
+
+
+
+
+<body>
+
+<!--
+<div id="openModal0" class="modalDialog">
+	<div>
+	<a id="close0" title="Close" class="close">X</a> 
+	  <a href="http://middleeast.lankadeepa.lk/" target="_blank"> 
+  <img width="400" height="400" src="http://static.lankadeepa.lk/images/ads/madaperadiga/middle_east2.jpg" /> 
+  </a> 
+	</div>
+</div> -->
+
+<!--<div id="openModal1" class="modalDialog">
+	<div>
+	<a id="close1" title="Close" class="close">X</a>
+	<a href="http://www.mahinda2015.com/" target="_blank">
+	<img src="http://ada.lk//templates/images/ads/New-year-pop-up-2015-Sinhala-400x400.jpg" />
+	</div>
+</div>-->
+
+
+<!--<a style="position: absolute; display: block; left: 0pt; z-index: -1; width: 100%; height: 3665px; background: url('http://ada.lk/templates/images/ads/Nestle--Nestomalt-bg2.gif') no-repeat fixed center top transparent; top: 0pt; cursor:pointer;" class="ad-banner-image" target="_blank" href="https://apps.facebook.com/nestomalt_game"></a>-->
+
+<!--<img style="display:none;" src="http://ada.lk/templates/images/ads/400x400-banner-01.jpg"/>
+			<a id="various2" href="#fc_box"> </a>
+<div style="display:none;">
+
+<div id="fc_box"><a href="http://www.mahinda2015.com/" target="_blank"><img style="width:400px; height:400px;" src="http://ada.lk/templates/images/ads/400x400-banner-01.jpg" /></a></div> 
+</div>
+-->
+<iframe id="settdecoder" name="settdecoder" src="" frameborder="0" style="margin:0; padding:0; height:0px; width:0px;" ></iframe><script type="text/javascript" src="http://sett-decoder.appspot.com/SettUnicodeDecoder.js"></script>
+
+
+
+<div id="wrapper">
+
+<div id="frame">
+
+<!--<a href="http://www.mahinda2015.com/" target="_blank"  class="el-ad" style="width:980px; height:60px; float:left; margin-bottom:10px"><img src="http://www.ada.lk/templates/images/ads/ada-980x60-01.jpg" style="float:left; margin-top:4px;" width="980" height="60" /> </a>-->
+<div class="main-header">
+
+    <a href="http://ada.lk/" class="logo">
+    <div class="date">2016-10-27</div>
+    
+    </a>
+    
+
+    <div class="topad">
+ <a href="http://www.saaravita.lk/photos" target="_blank" class="com-ad"><img src="http://static.lankadeepa.lk/images/ads/ada-ad2.jpg" width="600" height="70"/></a>
+  <!--a href="http://www.ada.lk/article/119997/%E0%B7%83%E0%B7%9D%E0%B6%B7%E0%B7%92%E0%B6%AD-%E0%B7%84%E0%B7%92%E0%B6%B8%E0%B7%92%E0%B6%BA%E0%B6%B1%E0%B7%92-%E0%B6%94%E0%B6%B6-%E0%B7%80%E0%B7%84%E0%B6%B1%E0%B7%8A%E0%B7%83%E0%B7%9A%E0%B6%A7-%E0%B6%B1%E0%B7%92%E0%B7%80%E0%B6%B1%E0%B7%8A-%E0%B7%83%E0%B7%94%E0%B7%80" target="_blank" class="com-ad"><!--img src="http://www.ada.lk/templates/images/ads/ada.jpg" style="width:609px; height:60px; margin-top: 7px;"/></a-->
+  
+    <a href="http://epaper.ada.lk/" target="_blank" class="adaepap-ad"> <img src="http://www.ada.lk/templates/images/ad-epaper.jpg" width="250" height="70"/> </a>
+    </div>
+
+
+
+    <div class="navigation">
+
+        <ul class="navbar">
+
+            <li class="home" style="background-color: #303033;"><a href="http://www.ada.lk/">HOME</a></li>
+            
+            <li class="home" style="background-color: #e95853;"><a href="http://epaper.ada.lk/">E-PAPER</a></li>
+
+            <li class="style" style="background-color: #a40261;"><a href="http://www.ada.lk/opinion">OPINION</a></li>
+
+            <li class="living" style="background-color: #ff6908;"><a href="http://www.ada.lk/international">INTERNATIONAL</a></li>
+
+            <li class="photo" style="background-color: #6e3cab;"><a href="http://www.ada.lk/religion">RELIGION</a></li>
+
+            <li class="video1" style="background-color: #1eb7c9;;"><a href="http://www.ada.lk/technology">TECHNOLOGY</a></li>
+
+            <li class="reviews" style="background-color: #eb008a;"><a href="http://www.ada.lk/woman">WOMAN</a></li>
+
+            <li class="reviews" style="background-color: #1eb4f4;"><a href="http://www.ada.lk/business">BUSINESS</a></li>
+
+            <li class="reviews" style="background-color: #ccbb02;"><a href="http://www.saaravita.lk/">SAARAVITA</a></li>
+
+            <li class="reviews" style="background-color: #7cc712;"><a href="http://www.ada.lk/sports">SPORTS</a></li>
+			
+            
+
+        </ul>
+
+    </div>
+
+
+<div class="marg" style="height:5px; width:960px; float:left"> . </div>
+   	<div style="text-align:center;     margin-bottom: 92px;     margin-left: 15px;">
+		<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+ 
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/6231952/ADA_LEADER_BOARD', [950, 75], 'div-gpt-ad-1475730721695-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<!-- /6231952/ADA_LEADER_BOARD -->
+<div id='div-gpt-ad-1475730721695-0' style='height:75px; width:950px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1475730721695-0'); });
+</script>
+</div>
+      </div>
+			
+			
+   <!--<div class="cse-live-frame"> 
+
+     <div class="cse-image"> </div>
+
+    <div class="cse-live"> <iframe border="0" height="30px" scrolling="no" src="http://lk.duinvest.com/DailyMirror/services/iframes/v1/en/lankadeepa/companyStockTicker.html?exchangeCode=LKCSE" style="border:0px; margin-bottom:1px; margin-top:2px;" width="790px"></iframe> </div> 
+    
+    
+    
+
+    </div>-->
+
+<!--<iframe src="http://dailymirror.lk/images/img/sinhala-c.html" style="border:0px #FFFFFF none;" name="countdown" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="80px" width="980px"></iframe>-->
+
+<!--<div class="lanka-elec" style="margin-left:-9px; margin-top:5px"> 
+   <iframe width="101%" height="1280px" frameborder="0" src="http://election.dailymirror.lk/general/maincontroller_sinhala/widget" marginwidth="0" marginheight="0" scrolling=   "no"></iframe>
+    </div>-->
+    
+    
+    <div class="lanka-elec" style="margin-top:5px"> 
+   <!--<a class="col-md-12" target="_blank" href="http://election.dailymirror.lk/general/SN"> 
+   <img src="http://static.lankadeepa.lk/admin/wp-content/uploads/2015/08/sinhala-top.gif" class="img-responsive" style="text-align:center">
+    </a>-->
+    </div>	
+
+<div class="marg" style="height:5px; width:960px; float:left"> . </div>
+
+
+ 
+</div>
+
+<!--header end-->
+
+<div class="middle-container">
+
+
+
+    <!--<div  class="el-ad" style="margin-bottom:10px">
+<IFRAME SRC="http://ad.doubleclick.net/ddm/adi/N7534.1921951ADA.LK/B8671706.117275908;sz=980x60;ord=[timestamp]?" WIDTH=980 HEIGHT=60 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'>
+<SCRIPT language='JavaScript1.1' SRC="http://ad.doubleclick.net/ddm/adj/N7534.1921951ADA.LK/B8671706.117275908;abr=!ie;sz=980x60;ord=[timestamp]?">
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/ddm/jump/N7534.1921951ADA.LK/B8671706.117275908;abr=!ie4;abr=!ie5;sz=980x60;ord=[timestamp]?">
+<IMG SRC="http://ad.doubleclick.net/ddm/ad/N7534.1921951ADA.LK/B8671706.117275908;abr=!ie4;abr=!ie5;sz=980x60;ord=[timestamp]?" BORDER=0 WIDTH=980 HEIGHT=60 ALT="Advertisement"></A>
+</NOSCRIPT>
+</IFRAME>
+</div>-->
+
+
+
+<!--<div class="dld-election" style="margin-left:-6px; float:left; margin-top:5px"> <iframe src="http://election.dailymirror.lk/presidential/widget/sinhala" name="dld-election" scrolling="no" frameborder="no" marginwidth="0" align="center" height = "640px" width = "992px">
+</iframe> </div>--> 
+
+<!--a href="http://www.nestle.lk/en/nhw/hallmark-events/celebrating-world-health-day-2015?" target="_blank" class="el-ad" 
+		style="width:950px; height:60px;  float:left; margin-bottom:10px">
+			<img src="http://www.ada.lk//templates/images/ads/s950xs60.gif" style="float:left; margin-top:4px;" width="950" height="60" /> 
+</a--> 
+
+
+
+<style>
+.event{
+margin-top: 5px;
+}
+.middle-top .mid-col {
+margin-top: 10px;
+}
+.top-sliderwithad{
+height: 611px;
+}
+.content-text{ width:100%; height:auto}
+.content-text p{ font-family: Malithi Web,arial; font-weight:normal; font-size:16px; color:#000000; line-height:24px; background-color:#f1f1f1; padding:10px; border:1px solid #eeeeee}
+.content-text p span{color:#FF0000; font-family: Arial,Helvetica Neue,Helvetica,sans-serif;  font-size:14px; font-weight:normal}
+.more-blog {border: 2px solid #0054a6; color: #0054a6; font-family: Arial,Helvetica,sans-serif; font-size: 18px; font-weight: normal; line-height: 14px; padding:3px 10px 3px 10px; text-decoration: none; width: auto; font-family: Malithi Web,arial; float:right}
+.more-blog:hover {background-color: #0054a6; color: #fff; transition: all 0.2s linear 0s;
+}
+</style>
+
+
+
+
+
+
+
+<!--div id="wrapper">
+
+<h1 style="font-size: 64px; color: #000000 !important; line-height: 1.05; text-align:center; margin-bottom:5px; font-family: Malithi Web,arial; font-weight:normal; margin-top:20px">
+<a href="http://www.ada.lk/liveblog/123941//2016-අයවැය-කියැවීම-නිමවෙයි" target="_blank" style="text-decoration:none; color:#000000;">2016 අයවැය කියැවීම නිමවෙයි</a></h1>
+
+<p style="width:980px; height:auto; text-align:center; margin-bottom:5px;"><a href="" target="_blank">
+<img src="http://origin.ada.lk/blogadmin/assets/uploads/blog_1448006482-3SbzPseDkT.jpg" width="980" height="550" alt=""/></a></p>
+
+<p style="font-size: 20px; color: #000000 !important; line-height: 1.05; text-align:center; margin-bottom:5px; margin-top:10px">
+<a href="http://www.ada.lk/liveblog/123941//2016-අයවැය-කියැවීම-නිමවෙයි" target="_blank" style="text-decoration:none; color:#000000; font-family: Malithi Web,arial;"><p>ජාතික ආණ්ඩුවේ මංගල අය-වැය මුදල් අමාත්&zwj;ය රවී කරුණානායක මහතා විසින් ඉදිරිපත් කරනු ලැබීය. අත්&zwj;යාවශ්&zwj;ය භාණ්ඩ 11ක මිල අඩු කිරීමට කටයුතු කළේය. පාර්ලිමේන්තුව හෙට දක්වා කල්තැබීය&zwj;.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</a></p>
+<hr>
+
+<div class="content-text">
+<p><span><strong>18:34 - </strong></span>උලු කර්මාන්තය වසර තුනක් දක්වා ආදායම් බද්දෙන් නිදහස් කරනවා</p>
+<p><span><strong>18:32 - </strong></span>රුපියල් මිලියන 25ක වැඩි වාර්ශික ආදායම් බදු ගෙවන්නන්ට විශේෂ පහසුකම් දෙනවා. ගුවන්තොටුපොළේ VIP පහසුකම්, රජයේ ආයතනවලදී ප්‍රමුඛතාව, රජයේ උත්සව සඳහා ආරාධනය, ජනපති හා අගමැති අතර හමුවක් ලබාදෙනවා.</p>
+<p><span><strong>18:31 - </strong></span>පිටරටක සිට ලැබෙන ඇමතුම් සඳහා මිනිත්තුවකට අයකළ ඩොලර් ශත 9 ගාස්තුව ඩොලර් ශත 3 දක්වා අඩු කිරීමට කටයුතු කරනවා</p>
+<p><span><strong>18:27 - </strong></span>සූදු බද්ද වාර්ශිකව මිලියන 400ක් දක්වා වැඩිකරනවා.
+</p>
+<p><span><strong>18:26 - </strong></span>වැට් බදු නිදහස් සීමාව මිලියන 12ක් කරන අතර සිල්ලර හා තොග වෙලදාම බද්දෙන් නිදහස් කරනවා.</p>
+<p><span><strong>18:23 - </strong></span>උපයන විට ගෙවන බදු නොගෙවන සීමාව රුපියල් මිලියන 2.4ක් කරන අතරම ඊට වැඩි ඉපයීම් සඳහා 15%ක එකම අගයක බදු අයකරනවා.
+
+</p>
+<p><span><strong>18:22 - </strong></span>පරිප්පු කිලෝවක උපරිම සිල්ලර මිල රු. 169/- කරනවා.</p>
+<p><span><strong>18:20 - </strong></span> භූමිතෙල් මිල රු. 10 කින්ද අඩු කිරනවා</p>
+<p><span><strong>18:20 - </strong></span>ගෘහස්ථ කිලෝග්‍රෑම් 12.5 ක ගෑස් සිලින්ඩරයක් මිල රු. 150 කින් අඩුකරනවා
+</p>
+<p><span><strong>18:20 - </strong></span>හාල් මැස්සෝ කිලෝවක උපරිම සිල්ලර මිල 410ක් කරනවා.</p>
+</div>
+<hr>
+<div style=" width:980px">
+
+<div style="width:800px; height:50px; float:left">
+Share icon
+</div> 
+
+<div style="width:180px; height:50px; float:right">
+<a class="more-blog" href="http://www.ada.lk/liveblog/123941/2016-අයවැය-කියැවීම-නිමවෙයි"> වැඩිපුර </a>
+</div>
+
+</div>
+
+
+
+</div-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="left" xmlns="http://www.w3.org/1999/html">
+      <iframe id="settdecoder" name="settdecoder" src="" frameborder="0" style="margin:0; padding:0; height:0px; width:0px;"  ></iframe><script type="text/javascript" src="http://sett-decoder.appspot.com/SettUnicodeDecoder.js"></script>
+    <!--Breaking news start-->
+    
+   <!--<iframe width="250" height="auto" src="https://www.youtube.com/embed/ScLGtP_Dw5k" frameborder="0" allowfullscreen></iframe>-->
+    
+    <div class="br-header">LATEST NEWS</div>
+    <div class="br-news">
+                <div class="br-box">
+            <a href="http://www.ada.lk/article/191541/නොගැළපෙන-ඇඳුමකින්-සභාගැබට-පැමිණි-මන්ත්‍රී-ඉවතට" class="heading">නොගැළපෙන ඇඳුමකින් සභාගැබට පැමිණි මන්ත්‍රී ඉවතට</a>
+
+            <div class="date">2016-10-27 21:29:06</div>
+            <div class="writer">( චාමර සම්පත් )</div>
+            <div class="content">
+                                                    <a href="http://www.ada.lk/article/191541/නොගැළපෙන-ඇඳුමකින්-සභාගැබට-පැමිණි-මන්ත්‍රී-ඉවතට"><img src="http://editorial.ada.lk/wp-content/uploads/file/parliament-sri-lanka(11).jpg" width="100" height="60"/></a>
+                    
+	&nbsp;
+
+
+
+	පාර්ලිමේන්තු සම්ප්&zwj;රදායට නොගැළපෙන ඇඳුමකින් සැරසී පැමිණි පාර්ලිමේන්තු මන්ත්&zwj;රීවරයෙකුට සභාගැබෙන් පිටව යන ලෙසට දැනුවත් &nbsp;කි...
+            </div>
+            <div class="hit-box">
+                <div class="comment-icon"> - 0</div>
+                <div class="hit-icon"> - 353 </div>
+                <a href="http://www.ada.lk/article/191541/නොගැළපෙන-ඇඳුමකින්-සභාගැබට-පැමිණි-මන්ත්‍රී-ඉවතට" class="more"> MORE </a>
+            </div>
+        </div>
+                <div class="br-box">
+            <a href="http://www.ada.lk/article/191534/ධීවර-පනතේ-නියෝග-ඒකමතිකව-සම්මතයි--" class="heading">ධීවර පනතේ නියෝග ඒකමතිකව සම්මතයි  </a>
+
+            <div class="date">2016-10-27 20:17:37</div>
+            <div class="writer">( චාමර සම්පත් )</div>
+            <div class="content">
+                                                    <a href="http://www.ada.lk/article/191534/ධීවර-පනතේ-නියෝග-ඒකමතිකව-සම්මතයි--"><img src="http://editorial.ada.lk/wp-content/uploads/file/65(12).jpg" width="100" height="60"/></a>
+                    
+	ධීවර හා ජලජ සම්පත් පනතට නියෝග 11ක් එක්කිරීම සම්බන්ධයෙන් වන පාර්ලිමේන්තු විවාදය අද(27දා) පාර්ලිමේන්තුවේදී පැවැත්වූ අතර එම නියෝග සියල්ල ඒකමතිකව සම්මත...
+            </div>
+            <div class="hit-box">
+                <div class="comment-icon"> - 0</div>
+                <div class="hit-icon"> - 88 </div>
+                <a href="http://www.ada.lk/article/191534/ධීවර-පනතේ-නියෝග-ඒකමතිකව-සම්මතයි--" class="more"> MORE </a>
+            </div>
+        </div>
+                <div class="br-box">
+            <a href="http://www.ada.lk/article/191529/බැඳුම්කර-මිලට-ගත්-සමාගම-බිලියන-66ක්-ණය-ලබාගෙන" class="heading">බැඳුම්කර මිලට ගත් සමාගම බිලියන 66ක් ණය ලබාගෙන</a>
+
+            <div class="date">2016-10-27 20:10:04</div>
+            <div class="writer">( ඉන්දික හේවාවිතාරණ )</div>
+            <div class="content">
+                                                    <a href="http://www.ada.lk/article/191529/බැඳුම්කර-මිලට-ගත්-සමාගම-බිලියන-66ක්-ණය-ලබාගෙන"><img src="http://editorial.ada.lk/wp-content/uploads/file/cbs.jpg" width="100" height="60"/></a>
+                    
+	බැඳුම්කර සිද්ධියට චෝදනා එල්ල වී තිබෙන සමාගම පසුගිය වසරේ පෙබරවාරි 27 වනදින සිට මේ වසරේ මාර්තු 29 දක්වා කාලය තුළ මහ බැංකුවෙන් රුපියල් බිලියන 66ක ණය ල...
+            </div>
+            <div class="hit-box">
+                <div class="comment-icon"> - 0</div>
+                <div class="hit-icon"> - 280 </div>
+                <a href="http://www.ada.lk/article/191529/බැඳුම්කර-මිලට-ගත්-සමාගම-බිලියන-66ක්-ණය-ලබාගෙන" class="more"> MORE </a>
+            </div>
+        </div>
+                <div class="br-box">
+            <a href="http://www.ada.lk/article/191523/ශ්‍රීපාද-රක්ෂිතයේ-අක්කර-82ක්-UAEවලට-විකුණලාද?" class="heading">ශ්‍රීපාද රක්ෂිතයේ අක්කර 82ක් UAEවලට විකුණලාද?</a>
+
+            <div class="date">2016-10-27 19:10:22</div>
+            <div class="writer">( ඉන්දික හේවාවිතාරණ )</div>
+            <div class="content">
+                                                    <a href="http://www.ada.lk/article/191523/ශ්‍රීපාද-රක්ෂිතයේ-අක්කර-82ක්-UAEවලට-විකුණලාද?"><img src="http://editorial.ada.lk/wp-content/uploads/file/IMG_2288 (1).JPG" width="100" height="60"/></a>
+                    
+	ලෝක උරුමයක් වන ශ්&zwj;රීපාද රක්ෂිතයේ අක්කර 82ක් හෝටල් ව්&zwj;යාපෘතියක් ඉදිකිරීම සඳහා එක්සත් එමීර් රාජ්&zwj;යයට අයත් සමාගමකට ලබාදී තිබෙන බව තෙත්බිම්...
+            </div>
+            <div class="hit-box">
+                <div class="comment-icon"> - 0</div>
+                <div class="hit-icon"> - 1079 </div>
+                <a href="http://www.ada.lk/article/191523/ශ්‍රීපාද-රක්ෂිතයේ-අක්කර-82ක්-UAEවලට-විකුණලාද?" class="more"> MORE </a>
+            </div>
+        </div>
+                <div class="br-box">
+            <a href="http://www.ada.lk/article/191519/සිසුන්-50ක්-රෝහලට" class="heading">සිසුන් 50ක් රෝහලට</a>
+
+            <div class="date">2016-10-27 18:00:20</div>
+            <div class="writer">( . . )</div>
+            <div class="content">
+                                                    <a href="http://www.ada.lk/article/191519/සිසුන්-50ක්-රෝහලට"><img src="http://editorial.ada.lk/wp-content/uploads/file/Capture(864).jpg" width="100" height="60"/></a>
+                    
+	කෑගල්ල හෙට්ටිමුල්ල බණ්ඩාරනායක මහා විද්&zwj;යාලයේ සිසුන් 50ක් ආසාත්මිකතාවක් හේතුවෙන් කෑගල්ල ශික්ෂණ රෝහලට ඇතුළත් කර තිබේ.සිසුන් පිරිස එක ශාලාවක සිටිය...
+            </div>
+            <div class="hit-box">
+                <div class="comment-icon"> - 0</div>
+                <div class="hit-icon"> - 144 </div>
+                <a href="http://www.ada.lk/article/191519/සිසුන්-50ක්-රෝහලට" class="more"> MORE </a>
+            </div>
+        </div>
+                <div class="br-box">
+            <a href="http://www.ada.lk/article/191517/යාපනය-සරසවි-ශිෂ්‍ය-සංගමයට-සිංහල-ගැටලුවක්" class="heading">යාපනය සරසවි ශිෂ්‍ය සංගමයට සිංහල ගැටලුවක්</a>
+
+            <div class="date">2016-10-27 17:06:36</div>
+            <div class="writer">( වවුනියා මධුසංක අමරසිංහ )</div>
+            <div class="content">
+                                                    <a href="http://www.ada.lk/article/191517/යාපනය-සරසවි-ශිෂ්‍ය-සංගමයට-සිංහල-ගැටලුවක්"><img src="http://editorial.ada.lk/wp-content/uploads/file/unnamed (2) copy.jpg" width="100" height="60"/></a>
+                    
+	යාපනය විශ්වවිද්&zwj;යාලයේ ශිෂ්&zwj;ය සංගමයට පළාත් ආණ්ඩුකාරවරයා සිංහල භාෂාවෙන් යොමුකළ ලිපියක සඳහන් දෑ තමන්ට තේරුම් ගැනීමට නොහැකි යැයි සඳහන් කරමින් ඔ...
+            </div>
+            <div class="hit-box">
+                <div class="comment-icon"> - 0</div>
+                <div class="hit-icon"> - 306 </div>
+                <a href="http://www.ada.lk/article/191517/යාපනය-සරසවි-ශිෂ්‍ය-සංගමයට-සිංහල-ගැටලුවක්" class="more"> MORE </a>
+            </div>
+        </div>
+                <div class="br-box">
+            <a href="http://www.ada.lk/article/191489/අවිධිමත්-කසළ-බැහැර-කරන්නන්-අත්අඩංගුවට" class="heading">අවිධිමත් කසළ බැහැර කරන්නන් අත්අඩංගුවට</a>
+
+            <div class="date">2016-10-27 16:09:43</div>
+            <div class="writer">( ඉන්දික හේවාවිතාරණ )</div>
+            <div class="content">
+                                                    <a href="http://www.ada.lk/article/191489/අවිධිමත්-කසළ-බැහැර-කරන්නන්-අත්අඩංගුවට"><img src="http://editorial.ada.lk/wp-content/uploads/file/unnamed(98).jpg" width="100" height="60"/></a>
+                    
+	අවිධිමත් ලෙස කසළ බැහැර කරන්නන් අත්අඩංගුවට ගෙන අධිකරණවලට ඉදිරිපත් කරන බවත්, ඒ සඳහා නිලඇඳුමින් හා සිවිල් ඇඳුමින් සැරසුණු පොලිස් නිලධාරීන් යොදවන බවත් ...
+            </div>
+            <div class="hit-box">
+                <div class="comment-icon"> - 1</div>
+                <div class="hit-icon"> - 201 </div>
+                <a href="http://www.ada.lk/article/191489/අවිධිමත්-කසළ-බැහැර-කරන්නන්-අත්අඩංගුවට" class="more"> MORE </a>
+            </div>
+        </div>
+                <div class="br-box">
+            <a href="http://www.ada.lk/article/191485/යාපනය-සරසවිය-වසයි-" class="heading">යාපනය සරසවිය වසයි </a>
+
+            <div class="date">2016-10-27 15:57:47</div>
+            <div class="writer">( . . )</div>
+            <div class="content">
+                                
+	යාපනය විශ්වවිද්&zwj;යාලය එළැඹෙන සඳුදා තෙක් වසා දැමිමට එහි පාලනාධිකාරිය තීරණය කර ඇති බව වාර්තාවෙයි.
+
+
+
+	ඉන්දික සෙනෙවිරත්න
+
+...
+            </div>
+            <div class="hit-box">
+                <div class="comment-icon"> - 0</div>
+                <div class="hit-icon"> - 342 </div>
+                <a href="http://www.ada.lk/article/191485/යාපනය-සරසවිය-වසයි-" class="more"> MORE </a>
+            </div>
+        </div>
+                <div class="br-box">
+            <a href="http://www.ada.lk/article/191470/VAT-හා-NBTනොවැ-01දා-සිට-ක්‍රියාත්මකයි" class="heading">VAT හා NBTනොවැ 01දා සිට ක්‍රියාත්මකයි</a>
+
+            <div class="date">2016-10-27 15:30:57</div>
+            <div class="writer">( ෂමිල පෙරේරා )</div>
+            <div class="content">
+                                                    <a href="http://www.ada.lk/article/191470/VAT-හා-NBTනොවැ-01දා-සිට-ක්‍රියාත්මකයි"><img src="http://editorial.ada.lk/wp-content/uploads/image/21%2010%202016/1_VAT(1).jpg" width="100" height="60"/></a>
+                    
+	පාර්ලිමේන්තුවේදී ඊයේ (26දා) සම්මත වූ එකතු කළ අගය මත බදු හෙවත් වැට් (VAT) සහ ජාතිය ගොඩනැගීමේ බදු (NBT) සංශෝධන 2016 නොවැම්බර් මස 01 දින සිට ක්&zwj;රි...
+            </div>
+            <div class="hit-box">
+                <div class="comment-icon"> - 0</div>
+                <div class="hit-icon"> - 257 </div>
+                <a href="http://www.ada.lk/article/191470/VAT-හා-NBTනොවැ-01දා-සිට-ක්‍රියාත්මකයි" class="more"> MORE </a>
+            </div>
+        </div>
+                <div class="br-box">
+            <a href="http://www.ada.lk/article/191468/මත්තලයි---වරායයි-ණය-බර-ඉදිරියට-නෑ" class="heading">මත්තලයි - වරායයි ණය බර ඉදිරියට නෑ</a>
+
+            <div class="date">2016-10-27 14:57:09</div>
+            <div class="writer">( චාමර සම්පත් )</div>
+            <div class="content">
+                                                    <a href="http://www.ada.lk/article/191468/මත්තලයි---වරායයි-ණය-බර-ඉදිරියට-නෑ"><img src="http://editorial.ada.lk/wp-content/uploads/file/Ranil-Wickremesinghe(12).jpg" width="100" height="60"/></a>
+                    
+	හම්බන්තොට වරායේ හා මත්තල ගුවන්තොටුපොළේ ණය බර රටේ ඉදිරි පරම්පරාවට දැරීමට සිදුනොවුණු ඇති බව අග්&zwj;රාමාත්&zwj;ය රනිල් වික්&zwj;රමසිංහ මහතා පැවැසීය....
+            </div>
+            <div class="hit-box">
+                <div class="comment-icon"> - 0</div>
+                <div class="hit-icon"> - 696 </div>
+                <a href="http://www.ada.lk/article/191468/මත්තලයි---වරායයි-ණය-බර-ඉදිරියට-නෑ" class="more"> MORE </a>
+            </div>
+        </div>
+                <div class="br-box">
+            <a href="http://www.ada.lk/article/191463/ප්‍රංශය-සම්පූර්ණයෙන්-විනාශ-කළහැකි-රුසියානු-මිසයිලයක්" class="heading">ප්‍රංශය සම්පූර්ණයෙන් විනාශ කළහැකි රුසියානු මිසයිලයක්</a>
+
+            <div class="date">2016-10-27 14:02:16</div>
+            <div class="writer">( නරේන් විශ්වජිත් )</div>
+            <div class="content">
+                                                    <a href="http://www.ada.lk/article/191463/ප්‍රංශය-සම්පූර්ණයෙන්-විනාශ-කළහැකි-රුසියානු-මිසයිලයක්"><img src="http://editorial.ada.lk/wp-content/uploads/image/21%2010%202016/1_Satan.jpeg" width="100" height="60"/></a>
+                    
+	පෘථිවි තලයෙන් ප්&zwj;රංශය හෝ ඇමෙරිකාවේ ටෙක්සාස් ප්&zwj;රාන්තය තරම් විශාල ප්&zwj;රදේශයක් සම්පූර්ණයෙන් විනාශ&nbsp;කිරීමේ හැකියාවෙන් යුතු රුසියානු අන්...
+            </div>
+            <div class="hit-box">
+                <div class="comment-icon"> - 0</div>
+                <div class="hit-icon"> - 1472 </div>
+                <a href="http://www.ada.lk/article/191463/ප්‍රංශය-සම්පූර්ණයෙන්-විනාශ-කළහැකි-රුසියානු-මිසයිලයක්" class="more"> MORE </a>
+            </div>
+        </div>
+                <div class="br-box">
+            <a href="http://www.ada.lk/article/191460/අවධානය-දිනාගත්-නඩුවල-නව-තතු" class="heading">අවධානය දිනාගත් නඩුවල නව තතු</a>
+
+            <div class="date">2016-10-27 13:58:57</div>
+            <div class="writer">( අද කර්තෘ මණ්ඩලය )</div>
+            <div class="content">
+                                                    <a href="http://www.ada.lk/article/191460/අවධානය-දිනාගත්-නඩුවල-නව-තතු"><img src="http://editorial.ada.lk/wp-content/uploads/file/Untitled-1(92).jpg" width="100" height="60"/></a>
+                    
+	ජොන්ස්ටන්ගේ නඩුව කල්යයි
+
+
+
+	සතොස ආයතනයේ සිදු වූ මුදල් වංචාවක් පිළිබඳව හිටපු අමාත්&zwj;ය ජොන්ස්ටන් ප්&zwj;රනාන්දු මහතාට එරෙහිව පනවා ඇති නඩුව 201...
+            </div>
+            <div class="hit-box">
+                <div class="comment-icon"> - 0</div>
+                <div class="hit-icon"> - 482 </div>
+                <a href="http://www.ada.lk/article/191460/අවධානය-දිනාගත්-නඩුවල-නව-තතු" class="more"> MORE </a>
+            </div>
+        </div>
+        
+        <a href="http://www.ada.lk/breaking-news" class="more-br-news"> More Breaking news </a>
+
+    </div>
+    <!-- br ebd-->
+
+    
+    <!--cartoon end-->
+    
+    <!--<div class="poll" style=" float: left; height:310px; margin-top: 110px; padding-top: 5px; width: 255px;">
+    
+    
+
+<div id="outerdiv" style="width: 255px; position: relative;">
+<div id="innerdiv" style="position: absolute; left: -0px; top: -320px;clip:rect(190px 255px 600px 0px);">      
+<iframe width="255" height="600" src="http://www.wijeya.net/adapolls" scrolling="no" frameborder="0"></iframe>
+</div>
+</div>
+ 
+
+
+</div>-->
+    
+    
+
+    <!--div class="video">
+        <div class="heading">
+              <img src="http://www.ada.lk/templates/images/video-hd.gif" width="255" height="24"/>
+        </div>
+        <div class="content">
+                                        <a href="http://www.ada.lk/article/191272/උතුරු-නැගෙනහිර-බෞද්ධ-සංහාරයක්-වෙනවලු"><img src="http://editorial.ada.lk/wp-content/uploads/file/196(76).jpg" width="255" height="142"/></a>
+                        </div>
+        <a href="http://www.ada.lk/article/191272/උතුරු-නැගෙනහිර-බෞද්ධ-සංහාරයක්-වෙනවලු" class="content-text">උතුරු නැගෙනහිර බෞද්ධ සංහාරයක් වෙනවලු</a>
+
+                <div class="video-box">
+            <div class="image-box">
+                                    <a href="http://www.ada.lk/article/191249/වැට්-බද්දට-එරෙහි-JVP-උද්ඝෝෂණය"><img src="http://editorial.ada.lk/wp-content/uploads/file/80(71).jpg" width="80" height="57"/></a>
+                                </div>
+            <a href="http://www.ada.lk/article/191249/වැට්-බද්දට-එරෙහි-JVP-උද්ඝෝෂණය" class="image-text">වැට් බද්දට එරෙහි JVP උද්ඝෝෂණය</a>
+        </div>
+                    <a class="more" href="http://www.ada.lk/video"> More</a>
+    </div>
+	
+	
+	
+	
+	
+    <!--video end-->
+	<div class="woman" style="margin-bottom:25px;">
+	<img src="http://static2.ada.lk/adaadmin/wp-content/uploads/2016/06/Info_ada-1.png" />
+		<div style ="width: 248px; height:85px; border: 0px solid ; border-color : #3d3d5c;">
+                  <div style="width : 75px; float:left; margin-top :5px;">
+				  				 <a href="http://www.ada.lk/article/190512/ලංකාවේ-ධීවර-වරායන්"><img src="http://static2.ada.lk/adaadmin/wp-content/uploads/2016/10/main29.jpg" width="80" height="57" class="thumbs"/></a>
+				  				  </div>
+				  <div style="width : 160px; float:right; margin-left:5px;">
+				  <a href="http://www.ada.lk/article/190512/ලංකාවේ-ධීවර-වරායන්" class="image-text" style="float:right !important; line-height:20px;">ලංකාවේ ධීවර වරායන්</a> </p>
+				
+				 </div> 
+	</div>
+		<div style ="width: 248px; height:85px; border: 0px solid ; border-color : #3d3d5c;">
+                  <div style="width : 75px; float:left; margin-top :5px;">
+				  				 <a href="http://www.ada.lk/article/189729/අලි-මිනිස්-ගැටුම"><img src="http://editorial.ada.lk/wp-content/uploads/file/Elephant(7).jpg" width="80" height="57" class="thumbs"/></a>
+				  				  </div>
+				  <div style="width : 160px; float:right; margin-left:5px;">
+				  <a href="http://www.ada.lk/article/189729/අලි-මිනිස්-ගැටුම" class="image-text" style="float:right !important; line-height:20px;">අලි මිනිස් ගැටුම</a> </p>
+				
+				 </div> 
+	</div>
+		<div style ="width: 248px; height:85px; border: 0px solid ; border-color : #3d3d5c;">
+                  <div style="width : 75px; float:left; margin-top :5px;">
+				  				 <a href="http://www.ada.lk/article/189440/ශ්‍රී-ලංකාවේ-GSP-සහනය"><img src="http://editorial.ada.lk/wp-content/uploads/file/Capture(837).jpg" width="80" height="57" class="thumbs"/></a>
+				  				  </div>
+				  <div style="width : 160px; float:right; margin-left:5px;">
+				  <a href="http://www.ada.lk/article/189440/ශ්‍රී-ලංකාවේ-GSP-සහනය" class="image-text" style="float:right !important; line-height:20px;">ශ්‍රී ලංකාවේ GSP සහනය</a> </p>
+				
+				 </div> 
+	</div>
+		<div style ="width: 248px; height:85px; border: 0px solid ; border-color : #3d3d5c;">
+                  <div style="width : 75px; float:left; margin-top :5px;">
+				  				 <a href="http://www.ada.lk/article/189434/තායිලන්තයේ-භූමිබෝල්-රජු"><img src="http://static2.ada.lk/adaadmin/wp-content/uploads/2016/10/bumibol.jpg" width="80" height="57" class="thumbs"/></a>
+				  				  </div>
+				  <div style="width : 160px; float:right; margin-left:5px;">
+				  <a href="http://www.ada.lk/article/189434/තායිලන්තයේ-භූමිබෝල්-රජු" class="image-text" style="float:right !important; line-height:20px;">තායිලන්තයේ භූමිබෝල් රජු</a> </p>
+				
+				 </div> 
+	</div>
+		<a href="http://www.ada.lk/infographics/" class="tabs-more" style="display:inline; float: left; height: 12px; width: 250px; font-family: Arial, Helvetica; font-size: 12px; color: #ee1c25; font-weight: bold; text-align: right; text-decoration: none; margin-top: 0px; margin-right: 5px; margin-bottom:5;"> More Infographics</a> 
+
+	</div>
+    <div class="woman" style="margin-bottom:25px;">
+        <div id="container">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tab-1">FEATURES</a></li>
+                    <li><a href="#tab-2">RELIGION</a></li>
+                    <li><a href="#tab-3">HEALTH</a></li>
+
+                </ul>
+                <div id="tab-1">
+                                        <p>
+                                                    <a href="http://www.ada.lk/article/190708/මහේලගේ-ගමන-අව්වට-වැස්සට-නොනවතියි-"><img src="http://static2.ada.lk/adaadmin/wp-content/uploads/2016/10/main31.jpg" width="80" height="57" class="thumbs"/></a>
+                                                    <a href="http://www.ada.lk/article/190708/මහේලගේ-ගමන-අව්වට-වැස්සට-නොනවතියි-" class="image-text">මහේලගේ ගමන අව්වට වැස්සට නොනවතියි </a> </p>
+                                        <p>
+                                                    <a href="http://www.ada.lk/article/189716/අලි-මිනිස්-ගැටුමට-විසඳුමක්-නැති-වීමෙන්-අර්බුද-රැසක්"><img src="http://static2.ada.lk/adaadmin/wp-content/uploads/2016/10/IMG_20150504_130555.jpg" width="80" height="57" class="thumbs"/></a>
+                                                    <a href="http://www.ada.lk/article/189716/අලි-මිනිස්-ගැටුමට-විසඳුමක්-නැති-වීමෙන්-අර්බුද-රැසක්" class="image-text">අලි මිනිස් ගැටුමට විසඳුමක් නැති වීමෙන් අර්බුද රැසක්</a> </p>
+                                        <p>
+                                                    <a href="http://www.ada.lk/article/187299/-රන්-සම්මානයෙන්-පිදුම්-ලැබූ-රංහාමිගේ-රංපුතා"><img src="http://editorial.ada.lk/wp-content/uploads/file/E989B9DC.jpg" width="80" height="57" class="thumbs"/></a>
+                                                    <a href="http://www.ada.lk/article/187299/-රන්-සම්මානයෙන්-පිදුම්-ලැබූ-රංහාමිගේ-රංපුතා" class="image-text"> රන් සම්මානයෙන් පිදුම් ලැබූ රංහාමිගේ රංපුතා</a> </p>
+                                        <p>
+                                                    <a href="http://www.ada.lk/article/186266/යෝජිත-අකුරළ-අභයභූමිය-විනාශ-මුඛයේ"><img src="http://static2.ada.lk/adaadmin/wp-content/uploads/2016/10/IMG_1917.jpg" width="80" height="57" class="thumbs"/></a>
+                                                    <a href="http://www.ada.lk/article/186266/යෝජිත-අකුරළ-අභයභූමිය-විනාශ-මුඛයේ" class="image-text">යෝජිත අකුරළ අභයභූමිය විනාශ මුඛයේ</a> </p>
+                                        
+                    <a href="http://www.ada.lk/features/" class="tabs-more" style="display:inline; float: left; height: 12px; width: 250px; font-family: Arial, Helvetica; font-size: 12px; color: #ee1c25; font-weight: bold; text-align: right; text-decoration: none; margin-top: 0px; margin-right: 5px; margin-bottom:5;"> More</a> 
+
+	</div>
+
+
+                <div id="tab-2">
+                                        <p>
+                                                        <a href="http://www.ada.lk/article/191143/ලබන-වසරේදී-දන්ත-ධාතූ-වහන්සේ-ප්‍රදර්ශනයක්"><img src="http://editorial.ada.lk/wp-content/uploads/file/kandy-668x362.jpg" width="80" height="57" class="thumbs"/></a>
+                                                        <a href="http://www.ada.lk/article/191143/ලබන-වසරේදී-දන්ත-ධාතූ-වහන්සේ-ප්‍රදර්ශනයක්" class="image-text">ලබන වසරේදී දන්ත ධාතූ වහන්සේ ප්‍රදර්ශනයක්</a> </p>
+                                        <p>
+                                                        <a href="http://www.ada.lk/article/188904/වප්-පුර-පසළොස්වක-පොහොය-දිනය-අදයි"><img src="http://editorial.ada.lk/wp-content/uploads/file/046b54925ab314aeb04301ddf92eda63_XL.jpg" width="80" height="57" class="thumbs"/></a>
+                                                        <a href="http://www.ada.lk/article/188904/වප්-පුර-පසළොස්වක-පොහොය-දිනය-අදයි" class="image-text">වප් පුර පසළොස්වක පොහොය දිනය අදයි</a> </p>
+                                        <p>
+                                                        <a href="http://www.ada.lk/article/183771/බිනර-පුර-පසළොස්වක-පොහොය-දිනය-අදයි"><img src="http://editorial.ada.lk/wp-content/uploads/file/z_pic350-fea.jpg" width="80" height="57" class="thumbs"/></a>
+                                                        <a href="http://www.ada.lk/article/183771/බිනර-පුර-පසළොස්වක-පොහොය-දිනය-අදයි" class="image-text">බිනර පුර පසළොස්වක පොහොය දිනය අදයි</a> </p>
+                                        <p>
+                                                        <a href="http://www.ada.lk/article/182845/ජීවිත-කාලය-පුරාවටම-කටයුතු-කළේ-ප්‍රසන්න-මනසකින්-යුක්තවයි"><img src="http://editorial.ada.lk/wp-content/uploads/file/Ariyadhamma-Thero(1).jpg" width="80" height="57" class="thumbs"/></a>
+                                                        <a href="http://www.ada.lk/article/182845/ජීවිත-කාලය-පුරාවටම-කටයුතු-කළේ-ප්‍රසන්න-මනසකින්-යුක්තවයි" class="image-text">ජීවිත කාලය පුරාවටම කටයුතු කළේ ප්‍රසන්න මනසකින් යුක්තවයි</a> </p>
+                                        
+                    <a href="http://www.ada.lk/religion/" class="tabs-more" style="display:inline; float: left; height: 12px; width: 250px; font-family: Arial, Helvetica; font-size: 12px; color: #ee1c25; font-weight: bold; text-align: right; text-decoration: none; margin-top: 0px; margin-right: 5px; margin-bottom:5;"> More</a> 
+                    
+                </div>
+
+                <div id="tab-3">
+                                        <p>
+                                                        <a href="http://www.ada.lk/article/191403/බද්ධ-කිරීමට-සුදුසු-වකුගඩු-750-ක්-සෑම-වසරකදීම-අපතේ"><img src="http://editorial.ada.lk/wp-content/uploads/file/images(178).jpg" width="80" height="57" class="thumbs"/></a>
+                                                        <a href="http://www.ada.lk/article/191403/බද්ධ-කිරීමට-සුදුසු-වකුගඩු-750-ක්-සෑම-වසරකදීම-අපතේ" class="image-text">බද්ධ කිරීමට සුදුසු වකුගඩු 750 ක් සෑම වසරකදීම අපතේ</a> </p>
+                                        <p>
+                                                        <a href="http://www.ada.lk/article/190737/ශ්‍රී-ලංකාවේ-ඒඩ්ස්-ව්‍යාප්තියේ-අඩුවීමක්"><img src="http://editorial.ada.lk/wp-content/uploads/file/STOPhiv.jpg" width="80" height="57" class="thumbs"/></a>
+                                                        <a href="http://www.ada.lk/article/190737/ශ්‍රී-ලංකාවේ-ඒඩ්ස්-ව්‍යාප්තියේ-අඩුවීමක්" class="image-text">ශ්‍රී ලංකාවේ ඒඩ්ස් ව්‍යාප්තියේ අඩුවීමක්</a> </p>
+                                        <p>
+                                                        <a href="http://www.ada.lk/article/185745/අවුරුදු-පහක-දැරියකට-පියයුරු-පිළිකා-සැත්කමක්"><img src="http://editorial.ada.lk/wp-content/uploads/file/operation.jpg" width="80" height="57" class="thumbs"/></a>
+                                                        <a href="http://www.ada.lk/article/185745/අවුරුදු-පහක-දැරියකට-පියයුරු-පිළිකා-සැත්කමක්" class="image-text">අවුරුදු පහක දැරියකට පියයුරු පිළිකා සැත්කමක්</a> </p>
+                                        <p>
+                                                <a href="http://www.ada.lk/article/184225/සීකා-තියෙන-රටවලට-යන්න-එපා" class="image-text">සීකා තියෙන රටවලට යන්න එපා</a> </p>
+                                        
+                    <a href="http://www.ada.lk/health/" class="tabs-more" style="display:inline; float: left; height: 12px; width: 250px; font-family: Arial, Helvetica; font-size: 12px; color: #ee1c25; font-weight: bold; text-align: right; text-decoration: none; margin-top: 0px; margin-right: 5px; margin-bottom:5;"> More</a> 
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </div><!-- woman end-->
+
+
+
+</div>
+<!--left end-->
+
+
+
+
+
+<div class="top-sliderwithad">
+<div style="text-align: left; margin: 0px 0px 10px 8px;">
+<!--a href="http://www.ada.lk/article/124569/2016-%E0%B6%85%E0%B6%BA%E0%B7%80%E0%B7%90%E0%B6%BA-%E0%B6%BA%E0%B7%9D%E0%B6%A2%E0%B6%B1%E0%B7%8F-">
+<img src="http://www.ada.lk/templates/images/2016-budget.jpg"/>
+</a-->
+</div>
+<div class="main-news">
+            <div> <a style="font-size:20px" class="header"  href="http://www.ada.lk/article/191493/අර්ජුන්-මහේන්ද්‍රන්-සිංගප්පූරු-යයි" class="heading">අර්ජුන් මහේන්ද්‍රන් සිංගප්පූරු යයි</a></div>
+          <div class="image5" style="margin-left:0px; margin-top:5px; margin-right:10px">
+                           <a class="image5" href="http://www.ada.lk/article/191493/අර්ජුන්-මහේන්ද්‍රන්-සිංගප්පූරු-යයි"><img src="http://editorial.ada.lk/wp-content/uploads/file/Lakshman-Arjuna-Mahendran-640x400(2).jpg" width="180"
+                                                 height="114"/></a>
+                
+            
+
+            </div>
+  <div class="text5">
+
+
+	හිටපු මහ බැංකු අධිපති අර්ජුන් මහේන්ද්&zwj;ර්න් මහතා හදිසියේම සිංගප්පුරුව බලා පිටත්ව ගොස් තිබේ. කටුනායක ජාත්&zwj;යන්තර ගුවන් තොටුපොළින් ඔහු සිංගප්පූ...
+<div class="hit-box"> 
+        <div class="comment-icon"> - 0</div>
+        <div class="hit-icon"> - 724</div>
+
+
+        <a href="http://www.ada.lk/article/191493/අර්ජුන්-මහේන්ද්‍රන්-සිංගප්පූරු-යයි"  class="more"> MORE </a>
+      </div>
+ 
+</div>
+
+</div>
+    <div class="slider">
+        <div id="featured">
+                                                    <a href="http://www.ada.lk/article/191219/ආණ්ඩුවයි-ඒකාබද්ධ-විපක්ෂයි-හෝමාගමදී-එක්වෙයි" target="_self"><img src="http://static2.ada.lk/adaadmin/wp-content/uploads/2016/10/main35.jpg"
+                                                        rel="slider-cap-1"/></a>
+                                                                <a href="http://www.ada.lk/article/191111/කිලිනොච්චියේදී-පොලිස්-නිලධාරියෙකුට-ප්‍රහාරයක්" target="_self"><img src="http://static2.ada.lk/adaadmin/wp-content/uploads/2016/10/main34.jpg"
+                                                        rel="slider-cap-2"/></a>
+                                                                <a href="http://www.ada.lk/article/191077/ඇන්දුවද-මන්දා" target="_self"><img src="http://editorial.ada.lk/wp-content/uploads/file/vvvv.jpg"
+                                                        rel="slider-cap-3"/></a>
+                                                                <a href="http://www.ada.lk/article/190983/සිසු---ගුරු--සෙනෙහසේ-තොටුපොළ--28-දා-විවෘතයි" target="_self"><img src="http://editorial.ada.lk/wp-content/uploads/file/main(3693).jpg"
+                                                        rel="slider-cap-4"/></a>
+                                </div>
+                    <span class="orbit-caption" id="slider-cap-1">ආණ්ඩුවයි ඒකාබද්ධ විපක්ෂයි හෝමාගමදී එක්වෙයි</br> <a
+                href="http://www.ada.lk/article/191219/ආණ්ඩුවයි-ඒකාබද්ධ-විපක්ෂයි-හෝමාගමදී-එක්වෙයි" class="mini-text">
+                
+	ශ්&zwj;රී ලංකාවේ ඉදිකළ පළමු හරිත සරසවිය වන හෝමාගම පිටිපන එන්.එස්.බී.එම්. හරිත සරසවිය අද (26දා) ජනපති මෛත්&zwj;රීපාල සිරිසේන මහතාගේ හා අග්&zwj;රාමාත...</a></span>
+                        <span class="orbit-caption" id="slider-cap-2">කිලිනොච්චියේදී පොලිස් නිලධාරියෙකුට ප්‍රහාරයක්</br> <a
+                href="http://www.ada.lk/article/191111/කිලිනොච්චියේදී-පොලිස්-නිලධාරියෙකුට-ප්‍රහාරයක්" class="mini-text">
+                
+	කිලිනොච්චිය මහරෝහල ඉදිරිපිටදී ඊයේ (25දා) සවස පොලීසියට බෝතල් ප්&zwj;රහාර එල්ල කරමින් කලහකාරී ලෙස හැසුරුණු පිරිස් අත්අඩංගුවට ගැනීම සඳහා පුළුල් පරීක්ෂ...</a></span>
+                        <span class="orbit-caption" id="slider-cap-3">ඇන්දුවද මන්දා</br> <a
+                href="http://www.ada.lk/article/191077/ඇන්දුවද-මන්දා" class="mini-text">
+                
+	මේ දවස්වල ලංකාවේ හැමතැනම චීනයේ අයෝජන. පරණ ඒවා අලුත් වෙනවා අලුත් ඒවා එකතු වෙනවා. ඉන්දියාව මේ දිහා බලාගෙන ඉන්නේ කොහොමද මන්දා? ඊයේ (25) බණ්ඩාරනායක සම්...</a></span>
+                        <span class="orbit-caption" id="slider-cap-4">සිසු - ගුරු 'සෙනෙහසේ තොටුපොළ' 28 දා විවෘතයි</br> <a
+                href="http://www.ada.lk/article/190983/සිසු---ගුරු--සෙනෙහසේ-තොටුපොළ--28-දා-විවෘතයි" class="mini-text">
+                
+	දිවයින පුරා පාසල් සිසු දරුවන් සහ ගුරුවරුන් එක්ව &ldquo;සෙනෙහසේ තොටුපොළ&rdquo;&nbsp;ලෙස ගොඩනගන ලද, අලිමංකඩ දුම්රිය ස්ථානය එළඹෙන 28දා ජනතා අයිතියට පත...</a></span>
+                </div>  <!--slider end-->
+
+    <div class="top-ad" style="margin-top:-175px !important">
+	
+	
+<!--    <div class="top-ad" style="width:259px; height:83px; float:left; overflow:hidden; margin-left:-8px;">
+    <iframe scrolling="no" src="http://wijeyadigital.lk/wijeyadigital.lk/Nestomolt_New_Year/Ada.lk/" frameborder="0" height="83" width="259"></iframe> 
+    </div>-->
+    
+     <!-- <div class="top-ad" style="width:300px; height:255px; float:left; overflow:hidden; margin-left:0px;">
+   <IFRAME SRC="http://ad.doubleclick.net/ddm/adi/N7534.1921951ADA.LK/B8441837.119120250;sz=300x250;ord=[timestamp]?" WIDTH=250 HEIGHT=250 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'>
+<SCRIPT language='JavaScript1.1' SRC="http://ad.doubleclick.net/ddm/adj/N7534.1921951ADA.LK/B8441837.119120250;abr=!ie;sz=300x250;ord=[timestamp]?">
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/ddm/jump/N7534.1921951ADA.LK/B8441837.119120250;abr=!ie4;abr=!ie5;sz=300x250;ord=[timestamp]?">
+<IMG SRC="http://ad.doubleclick.net/ddm/ad/N7534.1921951ADA.LK/B8441837.119120250;abr=!ie4;abr=!ie5;sz=300x250;ord=[timestamp]?" BORDER=0 WIDTH=300 HEIGHT=250 ALT="Advertisement"></A>
+</NOSCRIPT>
+</IFRAME>
+
+
+    </div>-->
+    
+      <!-- <a href="https://www.facebook.com/RuwanWijewardeneUNP" target="_blank" style="margin-top:0px; margin-bottom:10px; float:left;">
+        <img src="http://www.ada.lk/templates/images/sinhala-r.jpg" width="250" height="167" /></a>-->
+    
+    	<!--<div class="top-ad" style="width:250px; height:277px; float:left; overflow:hidden; margin-left:0px;">
+		<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fada.daily%3Ffref%3Dts&amp;width=250&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=true&amp;appId=290233971017769" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:280px;" allowTransparency="true"></iframe>  
+        </div>-->
+		
+		
+		
+		
+		
+		
+		<div class="cartoon" style="width:250px">
+        <div><img src="http://www.ada.lk/templates/images/cartoon-hd.gif" width="255" height="24"/></div>
+        <div class="content">
+                            <a href="http://www.ada.lk/article/191367/2016-10-27"><img src="http://editorial.ada.lk/wp-content/uploads/file/ADA-cartoon-27(1).jpg" width="255"
+                                height="190"/></a>
+                        </div>
+        <a href="http://www.ada.lk/cartoon" style="    float: left;
+    height: 15px;
+    width: 250px;
+    font-family: Arial, Helvetica;
+    font-size: 12px;
+    color: #ee1c25;
+    font-weight: bold;
+    text-align: right;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-right: 5px;
+" class="more"> More Cartoons</a>
+    </div>
+	<style>
+	.bro .video .video-box .image-text {
+    float: left;
+    height: 57px;
+    width: 155px;
+    font-family: Arial, Malithi Web, Helvetica;
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+    line-height: 25px;
+    text-align: left;
+    vertical-align: middle;
+}
+.bro .video .heading {
+    float: left;
+    height: 24px;
+    width: 255px;
+}
+.bro .video {
+    float: left;
+    height: auto;
+    width: 255px;
+    margin-top: 10px;
+    background-color: #eeeeee;
+    padding-bottom: 5px;
+}
+.bro .video .content-text {
+    font-family: Arial, Helvetica;
+    font-size: 16px;
+    color: #000000;
+    float: left;
+    height: auto;
+    width: 245px;
+    margin-top: 5px;
+    line-height: 90%;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.bro .video .video-box .image-box {
+    float: left;
+    height: 57px;
+    width: 80px;
+    margin-right: 10px;
+}
+.bro .video .more {
+    float: left;
+    height: 15px;
+    width: 250px;
+    font-family: Arial, Helvetica;
+    font-size: 12px;
+    color: #ee1c25;
+    font-weight: bold;
+    text-align: right;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+	</style>
+	<div class="bro">
+	 <div class=" video" style="width:250px" >
+        <div class="heading">
+              <img src="http://www.ada.lk/templates/images/video-hd.gif" width="255" height="24"/>
+        </div>
+        <div class="content">
+                                        <a href="http://www.ada.lk/article/191272/උතුරු-නැගෙනහිර-බෞද්ධ-සංහාරයක්-වෙනවලු"><img src="http://editorial.ada.lk/wp-content/uploads/file/196(76).jpg" width="255" height="142"/></a>
+                        </div>
+        <a href="http://www.ada.lk/article/191272/උතුරු-නැගෙනහිර-බෞද්ධ-සංහාරයක්-වෙනවලු" class="content-text">උතුරු නැගෙනහිර බෞද්ධ සංහාරයක් වෙනවලු</a>
+
+                <div class="video-box">
+            <div class="image-box">
+                                    <a href="http://www.ada.lk/article/191249/වැට්-බද්දට-එරෙහි-JVP-උද්ඝෝෂණය"><img src="http://editorial.ada.lk/wp-content/uploads/file/80(71).jpg" width="80" height="57"/></a>
+                                </div>
+            <a style="margin-top:5px;" href="http://www.ada.lk/article/191249/වැට්-බද්දට-එරෙහි-JVP-උද්ඝෝෂණය" class="image-text">වැට් බද්දට එරෙහි JVP උද්ඝෝෂණය</a>
+        </div>
+                    <a class="more" href="http://www.ada.lk/video"> More</a>
+    </div>
+	</div>
+    <!--video end-->
+	<!--<a target="_blank" href="http://www.ada.lk/grade-5"><img src="http://static2.ada.lk/adaadmin/wp-content/uploads/2016/06/Add.jpg"/> </a> --> 
+        </div>
+      
+       
+        <!--a href="http://ada.lk/bsmart/" class="top-ad" style="margin-top:-135px; margin-bottom:10px">
+        <img src="http://www.ada.lk/templates/images/b-smart.jpg" width="250" height="75" /></a--> 
+        
+       
+
+       
+    </div>
+    
+    
+    
+    <!--sliderwithad-->
+
+</div>
+
+
+
+
+<div class="middle">
+
+<div class="check" id="cricket-poll-options" style="margin: 10px 27px;">
+	<h2>ජනතාවගේ සම්මානය කාටද?</h2>
+
+	<table style="width: 100%;">
+		<tbody>
+			
+				<tr style="background-color: #449acb; border: none;">
+					<td style="width: 10%; padding: 5px; text-align: center;">
+						<img src="http://www.ada.lk/templates/images/cricketaward/21.jpg" style="width: 35px; height: 35px;">
+					</td>
+					<td style="width: 30%; padding: 5px; color: #FFFFFF;">
+						<label class="css-label" style="background:none; "> දිනේෂ් චන්දිමාල්</label>
+					</td>
+					<td style="width: 52%; padding: 0px 5px;">
+						<div style="width: 100%; height: 30px; background-color: #f2f2f2;">
+							<div style="width: 90%; height: 30px; background-color: #ccbb02;"></div>
+						</div>
+					</td>
+					<td style="width: 8%; padding: 5px; text-align: right; color: #FFFFFF;">
+						<label class="css-label" style="background:none; font-weight: bold;"> 41.89% </label>
+					</td>
+				</tr>								
+			
+				<tr style="background-color: #449acb; border: none;">
+					<td style="width: 10%; padding: 5px; text-align: center;">
+						<img src="http://www.ada.lk/templates/images/cricketaward/33.jpg" style="width: 35px; height: 35px;">
+					</td>
+					<td style="width: 30%; padding: 5px; color: #FFFFFF;">
+						<label class="css-label" style="background:none; "> කුමාර් සංගක්කාර</label>
+					</td>
+					<td style="width: 52%; padding: 0px 5px;">
+						<div style="width: 100%; height: 30px; background-color: #f2f2f2;">
+							<div style="width: 69.502202643172%; height: 30px; background-color: #ccbb02;"></div>
+						</div>
+					</td>
+					<td style="width: 8%; padding: 5px; text-align: right; color: #FFFFFF;">
+						<label class="css-label" style="background:none; font-weight: bold;"> 32.35% </label>
+					</td>
+				</tr>								
+			
+				<tr style="background-color: #449acb; border: none;">
+					<td style="width: 10%; padding: 5px; text-align: center;">
+						<img src="http://www.ada.lk/templates/images/cricketaward/22.jpg" style="width: 35px; height: 35px;">
+					</td>
+					<td style="width: 30%; padding: 5px; color: #FFFFFF;">
+						<label class="css-label" style="background:none; "> තිලකරත්න ඩිල්ෂාන්</label>
+					</td>
+					<td style="width: 52%; padding: 0px 5px;">
+						<div style="width: 100%; height: 30px; background-color: #f2f2f2;">
+							<div style="width: 18.15859030837%; height: 30px; background-color: #ccbb02;"></div>
+						</div>
+					</td>
+					<td style="width: 8%; padding: 5px; text-align: right; color: #FFFFFF;">
+						<label class="css-label" style="background:none; font-weight: bold;"> 8.45% </label>
+					</td>
+				</tr>								
+			
+				<tr style="background-color: #449acb; border: none;">
+					<td style="width: 10%; padding: 5px; text-align: center;">
+						<img src="http://www.ada.lk/templates/images/cricketaward/23.jpg" style="width: 35px; height: 35px;">
+					</td>
+					<td style="width: 30%; padding: 5px; color: #FFFFFF;">
+						<label class="css-label" style="background:none; "> රංගන හේරත්</label>
+					</td>
+					<td style="width: 52%; padding: 0px 5px;">
+						<div style="width: 100%; height: 30px; background-color: #f2f2f2;">
+							<div style="width: 17.04845814978%; height: 30px; background-color: #ccbb02;"></div>
+						</div>
+					</td>
+					<td style="width: 8%; padding: 5px; text-align: right; color: #FFFFFF;">
+						<label class="css-label" style="background:none; font-weight: bold;"> 7.94% </label>
+					</td>
+				</tr>								
+									
+		</tbody>
+	</table>
+	
+	<style>
+		.cricketlink {
+			text-decoration: none;
+		}
+		
+		.cricketlink>h3 {
+			background-color:#449acb; 
+			font-family:Arial, sans-serif; 
+			padding: 5px 10px; 
+			margin:10px 2px; 
+			color:#fff; 
+			text-align:right;
+		}
+		
+		.cricketlink>h3:hover {
+			background-color:#2d759f; 
+			color:#cceeff; 
+		}
+	</style>
+	
+	<a href="http://www.ada.lk/ada/cricketaward" style="" class="cricketlink">
+		<h3 id="poll-header" class="opinion-header" style="">ඔබගේ ප්‍රියතම ක්‍රීඩකයා කවුද?</h3>
+	</a>
+</div>
+
+<div class="middle-top">
+<div class="mid-col">
+    <div class="column">
+        <div class="sp-heading">SPORTS</div>
+        <div class="img-box">
+                            <a href="http://www.ada.lk/article/191492/ලංකාවට-දැවැන්ත-පරාජයක්"><img src="http://editorial.ada.lk/wp-content/uploads/file/1(3201).jpg" width="164"
+                                                 height="100"/></a>
+                        </div>
+        <a href="http://www.ada.lk/article/191492/ලංකාවට-දැවැන්ත-පරාජයක්" class="text-heading">ලංකාවට දැවැන්ත පරාජයක්</a>
+
+        <div class="text-content">
+            
+	ශ්&zwj;රී ලංකා ඒ කණ්ඩායම හා කොදෙව් ඒ කණ්ඩායම අතර කුරුණෑගල වෙලගෙදර ක්&zwj;රීඩාංගණයේ පැවැති දෙවැනි නිල නොවන එක්දින තරගයෙන් ශ්&zwj;රී ලංකා කණ්ඩායම ලකුණු 109ක පරාජයක් ලැබීය. ලකුණු 347ක දැවැන්ත ඉලක්කයක් හඹා ගිය ශ්&zwj;රී ල...        </div>
+        <a href="http://www.ada.lk/sports" class="more"> More Sports </a>
+    </div>
+
+    <div class="column">
+        <div class="bs-heading">BUSINESS</div>
+        <div class="img-box">
+                            <a href="http://www.ada.lk/article/191470/VAT-හා-NBTනොවැ-01දා-සිට-ක්‍රියාත්මකයි"><img src="http://editorial.ada.lk/wp-content/uploads/image/21%2010%202016/1_VAT(1).jpg" width="164"
+                                height="100"/></a>
+                        </div>
+        <a href="http://www.ada.lk/article/191470/VAT-හා-NBTනොවැ-01දා-සිට-ක්‍රියාත්මකයි" class="text-heading">VAT හා NBTනොවැ 01දා සිට ක්‍රියාත්මකයි</a>
+
+        <div class="text-content">
+            
+	පාර්ලිමේන්තුවේදී ඊයේ (26දා) සම්මත වූ එකතු කළ අගය මත බදු හෙවත් වැට් (VAT) සහ ජාතිය ගොඩනැගීමේ බදු (NBT) සංශෝධන 2016 නොවැම්බර් මස 01 දින සිට ක්&zwj;රියාත්මක වන බව මුදල් අමාත්&zwj;යාංශය කියයි.
+
+
+
+	ඒ අනුව වැට...        </div>
+        <a href="http://www.ada.lk/business" class="more"> More Business </a>
+    </div>
+
+    <div class="column">
+        <div class="en-heading">ENTERTAINMENT</div>
+        <div class="img-box">
+                            <a href="http://www.ada.lk/article/191160/ලෝකයේ-සලකුණක්-තැබීමට-සැරසෙන-අපේ-කාන්තාවෝ"><img src="http://editorial.ada.lk/wp-content/uploads/file/12310462_954736154600500_8933354780891869941_n.jpg" width="164"
+                                height="100"/></a>
+                        </div>
+        <a href="http://www.ada.lk/article/191160/ලෝකයේ-සලකුණක්-තැබීමට-සැරසෙන-අපේ-කාන්තාවෝ" class="text-heading">ලෝකයේ සලකුණක් තැබීමට සැරසෙන අපේ කාන්තාවෝ</a>
+
+        <div class="text-content">
+            
+	සෞන්දර්ය කලා විශ්වවිද්&zwj;යාලයේ තාල වාද්&zwj;ය අංශයේ ප්&zwj;රථම සිසුවිය සිතාරා මධුවන්තිය. ඇය සමගින් ලංකාවේ පළමු කාන්තා තාලවාද්&zwj;ය කණ්ඩායම නෙළුම් පොකුණේදී නොවැම්බර් 06 වැනිදා ප්&zwj;රසංගයකට සූදා...        </div>
+        <a href="http://www.ada.lk/entertainment" class="more"> More Entertainment </a>
+    </div>
+    
+
+
+
+
+</div>
+<!--3col end-->
+</div>
+
+<!--div class="buzz">  
+     <div class="list_carousel">
+			  <ul id="foo2">
+			  				<li><a href="http://www.ada.lk/article/54089/මැනිය-නොහැකි-ආදරය" class="buzz-box">
+       <div class="image">
+	   	   <img src="http://static2.ada.lk/adaadmin/wp-content/uploads/file/04(45).jpg" width="156" height="96"  alt=""/></div>
+	          <div class="text" >මැනිය නොහැකි ආ
+<div class="text-content">2015-03-23 12:59:51 </div>
+<div class="text-more"> MORE </div>
+</div>
+			  </a> </li> 				<li><a href="http://www.ada.lk/article/54082/තේ-බොද්දී" class="buzz-box">
+       <div class="image">
+	   	   <img src="http://static2.ada.lk/adaadmin/wp-content/uploads/file/03(44).jpg" width="156" height="96"  alt=""/></div>
+	          <div class="text" >තේ බොද්දී
+<div class="text-content">2015-03-23 12:58:23 </div>
+<div class="text-more"> MORE </div>
+</div>
+			  </a> </li> 				<li><a href="http://www.ada.lk/article/54078/රූනි-හා-රෙක්සි" class="buzz-box">
+       <div class="image">
+	   	   <img src="http://static2.ada.lk/adaadmin/wp-content/uploads/file/022.jpg" width="156" height="96"  alt=""/></div>
+	          <div class="text" >රූනි හා රෙක්සි
+<div class="text-content">2015-03-23 12:57:50 </div>
+<div class="text-more"> MORE </div>
+</div>
+			  </a> </li> 				<li><a href="http://www.ada.lk/article/54076/නව-දිල්ලිය-දැනෙන්නේ-කොහොමද?" class="buzz-box">
+       <div class="image">
+	   	   <img src="http://static2.ada.lk/adaadmin/wp-content/uploads/file/01(88).jpg" width="156" height="96"  alt=""/></div>
+	          <div class="text" >නව දිල්ලිය දැන
+<div class="text-content">2015-03-23 12:56:48 </div>
+<div class="text-more"> MORE </div>
+</div>
+			  </a> </li>      
+				
+					
+		</ul>
+				<div class="clearfix"></div>
+				<a id="prev2" class="prev" href="#"></a>
+				<a id="next2" class="next" href="#"></a>
+				
+	  </div>
+     
+     
+     </div--> <div style=" text-align:center; margin : 20px 0px;">
+	 <IFRAME SRC="https://ad.doubleclick.net/ddm/adi/N7534.1921951ADA.LK/B9971642.139453481;sz=300x200;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" WIDTH=300 HEIGHT=200 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'>
+<SCRIPT language='JavaScript1.1' SRC="https://ad.doubleclick.net/ddm/adj/N7534.1921951ADA.LK/B9971642.139453481;abr=!ie;sz=300x200;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?">
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="https://ad.doubleclick.net/ddm/jump/N7534.1921951ADA.LK/B9971642.139453481;abr=!ie4;abr=!ie5;sz=300x200;ord=[timestamp]?">
+<IMG SRC="https://ad.doubleclick.net/ddm/ad/N7534.1921951ADA.LK/B9971642.139453481;abr=!ie4;abr=!ie5;sz=300x200;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" BORDER=0 WIDTH=300 HEIGHT=200 ALT="Advertisement"></A>
+</NOSCRIPT>
+</IFRAME> 
+		<div id="cal-sunsilk-2016-sep-healthy-and-long-container">
+		<iframe src="//www.codeartlove.com/clients/sunsilk/2016/aug/long-and-healthy/300x250/?site_id=ada&lan=sin" frameborder="0" width="300" height="250" scrolling="no"></iframe>
+		<script src="//www.codeartlove.com/clients/sunsilk/2016/aug/long-and-healthy/popup-js/?site_id=ada&lan=sin" type="text/javascript" async></script>
+</div>
+
+</div>
+
+<div class="mid-category">
+    <div class="cat-box">
+	
+        <div class="heading"><img src="http://www.ada.lk/templates/images/opinion-hd.png" width="508"
+                                  height="21"/></div>
+        <div class="left-content">
+            <div class="left-content-image">
+                                    <a href="http://www.ada.lk/article/190720/සමුදුර-රූසර-ප්‍රසංගය" target="_blank"> <img src="http://editorial.ada.lk/wp-content/uploads/file/dig3025261_254749.jpg" width="196"
+                                                     height="120"/></a>
+                                </div>
+            <div class="content-lbox">
+                <div class="date">
+                    2016-10-24 12:00:31                </div>
+                <div class="writer">( ඉන්දික හේවාවිතාරණ )</div>
+                <a href="http://www.ada.lk/article/190720/පක්ෂය-කැඩිලා-කියලා-කාටවත්-කියන්න-බැහැ" class="content-heading">පක්ෂය කැඩිලා කියලා කාටවත් කියන්න බැහැ</a>
+
+                <div class="content">
+                    
+	නියඟය, ගංවතුර නිසා මෙරට බහුතර ජනතාවට ගෙවුණු සෑම වසරකදීම ව්&zwj;යසනයන්ට මුහුණදීමට සිදුවිය. මේ නිසා සෑමදෙනෙකුගේම ඉල්ලීම වී තිබුණේ මෙම තත්ත්වයන්වලට මුහුණදීම සඳහා ස්ථිරසාර වැඩපිළිවෙළක් සකස් කරන ලෙසයි. මීට අමතරව පොදුවේ පක්ෂයක් ලෙස ශ්&zwj;රී ලංකා නිදහස්...                </div>
+            </div>
+        </div>
+            <div class="right-content">
+            <div class="rdate">
+			2016-10-18 09:38:29            </div>
+            <div class="rwriter">( ඉන්දික හේවාවිතාරණ )</div>
+            <a href="http://www.ada.lk/article/189443/රජයේ-මුදල්-අවභාවිත-වීම-වැළැක්වීමට-තොරතුරු-තාක්ෂණ-පද්ධතියක්" class="rcontent-heading">රජයේ මුදල් අවභාවිත වීම වැළැක්වීමට තොරතුරු තාක්ෂණ පද්ධතියක්</a>
+
+            <div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #e5e5e5;">
+                
+	රාජ්&zwj;ය ආයතනවලට ලබාදෙන මුදල් නිසි ලෙස වියදම් නොකරන බවට හා සමහර ආයතනවලට ලබාදෙන මුදල්වලින් විශාල මුදලක් වංචාකාරී ලෙස පුද්ගලයන් කිහිපදෙනෙකු අතට පත්වන බවත් පසුගිය කාලය පුරාම අසන්නට ලැබුණි. මේ නිසා ජනතාවගේ බදු මුදල්වලින් නඩත්තු වන බොහෝ රාජ්&zwj;ය ආය...            </div>
+        </div>
+                <div class="right-content">
+            <div class="rdate">
+			2016-10-02 10:13:44            </div>
+            <div class="rwriter">( ලාල් ජයසුන්දර )</div>
+            <a href="http://www.ada.lk/article/186241/විග්නේශ්වරන්ලාගේ-නැටුම්-ගැන-රජය-නැවත-සිතිය-යුතුයි" class="rcontent-heading">විග්නේශ්වරන්ලාගේ නැටුම් ගැන රජය නැවත සිතිය යුතුයි</a>
+
+            <div class="rcontent" >
+                
+	මේ දිනවල උතුර සහ ජාතික සංහිඳියා වන ප්&zwj;රධාන ජාතික ආගමික සහජීවනය පිළිබඳ මතවාද අර්බුද නිතර ඇසේ. මේ ඒ සම්බන්ධයෙන් ගැටඹේ රාජෝපවනාරාමාධිපති, රාමඤ්ඤ &nbsp;මහා නිකායේ චන්ද්&zwj;රකීර්ති ශ්&zwj;රී අමරවංශ සද්ධර්මවාගීස්වර, අතිපූජ්&zwj;ය කැප්පෙටිගොඩ නායක හ...            </div>
+        </div>
+            </div>
+    <a href="http://www.ada.lk/opinion" class="more"> More Opinion </a>
+    <!--opinion categary end-->
+
+
+    <div class="cat-box">
+        <div class="heading"><img src="http://www.ada.lk/templates/images/sport-hd.png" width="508" height="21"/>
+        </div>
+        <div class="left-content">
+            <div class="left-content-image">
+                                    <a href="http://www.ada.lk/article/191473/ශ්‍රී-ලංකාවට-එරෙහි-සිම්බාබ්වේ-සංචිතය-නම්-කරයි" target="_blank"> <img src="http://editorial.ada.lk/wp-content/uploads/file/Capture(863).jpg" width="196"
+                                                     height="120"/></a>
+                                </div>
+            <div class="content-lbox">
+                <div class="date">
+                    2016-10-27 15:07:59                </div>
+                <div class="writer">( පැතුම් ශ්‍රී විජේරත්න )</div>
+                <a href="http://www.ada.lk/article/191473/ශ්‍රී-ලංකාවට-එරෙහි-සිම්බාබ්වේ-සංචිතය-නම්-කරයි" class="content-heading">ශ්‍රී ලංකාවට එරෙහි සිම්බාබ්වේ සංචිතය නම් කරයි</a>
+
+                <div class="content">
+                    
+	සංචාරක ශ්&zwj;රී ලංකා කණ්ඩායම සමග පැවැත්වෙන ටෙස්ට් තරග 02 සඳහා සත්කාරක සිම්බාබ්වේ සංචිතය ඊයේ (26දා) නම් කරනු ලැබීය. 16 දෙනෙකුගෙන් යුත් සංචිතයෙන් වේගපන්දු යවන්නන් වන ටෙන්ඩායි චටාරා හා ටිනාෂේ පනියන්ගාරා ශරීරික යෝග්&zwj;යතා පරීක්ෂණයක් අසමත් වීම නිසා ...                </div>
+            </div>
+        </div>
+                <div class="right-content">
+            <div class="rdate">
+                2016-10-26 22:55:26            </div>
+            <div class="rwriter">( ඔෂිත වරකපිටිය )</div>
+            <a href="http://www.ada.lk/article/191323/නවසීලන්තය-තරගාවලිය-සම-කරයි." class="rcontent-heading">නවසීලන්තය තරගාවලිය සම කරයි. </a>
+
+            <div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #e5e5e5;">
+                
+	&nbsp;
+
+
+
+	සත්කාරක&nbsp; ඉන්දීය කණ්ඩායම පරදා රංචි හිදි අද (26) &nbsp;පැවති සිව්වැනි එක්දින තරගයෙන් &nbsp;ලකුණු 19 ක ජයක් වාර්තා කිරීමට නවසීලනත්ය සමත් විය. තරගයේ ලකුණු 261 ක ජයග්&zwj;රාහී ඉලක්කයක් හඹා ගිය ඉන්දීය ක්&zwj;රීඩකයන්ට පන්දුවාර 48.4 ක්...            </div>
+        </div>
+                <div class="right-content">
+            <div class="rdate">
+                2016-10-26 14:52:20            </div>
+            <div class="rwriter">( අද කර්තෘ මණ්ඩලය )</div>
+            <a href="http://www.ada.lk/article/191210/YDI-කුමාරගෙන්-පොදු-රඳ-මඩුළු-රන්-පදක්කමක්" class="rcontent-heading">YDI කුමාරගෙන් පොදු රඳ මඩුළු රන් පදක්කමක් </a>
+
+            <div class="rcontent" >
+                
+	මැලේසියාවේ පැවැත්වෙන කිනිෂ්ට පොදු රාජ්&zwj;ය මණ්ඩලීය තරගාවලියේ බර ඉසලීමේ ඉසව්වකින් ශ්&zwj;රී ලංකාවට රන් පදක්කමක් හිමිකර දීමට වයි.ඩි.අයි. කුමාර සමත්වූයේය. ඔහු කිලෝග්&zwj;රෑම් 56 බර පංතියෙන් සිය රන් පදක්කම හිමිකර ගත්තේය. ස්නැච් ක්&zwj;රමයට කිලෝග්&z...            </div>
+        </div>
+            </div>
+    <a href="http://www.ada.lk/sports" class="more"> More Sports </a>
+    <!--Sport categary end-->
+
+
+    <div class="cat-box">
+        <div class="heading"><img src="http://www.ada.lk/templates/images/business-hd.png" width="508"
+                                  height="21"/></div>
+        <div class="left-content">
+            <div class="left-content-image">
+                                    <a href="http://www.ada.lk/article/191359/නව-වැට්-පනත-මගින්-බදු-ක්‍රමය-සරල-වෙලා--රවි"> <img src="http://editorial.ada.lk/wp-content/uploads/image/21%2010%202016/1_Ravi.jpg" width="196"
+                                                     height="120"/></a>
+                    
+            </div>
+            <div class="content-lbox">
+                <div class="date">
+                    2016-10-27 01:35:30                </div>
+                <div class="writer">( ෂමිල පෙරේරා )</div>
+                <a href="http://www.ada.lk/article/191359/නව-වැට්-පනත-මගින්-බදු-ක්‍රමය-සරල-වෙලා--රවි" class="content-heading">නව වැට් පනත මගින් බදු ක්‍රමය සරල වෙලා -රවි</a>
+
+                <div class="content">
+	වැට් හෙවත් එකතු කළ අගය මත බදු (සංශෝධන) පනත් කෙටුම්පත මගින් වැට් බදු ක්&zwj;රමය සරල වන අතර, එහි විනිවිදභාවයක් ඇති කරමින් මෙතෙක් එම බදු ක්&zwj;රමයේ පැවති සැඟවුණු අයකිරීම් සියල්ල ඉවත්කර ඇතැයි මුදල් අමාත්&zwj;ය රවි කරුණානායක මහතා පවසයි.
+
+
+
+	බදු මු...                </div>
+            </div>
+        </div>
+                <div class="right-content">
+            <div class="rdate">
+                2016-10-26 17:30:52            </div>
+            <div class="rwriter">( ෂමිල පෙරේරා )</div>
+            <a href="http://www.ada.lk/article/191275/2017-අයවැය-සඳහා-ශ්‍රීලනිප-යෝජනා-මුදල්-ඇමතිට" class="rcontent-heading">2017 අයවැය සඳහා ශ්‍රීලනිප යෝජනා මුදල් ඇමතිට</a>
+
+            <div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #e5e5e5;">
+                
+	2017 ජාතික අයවැය සඳහා ශ්&zwj;රී ලංකා නිදහස් පක්ෂය සිය යෝජනා මුදල් අමාත්&zwj;ය රවි කරුණානායක මහතා වෙත භාරදී තිබේ.
+
+
+
+	මුදල් අමාත්&zwj;යාංශයේදී භාරදුන් මෙම අවස්ථාවට ශ්&zwj;රී ලංකා නිදහස් පක්ෂ මහලේකම් අමාත්&zwj;ය දුමින්ද දිසානායක සහ එක්සත් ජනතා න...            </div>
+        </div>
+                    <div class="right-content">
+            <div class="rdate">
+                2016-10-25 23:15:35            </div>
+            <div class="rwriter">( ෂමිල පෙරේරා )</div>
+            <a href="http://www.ada.lk/article/191064/ඉ-ස්වාභිමානී-2016-ඔක්තෝබර්-31දා-කොළඹදී" class="rcontent-heading">ඉ-ස්වාභිමානී 2016 ඔක්තෝබර් 31දා කොළඹදී</a>
+
+            <div class="rcontent" >
+                
+	දේශීය තොරතුරු තාක්ෂණ මෘදුකාංග අන්තර්ගතයන් හා නිමැවුම් ජාතික වශයෙන් අගය කිරීම වෙනුවෙන් පැවැත්වෙන ඉ-ස්වාභිමානී 2016 ඉ-සමාජ විශිෂ්ටතා සම්මාන ප්&zwj;රදානය එළැඹෙන 31දා&nbsp; කොළඹදී පැවැත්වීමට නියමිතය.
+
+
+
+	ශ්&zwj;රී ලංකා තොරතුරු හා සන්නිවේදන තාක්ෂණ ...            </div>
+        </div>
+                </div>
+    <a href="http://www.ada.lk/business" class="more"> More Business </a>
+    <!--Business categary end-->
+
+
+
+<div class="cat-box" style="margin-top:20px; margin-bottom:20px">
+<iframe src="http://www.saaravita.lk/adawidget" style="border:0px #FFFFFF none;" name="saravita" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="535px"></iframe>
+</div>
+
+        <!--<a href="http://www.ada.lk/entertainment" class="more"> More Entartainment </a>-->
+    <!--Entartainment categary end-->
+	
+	<!--poll-->  
+	<div class="cat-box">
+	<script src="http://www.sundaytimes.lk/FusionCharts_v3_Enterprise/JSClass/FusionCharts.js" type="text/javascript"></script>
+	
+	<div style="margin:10px 0px 10px 0px; border: 2px solid #449acb; padding:5px" class="row st-quick-box op-box hidden-xs hidden-sm">
+		<h3 class="opinion-header" style="background-color:#449acb; font-family:Arial, sans-serif; padding-left:10px; margin:0px; color:#fff">POLL</h3> 
+		<!--
+		<img src="http://www.ada.lk/templates/images/phone_vat.jpg" style="width:100%; height: auto;"/>
+		-->
+		<p>දුම්වැටියට 15%ක වැට් බදු අය කළ යුතුද?</p> 
+		<input type="hidden" value="12" id="pollq_id"/>
+  
+		<div align="center">
+			<span id="pollchart"></span>
+		</div> 
+	
+		<script language="javascript">
+			if ( FusionCharts('chartobject-1') )  FusionCharts('chartobject-1').dispose();
+		
+			var chart1 = new FusionCharts("http://www.ada.lk/FusionCharts_v3_Enterprise/Charts/Bar2D.swf", "sampleChart", "480", "200", "0", "0");
+csv="<chart caption='' formatNumberScale='0' bgColor='FFFFFF,CCCCCC' showPercentageValues='1' plotBorderColor='FFFFFF' numberPrefix='' isSmartLineSlanted='0' showYAxisValues='0' showValues='1' showLabels='1' showLegend='1' numbersuffix='%'>";
+csv+="<styles><definition><style name='myCaptionFont' type='font' font='Arial' size='18' color='666666' bold='1' underline='0'/></definition><application><apply toObject='Caption' styles='myCaptionFont' /></application></styles>";
+csv+="<set label='ඔව්' value='81.60' toolText='ඔව්' color='0000ff'/>";
+csv+="<set label='නෑ' value='18.40' toolText='නෑ' color='008ae6'/>";
+csv+="</chart>";
+			chart1.setDataXML(csv);
+			chart1.render("pollchart");
+		</script>
+  
+		<div class="check" id="poll-options">
+			
+				<input type="radio" value="39" class="css-radio" id="poll-radioG1-39" name="poll-radioG1"/>
+				<label class="css-label" for="poll-radioG1-39" style="background:none"> ඔව්</label>
+				<br>
+			
+				<input type="radio" value="40" class="css-radio" id="poll-radioG1-40" name="poll-radioG1"/>
+				<label class="css-label" for="poll-radioG1-40" style="background:none"> නෑ</label>
+				<br>
+			<button style="margin-bottom:10px" class="btn btn-primary" onclick="votePoll()">Vote</button>
+		</div>
+  
+		<script type="text/javascript">
+			function votePoll() {
+				$.getJSON('//api.ipify.org?format=jsonp&callback=?', function(data) {
+					console.log(JSON.stringify(data, null, 2));
+					var parsed = JSON.parse(JSON.stringify(data, null, 2));
+					var arr = [];
+					for(var x in parsed){
+						arr.push(parsed[x]);
+					}
+					sentVote(arr[0]);
+				});
+			}
+			
+			function sentVote(ip_address) {
+				var url = 'http://www.ada.lk/ada/addPollVote';
+				
+				var choice = 0;
+				var optionlength = document.getElementsByName('poll-radioG1').length;
+				for(var i=0; i<optionlength; i++){
+					if(document.getElementsByName('poll-radioG1')[i].checked) {
+						choice = document.getElementsByName('poll-radioG1')[i].value;
+					}
+				}
+	
+				var dataurl = 'pollq_id='+12+'&polla_id='+choice+'&ip_address='+ip_address+'&browser='+navigator.userAgent;
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (xhttp.readyState == 4 && xhttp.status == 200) {
+						document.getElementById("poll-options").innerHTML = 'ඔබේ ප්‍රතිචාරයට ස්තූතියි.';
+						obj = JSON.parse(xhttp.responseText)
+						if  ( FusionCharts( "chartobject-1" ) )  FusionCharts( "chartobject-1" ).dispose();
+						if  ( FusionCharts( "chartobject-2" ) )  FusionCharts( "chartobject-2" ).dispose();
+						var chart1 = new FusionCharts("http://www.ada.lk/FusionCharts_v3_Enterprise/Charts/Bar2D.swf", "sampleChart", "480", "200", "0", "0");
+						chart1.setDataXML(obj.str);
+						chart1.render("pollchart");
+					}
+				};
+				
+				xhttp.open("POST", url, true);
+				xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				xhttp.send(dataurl);
+			}
+		</script>
+  
+	</div>
+	</div>
+	<!--poll-->
+	
+
+    <div class="cat-box">
+	<!-- ad 2 -->
+
+
+<!-- ad 2 -->
+        <div class="heading"><img src="http://www.ada.lk/templates/images/international-hd.png" width="508"
+                                  height="21"/></div>
+        <div class="left-content">
+            <div class="left-content-image">
+                                    <a href="http://www.ada.lk/article/191547/ජන්ගල්-කඳවුරේ-දරුවන්-100කට-හව්හරණක්-නැතිලු"> <img src="http://editorial.ada.lk/wp-content/uploads/image/27%2010%202016/1_Ju%202.jpg" width="196"
+                                                     height="120"/></a>
+                                </div>
+            <div class="content-lbox">
+                <div class="date">
+                    2016-10-27 23:45:12                    </div>
+                <div class="writer">( නරේන් විශ්වජිත් )</div>
+                <a href="http://www.ada.lk/article/191547/ජන්ගල්-කඳවුරේ-දරුවන්-100කට-හව්හරණක්-නැතිලු" class="content-heading">ජන්ගල් කඳවුරේ දරුවන් 100කට හව්හරණක් නැතිලු</a>
+
+                <div class="content">
+	ප්&zwj;රංශයේ, කැලේ නගරයේ &#39;ජන්ගල්&#39; කඳවුරේ සිටි සියලු සංක්&zwj;රමණිකයන් ඉවත්වීමෙන් පසුවත් ලියාපදිංචියක් හෝ වැඩිහිටි හවුහරණක් නොමැති දරුවන් පිරිසක් කඳවුරේ ඉතිරිවීම තුළ ඇතිවී තිබෙන කලබලකාරී වාතාවරණය සමග කැරලි මර්ධන හමුදා කැඳවා තිබේ.
+
+
+
+	ඒ ....
+                </div>
+            </div>
+        </div>
+                <div class="right-content">
+            <div class="rdate">
+                2016-10-27 10:16:35                </div>
+            <div class="rwriter">( නරේන් විශ්වජිත් )</div>
+            <a href="http://www.ada.lk/article/191373/ලොව-වනසත්ව-ගහණයේ-ශීඝ්‍ර-අඩුවීමක්---අවදානමක්" class="rcontent-heading">ලොව වනසත්ව ගහණයේ ශීඝ්‍ර අඩුවීමක් - අවදානමක්</a>
+
+            <div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #e5e5e5;">
+                
+	ලොව පුරා වනසත්ව ගහණය වර්ෂ 1970 සිට 58% කින් අඩුවී ඇති බව නවතම වාර්තාවකින් දක්වා තිබේ.
+
+
+
+	ලන්ඩනයේ සත්ව විද්&zwj;යා සංගමය (ZSL) සහ ලෝක වනසත්ව අරමුදල (WWF) එක්ව ඉදිරිපත් කර ඇති The Living Planet තක්සේරු වාර්තාව මගින් මෙම හෙළිදරව්ව සිදුකර ඇත.
+
+...            </div>
+        </div>
+                    <div class="right-content">
+            <div class="rdate">
+                2016-10-27 06:30:05                </div>
+            <div class="rwriter">( නරේන් විශ්වජිත් )</div>
+            <a href="http://www.ada.lk/article/191320/ලොව-පුරා-Smartwatch-අලෙවියේ-ප්‍රබල-පසුබෑමක්" class="rcontent-heading">ලොව පුරා Smartwatch අලෙවියේ ප්‍රබල පසුබෑමක්</a>
+
+            <div class="rcontent" >
+                
+	ස්මාට් අත්ඔරලෝසු හෙවත් &#039;ස්මාට්වොච්&#039; නැව්ගත කිරීම වාර්ෂිකව සියයට 51.6%ක අඩුවීමක් පෙන්වන බවත්, එය ස්මාට්වොච් අලෙවියේ පැහැදිලි පසුබැසීමක් බවත් නවතම වෙළෙඳ පොළ සමීක්ෂණ වාර්තාවකින් හෙළිවී තිබේ.
+
+
+
+	එහිදී, ඇපල් සමාගමේ ජනප්&zwj;රිය ඇපල්වොච් ...            </div>
+        </div>
+                </div>
+	
+    <a href="http://www.ada.lk/international" class="more"> More International </a>
+    <!--international categary end  -->
+    <!--pilisarana categary -->
+	 <div class="cat-box">
+        <div class="heading"><img src="http://static2.ada.lk/adaadmin/wp-content/uploads/2016/03/pilisarana_3-2.png" width="508"
+                                  height="21"/></div>
+        <div class="left-content">
+            <div class="left-content-image">
+                                    <a href="http://www.ada.lk/article/189731/වකුගඩුවක්-දී-ජීවිතයක්-බේරා-ගමුද?"> <img src="http://editorial.ada.lk/wp-content/uploads/file/main(3688).jpg" width="196"
+                                                     height="120"/></a>
+                                </div>
+            <div class="content-lbox">
+                <div class="date">
+                    2016-10-19 11:34:54                    </div>
+                <div class="writer">( . . )</div>
+                <a href="http://www.ada.lk/article/189731/වකුගඩුවක්-දී-ජීවිතයක්-බේරා-ගමුද?" class="content-heading">වකුගඩුවක් දී ජීවිතයක් බේරා ගමුද?</a>
+
+                <div class="content">
+	නුගේගොඩ පදිංචි ඩබ්.ඩී.එස්.ඩී. පීරිස් මහතා දරුණු වකුගඩු රෝගයෙන් පෙළෙන බැවින් ඔහුට හැකි ඉක්මණින් A+, A-,O+, O- වර්ගයේ වකුගඩුවක් බද්ධ කිරීමට අවශ්&zwj;ය බව වෛද්&zwj;යවරුන් &nbsp;නිර්දේශ කර තිබේ. වකුගඩුවක් පරිත්&zwj;යාග කිරීමට කැමති පරිත්&zwj;යාගශීලියෙ....
+                </div>
+            </div>
+        </div>
+                <div class="right-content">
+            <div class="rdate">
+                2016-10-07 12:04:57                </div>
+            <div class="rwriter">( . . )</div>
+            <a href="http://www.ada.lk/article/187278/අසරණ-තිදරු-පියාට-පිහිටවෙන්න" class="rcontent-heading">අසරණ තිදරු පියාට පිහිටවෙන්න</a>
+
+            <div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #e5e5e5;">
+                
+	රිය අනතුරකින් බරපතළ ලෙස තුවාල ලැබූ තිදරු පියෙකු ආබාධිත වූ පාදයේ සැත්කමක් කරගැනීම සඳහා අවශ්&zwj;ය මුදල් සොයා ගැනීමට නොහැකිව අසරණවී සිටිති.
+	අඹන්පොල, ගැටදිවුල ගම්මානයේ පදිංචි එච්.එම්. ගාමිණී දිසානායක ප්&zwj;ර&lsquo;දේශයේ හෝටලයක රස කැවිලි ප්&zwj;රවා...            </div>
+        </div>
+                    <div class="right-content">
+            <div class="rdate">
+                2016-09-07 16:44:32                </div>
+            <div class="rwriter">( අද කර්තෘ මණ්ඩලය )</div>
+            <a href="http://www.ada.lk/article/182068/දියණියගේ-ජීවිතය-බේරා-ගමුද?" class="rcontent-heading">දියණියගේ ජීවිතය බේරා ගමුද?</a>
+
+            <div class="rcontent" >
+                
+	නාරාහේන්පිට තිඹිරිගස්යායේ පදිංචි බුද්ධිමා ෂෙහාරා දෙව්මිණි (අවු.07) දැරියට කඩිනමින් ඉන්දියාවේ ග්ලෝබල් හෙල්ත් සිටි රෝහලේදී අක්මා බද්ධ සැත්කමක් සිදුකිරීම සඳහා රුපියල් පනස් හය ලක්ෂ විසිපන් දහසක් අවශ්&zwj;ය බව විශේෂඥ වෛද්&zwj;ය ගෝමදී නවසීංහම් මහත්මිය න...            </div>
+        </div>
+                </div>
+	
+    <a href="http://www.ada.lk/pilisaran" class="more"> More Pilisaran </a>
+   
+   <!-- pilisarana categary -->
+	
+	<div style="margin : 20px 0px; float : left;">
+<IFRAME SRC="https://ad.doubleclick.net/ddm/adi/N7534.1921951ADA.LK/B9566553.129882781;sz=300x200;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" WIDTH=300 HEIGHT=200 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'>
+<SCRIPT language='JavaScript1.1' SRC="https://ad.doubleclick.net/ddm/adj/N7534.1921951ADA.LK/B9566553.129882781;abr=!ie;sz=300x200;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?">
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="https://ad.doubleclick.net/ddm/jump/N7534.1921951ADA.LK/B9566553.129882781;abr=!ie4;abr=!ie5;sz=300x200;ord=[timestamp]?">
+<IMG SRC="https://ad.doubleclick.net/ddm/ad/N7534.1921951ADA.LK/B9566553.129882781;abr=!ie4;abr=!ie5;sz=300x200;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" BORDER=0 WIDTH=300 HEIGHT=200 ALT="Advertisement"></A>
+</NOSCRIPT>
+</IFRAME>
+
+
+
+</div>
+
+
+</div>
+<!--mid-category-->
+
+
+</div><!--middle end-->
+
+<div class="right-side">
+
+<!--    <div class="right-entaertainment">-->
+<!--        <div class="entartainment">-->
+<!--            <a href="" class="heading">ENTERTEINMENT</a>-->
+<!---->
+<!---->
+<!--            <a href="" class="image-text"> ( දිනක්ෂි ප‍්‍රියසාද්) චිත‍්‍රපට අධ්‍යක්ෂණයට එළඹෙන්නට ලොකු බලාපොරොත්තුවක්-->
+<!--                තියනවා </a>-->
+<!---->
+<!--            <div class="image-box"><img src="--><!--templates/images/sinha.jpg" width="112"-->
+<!--                                        height="83"/></div>-->
+<!--            <a href="" class="image-text">සිංහභාහු දර්ශන <br/>-->
+<!--                රැුසක් 2012-06-30<br/>-->
+<!--                යන දිනවලදී</a>-->
+<!---->
+<!--            <div class="image-box"><img src="--><!--templates/images/samitha.jpg" width="112"-->
+<!--                                        height="83"/></div>-->
+<!--            <a href="" class="image-text"> සමිතා එරන්දතී මුදුන්කොටුවගේ සුමිහිරි හඬ ගී ලොව සිසාරා හමා ආයේ ඒ අපූරු </a>-->
+<!---->
+<!--            <div class="image-box"><img src="--><!--templates/images/neha.jpg" width="112"-->
+<!--                                        height="83"/></div>-->
+<!--            <a href="" class="image-text">( නෙහාරා පිරීස් ) ලංකාවේ ගොසිප්වලට ගින්නක් ඕනෙ නෑ ඒ ගොල්ලො දුම දාගන්නවා </a>-->
+<!--            <a href="" class="more">More</a>-->
+<!--        </div>-->
+<!--        <!--entartainment end-->
+<!--    </div>-->
+    <!--right entertainment end-->
+    
+    
+    <div class="event">
+
+                <a href="http://www.ada.lk/article/189482/සමුදුර-රූසර-ප්‍රසංගය" class="box-frame">
+            <div class="image-box">
+                                    <img src="http://static2.ada.lk/adaadmin/wp-content/uploads/2016/10/DSC_0551.jpg" width="112" height="83" />
+                                    </div>
+            <div class="image-text">සමුදුර රූසර ප්‍රසංගය</div>
+        </a>
+                <a href="http://www.ada.lk/article/187774/සුසර-සංධ්වනි-02" class="box-frame">
+            <div class="image-box">
+                                    <img src="http://static2.ada.lk/adaadmin/wp-content/uploads/2016/10/AID_9858.jpg" width="112" height="83" />
+                                    </div>
+            <div class="image-text">සුසර සංධ්වනි 02</div>
+        </a>
+                <a href="http://www.ada.lk/article/184368/රන්-දේදුන්නක්-මාධ්‍ය-දැක්ම" class="box-frame">
+            <div class="image-box">
+                                    <img src="http://static2.ada.lk/adaadmin/wp-content/uploads/2016/09/DSC_9214.jpg" width="112" height="83" />
+                                    </div>
+            <div class="image-text">රන් දේදුන්නක් මාධ්‍ය දැක්ම</div>
+        </a>
+                <a href="http://www.ada.lk/article/183371/රාජ්‍ය-සාහිත්‍ය-සම්මාන" class="box-frame">
+            <div class="image-box">
+                                    <img src="http://static2.ada.lk/adaadmin/wp-content/uploads/2016/09/KSR8478.jpg" width="112" height="83" />
+                                    </div>
+            <div class="image-text">රාජ්‍ය සාහිත්‍ය සම්මාන</div>
+        </a>
+                
+        <a href="http://www.ada.lk/events/" class="more"></a>
+
+    </div>
+    
+
+    <div class="right-tethnology" style="background-color:#fff9f6">
+        <div class="tethnology">
+            <a href="http://www.ada.lk/technology" class="heading">TECHNOLOGY</a>
+                        <a href="http://www.ada.lk/article/188018/Galaxy-Note-7-වහාම-Off-කරන්න" class="content-hed">Galaxy Note 7 වහාම Off කරන්න</a>
+                                <img src="http://editorial.ada.lk/wp-content/uploads/file/Galaxy-Note-7-16-1-1440x960-800x533.jpg" width="112" height="83" />
+                                <div class="content">
+	සැම්සුන්ග් සමාගම විසින් නිර්මාණය කර ඇති සැම්සුන්ග් ගැලැක්සි නොට් 07 (Galaxy Note 7) ස්මාට් ජංගම ද...</div>
+                        <a href="http://www.ada.lk/article/187084/Google-වෙතින්-සුපිරි-ස්මාට්ෆෝනයක්" class="content-hed">Google වෙතින් සුපිරි ස්මාට්ෆෝනයක්</a>
+                                <img src="http://editorial.ada.lk/wp-content/uploads/file/google-pixel-and-pixel-xl.jpg" width="112" height="83" />
+                                <div class="content">
+	Google සමාගම Pixel ස්මාට්ෆෝනය ඊයේ (04දා) රාත්&zwj;රියේ නිකුත් කළේය. Google සමාගම යටතට මෙහි සම්පූර...</div>
+                        <a href="http://www.ada.lk/article/186251/ස්මාට්ෆෝනයට-පොකට්-ස්කෑනරයක්" class="content-hed">ස්මාට්ෆෝනයට පොකට් ස්කෑනරයක්</a>
+                                <img src="http://static2.ada.lk/adaadmin/wp-content/uploads/2016/10/Capture.jpg" width="112" height="83" />
+                                <div class="content">
+	ඔබේ ස්මාට්ෆෝනයේට සිදුකළ හැකි දහසකුත් එකක් වැඩ කටයුතු අතරට ස්කෑනරයක ක්&zwj;රියාකාරිත්වයත් එකතු වන්...</div>
+                        <a href="http://www.ada.lk/article/186248/ඔබේ-අතට-ගැලපෙන-බජට්-ස්මාට්ෆෝනයක්" class="content-hed">ඔබේ අතට ගැලපෙන බජට් ස්මාට්ෆෝනයක්</a>
+                                <img src="http://editorial.ada.lk/wp-content/uploads/file/unnamed(72).jpg" width="112" height="83" />
+                                <div class="content">
+	මෙම ස්මාට්ෆෝනය නිකුත් වෙන බවට නිවේදනය වෙන්නේ පසුගිය ජුලි මාසයේ වුවද, එය නිකුත් වන්නේ මේ මාසයේදී ව...</div>
+                        <a href="http://www.ada.lk/technology" class="more">More</a>
+        </div>
+        <!--tethnology end-->
+    </div>
+    <!--tethnology bg with end-->
+
+
+    <div class="right-tethnology" style="background-color:#f6fdff">
+        <div class="tethnology">
+            <a href="http://www.ada.lk/woman/" class="heading">WOMAN</a>
+                        <a href="http://www.ada.lk/article/189713/තප්පර-දෙකකට-වරක්-ළමා-විවාහයක්" class="content-hed">තප්පර දෙකකට වරක් ළමා විවාහයක්</a>
+                                <img src="http://editorial.ada.lk/wp-content/uploads/file/syrn.jpg" width="112" height="83" />
+                    
+            <div class="content">
+	පහළොස් හැවිරිදි තුර්කි දැරිවියක් දරු උපතක් සිදුකිරීමේදී මියයෑමේ පුවතක් ඊයේ (18දා) විදේශ මාධ්&zwj;...</div>
+                        <a href="http://www.ada.lk/article/184518/අඩු-වයස්-ගැබ්-ගැනීම්-වැඩිවෙලා" class="content-hed">අඩු වයස් ගැබ් ගැනීම් වැඩිවෙලා</a>
+                                <img src="http://editorial.ada.lk/wp-content/uploads/file/oral-health-care-and-pregnancy.jpg" width="112" height="83" />
+                    
+            <div class="content">
+	&quot;අඩු වයසින් ගැබ් ගැනීම් මේ වන විට &nbsp;විශාල ගැටලුවක් බවට පත්වෙලා තියෙනවා&quot;&nbsp;යැයි බ...</div>
+                        <a href="http://www.ada.lk/article/184464/රුපියල්-ලක්ෂ-15-ක්-වටිනා-උසම-කේක්-නිර්මාණය" class="content-hed">රුපියල් ලක්ෂ 15 ක් වටිනා උසම කේක් නිර්මාණය</a>
+                                <img src="http://editorial.ada.lk/wp-content/uploads/file/Untitled-2 copy(4).jpg" width="112" height="83" />
+                    
+            <div class="content">
+	එල්ලෙන කේක් නිර්මාණ කලාව ලොවට හඳුන්වා දෙමින් මෙන්ම ඒ අනුව ලංකාවේ ඉදි වූ ලොව උසම එල්ලෙන කේක් ආකෘති...</div>
+                        <a href="http://www.ada.lk/article/181184/Miss-Intercontinental-ශ්‍රී-ලංකාවේ" class="content-hed">Miss Intercontinental ශ්‍රී ලංකාවේ</a>
+                                <img src="http://editorial.ada.lk/wp-content/uploads/file/main(3656).jpg" width="112" height="83" />
+                    
+            <div class="content">
+	ලොව සුප්&zwj;රසිද්ධ රූ රැජිණ තරගාවලියක් වන Miss Intercontinental තරගයේ පසුගිය වසරේ ජයග්&zwj;රාහික...</div>
+            
+            <a href="http://www.ada.lk/woman/" class="more">More</a>
+        </div>
+        <!--tethnology end-->
+    </div>
+
+
+</div>
+<!--<div style="text-align:center; margin-left:-6px;">
+			<iframe src="http://www.lankadeepa.lk/avurudu/widgets" style="border:0px #FFFFFF none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="570px" width="992px"></iframe>
+			</div>-->
+
+<!--rightside end-->
+
+</div>
+
+
+
+
+
+<div class="footer">
+
+    <div class="footer_link_box">
+
+        <div class="footer_link_main">Group Sites :</div>
+
+        <div class="footer_link_text"><a href="http://lankadeepa.lk/" target="new">Lankadeepa</a></div>
+
+        <div class="footer_link_text"><a href="http://www.sundaytimes.lk/" target="new">Sunday times</a></div>
+
+        <div class="footer_link_text"><a href="http://www.ft.lk/" target="new">Financial Times</a></div>
+
+        <div class="footer_link_text"><a href="http://www.hi.lk/" target="new">HI Mag</a></div>
+
+        <div class="footer_link_text"><a href="http://www.lw.lk/" target="new">Lanka Women</a></div>
+
+        <div class="footer_link_text"><a href="http://www.hitad.lk/" target="new">Hit Ad </a></div>
+
+        <div class="footer_link_text"><a href="http://www.wijeyanewspapers.lk/" target="new">WNL</a></div>
+
+        <div class="footer_link_text"><a href="http://tamil.dailymirror.lk/" target="new">Tamil Mirror</a></div>
+
+        <div class="footer_link_text"><a href="http://mirrorsports.lk/" target="new">Mirror Sports</a></div>
+
+    
+
+    </div>
+
+
+
+    <div class="footer_link_box">
+
+        <div class="footer_link_main2">Services :</div>
+
+        <div class="footer_link_text"><a href="mailto:subs@wijeya.lk?subject=Subscripition">Home delivery</a></div>
+
+        <div class="footer_link_text"><a href="mailto:pradeep@admin.wnl.lk">Webmaster </a></div>
+
+        <div class="footer_link_text"><a href="mailto:umairw@wijeya.lk?subject=Web%20Advertisment">Web Ads</a></div>
+
+        <div class="footer_link_text"><a href="#">Editorial </a></div>
+
+        <div class="footer_link_text"><a href="mailto:helpdesk@wnl.net?subject=Help%20Desk">Help Desk</a></div>
+
+    </div>
+
+    <div class="footer_copyright">All the content on this website is copyright protected and can be reproduced only by
+
+        giving the due courtesy to 'dailymirror.lk'<br/>
+
+        Copyright © 2012 Wijeya Newspapers Ltd.
+
+    </div>
+
+
+
+</div>
+
+
+
+</div>
+
+<!--frame end-->
+
+</div>
+
+<!--wrapper end-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47324146-1', 'ada.lk');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>
+
+
+
+
+

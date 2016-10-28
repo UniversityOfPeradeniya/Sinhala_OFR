@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+	if(window.location != window.parent.location) window.location.href = "http://assets.amung.us/oldpro/images/icons/warning.png";
+</script>
+<link href="http://assets.amung.us/styles/3rdparty/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+<link href="http://assets.amung.us/styles/global.css" rel="stylesheet" type="text/css" />
+<!--
+<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAPXgAKW6DmooahkxPmKGWLhTcAWu5A4Db0_f4DEEtXyFOIQeKbhTwYcNS9G8T3HI92P7tX1ne3ZyIow"></script>
+<script type="text/javascript">
+	google.load('mootools', '1.4.1');
+</script>
+-->
+<script type="text/javascript" src="http://assets.amung.us/scripts/3rdparty/moocore.js"></script>
+<script type="text/javascript" src="http://assets.amung.us/scripts/3rdparty/moomore.js"></script>
+<script type="text/javascript" src="http://assets.amung.us/scripts/global.js"></script>
+<script type="text/javascript">
+	var addthis_config = {data_track_clickback: true, ui_language: 'en'};
+	var addthis_share = {url: 'http://whos.amung.us'};
+</script>
+<script type="text/javascript">
+	var tx_al = "en-US";
+</script>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="http://assets.amung.us/scripts/3rdparty/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+ 
+var $j = jQuery.noConflict();
+// $j is now an alias to the jQuery function; creating the new alias is optional.
+ 
+window.addEvent('domready', function() {
+    //$j.featherlight('#mylightbox');
+});
+
+var activecodebox;
+
+window.addEvent('domready', function() {
+
+var codeboxes = $$('.codebox');
+	codeboxes.each(function(codebox) {
+		codebox.addEvent('mouseover', function() {
+			$j.featherlight('#mylightbox', {variant: 'lboxdark'});
+			codeboxes.each(function(codebox) {
+				codebox.removeEvents('mouseover');
+			});
+		});
+	});
+});
+
+function selectText(containerid) {
+        if (document.selection) {
+            var range = document.body.createTextRange();
+            range.moveToElementText(document.getElementById(containerid));
+            range.select();
+        } else if (window.getSelection) {
+            var range = document.createRange();
+            range.selectNode(document.getElementById(containerid));
+            window.getSelection().addRange(range);
+        }
+    }
+
+
+</script>
+
+<script type="text/javascript">
+    window.addEvent('domready', function() {
+        initGlobalNav(2); //set stats button
+	});
+	
+	//on stats pages share the stats page URL not the homepage
+	addthis_share = {url: "http://whos.amung.us/stats/9dl3wgygch8d/"};
+</script>
+<script type="text/javascript" src="http://assets.amung.us/scripts/3rdparty/highcharts.js"></script>
+<script type="text/javascript" src="http://assets.amung.us/scripts/stats.js"></script>
+<link href="http://assets.amung.us/styles/stats.css" rel="stylesheet" type="text/css" />
+<title>whos.amung.us - dashboard &raquo; 9dl3wgygch8d</title>
+<meta name="Keywords" content="whos.amung.us, widget, widgets, web2.0, analytics, stats, statistics" />
+<script type="text/javascript">
+tx_ignore_body_dir = true;	//change text direction on a block by block basis in this page
+var sitekey = '9dl3wgygch8d';
+var tynt_sitekey = '9dl3wgygch8d';
+var pf = false;
+var _wau_opt = {'tag' : 'npf'};
+if(pf)
+	_wau_opt.tag = 'pf';
+var poller;
+window.addEvent('domready', function() {
+	insertLoaders();
+	poller = new Poller(sitekey, 'dashboard');
+	/* load tynt stats */
+	var tynt = Asset.javascript('http://wd.tynt.com/all_stats/' + tynt_sitekey + '?rId=0');
+});
+</script>
+
+<style type="text/css">#content {position:relative; overflow: visible;}</style>
+
+<!-- IE footers -->
+<!--[if !IE 7]>
+<style type="text/css">#wrap {display:table;height:100%;}</style>
+<![endif]-->
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+    	<div id="langbar">
+        	<div id="sel_lang" class="fl">
+                <a href="javascript:void(0)" onclick="showLangs();return false;">
+                	<span id="sel_lang_txt" class="tx" rel="nunnum">Change Site Language:</span> <img id="active_lang_flag" class="vam" src="http://assets.amung.us/images/flags/16/us.png" />
+                </a>
+			</div>
+            <div id="langs" class="fl">
+            	<a rel="ar:sa:rtl:,."		href="#">عربي</a> &#8226;
+                <a rel="zh-CN:cn:ltr:,." 	href="#">简体</a> &#8226;
+                <a rel="zh-TW:cn:ltr:,." 	href="#">繁體</a> &#8226;
+				<a rel="en:us:ltr:,." 		href="#">English</a> &#8226;
+				<a rel="es:es:ltr: ," 		href="#">Español</a> &#8226;
+                <a rel="fr:fr:ltr: ," 		href="#">Français</a> &#8226;
+                <a rel="de:de:ltr: ," 		href="#">Deutsch</a> &#8226;
+                <a rel="el:gr:ltr: ," 		href="#">Ελληνικά</a> &#8226;
+				<a rel="id:id:ltr: ,"		href="#">Indonesian</a> &#8226;
+                <a rel="it:it:ltr: ," 		href="#">Italiano</a> &#8226;
+				<a rel="ja:jp:ltr:,." 		href="#">日本語</a> &#8226;
+                <a rel="ko:kr:ltr:,." 		href="#">한국어</a> &#8226;
+				<a rel="nl:nl:ltr: ," 		href="#">Nederlands</a> &#8226;
+                <a rel="pl:pl:ltr: ," 		href="#">Polski</a> &#8226;
+                <a rel="pt:br:ltr: ,"		href="#">Português</a> &#8226;
+                <a rel="ru:ru:ltr: ," 		href="#">Русский</a> &#8226;
+                <a rel="tr:tr:ltr: ," 		href="#">Türkçe</a> &#8226;
+				<a rel="vi:vn:ltr:,."		href="#">tiếng Việt</a>
+            </div>
+			<div class="tx" id="lang_bar_text_lang" style="display: none;" rel="nunnum">Change Site Language:</div>
+        </div>
+		<div id="prologin_ico" class="fr">
+            <a class="tx" href="/pro/login/" rel="z5l86o"><img src="http://assets.amung.us/images/header/prologin.png" /></a>
+            <a class="tx" href="/pro/login/" rel="kcjrki">Pro Login</a>
+		</div>
+        <div id="logo" class="fl">
+			<a href="http://whos.amung.us">
+            	<img src="http://assets.amung.us/images/header/headerlogo.png" />
+        	</a>
+		</div>
+        <div id="menu" class="fr">
+        	<ul id="global_nav">
+                <li id="nav_home" onclick="document.location.href='/'"></li>
+                <li id="nav_widgets" onclick="document.location.href='/showcase/'"></li>
+                <li id="nav_stats" onclick="document.location.href='/stats/'"></li>
+                <li id="nav_pro" onclick="document.location.href='/pro/'"></li>
+                <li id="nav_help" onclick="document.location.href='/help/'"></li>
+            </ul>
+        </div>
+    </div>
+    <div id="headspacer" class="clear"></div>
+    <div id="content">
+    <div class="largerectangle" style="position: absolute; top: 375px; right: 0px;">
+			<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-8071578134835204";
+			google_ad_slot = "9016025814";
+			google_ad_width = 336;
+			google_ad_height = 280;
+			//-->
+		</script>
+		<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+	</div>
+
+<div class="leaderboard" style="margin-bottom: 15px;">
+			<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-8071578134835204";
+		/* Stats Leaderboard - Center */
+		google_ad_slot = "9998311011";
+		google_ad_width = 728;
+		google_ad_height = 90;
+		//-->
+		</script>
+		<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+	</div>
+<div class="clear"></div>
+<div id="headerwrapper">
+	<div class="fl">
+	    <h1 id="dashtitle">
+	        <span class="tx" rel="uwkync">Dashboard</span> <span id="bigarrow"></span> (<span id="totalusers" class="di">0</span>)
+	    </h1>
+	    <div class="statshook tx" rel="g1uwks">
+	        Have a website or blog? <a href="/">Get your own free stats page</a>!
+	   </div>
+	</div>
+	<div class="fr">
+	    <div class="addthis_toolbox addthis_default_style addthis_stats fr">
+	        <a class="addthis_button_facebook_like" fb:like:layout="button_count" fb:like:href="http://whos.amung.us"></a>
+	        <a class="addthis_button_twitter_follow_native" tw:screen_name="whosamungus" tw:show-screen-name="false" tw:lang="en"></a>
+	        <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	    </div>
+	    <div class="clear"></div>
+		<div style="text-align: right; font-size: 10px; padding-right: 13px; font-family: Ubuntu;">
+			<a href="http://whos.amung.us/report/" class="tx" rel="7k9rbn">Report this account</a>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+<div id="statscontainer">
+    <h3>
+        <img src="http://assets.amung.us/images/stats/icons/history.png" />
+        <a href="/stats/history/9dl3wgygch8d/" class="tx" title="Click for more detail" rel="j82zed">History<img src="http://assets.amung.us/images/stats/icons/more.png" alt="more..." /></a>
+    </h3>
+    <div id="chartloader" class="wau_loader"></div>
+    <div id="no_data_history" class="nodata"></div>
+    <div id="chartcontainer">
+        <div id="chart"></div>
+    </div>
+    <div class="fl">
+        <h3>
+            <img src="http://assets.amung.us/images/stats/icons/readers.png" />
+            <a href="/stats/readers/9dl3wgygch8d/" class="tx" title="Click for more detail" rel="xi7dcq">Readers<img src="http://assets.amung.us/images/stats/icons/more.png" alt="more..." /></a>
+        </h3>
+        <div id="listloader" class="wau_loader"></div>
+        <div id="no_data_list" class="nodata"></div>
+        <div id="listcontainer"></div>
+    </div>
+    <div class="clear" style="height: 65px;">&nbsp;</div>
+    <div class="fl pretynt">
+        <h3>
+            <img src="http://assets.amung.us/images/stats/icons/tynt.png" />
+            <a href="https://signup.tynt.com/account/whos_amung_us_sign_up/9dl3wgygch8d" class="tx" rel="xl1ne0">What's Being Copied?</a>
+        </h3>
+        <div id="tyntloader" class="tynt_loader"></div>
+        <div id="tyntcontainer">
+            <div>
+                <img src="http://assets.amung.us/images/stats/tynthook.png" class="vam" />
+                <span id="tynt_words" class="tyntcount"></span> <span class="tyntdesc tx" rel="av15sm">words</span> &#9679;
+                <span id="tynt_images" class="tyntcount"></span> <span class="tyntdesc tx" rel="ybdbcl">images</span> &#9679;
+                <span id="tynt_copies" class="tyntcount"></span> <span class="tyntdesc tx" rel="ewugv8">copies</span>
+            </div>
+            <div id="tyntimages" class="tyntimages"></div>
+            <div id="tyntwords" class="tyntwords"></div>
+        </div>
+    </div>
+    <div class="fr">
+        <h3>
+            <img src="http://assets.amung.us/images/stats/icons/map.png" />
+            <a href="/stats/maps/9dl3wgygch8d/" class="tx" title="Click for more detail" rel="utr263">Maps<img src="http://assets.amung.us/images/stats/icons/more.png" alt="more..." /></a>
+        </h3>
+        <div id="maploader" class="wau_loader"></div>
+        <div id="no_data_map" class="nodata"></div>
+        <div id="mapcontainer"></div>
+    </div>
+    <div class="fl" style="margin-top: 50px; margin-left: 80px; clear: both;">
+    				<script type="text/javascript"><!--
+				google_ad_client = "ca-pub-8071578134835204";
+				google_ad_slot = "4656423413";
+				google_ad_width = 336;
+				google_ad_height = 280;
+				//-->
+			</script>
+			<script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+            </div>
+	<div class="fr" style="width:420px; height:400px;">
+    	<h3>
+            <img src="http://assets.amung.us/images/stats/icons/devices.png" />
+            <span style="text-decoration: underline;" class="tx" rel="s4pur4">Devices</span>
+        </h3>
+		<div id="devhistchartcontainer" style="width: 420px; height: 80px;">
+			<div id="devhistchart"></div>
+		</div>
+        <div id="piecontainer" style="margin-left:35px;">
+        	<div id="piechart"></div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+
+<!-- dynamic texts -->
+<div class="dn">
+    <div id="chart_users" class="tx" rel="tpfo2m">users</div>
+    <div id="chart_now" class="tx" rel="vjcx0w">now</div>
+</div>
+<!-- dynamic texts -->
+
+	</div>
+</div>
+<div id="footer">
+	<div class="border">
+        <div class="section">
+            <div class="links fl">
+                <div>
+                    <a href="/about/" class="tx" rel="09fpu0">About</a> | 
+					<a href="/blog/" class="tx" rel="2gcxtk">News</a> | 
+                    <a href="/contact/" class="tx" rel="xjfy9j">Contact Us</a> | 
+                    <a href="/help/" class="tx" rel="5qzweq">Help</a> | 
+                    <a href="/legal/" class="tx" rel="3oxut8">Legal/Notices</a> | 
+                    <a href="/legal/privacy/" class="tx" rel="c26ss1">Privacy Policy</a> | 
+                    <a href="/showcase/" class="tx" rel="suh4sb">Get Stats!</a>
+                </div>
+                <div class="cr">
+                	<span class="tx" rel="y4hbxs">Copyright</span> © 2016 whos.amung.us Inc. - <span class="tx" rel="k7na6a">All Rights Reserved.</span>
+                    &nbsp;
+                    					&darr; 3,089.64B &#8901; 2.34M &uarr;
+                </div>
+            </div>
+            <div class="addthis fl">
+                <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                    <a class="addthis_button_facebook"></a>
+                    <a class="addthis_button_twitter"></a>
+					<a class="addthis_button_tumblr"></a>
+					<a class="addthis_button_linkedin"></a>
+					<a class="addthis_button_reddit"></a>
+					<a class="addthis_button_favorites"></a>
+                </div>
+                <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#async=1"></script>
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript" id="wau_scr_ff225964">
+	    var wau_p = wau_p || []; wau_p.push(["1234", "ff225964", false]);
+	    (function() {
+	        var s=document.createElement("script"); s.type="text/javascript";
+	        s.async=true; s.src="http://widgets.amung.us/a_pro.js";
+	        document.getElementsByTagName("head")[0].appendChild(s);
+	    })();
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="sri lanka news ,news,breaking news,sports,finance,entertainment,sri lanka,lanka, sri lanka news, lanka news, sri lanka cricket, sri lanka breaking">
+	<meta name="description" content="ft.lk Sri Lanka 24 Hours Online Breaking News : News, Politics, Video, Finance, Business, Sports,  Entertainment, Travel.">
+<meta property="og:title" content="DailyFT - Be Empowered" />
+<meta property="og:image" content="http://static.ft.lk/Daily-FT-Logo.jpg"/>
+<meta property="og:description" content="ft.lk Sri Lanka 24 Hours Online Breaking News : News, Politics, Video, Finance, Business, Sports,  Entertainment, Travel."/> 
+
+<meta property="og:url" content="http://www.ft.lk" />
+
+
+
+<link rel="icon" type="image/ico" href="http://www.ft.lk/templates/images/FT_icon.png"/>
+
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>DailyFT - Be Empowered</title>
+
+<!-- Bootstrap -->
+<link href="http://www.ft.lk/templates/css/bootstrap2.min.css" rel="stylesheet">
+<link href="http://www.ft.lk/templates/css/sinu15.css" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>   
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- google a -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30012267-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+    <!-- google a -->
+    
+<!--backgrunds ads-->
+<style>
+  .invisible1 {
+	width: 130px;
+	height: 600px;
+	padding: 0px;
+	position: fixed;
+	display: block;
+	float: left;
+	top: 0px;
+	right: 0px;
+	left: -10px !important;
+	bottom: 0px;
+	margin-top: 70px !important;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+
+}
+.invisible2 {
+	width: 130px;
+	height: 600px;
+	position: fixed;
+	right: 00px !important;
+	padding: 0px;
+	float: left;
+	display: block;
+	margin-top: 70px !important; 
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+
+}
+  .pop-bt{
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 6px 15px 6px 15px;
+  text-decoration: none;
+  border:none;
+	}
+	.pop-bt:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  border:none;
+}
+/*.modal-backdrop.in {
+	filter: alpha(opacity=50);
+	opacity: .75
+}*/
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none
+}
+.opend {
+	opacity: 1;
+	pointer-events: auto
+}
+.modalDialog:target {
+	opacity: 1;
+	pointer-events: auto
+}
+.modalDialog > div {
+	width: 440px;
+	position: relative;
+	margin: 1% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999)
+}
+.popclose {
+	line-height: 35px;
+	position: absolute;
+	right: -25px;
+	text-align: center;
+	top: -25px;
+	width: 55px;
+	cursor: pointer;
+	height: 55px;
+	
+}
+.popclose:hover {
+	text-decoration: none
+}
+</style>
+ <!--popads-->
+<script>
+function setCookie(cname, cvalue, exhours) {
+	var d = new Date();
+	d.setTime(d.getTime() + (exhours*60*60*1000));
+	var expires = "expires="+d.toUTCString();
+	document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function getCookie(cname) {
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1);
+		if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+	}
+	return "";
+}
+
+
+$(document).ready(function(){
+	$("#close0").click(function(){
+		$("#openModal0").attr("class", "modalDialog");		
+	});
+	$("#close1").click(function(){
+		$("#openModal1").attr("class", "modalDialog");
+	});
+	$("#close3").click(function(){
+		$("#openModal3").attr("class", "modalDialog");
+	});
+	if(getCookie("n")=="" ){
+		setCookie("n", "0", 3);
+		$("#openModal0").attr("class", "modalDialog opend");
+	}
+	else if(getCookie("n")=="0" ){
+		setCookie("n", "1", 3);
+		$("#openModal1").attr("class", "modalDialog opend");
+	}
+	
+	if(getCookie("m")=="" ){
+		setCookie("m", "0", 3);
+		$("#openModal3").attr("class", "modalDialog opend hidden-md hidden-lg");
+	}
+});
+</script>
+<!--popads-->
+
+ <script language="javascript">
+                                jQuery(document).ready(function(){ adsBanner(); });
+                                jQuery(window).resize(function(){ adsBanner(); });
+                                function adsBanner(){
+                                    var windowWidth = jQuery(window).width();
+                                    if(windowWidth > 1324) {
+                                        jQuery(".adsBanner").show();
+                                        if(windowWidth > 1334) {
+                                            var positionPx = ((windowWidth - 1334) / 2) + "px";
+                                            jQuery(".invisible1").css('left',positionPx);
+                                            jQuery(".invisible2").css('right',positionPx);
+                                        }
+                                    }
+                                    else { jQuery(".adsBanner").hide(); }
+                                }
+                            </script>
+                            <!--backgrunds ads-->
+                      <script type="text/javascript">
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>   
+
+   
+                   
+</head>
+<body>
+
+    
+
+<!--popads-->
+<!--popads-->
+<!--pop ads mobile -->
+<!--pop ads mobile -->
+
+            
+    	
+                                            <div class="adsBanner invisible1 hidden-xs hidden-sm hidden-md"> <p>
+<script src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=rsb&c=28&pli=17058759&PluID=0&w=150&h=600&ord=[timestamp]"></script>
+<noscript>
+<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=brd&FlightID=17058759&Page=&PluID=0&Pos=1447766759" target="_blank"><img src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=bsr&FlightID=17058759&Page=&PluID=0&Pos=1447766759" border=0 width=150 height=600/></a>
+</noscript>
+</p>                                            </div>
+                                                                        	
+                                            <div class="adsBanner invisible2 hidden-xs hidden-sm hidden-md"> <p>
+<script src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=rsb&c=28&pli=17058759&PluID=0&w=150&h=600&ord=[timestamp]"></script>
+<noscript>
+<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=brd&FlightID=17058759&Page=&PluID=0&Pos=1447766759" target="_blank"><img src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=bsr&FlightID=17058759&Page=&PluID=0&Pos=1447766759" border=0 width=150 height=600/></a>
+</noscript>
+</p>                                            </div>
+        <header id="header">
+  <div class="top-bar" style="background-color:#585755">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-xs-4">
+        <div class="ft-logo-tab hidden-lg hidden-xs">
+        <p class="p-date2" > Thursday Oct 27, 2016 </p>
+        <a href="http://www.ft.lk/"> <img src="http://www.ft.lk/templates/images/logo2.png" class="img-responsive" alt="logo"></a> </div>
+          <div class="social-l">
+            <div class="btn-group" style="float:right">
+             <p class="p-date hidden-lg hidden-md hidden-sm" style="margin-top:7px" >Thursday Oct 27, 2016</p>
+               <a class="btn epaper hidden-xs" target="_blank" href="http://epaper.ft.lk/" ><img src="http://www.ft.lk/templates/images/epaper.gif" width="78" height="29" alt=""/> </a>
+               <a class="btn esub-menu hidden-sm hidden-xs" href="http://www.ft.lk/aboutus" >  ABOUT US </a>
+              <a class="btn esub-menu hidden-xs" href="http://www.ft.lk/archivepage" >  ARCHIVES </a>
+              <a class="btn esub-menu hidden-xs" href="http://www.ft.lk/contactus" >  CONTACT </a>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-8">
+          <div class="social">
+            <ul class="social-share">
+              <li><a target="_blank" href="https://www.facebook.com/dailyft"><i class="fa fa-facebook"></i></a></li>
+              <li><a target="_blank" href="https://twitter.com/ft_srilanka"><i class="fa fa-twitter"></i></a></li>
+              <li><a  href="http://www.ft.lk/rss"><i class="fa fa-rss"></i></a></li>
+              <li class="hidden-xs"><a target="_blank" style="font-size:15px" href="http://www.ft.lk/apps"><i class="fa fa-mobile-phone"></i></a></li>
+            </ul>
+            <div class="search">
+              <form method="POST" action="http://www.ft.lk/search">
+                <input type="text" placeholder="Search" autocomplete="off" class="search-form" name="searchdata">
+                <i class="fa fa-search"></i>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.container--> 
+  </div>
+  <!--/.top-bar-->
+  
+  <nav role="navigation" class="navbar navbar-default ft-nav">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="ft-logo hidden-xs hidden-sm hidden-md">
+                <p class="p-date" style="text-align:right;" > Thursday Oct 27, 2016 </p>
+                <a href="http://www.ft.lk/"> <img src="http://www.ft.lk/templates/images/logo.png" class="img-responsive" alt="logo"></a> </div>
+                <a href="http://www.ft.lk/" class="navbar-brand hidden-sm hidden-md hidden-lg">
+                    <img alt="" src="http://www.ft.lk/templates/images/logo2.png">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+             <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"> <a href="http://www.ft.lk/">Home</a> </li>
+          <li class="dropdown"> 
+          <a class="inactive dropdown-toggle" data-toggle="dropdown" href="http://www.ft.lk/columns" >Columnists</a>
+          <ul class="dropdown-menu">
+          			                               
+                            <li>
+                                <a href="http://www.ft.lk/ajantha-dharmasiri">Ajantha Dharmasiri</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/ajith-de-alwis">Ajith de Alwis</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/arthur_fernandez">Arthur Fernandez</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/chamitha-kuruppu">Chamitha Kuruppu</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/charitha-ratwatte">Charitha Ratwatte</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/d-b-s-jeyaraj">D.B.S. Jeyaraj</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/dharisha-bastians">Dharisha Bastians</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/dinesh-weerakkody">Dinesh Weerakkody</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/harsha-gunasena">Harsha Gunasena</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/hilmy-cader">Hilmy Cader</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/lalith-de-mel">Lalith De Mel</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/lalith-samarakoon">Lalith Samarakoon</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/marianne-david-columns">Marianne David</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/neville-de-silva">Neville De Silva</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/rohantha-athukorala">Rohantha Athukorala</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/sujata-gamage">Sujata Gamage</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/tyron-devotta">Tyron Devotta</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/w-a-wijewardena-columns">W. A. Wijewardena</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/wijith-dechickera">Wijith DeChickera</a>
+                            </li>
+                               		
+                        </ul> 
+          </li>
+          <li> <a class="inactive" href="http://www.ft.lk/ft-click">FT Click</a> </li>
+          <li> <a class="inactive" href="http://www.ft.lk/ft-lite">FT Lite</a> </li>
+         <li> <a class="inactive" href="http://www.ft.lk/funtoon">Cartoon</a> </li>
+          <li> <a class="inactive" href="http://www.ft.lk/opinion">Opinion and Issues</a> </li>
+        
+          <li class="dropdown"> 
+          <a class="inactive dropdown-toggle" data-toggle="dropdown" href="http://www.ft.lk/sectors" >Sectors</a>
+          <ul class="dropdown-menu" >
+<!--                            <li>
+                                <a href="http://www.ft.lk/sectors">Sectors</a>
+                            </li>-->
+                                                          
+                            <li>
+                                <a href="http://www.ft.lk/agriculture">Agriculture</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/business">Business</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/csrevents">CSR / Events</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/dining">Dining</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/energy">Energy</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/entertainment-sectors">Entertainment / Arts</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/entrepreneurship">Entrepreneurship</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/fashionlifestyle">Fashion</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/financial-services">Financial Services</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/front-page">Front Page</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/ft-education">FT Education</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/healthcare">Healthcare</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/hr">HR</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/in-depth">In Depth</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/international">International</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/it-telecom-tech">IT / Telecom / Tech</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/leadership">Leadership</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/leisure">Leisure</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/letters-to-the-editor">Letters to the Editor</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/lifestyle">Lifestyle</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/management">Management</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/marketing">Marketing</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/motor">Motor</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/news">News</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/other-sectors">Other Sectors</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/propertyconstruction">Property/Construction</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/shippingaviation">Shipping / Aviation</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/special-report">Special Report</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/travel-tourism">Travel / Tourism</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/youthcareershigher-education">Youth / Careers / Higher Education</a>
+                            </li>
+                                                           
+                        </ul> 
+          </li>
+          <li> <a class="inactive" href="http://www.ft.lk/sports">Sports</a> </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse --> 
+    </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+  <!--/nav--> 
+  
+</header>
+
+ <div class="container">
+  <div class="hidden-xs hidden-sm" style="margin-left: 80px;">
+ 
+
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/6231952/FT_Home_Leaderboard_900x125', [900, 125], 'div-gpt-ad-1464860792152-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<!-- /6231952/FT_Home_Leaderboard_900x125 -->
+<div id='div-gpt-ad-1464860792152-0' style='height:125px; width:900px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464860792152-0'); });
+</script>
+</div>
+
+
+ </div>
+ 
+  <div class="row">
+    <div class="col-md-8">
+    <div class="row zero-white" style="padding-left:15px; padding-right:15px; padding-bottom:0px">
+          <div class="hidden-xs hidden-sm">
+</div>
+</div>
+                      <div class="row zero-white"> <a href="http://www.ft.lk/article/576640/PM-presents-path-to-progress">
+        <h1 class="top-story-header"> PM presents path to progress </h1>
+        </a>
+                
+          <img src="http://static.ft.lk/ftadmin/wp-content/files_mf/1477590199s.jpg" class="img-responsive" alt="FT Main Image">
+                   <p class="top-story-text"> 
+	Prime Minister Ranil Wickremesinghe yesterday delivered the long awaited economic policy statement to Parliament outlining the way ahead for Sri La... </p>
+        <p style="text-align:center; margin-bottom:20px;">  <a class="btn btn-default read-more" href="http://www.ft.lk/article/576640/PM-presents-path-to-progress" role="button">READ MORE <i class="fa fa-plus fa-1"></i></a> </p>
+        <hr>
+</div>
+
+<div class="row zero-white" style="padding-left:15px; padding-right:15px; padding-bottom:15px">
+<div class="hidden-xs hidden-sm">
+</div>
+</div>
+
+
+
+
+
+              <div class="row zero-white">
+         
+        <div class="col-md-6 col-sm-6">
+                     <div class="panel-box">
+          <hr>
+          <a href="http://www.ft.lk/article/576626/SC-to-proceed-with-SLT-petition-against-TRC">
+          <h3 class="ft-header">SC to proceed with SLT petition against TRC</h3>
+          </a>
+          <p class="ft-other">  <span>  Friday, 28 October 2016 00:01</span>  <small style="text-align:right; float:right">Views - 2   </small> </p>
+                      <p class="text">
+	By S. S. Selvanayagam
+	The Supreme Court overruled preliminary objections raised by the Telecommunications Regulatory Commission (TRC) in a fundam...</p>
+          <p>
+                    <a class="btn btn-default read-more" style="margin-left:0px" href="http://www.ft.lk/article/576626/SC-to-proceed-with-SLT-petition-against-TRC" role="button">READ MORE <i class="fa fa-plus fa-1"></i></a>
+          </p>
+          <p class="ft-panel-bot"></p>
+        </div>
+                    <div class="panel-box">
+          <hr>
+          <a href="http://www.ft.lk/article/576634/Tea-earnings-grow-2-11--in-first-nine-months">
+          <h3 class="ft-header">Tea earnings grow 2.11% in first nine months</h3>
+          </a>
+          <p class="ft-other">  <span>  Friday, 28 October 2016 00:01</span>  <small style="text-align:right; float:right">Views - 3   </small> </p>
+                      <a href="http://www.ft.lk/article/576634/Tea-earnings-grow-2-11--in-first-nine-months"> 
+              <img alt="" src="http://static.ft.lk/ftadmin/wp-content/files_mf/1477589801s6.jpg" class="img-responsive"> </a>
+                     <p class="text">
+	
+		January-September shows slight gain of Rs. 2.84 b,&nbsp;cumulative Rs. 137 b &nbsp;
+	
+	
+		Iraq remains largest importer followed by Russia a...</p>
+          <p>
+                    <a class="btn btn-default read-more" style="margin-left:0px" href="http://www.ft.lk/article/576634/Tea-earnings-grow-2-11--in-first-nine-months" role="button">READ MORE <i class="fa fa-plus fa-1"></i></a>
+          </p>
+          <p class="ft-panel-bot"></p>
+        </div>
+                    <div class="panel-box">
+          <hr>
+          <a href="http://www.ft.lk/article/576637/Budget-wake-up-call-for-Private-Sector--Ravi-K">
+          <h3 class="ft-header">Budget wake-up call for Private Sector: Ravi K</h3>
+          </a>
+          <p class="ft-other">  <span>  Friday, 28 October 2016 00:01</span>  <small style="text-align:right; float:right">Views - 7   </small> </p>
+                      <a href="http://www.ft.lk/article/576637/Budget-wake-up-call-for-Private-Sector--Ravi-K"> 
+              <img alt="" src="http://static.ft.lk/ftadmin/wp-content/files_mf/1477590083s7.jpg" class="img-responsive"> </a>
+                     <p class="text">
+	
+		Expects to increase public revenue to 16% next year
+	
+	
+		Says inconsistencies would be addressed in&nbsp;latest Budget
+	
+	
+		Delay in VA...</p>
+          <p>
+                    <a class="btn btn-default read-more" style="margin-left:0px" href="http://www.ft.lk/article/576637/Budget-wake-up-call-for-Private-Sector--Ravi-K" role="button">READ MORE <i class="fa fa-plus fa-1"></i></a>
+          </p>
+          <p class="ft-panel-bot"></p>
+        </div>
+                    </div>
+          
+      
+         <div class="col-md-6 col-sm-6">
+                       <div class="panel-box">
+          <hr>
+          <a href="http://www.ft.lk/article/576630/Rupee-ends-weaker--CB-moral-suasion-caps-fall">
+          <h3 class="ft-header">Rupee ends weaker; CB moral suasion caps fall</h3>
+          </a>
+          <p class="ft-other">  <span> Friday, 28 October 2016 00:01</span> <small style="text-align:right; float:right">Views - 6   </small></p>
+                      <p class="text">
+	Reuters - The rupee ended weaker on Thursday on importer demand for the US currency, but moral suasion by the Central Bank prevented a steeper fall...</p>
+          <p>
+                    <a class="btn btn-default read-more" style="margin-left:0px" href="http://www.ft.lk/article/576630/Rupee-ends-weaker--CB-moral-suasion-caps-fall" role="button">READ MORE <i class="fa fa-plus fa-1"></i></a>
+          </p>
+          <p class="ft-panel-bot"></p>
+        </div>
+                    <div class="panel-box">
+          <hr>
+          <a href="http://www.ft.lk/article/576628/VAT-effective-from-1-Nov-">
+          <h3 class="ft-header">VAT effective from 1 Nov.</h3>
+          </a>
+          <p class="ft-other">  <span> Friday, 28 October 2016 00:01</span> <small style="text-align:right; float:right">Views - 3   </small></p>
+                      <p class="text">
+	The Value Added Tax (VAT) and the Nation Building Tax, which were passed in Parliament on Wednesday, will be effective from 1 November, the Finance...</p>
+          <p>
+                    <a class="btn btn-default read-more" style="margin-left:0px" href="http://www.ft.lk/article/576628/VAT-effective-from-1-Nov-" role="button">READ MORE <i class="fa fa-plus fa-1"></i></a>
+          </p>
+          <p class="ft-panel-bot"></p>
+        </div>
+                    <div class="panel-box">
+          <hr>
+          <a href="http://www.ft.lk/article/576623/Review-and-redefine-for-Budget-2017">
+          <h3 class="ft-header">Review and redefine for Budget 2017</h3>
+          </a>
+          <p class="ft-other">  <span> Friday, 28 October 2016 00:01</span> <small style="text-align:right; float:right">Views - 2   </small></p>
+                      <a href="http://www.ft.lk/article/576623/Review-and-redefine-for-Budget-2017"> <img alt="" src="http://static.ft.lk/ftadmin/wp-content/files_mf/1477589411s5.jpg" class="img-responsive"> </a>
+                     <p class="text">
+	Top industry leaders and experts will give their feedback and thoughts to Finance Minister Ravi Karunanayake at a pre-budget forum organised jointl...</p>
+          <p>
+                    <a class="btn btn-default read-more" style="margin-left:0px" href="http://www.ft.lk/article/576623/Review-and-redefine-for-Budget-2017" role="button">READ MORE <i class="fa fa-plus fa-1"></i></a>
+          </p>
+          <p class="ft-panel-bot"></p>
+        </div>
+             
+        </div>
+        
+         
+         
+       
+        <a class="btn btn-default read-more" style="float:right; margin-right:15px" href="http://www.ft.lk/front-page" role="button">MORE FRONT PAGE NEWS <i class="fa fa-plus fa-1"></i></a> </div>
+      <div class="row zero-white">
+        <hr>
+        
+        <div class="row zero-white" style="padding-left:15px; padding-right:15px; padding-bottom:0px">
+        <div class="hidden-xs hidden-sm">
+	
+							
+								<div class="row">
+	<div class="col-md-6 col-sm-6">
+		
+	</div>
+
+	
+
+	<div class="col-md-6 col-sm-6">
+		
+		</div>
+
+		
+	</div>
+
+
+
+
+
+<center>
+
+	<iframe frameborder="0" height="100" scrolling="no" src="//www.codeartlove.com/clients/janashakthi/2015/july/active-risk-management/680x100/?site_id=ft_680x100" width="680"></iframe>
+</center>
+
+
+
+
+
+
+
+
+							
+</div>
+</div>
+        <a href="http://www.ft.lk/news"> <h3 class="news-header" style="text-decoration: none;">FT NEWS</h3></a>
+         
+    
+        <div class="col-md-6 col-sm-6">
+                     <div class="panel-box">
+          <hr style="background-color:#09b7b1">
+          <a href="http://www.ft.lk/article/576617/SLFP-wants-probe-on-16-primary-dealers">
+          <h3 class="ft-header">SLFP wants probe on 16 primary dealers</h3>
+          </a>
+          <p class="ft-other"> <span>Friday, 28 October 2016 00:01</span> <small style="text-align:right; float:right">Views - 3   </small></p>
+                    <a href="http://www.ft.lk/article/576617/SLFP-wants-probe-on-16-primary-dealers"> <img alt="" src="http://static.ft.lk/ftadmin/wp-content/files_mf/1477588440s3.jpg" class="img-responsive"> </a>
+                    <p class="text">
+	By Chamodi Gunawardana
+	Adding yet another twist to the alleged bond scam, the Sri Lanka Freedom Party (SLFP) yesterday called on the Government t...<p>
+                    <a class="btn btn-default read-more" style="margin-left:0px" href="http://www.ft.lk/article/576617/SLFP-wants-probe-on-16-primary-dealers" role="button">READ MORE <i class="fa fa-plus fa-1"></i></a>
+          </p>
+          <p class="ft-panel-bot"></p>
+        </div>
+                    <div class="panel-box">
+          <hr style="background-color:#09b7b1">
+          <a href="http://www.ft.lk/article/576612/ACHC-warns-over-meat-at-Deepavali-buffets">
+          <h3 class="ft-header">ACHC warns over meat at Deepavali buffets</h3>
+          </a>
+          <p class="ft-other"> <span>Friday, 28 October 2016 00:01</span> <small style="text-align:right; float:right">Views - 4   </small></p>
+                    <a href="http://www.ft.lk/article/576612/ACHC-warns-over-meat-at-Deepavali-buffets"> <img alt="" src="http://static.ft.lk/ftadmin/wp-content/files_mf/1477588344s2.jpg" class="img-responsive"> </a>
+                    <p class="text">
+	On the eve of the Deepavali festival, the All Ceylon Hindu Congress (Federation of Hindu Religious Associations and Temple Trusts in Sri Lanka) too...<p>
+                    <a class="btn btn-default read-more" style="margin-left:0px" href="http://www.ft.lk/article/576612/ACHC-warns-over-meat-at-Deepavali-buffets" role="button">READ MORE <i class="fa fa-plus fa-1"></i></a>
+          </p>
+          <p class="ft-panel-bot"></p>
+        </div>
+                    <div class="panel-box">
+          <hr style="background-color:#09b7b1">
+          <a href="http://www.ft.lk/article/576330/Govt--appoints-committee-to-propose-amendments-to-Muslim-marriage-law">
+          <h3 class="ft-header">Govt. appoints committee to propose amendments to Muslim marriage law</h3>
+          </a>
+          <p class="ft-other"> <span>Thursday, 27 October 2016 00:01</span> <small style="text-align:right; float:right">Views - 707   </small></p>
+                    <a href="http://www.ft.lk/article/576330/Govt--appoints-committee-to-propose-amendments-to-Muslim-marriage-law"> <img alt="" src="http://static.ft.lk/ftadmin/wp-content/files_mf/1477505568d3.jpg" class="img-responsive"> </a>
+                    <p class="text">
+	Cabinet yesterday appointed a subcommittee to make proposals on amendments to the Muslim Marriage and Divorce Act, which allows girls under the age...<p>
+                    <a class="btn btn-default read-more" style="margin-left:0px" href="http://www.ft.lk/article/576330/Govt--appoints-committee-to-propose-amendments-to-Muslim-marriage-law" role="button">READ MORE <i class="fa fa-plus fa-1"></i></a>
+          </p>
+          <p class="ft-panel-bot"></p>
+        </div>
+                    <div class="panel-box">
+          <hr style="background-color:#09b7b1">
+          <a href="http://www.ft.lk/article/576261/PUCSL-appoints-committee-to-investigate-recent-Norochcholai-breakdown">
+          <h3 class="ft-header">PUCSL appoints committee to investigate recent Norochcholai breakdown</h3>
+          </a>
+          <p class="ft-other"> <span>Thursday, 27 October 2016 00:00</span> <small style="text-align:right; float:right">Views - 392   </small></p>
+                    <p class="text">
+	A three-member committee has been appointed by the Public Utilities Commission of Sri Lanka (PUCSL) to carry out an independent investigation into ...<p>
+                    <a class="btn btn-default read-more" style="margin-left:0px" href="http://www.ft.lk/article/576261/PUCSL-appoints-committee-to-investigate-recent-Norochcholai-breakdown" role="button">READ MORE <i class="fa fa-plus fa-1"></i></a>
+          </p>
+          <p class="ft-panel-bot"></p>
+        </div>
+                    </div>
+        
+        
+        <div class="col-md-6 col-sm-6">
+                      <div class="panel-box">
+          <hr style="background-color:#09b7b1">
+          <a href="http://www.ft.lk/article/576615/SL-backs-Indian-Ocean-security-at-IORA">
+          <h3 class="ft-header">SL backs Indian Ocean security at IORA</h3>
+          </a>
+          <p class="ft-other"> <span> Friday, 28 October 2016 00:01</span> <small style="text-align:right; float:right">Views - 3   </small></p>
+                    <p class="text">
+	Foreign Minister Mangala Samaraweera called for the Indian Ocean Rim Association (IORA) to move into a new era of dynamism, when he addressed the 1...<p>
+                    <a class="btn btn-default read-more" style="margin-left:0px" href="http://www.ft.lk/article/576615/SL-backs-Indian-Ocean-security-at-IORA" role="button">READ MORE <i class="fa fa-plus fa-1"></i></a>
+          </p>
+          <p class="ft-panel-bot"></p>
+        </div>
+                     <div class="panel-box">
+          <hr style="background-color:#09b7b1">
+          <a href="http://www.ft.lk/article/576599/The-way-ahead">
+          <h3 class="ft-header">The way ahead</h3>
+          </a>
+          <p class="ft-other"> <span> Friday, 28 October 2016 00:01</span> <small style="text-align:right; float:right">Views - 4   </small></p>
+                    <a href="http://www.ft.lk/article/576599/The-way-ahead"> 
+              <img alt="" src="http://static.ft.lk/ftadmin/wp-content/files_mf/1477587775s8.jpg" class="img-responsive"> </a>
+                    <p class="text">
+	
+		Prime Minister Ranil Wickremesinghe outlined Sri Lanka&rsquo;s future in a special statement in Parliament yesterday
+	
+
+
+
+	
+
+
+
+	Prime ...<p>
+                    <a class="btn btn-default read-more" style="margin-left:0px" href="http://www.ft.lk/article/576599/The-way-ahead" role="button">READ MORE <i class="fa fa-plus fa-1"></i></a>
+          </p>
+          <p class="ft-panel-bot"></p>
+        </div>
+                     <div class="panel-box">
+          <hr style="background-color:#09b7b1">
+          <a href="http://www.ft.lk/article/576265/Sri-Lanka-dedicated-to-guarantee-equal-rights--justice---Speaker">
+          <h3 class="ft-header">Sri Lanka dedicated to guarantee equal rights, justice - Speaker</h3>
+          </a>
+          <p class="ft-other"> <span> Thursday, 27 October 2016 00:00</span> <small style="text-align:right; float:right">Views - 406   </small></p>
+                    <a href="http://www.ft.lk/article/576265/Sri-Lanka-dedicated-to-guarantee-equal-rights--justice---Speaker"> 
+              <img alt="" src="http://static.ft.lk/ftadmin/wp-content/files_mf/1477502400d2.jpg" class="img-responsive"> </a>
+                    <p class="text">
+	The Government is dedicated to guaranteeing equal rights and justice, according to the Speaker of Parliament Karu Jayasuriya&nbsp;
+	The Speaker sa...<p>
+                    <a class="btn btn-default read-more" style="margin-left:0px" href="http://www.ft.lk/article/576265/Sri-Lanka-dedicated-to-guarantee-equal-rights--justice---Speaker" role="button">READ MORE <i class="fa fa-plus fa-1"></i></a>
+          </p>
+          <p class="ft-panel-bot"></p>
+        </div>
+                     <div class="panel-box">
+          <hr style="background-color:#09b7b1">
+          <a href="http://www.ft.lk/article/576269/Mangala-insists-SL-stands-by-Palestine">
+          <h3 class="ft-header">Mangala insists SL stands by Palestine</h3>
+          </a>
+          <p class="ft-other"> <span> Thursday, 27 October 2016 00:00</span> <small style="text-align:right; float:right">Views - 421   </small></p>
+                    <p class="text">
+	Foreign Minister Mangala Samaraweera yesterday defended Sri Lanka&rsquo;s decision to abstain from voting on a UNESCO resolution, denouncing Israel...<p>
+                    <a class="btn btn-default read-more" style="margin-left:0px" href="http://www.ft.lk/article/576269/Mangala-insists-SL-stands-by-Palestine" role="button">READ MORE <i class="fa fa-plus fa-1"></i></a>
+          </p>
+          <p class="ft-panel-bot"></p>
+        </div>
+                     </div>
+        
+       
+        <a class="btn btn-default read-more" style="float:right; margin-right:15px" href="http://www.ft.lk/news" role="button">MORE FT NEWS  <i class="fa fa-plus fa-1"></i></a>
+        <div class="row zero-white">
+        <h1 style="color:#FFFFFF"> . </h1>
+        </div>
+        
+        <div class="hidden-xs hidden-sm">
+			
+
+				
+</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row zero-white">
+          <div class="col-md-12 col-sm-6 panel-box hidden-xs hidden-sm">
+	
+							
+								<div style="margin:5px 0 5px 0;">
+	<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script><script type='text/javascript'>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/6231952/FT_HOME_350_400', [350, 400], 'div-gpt-ad-1446800238353-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script><!-- /6231952/FT_HOME_350_400 -->
+
+	<div id="div-gpt-ad-1446800238353-0" style="height:400px; width:350px;">
+		<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1446800238353-0'); });
+</script>
+	</div>
+</div>
+
+<div style="margin:0px 0 10px 0;">
+<iframe frameborder="0" height="200" scrolling="no"
+src="http://dmstuff.wijeyadigital.lk/ads/heightslk/"width="300"></iframe>
+</div>
+
+<div style="margin:0px 0 10px 0;">
+	<iframe frameborder="0" height="200" scrolling="no" src="http://techkeels.com/creatives/dfcc_ca/banner/dailyft_300x200/" width="300"> </iframe>
+</div>
+
+<div style="margin:0px 0 10px 0;">
+	<a href="http://www.ft.lk/ft-education"><img alt="gggggdfg-copy" class="alignnone size-full wp-image-568654" height="99" src="http://static.ft.lk/ftadmin/wp-content/uploads/2015/05/05055020/gggggdfg-copy.png" width="310" /></a>
+</div>
+							
+</div>
+        <div class="col-md-12 col-sm-6 panel-box">
+            
+          <div class="row ft-quick-box">
+            <h3 class="ftquick-header">FT Quick Guide</h3>
+           
+            <a href="http://www.ft.lk/travel-tourism">
+            <blockquote class="ft-quick">
+              <p class="ft-quick-text">Travel / Tourism</p>
+            </blockquote>
+            </a> 
+             <a href="http://www.ft.lk/it-telecom-tech">
+            <blockquote class="ft-quick">
+              <p class="ft-quick-text">IT / Telecom / Tech</p>
+            </blockquote>
+            </a> 
+             <a href="http://www.ft.lk/financial-services">
+            <blockquote class="ft-quick">
+              <p class="ft-quick-text">Financial Services</p>
+            </blockquote>
+            </a> 
+             <a href="http://www.ft.lk/business">
+            <blockquote class="ft-quick">
+              <p class="ft-quick-text">Business News</p>
+            </blockquote>
+            </a> 
+            <div style="text-align: right; float: right; margin-bottom: 15px;" class="dropdown"> 
+          <a class="inactive dropdown-toggle" data-toggle="dropdown" href="http://www.ft.lk/sectors" >More Sectors</a>
+          <ul class="dropdown-menu" >
+<!--                            <li>
+                                <a href="http://www.ft.lk/sectors">Sectors</a>
+                            </li>-->
+                                                          
+                            <li>
+                                <a href="http://www.ft.lk/agriculture">Agriculture</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/business">Business</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/csrevents">CSR / Events</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/dining">Dining</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/energy">Energy</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/entertainment-sectors">Entertainment / Arts</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/entrepreneurship">Entrepreneurship</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/fashionlifestyle">Fashion</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/financial-services">Financial Services</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/front-page">Front Page</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/ft-education">FT Education</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/healthcare">Healthcare</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/hr">HR</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/in-depth">In Depth</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/international">International</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/it-telecom-tech">IT / Telecom / Tech</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/leadership">Leadership</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/leisure">Leisure</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/letters-to-the-editor">Letters to the Editor</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/lifestyle">Lifestyle</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/management">Management</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/marketing">Marketing</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/motor">Motor</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/news">News</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/other-sectors">Other Sectors</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/propertyconstruction">Property/Construction</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/shippingaviation">Shipping / Aviation</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/special-report">Special Report</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/travel-tourism">Travel / Tourism</a>
+                            </li>
+                                                             
+                            <li>
+                                <a href="http://www.ft.lk/youthcareershigher-education">Youth / Careers / Higher Education</a>
+                            </li>
+                                                           
+                        </ul> 
+          </div>
+             </div>
+        </div>
+        
+        
+        <div class="col-md-12 col-sm-6 panel-box hidden-xs hidden-sm" style="margin-top:15px; padding-left:20px; padding-right:20px">
+	
+							
+								<div style="margin:5px 0 5px 0;">
+<a href="http://www.m3force.com/" target="_blank"><img alt="" src="http://static.ads.dailymirror.lk/wp-content/uploads/2016/09/ft-m3.gif" style="width: 300px; height: 200px;" /></a>
+</div>
+
+<div style="margin:5px 0 5px 0;">
+<iframe frameborder="0" height="400" scrolling="no" src="http://dmstuff.wijeyadigital.lk/ads/astoria/" width="300"></iframe>
+</div>
+
+
+							
+				
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300x250, created 26/10/08 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-6200193111498313"
+     data-ad-slot="1138007978"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+				
+				
+</div>
+        
+        
+        <div class="col-md-12 col-sm-6 panel-box">
+		
+          <h3 class="columnists-header">Today's Columnists</h3>
+                               <div class="columnists"> <a href="http://www.ft.lk/article/576644/Learnings-from-the--Trail-">
+            <h3 class="col-header">Learnings from the ‘Trail’</h3>
+            </a>
+            <p class="col-panel-bot"></p>
+            <div class="col-img"> 
+                                 <img alt="" src="http://static.ft.lk/ftadmin/wp-content/files_mf/1477590325s2.jpg" class="profile-image img-responsive">
+                              <p class="col-date">  28 October 2016  </p>
+            </div>
+            <p class="col-text">
+	Judging by the public response (qualitative) and the donations received (quantitative), the &lsquo;Trail&rsquo; need to be commended. How do you explain such an overwhelming volunteer response to the &lsquo;Trail&rsquo;?
+
+
+
+	
+		The cause is l...</p>
+            <hr>
+          </div>
+                    <div class="columnists"> <a href="http://www.ft.lk/article/576462/President-s-speech-and-a-new-dimension-to-transitional-justice">
+            <h3 class="col-header">President’s speech and a new dimension to transitional justice</h3>
+            </a>
+            <p class="col-panel-bot"></p>
+            <div class="col-img"> 
+                                 <img alt="" src="http://static.ft.lk/ftadmin/wp-content/files_mf/1477582491s.jpg" class="profile-image img-responsive">
+                              <p class="col-date">  28 October 2016  </p>
+            </div>
+            <p class="col-text">
+	 President Sirisena seems to be governing by public speaking. He dropped a bombshell by criticising the Commission to Investigate Allegations of Bribery or Corruption (CIABOC) and also the Financial Crimes Investigation Division (FCID) and Crimina...</p>
+            <hr>
+          </div>
+                    <div class="columnists"> <a href="http://www.ft.lk/article/576471/Who-will-guard-the-guards--when-the-wardens-ward-off-the-law-for-friends?">
+            <h3 class="col-header">Who will guard the guards, when the wardens ward off the law for friends?</h3>
+            </a>
+            <p class="col-panel-bot"></p>
+            <div class="col-img"> 
+                                 <img alt="" src="http://static.ft.lk/ftadmin/wp-content/files_mf/1477583050s.jpg" class="profile-image img-responsive">
+                              <p class="col-date">  28 October 2016  </p>
+            </div>
+            <p class="col-text">
+	&nbsp;
+
+
+
+	SIT IT OUT, NOT QUIT IT!? &ndash; Concur or conquer, the machinery of state as in CIABOC as much as the engine of legislative oversight per COPE must be paramount over petty politicking and personal agendas. Pity, then, that agents ...</p>
+            <hr>
+          </div>
+                    <div class="columnists"> <a href="http://www.ft.lk/article/576466/BOI-needs-to-become-more-competitive">
+            <h3 class="col-header">BOI needs to become more competitive</h3>
+            </a>
+            <p class="col-panel-bot"></p>
+            <div class="col-img"> 
+                                 <img alt="" src="http://static.ft.lk/ftadmin/wp-content/files_mf/1477582814s2.jpg" class="profile-image img-responsive">
+                              <p class="col-date">  28 October 2016  </p>
+            </div>
+            <p class="col-text">
+	&nbsp;
+
+
+
+	Last week at an economic forum it was mentioned that while Sri Lanka attracted $ 700 million in FDI, Singapore got $ 40 billion and Ireland got $ 30 billion and the low level of Foreign Direct Investment was becoming a serious const...</p>
+            <hr>
+          </div>
+                    
+          
+          <p style="text-align:right"><a class="btn btn-default read-more" style="margin-top:8px; margin-bottom:0px" href="http://www.ft.lk/columns" role="button">More Columnists  <i class="fa fa-plus fa-1"></i></a></p>
+          <p class="col-fo"></p>
+        </div>
+            <div class="col-md-12 col-sm-6 panel-box hidden-xs hidden-sm" style="margin-top:15px; padding-left:20px; padding-right:20px">
+				
+				<a target="_blank" href="http://builders.lk/lankatenders/" >
+	<img src="http://static.ft.lk/ftadmin/wp-content/uploads/2016/10/06154003/dm5.gif" />
+	</a>
+</div>
+        
+        <div class="col-md-12 col-sm-6 panel-box red-widget">
+          <div class="row ft-red-box">
+            <h3 class="ftred-header">Opinion and Issues</h3>
+                        
+            <a href="http://www.ft.lk/article/576336/Human-rights-abuses-as-precursors-of-conflict--Parliaments-as-early-responders">
+            <blockquote class="ft-red">
+              <p class="ft-red-text">Human rights abuses as precursors of conflict: Parliaments as early responders</p>
+            </blockquote>
+            </a>
+                         
+            <a href="http://www.ft.lk/article/576174/Era-of-youth">
+            <blockquote class="ft-red">
+              <p class="ft-red-text">Era of youth</p>
+            </blockquote>
+            </a>
+                         
+            <a href="http://www.ft.lk/article/576028/-Govt--efforts-to-prevent-ethnic-unrest-are-commendable---Ven--Dhammanada-Thera">
+            <blockquote class="ft-red">
+              <p class="ft-red-text">“Govt. efforts to prevent ethnic unrest are commendable”: Ven. Dhammanada Thera</p>
+            </blockquote>
+            </a>
+                         
+            <a href="http://www.ft.lk/article/575903/The-tragedy-of-power">
+            <blockquote class="ft-red">
+              <p class="ft-red-text">The tragedy of power</p>
+            </blockquote>
+            </a>
+                        
+       
+            <p class="red-fo"></p>
+            <p style="text-align:right; margin-right:10px"><a class="btn btn-default read-more" style="margin-top:8px; margin-bottom:0px" href="http://www.ft.lk/opinion" role="button"> MORE OPINION & ISSUES  <i class="fa fa-plus fa-1"></i></a></p>
+          </div>
+            
+        </div>
+          <div class="col-md-12 col-sm-6 panel-box hidden-xs hidden-sm" style="margin-top:15px; padding-left:20px; padding-right:20px">
+</div>
+        <div class="col-md-12 col-sm-6 panel-box red-widget">
+          <div class="row ft-red-box">
+            <h3 class="ftred-header">Special Report</h3>
+                         <a href="http://www.ft.lk/article/576021/Beyond-our-lifetimes">
+            <blockquote class="ft-red">
+              <p class="ft-red-text">Beyond our lifetimes</p>
+            </blockquote>
+            </a>
+                        <a href="http://www.ft.lk/article/575782/India-makes-housing-dream-come-true-for-Sri-Lanka-s-war-affected-people">
+            <blockquote class="ft-red">
+              <p class="ft-red-text">India makes housing dream come true for Sri Lanka’s war-affected people</p>
+            </blockquote>
+            </a>
+                        <a href="http://www.ft.lk/article/575149/Intrapreneurship-as-important-as-entrepreneurship-for-growth">
+            <blockquote class="ft-red">
+              <p class="ft-red-text">Intrapreneurship as important as entrepreneurship for growth</p>
+            </blockquote>
+            </a>
+                        <a href="http://www.ft.lk/article/575156/Meet-the-Millennials">
+            <blockquote class="ft-red">
+              <p class="ft-red-text">Meet the Millennials</p>
+            </blockquote>
+            </a>
+                        
+            
+            <p class="red-fo"></p>
+            <p style="text-align:right; margin-right:10px"><a class="btn btn-default read-more" style="margin-top:8px; margin-bottom:0px" href="http://www.ft.lk/special-report" role="button"> MORE SPECIAL REPORT  <i class="fa fa-plus fa-1"></i></a></p>
+          </div>
+        </div>
+       
+        <div class="col-md-12 col-sm-6 panel-box red-widget">
+          <div class="row ft-red-box">
+            <h3 class="ftred-header">FT View</h3>
+                         <a href="http://www.ft.lk/article/576475/Universal-higher-education">
+            <blockquote class="ft-red">
+              <p class="ft-red-text">Universal higher education</p>
+            </blockquote>
+            </a>
+            <p class="red-fo"></p>
+                        <a href="http://www.ft.lk/article/576186/R-D-for-growth">
+            <blockquote class="ft-red">
+              <p class="ft-red-text">R&D for growth</p>
+            </blockquote>
+            </a>
+            <p class="red-fo"></p>
+                        <a href="http://www.ft.lk/article/576039/Buy-in-for-PPPs">
+            <blockquote class="ft-red">
+              <p class="ft-red-text">Buy-in for PPPs</p>
+            </blockquote>
+            </a>
+            <p class="red-fo"></p>
+                        <a href="http://www.ft.lk/article/575908/True-empowerment">
+            <blockquote class="ft-red">
+              <p class="ft-red-text">True empowerment</p>
+            </blockquote>
+            </a>
+            <p class="red-fo"></p>
+                        
+            <p style="text-align:right; margin-right:10px"><a class="btn btn-default read-more" style="margin-top:8px; margin-bottom:0px" href="http://www.ft.lk/ft-view" role="button"> MORE FT VIEW  <i class="fa fa-plus fa-1"></i></a></p>
+          </div>
+        </div>
+            <div class="col-md-12 col-sm-6 panel-box hidden-xs hidden-sm">
+</div>
+      </div>
+    </div>
+  </div>
+</div><div class="container">
+
+<div class="row footer-top hidden-sm hidden-md hidden-lg"> 
+
+<div class="dropdown">
+<button class="btn btn-default dropdown-toggle bottom-header" style="background-color:#4c4a47" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    INSIDE SECTORS
+    <span class="caret"></span>
+  </button>
+<ul role="menu" class="dropdown-menu">
+		<li role="presentation"><a href="http://www.ft.lk/agriculture" tabindex="-1" role="menuitem">Agriculture</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/breaking-news" tabindex="-1" role="menuitem">Breaking News</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/business" tabindex="-1" role="menuitem">Business</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/corporate" tabindex="-1" role="menuitem">Corporate</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/csrevents" tabindex="-1" role="menuitem">CSR / Events</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/dining" tabindex="-1" role="menuitem">Dining</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/entertainment" tabindex="-1" role="menuitem">Entertainment</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/entrepreneurship" tabindex="-1" role="menuitem">Entrepreneurship</a></li>
+        
+        <li class="divider"></li>
+                 <li role="presentation"><a href="http://www.ft.lk/fashionlifestyle" tabindex="-1" role="menuitem">fashion/lifestyle</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/financial-services" tabindex="-1" role="menuitem">Financial Services</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/fortune" tabindex="-1" role="menuitem">Fortune</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/front-page" tabindex="-1" role="menuitem">Front page</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/healthcare" tabindex="-1" role="menuitem">Health care</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/hr" tabindex="-1" role="menuitem">HR</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/in-depth" tabindex="-1" role="menuitem">In Depth</a></li>
+        <li role="presentation"><a href="#http://www.ft.lk/international" tabindex="-1" role="menuitem">International</a></li>
+        
+        <li class="divider"></li>
+         <li role="presentation"><a href="http://www.ft.lk/it-telecom-tech" tabindex="-1" role="menuitem">IT / Telecom / Tech</a></li>
+        <li role="http://www.ft.lk/leadership"><a href="http://www.ft.lk/leadership" tabindex="-1" role="menuitem">Leadership</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/leisure" tabindex="-1" role="menuitem">Leisure</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/letters-to-the-editor" tabindex="-1" role="menuitem">Letters to the Editor</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/management" tabindex="-1" role="menuitem">Management</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/marketing" tabindex="-1" role="menuitem">Marketing</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/motor" tabindex="-1" role="menuitem">Motor</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/news" tabindex="-1" role="menuitem">News</a></li>
+        
+        <li class="divider"></li>
+         <li role="presentation"><a href="http://www.ft.lk/other-sectors" tabindex="-1" role="menuitem">Other Sectors</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/pdf" tabindex="-1" role="menuitem">PDF</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/shippingaviation" tabindex="-1" role="menuitem">Shipping / Aviation</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/special-report" tabindex="-1" role="menuitem">Special Report</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/technology" tabindex="-1" role="menuitem">Management</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/travel-tourism" tabindex="-1" role="menuitem">Marketing</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/wildlife" tabindex="-1" role="menuitem">Wildlife</a></li>
+        <li role="presentation"><a href="http://www.ft.lk/youthcareershigher-education" tabindex="-1" role="menuitem">Youth / Careers / Higher Education</a></li>					
+ 
+  
+</ul>
+</div>
+
+
+
+</div>
+
+  <div class="row footer-top hidden-xs">
+    <div class="col-md-8">
+      <h3 class="bottom-header">INSIDE <span> SECTORS</span></h3>
+      <div class="col-sm-6 col-md-3 bottom-widget">
+        <p class="bottom-col"><a href="http://www.ft.lk/agriculture" class="bottom-text">Agriculture </a><br>
+<!--          <a href="http://www.ft.lk/breaking-news" class="bottom-text">Breaking News </a><br>-->
+          <a href="http://www.ft.lk/business" class="bottom-text">Business </a><br>
+          <a href="http://www.ft.lk/lifestyle" class="bottom-text">Lifestyle </a><br>
+          <a href="http://www.ft.lk/csrevents" class="bottom-text">CSR / Events </a><br>
+          <a href="http://www.ft.lk/dining" class="bottom-text">Dining </a><br>
+          <a href="http://www.ft.lk/entertainment-sectors" class="bottom-text">Entertainment / Art </a><br>
+          <a href="http://www.ft.lk/entrepreneurship" class="bottom-text">Entrepreneurship </a><br>
+        </p>
+      </div>
+      <div class="col-sm-6 col-md-3 bottom-widget">
+        <p class="bottom-col"><a href="http://www.ft.lk/fashionlifestyle" class="bottom-text">Fashion</a><br>
+          <a href="http://www.ft.lk/financial-services" class="bottom-text">Financial Services </a><br>
+          <a href="http://www.ft.lk/energy" class="bottom-text">Energy </a><br>
+          <a href="http://www.ft.lk/front-page" class="bottom-text">Front page </a><br>
+          <a href="http://www.ft.lk/healthcare" class="bottom-text">Healthcare </a><br>
+          <a href="http://www.ft.lk/hr" class="bottom-text">HR </a><br>
+          <a href="http://www.ft.lk/in-depth" class="bottom-text">In Depth </a><br>
+          <a href="http://www.ft.lk/international" class="bottom-text">International </a><br>
+        </p>
+      </div>
+      <div class="col-sm-6 col-md-3 bottom-widget">
+        <p class="bottom-col"> <a href="http://www.ft.lk/it-telecom-tech" class="bottom-text">IT / Telecom / Tech</a><br>
+          <a href="http://www.ft.lk/leadership" class="bottom-text">Leadership </a><br>
+          <a href="http://www.ft.lk/leisure" class="bottom-text">Leisure </a><br>
+          <a href="http://www.ft.lk/letters-to-the-editor" class="bottom-text">Letters to the Editor </a><br>
+          <a href="http://www.ft.lk/management" class="bottom-text">Management </a><br>
+          <a href="http://www.ft.lk/marketing" class="bottom-text">Marketing </a><br>
+          <a href="http://www.ft.lk/motor" class="bottom-text">Motor </a><br>
+          <a href="http://www.ft.lk/news" class="bottom-text">News </a><br>
+        </p>
+      </div>
+      <div class="col-sm-6 col-md-3 bottom-widget">
+        <p class="bottom-col"><a href="http://www.ft.lk/other-sectors" class="bottom-text">Other Sectors </a><br>
+          
+          <a href="http://www.ft.lk/shippingaviation" class="bottom-text">Shipping / Aviation </a><br>
+          <a href="http://www.ft.lk/special-report" class="bottom-text">Special Report </a><br>
+          <a href="http://www.ft.lk/technology" class="bottom-text">Technology</a><br>
+          <a href="http://www.ft.lk/travel-tourism" class="bottom-text">Travel / Tourism </a><br>
+         
+          <a href="http://www.ft.lk/youthcareershigher-education" class="bottom-text">Youth / Careers / Higher Education </a><br>
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h3 class="bottom-header">also follow us on </h3>
+      <ul class="fsocial-share">
+        <li><a target="_blank" href="https://www.facebook.com/dailyft" style="font-size:22px"><i class="fa fa-facebook"></i></a></li>
+        <li><a target="_blank" href="https://twitter.com/ft_srilanka" style="font-size:22px"><i class="fa fa-twitter"></i></a></li>
+        <li><a  href="http://www.ft.lk/rss" style="font-size:22px"><i class="fa fa-rss"></i></a></li>
+        <li><a target="_blank" href="http://www.ft.lk/apps" style="font-size:25px"><i class="fa fa-mobile-phone"></i></a></li>
+      </ul>
+      <h5 class="contact-foot">CONTACT</h5>
+      <p class="contact-text"> General : +94 0112 436 998,  +94 0115 335 731 <br>
+        Fax : +94 0112 304 545<br>
+        Circulation : +94 0112 479 611<br>
+        Advertising : +94 0112 247 9561 </p>
+    </div>
+  </div>
+  <div class="row footer-bot">
+    <div class="col-md-12">
+      <p style="text-align:center !important" class="footer_link_main hidden-xs hidden-sm"> Group Sites : <a href="http://www.lankadeepa.lk/" target="_blank" class="footer_link_sub">Lankadeepa</a> <a href="http://www.dailymirror.lk/" target="_blank" class="footer_link_sub">Dailymirror</a> <a href="http://www.sundaytimes.lk/" target="_blank" class="footer_link_sub">Sunday Times</a> <a href="http://www.ft.lk/" target="_blank" class="footer_link_sub">Daily FT</a> <a href="http://www.ada.lk/" target="_blank" class="footer_link_sub">Ada</a> <a href="http://www.deshaya.lk/" target="_blank" class="footer_link_sub">Deshaya</a> <a href="http://www.tamilmirror.lk" target="_blank" class="footer_link_sub">Tamil Mirror</a> <a href="http://sports.dailymirror.lk" target="_blank" class="footer_link_sub">Mirror Sports</a> <a href="http://hitv.dailymirror.lk/" target="_blank" class="footer_link_sub">HI TV</a> <a href="http://kelimandala.lankadeepa.lk/" target="_blank" class="footer_link_sub">Kelimandala</a> <a href="http://sinhala.wisdensrilanka.lk/" target="_blank" class="footer_link_sub">Wisden Sri Lanka</a> <a href="http://life.dailymirror.lk/" target="_blank" class="footer_link_sub"> Life </a> <a href="http://lw.dailymirror.lk/" target="_blank" class="footer_link_sub"> LW </a> <a href="http://mirrorcitizen.lk/" target="_blank" class="footer_link_sub">Mirrorcitizen</a> </p>
+      <p style="text-align:center !important" class="footer_link_main hidden-xs hidden-sm"> <a href="http://print.hitad.lk/" target="_blank" class="footer_link_sub"> Hitad Print </a> <a href="http://www.hi.lk/" target="_blank" class="footer_link_sub"> HI Magz </a> <a href="http://timesjobs.hitad.lk/" target="_blank" class="footer_link_sub"> Times Jobs </a> <a href="http://educationtimes.lk/" target="_blank" class="footer_link_sub"> Times Education </a> <a href="http://www.wijeya.lk/" target="_blank" class="footer_link_sub"> Wijeya </a> <a href="http://www.tamilmirror.lk/tmradio/" target="_blank" class="footer_link_sub"> Tamil Radio </a> <a href="http://www.wijeyanewspapers.lk/" target="_blank" class="footer_link_sub"> WNL Home </a> </p>
+      <p style="text-align:center !important" class="footer_link_main hidden-xs hidden-sm">e-papers : <a href="http://dailylankadeepa.newspaperdirect.com/epaper/viewer.aspx" target="_blank" class="footer_link_sub"> Lankadeepa </a> <a href="http://sundaylankadeepa.newspaperdirect.com/epaper/viewer.aspx" target="_blank" class="footer_link_sub"> Sunday Lankadeepa </a> <a href="http://epaper.dailymirror.lk/epaper/viewer.aspx" target="_blank" class="footer_link_sub"> Daily Mirror </a> <a href="http://epaper.ada.lk/" target="_blank" class="footer_link_sub"> Ada </a> <a href="http://epaper.tamilmirror.lk/" target="_blank" class="footer_link_sub"> Tamil Mirror </a> <a href="http://epaper.ft.lk/" target="_blank" class="footer_link_sub"> Daily FT </a> <a href="http://deshaya.lk/" target="_blank" class="footer_link_sub"> Deshaya </a> <a href="http://epaper.lk/" target="_blank" class="footer_link_sub">Wijeya e-paper portal</a> </p>
+      
+      <p style="text-align:center !important" class="footer_link_main hidden-xs hidden-sm">Services : 
+
+ <a href="mailto:subs@wijeya.lk" class="footer_link_sub">Home delivery</a>
+                        <a href="mailto:Pradeep@admin.wnl.lk" class="footer_link_sub">Webmaster </a>
+                        <a href="mailto:umairw@wijeya.lk" class="footer_link_sub">Web Ads</a>
+                        <a href="mailto:editor@ft.lk" class="footer_link_sub">Editorial </a>
+                        <a href="mailto:helpdesk@wijeya.net" class="footer_link_sub">Help Desk</a>
+                        <a href="http://www.dailymirror.lk/rss" target="_blank" class="footer_link_sub">News Alerts </a>
+                        <a href="http://banner.wijeya.net/Banners/advertise_with_us/index.htm#dm_section" target="_blank" class="footer_link_sub">Book Print Ads </a>
+
+ </p>
+      
+      <p class="footer_copyright">All the content on this website is copyright protected and can be reproduced only by giving the due courtesy to 'ft.lk'
+        Copyright &copy; 2004 Wijeya Newspapers Ltd.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="http://www.ft.lk/templates/js/bootstrap.min.js"></script>
+</body>
+</html>

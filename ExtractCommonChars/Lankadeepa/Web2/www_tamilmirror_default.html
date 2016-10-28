@@ -1,0 +1,2553 @@
+﻿
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	  
+	<title>Tamil Mirror</title>
+	<link rel="icon" type="image/ico" href="http://static2.tamilmirror.lk/templates/images/favicon.ico"/>
+	
+	<meta name="keywords" content="tamil, tamilmirror, news, tamil news, sri lanka, lanka, wijeya, horoscope, politics, video, business, finance, sports." />
+	<meta name="description" content="TamilMirror.lk – Sri Lanka 24 Hours Online Breaking News in Tamil Language: News, Politics, Video, Finance, Business, Sports, Horoscope ." />
+	
+	<link href="http://static2.tamilmirror.lk/templates/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="http://static2.tamilmirror.lk/templates/css/smk-accordion.css" rel="stylesheet" type="text/css" />
+	<link href="http://static2.tamilmirror.lk/templates/css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+	<link href="http://static2.tamilmirror.lk/templates/js/js/mhgallery.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="http://static2.tamilmirror.lk/templates/js/jquery-1.10.2.min.js"></script>
+	<script src="http://static2.tamilmirror.lk/templates/js/jquery.bpopup-0.10.0.min.js"></script>  
+	<style>
+	#menu a { padding: 0 10px;}
+	</style>
+	 <script type="text/javascript">
+			    
+			    	 
+	  function add(){
+
+                              
+                                
+			    ;(function($) {
+
+         // DOM Ready popup function
+        $(function() {
+       $('#element_to_pop_up').bPopup({
+            modalClose: true,
+            opacity: 0.6,
+            positionStyle: 'fixed',
+	    modalColor:'#0e5671'
+	     
+        });
+            // Binding a click event
+  
+
+        });
+	 })(jQuery);
+ 
+ }
+                                $(document).ready(function(){
+                                    $('#tabs div').hide();
+                                    $('#tabs div:first').show();
+                                    $('#tabs ul li:first').addClass('active');
+                                    $('#tabs ul li a').click(function(){ 
+                                        $('#tabs ul li').removeClass('active');
+                                        $(this).parent().addClass('active'); 
+                                        var currentTab = $(this).attr('href'); 
+                                        $('#tabs div').hide();
+                                        $(currentTab).show();
+                                        return false;
+                                    });
+                                });
+		
+                            </script>
+
+                        <!--    <script type="text/javascript"> 
+			    	if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent) )) {
+                           function getCookieslide(c_name) {
+			var i,x,y,ARRcookies=document.cookie.split(";");
+			for (i=0;i<ARRcookies.length;i++)
+			{
+				x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+				y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+				x=x.replace(/^\s+|\s+$/g,"");
+				if (x==c_name)
+				{
+					return unescape(y);
+				}
+			}
+		}
+
+		function setCookieslide(c_name,value,exdays) {
+			var exdate=new Date();
+			exdate.setHours(exdate.getHours() + exdays);
+			var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+			document.cookie=c_name + "=" + c_value;
+
+			//jQuery(document).ready(function() {
+
+			//    jQuery('#various2').trigger('click');
+			//  });
+
+			// alert("Welcome");
+		}
+		
+		function checkCookieslide() {
+			var username=getCookieslide("bluemountentm");
+			if (username!=null && username!="")
+			{
+				return false;
+			}
+			else 
+			{
+				
+				
+				//var url='http://nilamz.com/banners/clients/achileion/js/pageCaller.js';
+				var script=document.createElement('script');
+				script.type='text/javascript';
+				script.src=url;
+
+				$("body").append(script);
+				
+				setCookieslide("bluemountentm","bluemountentm",24);
+				return true;
+			}
+		}
+		
+		         $(document).ready(function(){
+                           checkCookieslide(); 
+			     });
+			     
+			     }
+                            </script> -->
+			    <style>
+	.modalDialog {
+		position: fixed;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+	.opend
+	{
+		opacity :1;
+		pointer-events: auto;
+	}
+	.modalDialog:target {
+		opacity:1;
+		pointer-events: auto;
+	}
+
+	.modalDialog > div {
+		width: 400px;
+		height:400px;
+		position: relative;
+		margin: 5% auto;
+		padding: 5px 20px 13px 20px;
+		border-radius: 10px;
+	background: #fff; 
+		background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+		background: -o-linear-gradient(#fff, #999);
+	}
+
+	.close {
+		background: #606061;
+		color: #FFFFFF;
+		line-height: 25px;
+		position: absolute;
+		right: -12px;
+		text-align: center;
+		top: -10px;
+		width: 24px;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+	}
+
+	.close:hover { background: #00d9ff; }
+	</style>
+	                   <script language="javascript">
+                             var jq = jQuery.noConflict();
+	function setCookie(abc, cvalue, exhours) {
+	var d = new Date();
+	d.setTime(d.getTime() + (exhours*60*60*1000));
+	var expires = "expires="+d.toUTCString();
+	document.cookie = abc + "=" + cvalue + "; " + expires;
+}
+
+function getCookie(abc) {
+	var name = abc + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1);
+		if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+	}
+	return "";
+}
+jq(document).ready(function(){
+	jq("#close0").click(function(){
+		jq("#openModal0tm").attr("class", "modalDialog");
+		
+	});
+	jq("#close1").click(function(){
+		jq("#openModal1").attr("class", "modalDialog");
+	});
+	jq("#close2").click(function(){
+		jq("#openModal2").attr("class", "modalDialog");
+	});
+	jq("#close3").click(function(){
+		jq("#openModal3").attr("class", "modalDialog");
+	});
+	
+	
+
+		if(getCookie("tm")=="" ){
+			setCookie("tm", "0", 3);
+			jq("#openModal0tm").attr("class", "modalDialog opend");
+		}
+		else if(getCookie("tm")=="0" ){
+			setCookie("tm", "1", 3);
+			jq("#openModal1").attr("class", "modalDialog opend");
+		}
+		
+		// if(getCookie("horlicks")=="" ){
+			// setCookie("horlicks", "1", 8);
+			// $("#openModal3").attr("class", "modalDialog opend");
+		// }
+	
+	
+	// if(getCookie("a")=="0" ){
+		// setCookie("a", "1", 4);
+		// $("#openModal2").attr("class", "modalDialog opend");
+	// }
+
+});
+				
+   
+                                    </script>
+									
+</head>
+
+<body>
+
+
+<!--<script src="//www.codeartlove.com/clients/vaseline/2016/body-vs-face/road-block/popup-js/rb.php?site_id=tamilmirror" charset="utf-8" async></script>-->
+<!--div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=248289471862991";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> -->
+
+<!--<div id="openModal0" class="modalDialog"> 
+	<div>
+		<a id="close0" title="Close" class="close">X</a> 
+		      <iframe src="http://bestpromoslk.com/clients/nestle/nestomalt/2015/xmas-overlay-tamil/800-600.html" style="border:0px  none;" name="myiFrame" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="600px" width="800px"></iframe> 
+
+	<!--div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-video" data-allowfullscreen="1" data-href="https://www.facebook.com/airtellife/videos/920663084637775/"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/airtellife/videos/920663084637775/"><a href="https://www.facebook.com/airtellife/videos/920663084637775/"></a><p>It’s your life, and the best way to make it yours, just love everything about it  #BeBrave</p>Posted by <a href="https://www.facebook.com/airtellife/">Airtel Life</a> on Tuesday, November 3, 2015</blockquote></div></div-->
+	
+<!--div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-video" data-allowfullscreen="1" data-href="https://www.facebook.com/airtellife/videos/920656937971723/"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/airtellife/videos/920656937971723/"><a href="https://www.facebook.com/airtellife/videos/920656937971723/"></a><p>The world takes a lot of pride in telling you what you can’t do. Prove them wrong  #BeBrave</p>Posted by <a href="https://www.facebook.com/airtellife/">Airtel Life</a> on Tuesday, November 3, 2015</blockquote></div></div>
+
+
+	</div >
+</div--> 
+
+<!--<div id="openModal3" class="modalDialog"> 
+			<div style="width: 430px;  margin: 5% auto;">
+				<a id="close3" title="Close" class="close">X</a> 
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/Cln72o5I01k" frameborder="0"></iframe>
+			</div >
+		</div>-->
+
+
+	<!--ads-->
+	<!--ads-->
+
+	<div id="wrapper">
+		<div id="frame">
+			<div class="top-navigation">
+				<div class="date">28-10-2016</div>
+				<a href="http://content.tamilmirror.lk/apps/" class="navil">Apps</a> 
+				<a href="http://banner.wijeya.net/Banners/advertise_with_us/index.htm#tm_section" class="navil">Ad Specs</a> 
+				<a href="http://www.pay.wijeya.lk/Subscribe/index.aspx" class="navil">Home Delivery</a> 
+				<!--a href="#" class="navil">Feedback</a> 
+				<a href="#" class="navir">Register</a> 
+				<a href="#" class="navir">Log in</a> 
+				<a href="#" class="navir">Subscribe</a--> 
+			</div>
+			<!--top-navigation end-->
+            
+
+			<div class="logo">
+							<div class="leftad">
+								<div style="margin:5px 0 5px 0;">
+<a href="http://epaper.tamilmirror.lk/" target="_blank"><img src="http://adsadmin.tamilmirror.lk/wp-content/uploads/2015/01/tm.jpg" alt="" width="300" height="55" longdesc="undefined" /></a>
+</div>
+							</div>
+				<div class="dmlogo"><img src="http://static2.tamilmirror.lk/templates/images/logo.png" alt=""/></div>
+                <!--http://static2.tamilmirror.lk/templates/images/logo.png-->
+				
+				
+			</div><!--logo end-->
+  
+			<div class="navigation">
+				<ul id="menu">
+					<li><a href="http://www.tamilmirror.lk/">முகப்பு</a></li>
+					<li><a>செய்தி</a>
+						<ul>
+							<li><a href="http://www.tamilmirror.lk/main-news">பிரதான செய்திகள்</a></li>
+							<li><a>பிராந்திய செய்திகள்</a>
+								<ul>
+									<li><a href="http://www.tamilmirror.lk/jaffna">யாழ்ப்பாணம்</a></li>
+									<li><a href="http://www.tamilmirror.lk/vanni">வன்னி</a></li>
+									<li><a href="http://www.tamilmirror.lk/batticaloa">மட்டக்களப்பு</a></li>
+									<li><a href="http://www.tamilmirror.lk/ampara">அம்பாறை</a></li>
+									<li><a href="http://www.tamilmirror.lk/trincomalee">திருகோணமலை</a></li>
+									<li><a href="http://www.tamilmirror.lk/up-country">மலையகம்</a></li>
+									<li><a href="http://www.tamilmirror.lk/southern">தென் மாகாணம்</a></li>
+									<li><a href="http://www.tamilmirror.lk/vayamba">வடமேல், வடமத்தி</a></li>
+									<li><a href="http://www.tamilmirror.lk/western">மேல் மாகாணம்</a></li>
+								</ul>
+							</li>
+							<li><a href="http://www.tamilmirror.lk/international">உலக செய்தி</a></li>
+							<li><a href="http://www.tamilmirror.lk/crime-news">குற்ற செய்திகள்</a></li>
+						</ul>
+					</li>
+					<li><a href="http://www.tamilmirror.lk/features">சிறப்பு கட்டுரை</a></li>
+					<li><a>விளையாட்டு</a>
+						<ul>
+							<li><a href="http://www.tamilmirror.lk/sports-main">பிரதான விளையாட்டு</a></li>
+							<li><a href="http://www.tamilmirror.lk/local-sports">உள்ளூர் விளையாட்டு</a></li>
+							<li><a href="http://www.tamilmirror.lk/local-articles">விளையாட்டு கட்டுரை</a></li>
+						</ul>
+					</li>
+					<li><a href="http://www.tamilmirror.lk/business">வணிகம்</a></li>
+					<li><a>ஜோதிடம்</a>
+						<ul>
+							<li><a href="http://www.tamilmirror.lk/astrology-daily">இன்றைய பலன்</a></li>
+							<li><a href="http://www.tamilmirror.lk/astrology-weekly">வார பலன்</a></li>
+							<li><a href="http://www.tamilmirror.lk/astrology-special">ஏனையவை</a></li>
+						</ul>
+					</li>
+					<li><a href="http://www.tamilmirror.lk/cinema">சினிமா</a></li>
+					<li><a href="http://www.tamilmirror.lk/gossip">விநோத உலகம்</a></li>
+					<li><a>ஏனையவை</a>
+						<ul>
+							<li><a href="http://www.tamilmirror.lk/business-interviews">வணிக ஆய்வுகளும் அறிமுகங்களும்</a></li>
+							<li><a href="http://www.tamilmirror.lk/video">காணொளி</a></li>
+							<li><a href="http://www.tamilmirror.lk/cartoons">சிந்தனைச் சித்திரம்</a></li>
+							<li><a href="http://www.tamilmirror.lk/apps_image">Apps Image</a></li>
+							<li><a href="http://www.tamilmirror.lk/fashion-a-beauty">Fashion and Beauty</a></li>
+							<li><a href="http://www.tamilmirror.lk/life">வாழ்க்கை</a></li>
+							<li><a href="http://www.tamilmirror.lk/science-tech">விஞ்ஞானமும் தொழில்நுட்பமும்</a></li>
+							<li><a href="http://www.tamilmirror.lk/world-records">சாதனைகள்</a></li>
+							<li><a href="http://www.tamilmirror.lk/popularity">விசித்திர பிரபலங்கள்</a></li>
+							<li><a href="http://www.tamilmirror.lk/tour">சுற்றுலா</a></li>
+							<li><a href="http://www.tamilmirror.lk/temple">வழிபாட்டுத் தலங்கள்</a></li>
+							<li><a href="http://www.tamilmirror.lk/medical">மருத்துவம்</a></li>
+							<li><a href="http://www.tamilmirror.lk/art">கலை</a></li>
+							<li><a href="http://www.tamilmirror.lk/artiest">கலைஞர்கள்</a></li>
+							<li><a href="http://www.tamilmirror.lk/poem">கவிதை</a></li>
+							<li><a href="http://www.tamilmirror.lk/art-articles">கலை கட்டுரைகள்</a></li>
+							<li><a href="http://www.tamilmirror.lk/short-stories">சிறுகதை</a></li>
+							<li><a href="http://www.tamilmirror.lk/today-history">வரலாற்றில் இன்று</a></li>
+							<li><a href="http://www.tamilmirror.lk/graphics">வரைகலை</a></li>
+						</ul>
+					</li>
+                    <li><a href="http://epaper.tamilmirror.lk/">e-paper</a></li>
+				</ul>
+			</div>
+			<!-- navigation-->
+            
+            <div class="search-main">
+				<div class="search-navigation">
+					<a target="_blank" href="http://www.dailymirror.lk/" class="search-nav">Daily Mirror</a>
+					<a target="_blank" href="http://sports.dailymirror.lk/" class="search-nav">Mirror Sports</a>
+					<a target="_blank" href="http://www.editorblog.lk/" class="search-nav">Editor blog</a>
+					<a target="_blank" href="http://video.dailymirror.lk/" class="search-nav">Video</a>
+					<a target="_blank" href="http://print.dailymirror.lk/" class="search-nav">Print Edition</a>
+					<a target="_blank" href="http://hitv.dailymirror.lk/" class="search-nav">Hi TV</a>
+					<a target="_blank" href="http://life.dailymirror.lk/" class="search-nav">Life Online</a>
+				</div>
+				<a href="http://content.tamilmirror.lk/apps/" class="apps"></a>
+                <a style=" text-decoration:none" href="http://www.tamilmirror.lk/contactus" class="contact">
+					CONTACT</a>
+				<!-- a class="contact">
+					CONTACT
+					<!--<input id="nlName" class="searchfield" type="text" name="name" />
+					<input class="search_bt" type="submit" value="">-->
+				</a>
+				<a target="_blank" href="http://feeds.feedburner.com/TamilmirrorBreakingNews" class="social-icon"> <img src="http://static2.tamilmirror.lk/templates/images/rss.png" width="34" height="33" /> </a>
+				<a target="_blank" href="https://twitter.com/tamilmirror" class="social-icon"> <img src="http://static2.tamilmirror.lk/templates/images/tw.png" width="32" height="33" /> </a>
+				<a target="_blank" href="https://www.facebook.com/tamilmirror" class="social-icon"> <img src="http://static2.tamilmirror.lk/templates/images/fb.png" width="33" height="33" /> </a>
+			</div><!--search-main end--> 
+            <!--iframe style="width:988px; height:70px; margin:6px;" frameborder="0" src="http://www.tamilmirror.lk/electionbanner/"></iframe-->
+            
+						<div class="long-ad">
+							<center>
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/6231952/TM_LEADER_BOARD', [950, 75], 'div-gpt-ad-1470804079842-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<!-- /6231952/TM_LEADER_BOARD -->
+<div id='div-gpt-ad-1470804079842-0' style='height:75px; width:950px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470804079842-0'); });
+</script>
+</div>
+</center>
+						</div>
+      
+      
+      
+			﻿<div class="container">
+	<!-- Blog -->
+	
+	<!--  -->
+		<style>
+			#wrapper {text-align: left;width: 980px;margin-top: 0;margin-right: auto;margin-bottom: 0;margin-left: auto;}
+			.content-text{ width:100%; height:auto}
+			.content-text p{ font-family: Malithi Web,arial; font-weight:normal; font-size:16px; color:#000000; line-height:24px; background-color:#f1f1f1; padding:10px; border:1px solid #eeeeee}
+			.content-text p span{color:#FF0000; font-family: Arial,Helvetica Neue,Helvetica,sans-serif;  font-size:14px; font-weight:normal}
+			.more-blog {border: 2px solid #0054a6; color: #0054a6; font-family: Arial,Helvetica,sans-serif; font-size: 18px; font-weight: normal; line-height: 14px; padding:3px 10px 3px 10px; text-decoration: none; width: auto; font-family: Malithi Web,arial; float:right}
+			.more-blog:hover {background-color: #0054a6; color: #fff; transition: all 0.2s linear 0s;}
+		</style>
+			<!-- /Blog -->
+	
+	<div class="left">
+		
+        
+        <div class="slider">
+			<div id="mhgallery">
+				<style type="text/css"> #mhgallery img { display:none; } </style>
+				
+									
+					<a href="http://www.tamilmirror.lk/184874/பண-ப-ட-ட-த-த-ர-வ-ழ-"><img src="http://static1.tamilmirror.lk/images/uploads/article_1477547703-1.jpg" title="பண்பாட்டுத் திருவிழா" alt="" /></a>
+					
+									
+					<a href="http://www.tamilmirror.lk/184854/ம-ன-ற-ட-ப-பர-கள-வ-பத-த-"><img src="http://static1.tamilmirror.lk/images/uploads/article_1477544438-sm.jpg" title="மூன்று டிப்பர்கள் விபத்து..." alt="" /></a>
+					
+									
+					<a href="http://www.tamilmirror.lk/184781/லண-டன-ல-ம-கவனய-ர-ப-ப-"><img src="http://static1.tamilmirror.lk/images/uploads/article_1477461466-IMG_4050-copy.jpg" title="லண்டனிலும் கவனயீர்ப்பு..." alt="" /></a>
+					
+									
+					<a href="http://www.tamilmirror.lk/184776/சம-பவ-இடத-த-ல-"><img src="http://static1.tamilmirror.lk/images/uploads/article_1477458012-20161026_093041mmm.jpg" title="சம்பவ இடத்தில்..." alt="" /></a>
+					
+							</div>
+		</div>
+		
+		<!--div>
+			<iframe width="310" height="228" src="https://www.youtube.com/embed/_n9igDSeF4A" frameborder="0" allowfullscreen></iframe>
+		</div-->
+        
+					<div style="width: 310px; height: auto; margin-bottom:10px; float: left;">
+						<!--div style="margin: 0px 0 5px 0;"><iframe src="http://widget.hitad.lk/300x500" width="300" height="497" frameborder="0" scrolling="no"></iframe></div-->				</div>
+        <!--Videos-->
+		<div class="slider-a">
+			<a href="http://www.tamilmirror.lk/video">
+			<div class="header-a">Videos</div>
+			</a>
+								
+					<div class="main-image"><a href="http://www.tamilmirror.lk/184905/அடம-ப-ட-த-த-ப-ள-ள-ய-ன-">
+						<img width="300" height="200" src="http://static1.tamilmirror.lk/images/uploads/article_1477570851-1.jpg">
+						<div class='description'>
+							<p class='description_content'>அடம்பிடித்த பிள்ளையான் </p></a>
+						</div>
+					</div>
+					<div class="thumb-frame">
+																	<div class="thumb-image">
+							<a  href="http://www.tamilmirror.lk/184533/இற-த-த-தர-ணங-கள-">
+							<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1477230875-KAJAN-KILINOCHCHI-NIBOJAN7.jpg"/>
+							</a>
+						</div>
+																<div class="thumb-image">
+							<a  href="http://www.tamilmirror.lk/184072/Jaffna-Boy-Ep-TamilMirror">
+							<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1476622305-1.jpg"/>
+							</a>
+						</div>
+																<div class="thumb-image">
+							<a  href="http://www.tamilmirror.lk/183501/ஒன-ற-ண-ந-த-எத-ரண-ய-ன-க-ட-டம-LIVE-">
+							<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1475927653-1.jpg"/>
+							</a>
+						</div>
+																<div class="thumb-image" style="margin-right:0px !important">
+							<a  href="http://www.tamilmirror.lk/183453/Jaffna-Boy-Ep-TamilMirror">
+							<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1475832854-2222.jpg">
+							</a>
+						</div>			
+														</div>
+			
+		</div>
+		<!--Videos-->
+		<!--crime slide-->
+		<div class="panel">
+			<a href="http://www.tamilmirror.lk/crime-news">
+			<div class="header-a">CRIME NEWS</div>
+			</a>
+			<div class="box-frame">
+									<div class="w-box">
+																		<img src="http://static1.tamilmirror.lk/images/uploads/article_1476957519-arast-gril.jpg" width="105" height="70" alt=""/> 
+						<a href="http://www.tamilmirror.lk/184381/இலங-க-ப-ப-ண-க-வ-த-த-ல-க-த-">
+						<div class="headline"> இலங்கைப் பெண் குவைத்தில் கைது </div>
+						</a>
+						<div class="text">குவைத் நாட்டில், சட்டவிரோத மதுபானத் தொழிற்சாலையொன்றை நடத்தி வந்த இலங்கையைச் சேர்ந்த பெண்ணை,..
+
+ </div>
+					</div>
+									<div class="w-box">
+																		<img src="http://static1.tamilmirror.lk/images/uploads/article_1476078046-kaththi.jpg" width="105" height="70" alt=""/> 
+						<a href="http://www.tamilmirror.lk/183621/கத-த-க-க-த-த-ல-இர-வர-பல-இர-வர-க-யம-">
+						<div class="headline"> கத்திக்குத்தில் இருவர் பலி; இருவர் காயம் </div>
+						</a>
+						<div class="text">
+
+ </div>
+					</div>
+									<div class="w-box">
+																		<img src="http://static1.tamilmirror.lk/images/uploads/article_1475742232-bloody-knife300.jpg" width="105" height="70" alt=""/> 
+						<a href="http://www.tamilmirror.lk/183358/க-ட-ம-பஸ-தர-ம-த-கத-த-க-க-த-த-சந-த-கநபர-தல-மற-வ-">
+						<div class="headline"> குடும்பஸ்தர் மீது கத்திக்குத்து: சந்தேகநபர் தலைமறைவு </div>
+						</a>
+						<div class="text">
+
+ </div>
+					</div>
+									<div class="w-box">
+																		<img src="http://static1.tamilmirror.lk/images/uploads/article_1475493246-1.jpg" width="105" height="70" alt=""/> 
+						<a href="http://www.tamilmirror.lk/183147/வ-ட-ட-ல-ர-ந-த-வர-த-தகர-க-ல-">
+						<div class="headline"> வீட்டிலிருந்த வர்த்தகர் கொலை </div>
+						</a>
+						<div class="text">
+
+ </div>
+					</div>
+									<div class="w-box">
+																		<img src="http://static1.tamilmirror.lk/images/uploads/article_1475406923-Body Found 01.jpg" width="105" height="70" alt=""/> 
+						<a href="http://www.tamilmirror.lk/183055/வ-ய-த-தர-க-கம-ம-ற-ற-யத-ல-ஒர-வர-அட-த-த-க-க-ல-">
+						<div class="headline"> வாய்த்தர்க்கம் முற்றியதில் ஒருவர் அடித்துக் கொலை </div>
+						</a>
+						<div class="text">
+
+ </div>
+					</div>
+									<div class="w-box">
+																		<img src="http://static1.tamilmirror.lk/images/uploads/article_1475400303-1.jpg" width="105" height="70" alt=""/> 
+						<a href="http://www.tamilmirror.lk/183034/க-ள-ள-ய-ட-ம-இள-ஞன-ய-வத-CCTVய-ல-பத-வ-னத-">
+						<div class="headline"> கொள்ளையிடும் இளைஞன், யுவதி: CCTVயில் பதிவானது  </div>
+						</a>
+						<div class="text">
+
+ </div>
+					</div>
+								
+				<a href="http://www.tamilmirror.lk/crime-news">
+				<div class="w-box-more" style="color:black;">MORE</div>
+				</a>
+			</div>
+		</div>
+						<div class="panel">
+			<a href="http://www.tamilmirror.lk/tm-gossip-news">
+			<div class="header-a">GOSSIP</div>
+			</a>
+			<div class="box-frame">
+									<div class="w-box">
+																		<img src="http://static1.tamilmirror.lk/images/uploads/article_1470033722-Keheliya120.jpg" width="105" height="70" alt=""/> 
+						<a href="http://www.tamilmirror.lk/178396/அப-பட-என-ன-த-ன-ப-ச-ச-">
+						<div class="headline"> அப்படி என்னாதான் பேச்சோ...? </div>
+						</a>
+						<div class="text">
+
+ </div>
+					</div>
+									<div class="w-box">
+																		<img src="http://static1.tamilmirror.lk/images/uploads/article_1470032624-Thero120.jpg" width="105" height="70" alt=""/> 
+						<a href="http://www.tamilmirror.lk/178392/இரகச-ய-சந-த-ப-ப-">
+						<div class="headline"> இரகசிய சந்திப்பு </div>
+						</a>
+						<div class="text">
+
+ </div>
+					</div>
+									<div class="w-box">
+																		<img src="http://static1.tamilmirror.lk/images/uploads/article_1468994013-Unnahe.jpg" width="105" height="70" alt=""/> 
+						<a href="http://www.tamilmirror.lk/177511/சத-தம-அடங-க-ப-ப-ச-ச-">
+						<div class="headline"> சத்தம் அடங்கிப்போச்சு </div>
+						</a>
+						<div class="text">
+
+ </div>
+					</div>
+								
+				<a href="http://www.tamilmirror.lk/tm-gossip-news">
+				<div class="w-box-more" style="color:black;">MORE</div>
+				</a>
+			</div>
+		</div>
+				
+								<div class="panel">
+			<a href="http://www.tamilmirror.lk/courts">
+			<div class="header-a">COURTS</div>
+			</a>
+			<div class="box-frame">
+									<div class="w-box">
+																		<img src="http://static1.tamilmirror.lk/images/uploads/article_1476935884-lasantha.jpg" width="105" height="70" alt=""/> 
+						<a href="http://www.tamilmirror.lk/184892/லசந-த-பட-க-ல-வ-வக-ரம-ப-லன-ய-வ-அத-க-ர-க-க-ப-ண-">
+						<div class="headline"> லசந்த படுகொலை விவகாரம்: புலனாய்வு அதிகாரிக்கு பிணை </div>
+						</a>
+						<div class="text">படுகொலை செய்யப்பட்ட சண்டே லீடர் பத்திரிகையின் பிரதம ஆசிரியர் லசந்த விக்கிரமதுங்கவின் கொலையுடன்...
+
+ </div>
+					</div>
+									<div class="w-box">
+																		<img src="http://static1.tamilmirror.lk/images/uploads/article_1477550247-ccd.jpg" width="105" height="70" alt=""/> 
+						<a href="http://www.tamilmirror.lk/184877/வ-ச-ட-ஜ-ர-கள-க-க-அன-மத-">
+						<div class="headline"> விசேட ஜுரிகளுக்கு அனுமதி </div>
+						</a>
+						<div class="text">
+
+தமிழ்த் தேசியக் கூட்டமைப்பின் முன்னாள் நாடாளுமன்ற உறுப்பினர் நடராஜா ரவிராஜ் படுகொலை செய்யப்பட்டமை ...
+
+ </div>
+					</div>
+									<div class="w-box">
+																		<img src="http://static1.tamilmirror.lk/images/uploads/article_1476173287-image_1476170943-db055eb8fa.jpg" width="105" height="70" alt=""/> 
+						<a href="http://www.tamilmirror.lk/184674/ப-டகர-ச-ல-க-க-ப-ண-">
+						<div class="headline"> பாடகர் சிலிக்கு பிணை </div>
+						</a>
+						<div class="text"> விளக்கமறியலில் வைக்கப்பட்டிருந்த&nbsp; பாடகர் சிலி திலங்க, இன்று செவ்வாய்க்கிழமை பிணையில்...
+
+ </div>
+					</div>
+								
+				<a href="http://www.tamilmirror.lk/courts">
+				<div class="w-box-more" style="color:black;">MORE</div>
+				</a>
+			</div>
+		</div>
+				
+						<div class="panel">
+			<a href="http://www.tamilmirror.lk/parliament">
+			<div class="header-a">PARLIAMENT</div>
+			</a>
+			<div class="box-frame">
+									<div class="w-box">
+																		<img src="http://static1.tamilmirror.lk/images/uploads/article_1477539529-Parliament3.jpg" width="105" height="70" alt=""/> 
+						<a href="http://www.tamilmirror.lk/184838/எழ-ம-ப-வ-ட-த-க-ஷம-தட-த-தத-">
+						<div class="headline"> எழும்ப விடாது கோஷம் தடுத்தது </div>
+						</a>
+						<div class="text">சேர் பெறுமதி வரி (திருத்த) சட்டமூலம் மற்றும் ஒதுக்கீடு (திருத்த) சட்டமூலம் ஆகியன, நாடாளுமன </div>
+					</div>
+									<div class="w-box">
+																		<img src="http://static1.tamilmirror.lk/images/uploads/article_1427176354-456.jpg" width="105" height="70" alt=""/> 
+						<a href="http://www.tamilmirror.lk/184808/வற-ஒத-க-க-ட-ட-சட-டம-லங-கள-ந-ற-வ-ற-றப-பட-டன">
+						<div class="headline"> வற், ஒதுக்கீட்டு சட்டமூலங்கள் நிறைவேற்றப்பட்டன </div>
+						</a>
+						<div class="text">சேர் பெறுமதி&nbsp; வரி (வற்) திருத்தச் சட்டமூலம் மற்றும் முற்கூட்டிய ஒதுக்கீட்டு சட்டமூலம் </div>
+					</div>
+									<div class="w-box">
+																		<img src="http://static1.tamilmirror.lk/images/uploads/article_1473751688-aa.jpg" width="105" height="70" alt=""/> 
+						<a href="http://www.tamilmirror.lk/183192/-வற-த-ர-த-தச-சட-டம-லம-இன-ற-சமர-ப-ப-ப-ப-">
+						<div class="headline"> 'வற்' திருத்தச் சட்டமூலம் இன்று சமர்ப்பிப்பு </div>
+						</a>
+						<div class="text">
+
+ </div>
+					</div>
+								
+				<a href="http://www.tamilmirror.lk/parliament">
+				<div class="w-box-more" style="color:black;">MORE</div>
+				</a>
+			</div>
+		</div>
+		
+		
+		<!--crime slide-->
+			
+		
+		<!--cartoon slide-->
+		<div class="slider-a">
+			<a href="http://www.tamilmirror.lk/cartoons">
+			<div class="header-a">CARTOON</div>
+			</a>
+								
+					<div class="main-image"><a href="http://www.tamilmirror.lk/184841/இன-ற-ய-ச-ந-தன-க-க-ர-ய-க-ல-ச-ச-த-த-ரம-">
+						<img width="300" height="200" src="http://static1.tamilmirror.lk/images/uploads/article_1477540084-TM1.jpg">
+						<div class='description'>
+							<p class='description_content'>இன்றைய சிந்தனைக்குரிய கேலிச்சித்திரம்... </p></a>
+						</div>
+					</div>
+					<div class="thumb-frame">
+											
+											<div class="thumb-image">
+							<a  href="http://www.tamilmirror.lk/184759/இன-ற-ய-ச-ந-தன-க-க-ர-ய-க-ல-ச-ச-த-த-ரம-">
+							<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1477454104-TM1.jpg"/>
+							</a>
+						</div>
+										
+											<div class="thumb-image">
+							<a  href="http://www.tamilmirror.lk/184658/இன-ற-ய-ச-ந-தன-க-க-ர-ய-க-ல-ச-ச-த-த-ரம-">
+							<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1477366956-TM1.jpg"/>
+							</a>
+						</div>
+										
+											<div class="thumb-image">
+							<a  href="http://www.tamilmirror.lk/184566/இன-ற-ய-ச-ந-தன-க-க-ர-ய-க-ல-ச-ச-த-த-ரம-">
+							<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1477280035-TM1.jpg"/>
+							</a>
+						</div>
+										
+											<div class="thumb-image" style="margin-right:0px !important">
+							<a  href="http://www.tamilmirror.lk/184327/இன-ற-ய-ச-ந-தன-க-க-ர-ய-க-ல-ச-ச-த-த-ரம-">
+							<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1476934425-TM1.jpg"/>
+							</a>
+						</div>
+											
+								</div>
+			
+		</div>
+		<!--cartoon slide-->
+		
+		
+		<!--cartoon slide-->
+		
+		<!--cartoon slide-->
+		<div style="margin:5px 0 5px 0;">
+<a href="http://www.dailymirror.lk/wisden/kusal.html" target="_blank">
+<img alt="" src="https://tpc.googlesyndication.com/pageadimg/imgad?id=CICAgKDLipWPdBCsAhisAigBMgjZR0S1y93lhw" style="width: 300px; height: 300px;" />
+</a>
+</div>
+<iframe width="320" height="610" scrolling="no" frameborder="0" src="http://tamil.wisdensrilanka.lk/widget"></iframe>	
+	
+	</div>
+	<!--left end-->
+	
+	
+	<!--<div style="float:left;">
+<iframe src="http://www.ustream.tv/embed/9042446?html5ui=1" style="border: 0 none transparent;"  webkitallowfullscreen allowfullscreen frameborder="no" width="640" height="360"></iframe>
+	</div>-->
+	
+	
+	<div class="mid">
+
+					<div style="width: 340px; height: auto; margin-bottom:10px; float: left;">
+						<div style="margin: 0px 0 0px 0;">
+<!-- AdSpeed.com Tag 8.0.2 for [Ad] Tamil Mirror 340x125 -->
+<script type="text/javascript">var asdate=new Date();var q='&tz='+asdate.getTimezoneOffset()/60 +'&ck='+(navigator.cookieEnabled?'Y':'N') +'&jv='+(navigator.javaEnabled()?'Y':'N') +'&scr='+screen.width+'x'+screen.height+'x'+screen.colorDepth +'&z='+Math.random() +'&ref='+escape(document.referrer.substr(0,255)) +'&uri='+escape(document.URL.substr(0,255));document.write('<ifr'+'ame width="340" height="125" src="http://g.adspeed.net/ad.php?do=html&aid=212592&oid=16637&wd=340&ht=125&target=_blank'+q+'" frameborder="0" scrolling="no" allowtransparency="true" hspace="0" vspace="0"></ifr'+'ame>');</script>
+<noscript><iframe width="340" height="125" src="http://g.adspeed.net/ad.php?do=html&aid=212592&oid=16637&wd=340&ht=125&target=_blank" frameborder="0" scrolling="no" allowtransparency="true" hspace="0" vspace="0"><a href="http://g.adspeed.net/ad.php?do=clk&aid=212592&oid=16637&wd=340&ht=125&pair=as" target="_blank"><img style="border:0px;max-width:100%;height:auto;" src="http://g.adspeed.net/ad.php?do=img&aid=212592&oid=16637&wd=340&ht=125&pair=as" width="340" height="125"/></a></iframe>
+</noscript><!-- AdSpeed.com End -->
+
+</div>
+
+					</div>
+	
+		<!--top story-->
+        <div class="top-story"> 
+									<a class="heading" href="http://www.tamilmirror.lk/184888/இன-ற-ய-ச-ந-தன-க-க-ர-ய-க-ல-ச-ச-த-த-ரம-">
+			<img width="340" height="28" src="http://static2.tamilmirror.lk/templates/images/top-story.png">
+			</a>
+			<div class="content"> <a class="h1" href="http://www.tamilmirror.lk/184888/-VAT-NBT-நவம-பர-ம-தல-அம-ல-"> VAT & NBT நவம்பர் முதல் அமுல்</a>
+				<div class="date-bar">27-10-2016 02:37 PM</div>
+				<div class="top-story-news" style="font-size: 12px;"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1473863837-upward.jpg"> 
+
+15 சதவீத சேர் ​பெறுமதி வரி (வற்) மற்றும் தேசத்தைக் கட்டியெழும்பும் வரி என்பன நவம்பர் மாதம் அமுல்படுத்தப்படும்...
+
+</div>
+				<div class="more-box">
+					<div class="views">128</div>
+					<div class="comment">0</div>
+					<a class="more" href="http://www.tamilmirror.lk/184888">MORE</a> 
+				</div>
+			</div>
+		</div>
+		<!--top story-->
+		
+		<!--latest-story-->
+        <div class="latest-story"> 
+            <!--<a class="heading" href="#"><img width="310" height="42" src="images/latest-story.png"></a>-->
+            <div class="news-content-frame">
+				
+						
+											
+					<div class="news-content"> <a class="h1" href="http://www.tamilmirror.lk/184905/அடம-ப-ட-த-த-ப-ள-ள-ய-ன-">அடம்பிடித்த பிள்ளையான்</a>
+						<div class="date">27-10-2016 05:43 PM							<div class="comment">0</div>
+							<div class="views">282</div>
+						</div>
+						<div class="latest-news"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1477570851-1.jpg"> கிழக்கு மாகாண சபையின் 65ஆவது அமர்வுக்கு வருகை தந்திருந்த, கிழக்கு மாகாண முன்னாள் முதலமைச்சரும் கிழக்கு ...
+
+							<div class="addcomment-box"> <a class="addcomment" href="http://www.tamilmirror.lk/184905">மேலும்...</a> 
+							<!--<a class="addcomment" href="">Add New Comment</a>--> </div>
+							<div class="space-bar">............................................................................................................</div>
+						</div>
+					</div>
+						
+											
+					<div class="news-content"> <a class="h1" href="http://www.tamilmirror.lk/184897/-ந-ட-ட-வ-ட-ட-அர-ஜ-ன-மக-ந-த-ரன-வ-ய-ற-வ-ட-ட-ர-">'நாட்டை விட்டு அர்ஜுன மகேந்திரன்  வௌியேறி​விட்டார்'</a>
+						<div class="date">27-10-2016 04:54 PM							<div class="comment">0</div>
+							<div class="views">143</div>
+						</div>
+						<div class="latest-news"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1436248147-aa.jpg"> மத்திய வங்கியின்&nbsp; பிணைமுறிப்&nbsp; கொடுக்கல் வாங்கல் தொடர்பிலான கோப் குழு அறிக்கை, நாடாளுமன்றத்தில்...
+
+							<div class="addcomment-box"> <a class="addcomment" href="http://www.tamilmirror.lk/184897">மேலும்...</a> 
+							<!--<a class="addcomment" href="">Add New Comment</a>--> </div>
+							<div class="space-bar">............................................................................................................</div>
+						</div>
+					</div>
+						
+											
+					<div class="news-content"> <a class="h1" href="http://www.tamilmirror.lk/184896/ச-ப-ப-ய-கள-ம-த-த-க-க-தல-வ-வக-ரம-சந-த-கநபர-கள-க-க-ப-ண-">சிப்பாய்கள் மீது தாக்குதல் விவகாரம்: சந்தேகநபர்களுக்கு பிணை</a>
+						<div class="date">27-10-2016 04:36 PM							<div class="comment">0</div>
+							<div class="views">33</div>
+						</div>
+						<div class="latest-news"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1477566501-Gvel 300.jpg"> முத்தரிப்புத்துறை பகுதியில், கடற்படை சிப்பாய்கள் மீது தாக்குதல்களை மேற்கொண்டார்கள் என்ற குற்றச்சாட்டில்...
+
+							<div class="addcomment-box"> <a class="addcomment" href="http://www.tamilmirror.lk/184896">மேலும்...</a> 
+							<!--<a class="addcomment" href="">Add New Comment</a>--> </div>
+							<div class="space-bar">............................................................................................................</div>
+						</div>
+					</div>
+						
+											
+					<div class="news-content"> <a class="h1" href="http://www.tamilmirror.lk/184895/-ம-னவர-கள-க-த-படக-கள-பற-ம-தல-">71 மீனவர்கள் கைது: 13 படகுகள் பறிமுதல்</a>
+						<div class="date">27-10-2016 04:27 PM							<div class="comment">0</div>
+							<div class="views">51</div>
+						</div>
+						<div class="latest-news"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1477566001-1.jpg"> குறித்த மீனவர்கள், கடற்தொழிலில் ஈடுபட்டுக்கொண்டிருந்த போது இன்று வியாழக்கிழமை...
+
+							<div class="addcomment-box"> <a class="addcomment" href="http://www.tamilmirror.lk/184895">மேலும்...</a> 
+							<!--<a class="addcomment" href="">Add New Comment</a>--> </div>
+							<div class="space-bar">............................................................................................................</div>
+						</div>
+					</div>
+						
+											
+					<div class="news-content"> <a class="h1" href="http://www.tamilmirror.lk/184892/லசந-த-பட-க-ல-வ-வக-ரம-ப-லன-ய-வ-அத-க-ர-க-க-ப-ண-">லசந்த படுகொலை விவகாரம்: புலனாய்வு அதிகாரிக்கு பிணை</a>
+						<div class="date">27-10-2016 04:09 PM							<div class="comment">0</div>
+							<div class="views">29</div>
+						</div>
+						<div class="latest-news"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1476935884-lasantha.jpg"> படுகொலை செய்யப்பட்ட சண்டே லீடர் பத்திரிகையின் பிரதம ஆசிரியர் லசந்த விக்கிரமதுங்கவின் கொலையுடன்...
+
+							<div class="addcomment-box"> <a class="addcomment" href="http://www.tamilmirror.lk/184892">மேலும்...</a> 
+							<!--<a class="addcomment" href="">Add New Comment</a>--> </div>
+							<div class="space-bar">............................................................................................................</div>
+						</div>
+					</div>
+						
+											
+					<div class="news-content"> <a class="h1" href="http://www.tamilmirror.lk/184891/தம-ழ-ல-பத-லள-த-த-ர-க-ர-">தமிழில் பதிலளித்தார் குரே</a>
+						<div class="date">27-10-2016 03:26 PM							<div class="comment">0</div>
+							<div class="views">177</div>
+						</div>
+						<div class="latest-news"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1477562385-aa.jpg"> யாழ். பல்கலைக்கழக கலைப்பீட மாணவர் ஒன்றியத்துக்கு சிங்களத்தில் அனுப்பிய கடிதத்துக்கு மாற்றீடாக, தமிழில் எழுதிய...
+
+							<div class="addcomment-box"> <a class="addcomment" href="http://www.tamilmirror.lk/184891">மேலும்...</a> 
+							<!--<a class="addcomment" href="">Add New Comment</a>--> </div>
+							<div class="space-bar">............................................................................................................</div>
+						</div>
+					</div>
+						
+											
+					<div class="news-content"> <a class="h1" href="http://www.tamilmirror.lk/184886/-உய-ர-ழந-த-ம-ணவர-கள-க-ட-ம-பத-த-க-க-ம-ல-ல-யன-ர-ப-ய-க-ட-ங-கள-">'உயிரிழந்த மாணவர்கள் குடும்பத்துக்கு 10 மில்லியன் ரூபாய் கொடுங்கள்'</a>
+						<div class="date">27-10-2016 02:00 PM							<div class="comment">0</div>
+							<div class="views">84</div>
+						</div>
+						<div class="latest-news"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1477557114-1.jpg"> பொலிஸாரால் சுட்டுக்கொலை செய்யப்பட்ட இரண்டு பல்கலைக்கழக மாணவர்களின் குடும்பத்துக்கு 10 மில்லியன் ரூபாய்...
+
+							<div class="addcomment-box"> <a class="addcomment" href="http://www.tamilmirror.lk/184886">மேலும்...</a> 
+							<!--<a class="addcomment" href="">Add New Comment</a>--> </div>
+							<div class="space-bar">............................................................................................................</div>
+						</div>
+					</div>
+						
+											
+					<div class="news-content"> <a class="h1" href="http://www.tamilmirror.lk/184884/வடம-க-ணசப-ய-ன-ப-த-ய-ப-ரத-அவ-த-தல-வர-த-ர-வ-">வடமாகாணசபையின் புதிய  பிரதி அவைத்தலைவர் தெரிவு</a>
+						<div class="date">27-10-2016 01:37 PM							<div class="comment">0</div>
+							<div class="views">121</div>
+						</div>
+						<div class="latest-news"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1477556299-npc.jpg"> வட மாகாண சபையின் முதலாவது&nbsp; பிரதித் அவைத்தலைவராக (பிரதித் தவிசாளர்) பதவி வகித்த அன்டனி ஜெயநாதன்...
+
+							<div class="addcomment-box"> <a class="addcomment" href="http://www.tamilmirror.lk/184884">மேலும்...</a> 
+							<!--<a class="addcomment" href="">Add New Comment</a>--> </div>
+							<div class="space-bar">............................................................................................................</div>
+						</div>
+					</div>
+						
+											
+					<div class="news-content"> <a class="h1" href="http://www.tamilmirror.lk/184883/-ந-த-த-மத-த-த-ல-அரச-இயந-த-ரம-ம-டக-கப-பட-ம-">'நீதி தாமதித்தால் அரச இயந்திரம் முடக்கப்படும்'</a>
+						<div class="date">27-10-2016 12:57 PM							<div class="comment">0</div>
+							<div class="views">95</div>
+						</div>
+						<div class="latest-news"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1477553510-1.jpg"> பொலிஸாரால் சுட்டுப் படுகொலை செய்யப்பட்ட இரண்டு பல்கலைக்கழக மாணவர்கள் தொடர்பில் நீதியான...
+
+							<div class="addcomment-box"> <a class="addcomment" href="http://www.tamilmirror.lk/184883">மேலும்...</a> 
+							<!--<a class="addcomment" href="">Add New Comment</a>--> </div>
+							<div class="space-bar">............................................................................................................</div>
+						</div>
+					</div>
+						
+											
+					<div class="news-content"> <a class="h1" href="http://www.tamilmirror.lk/184879/பல-கல-க-கழக-ம-ணவர-கள-க-க-வடம-க-ண-சப-ய-ல-அஞ-சல-">பல்கலைக்கழக மாணவர்களுக்கு வடமாகாண சபையில் அஞ்சலி</a>
+						<div class="date">27-10-2016 11:56 AM							<div class="comment">0</div>
+							<div class="views">48</div>
+						</div>
+						<div class="latest-news"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1477552093-2.jpg"> கொக்குவில், குளப்பிட்டி பகுதியில் கடந்த 21ஆம் திகதி அதிகாலை சுட்டுக்கொலை செய்யப்பட்ட யாழ்ப்பாண பல்கலைக்கழக...
+
+							<div class="addcomment-box"> <a class="addcomment" href="http://www.tamilmirror.lk/184879">மேலும்...</a> 
+							<!--<a class="addcomment" href="">Add New Comment</a>--> </div>
+							<div class="space-bar">............................................................................................................</div>
+						</div>
+					</div>
+						
+											
+					<div class="news-content"> <a class="h1" href="http://www.tamilmirror.lk/184873/ச-ற-வன-க-ணவ-ல-ல-">சிறுவனை காணவில்லை </a>
+						<div class="date">27-10-2016 11:20 AM							<div class="comment">0</div>
+							<div class="views">84</div>
+						</div>
+						<div class="latest-news"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1477547612-1.jpg"> கடந்த 22ஆம் திகதி, அயல் வீட்டாருடன் பழைய டயர்களை கொள்வனவு செய்வதற்காக வாகனமொன்றில்...
+
+							<div class="addcomment-box"> <a class="addcomment" href="http://www.tamilmirror.lk/184873">மேலும்...</a> 
+							<!--<a class="addcomment" href="">Add New Comment</a>--> </div>
+							<div class="space-bar">............................................................................................................</div>
+						</div>
+					</div>
+						
+											
+					<div class="news-content"> <a class="h1" href="http://www.tamilmirror.lk/184871/சம-பளம-வழங-க-ம-ற-க-ர-ச-க-த-ர-அம-ச-ச-ஊழ-யர-கள-ஆர-ப-ப-ட-டம-">சம்பளம் வழங்குமாறு கோரி சுகாதார அமைச்சு ஊழியர்கள் ஆர்ப்பாட்டம்</a>
+						<div class="date">27-10-2016 11:11 AM							<div class="comment">0</div>
+							<div class="views">52</div>
+						</div>
+						<div class="latest-news"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1477546949-Arpaattam.jpg"> சம்பளத்தை வழங்குமாறு கோரி, சுகாதார அமைச்சில் பணிபுரியும் ஊழியர்கள், சுகாதார அமைச்சரின் கூரையில் மேல் ஏறி,..
+
+							<div class="addcomment-box"> <a class="addcomment" href="http://www.tamilmirror.lk/184871">மேலும்...</a> 
+							<!--<a class="addcomment" href="">Add New Comment</a>--> </div>
+							<div class="space-bar">............................................................................................................</div>
+						</div>
+					</div>
+						
+											
+					<div class="news-content"> <a class="h1" href="http://www.tamilmirror.lk/184849/பம-பலப-ப-ட-ட-கட-டடத-த-ல-த-">பம்பலப்பிட்டி கட்டடத்தில் தீ</a>
+						<div class="date">27-10-2016 10:13 AM							<div class="comment">0</div>
+							<div class="views">102</div>
+						</div>
+						<div class="latest-news"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1477543461-Fire.jpg"> பம்பலப்பிட்டி, டுப்ளிகேஷன் வீதியில் அமைந்துள்ள கட்டடமொன்றில், தீ விபத்து ஏற்பட்டுள்ளதாகத் தீயணைப்புப் படை...
+
+							<div class="addcomment-box"> <a class="addcomment" href="http://www.tamilmirror.lk/184849">மேலும்...</a> 
+							<!--<a class="addcomment" href="">Add New Comment</a>--> </div>
+							<div class="space-bar">............................................................................................................</div>
+						</div>
+					</div>
+						
+											
+					<div class="news-content"> <a class="h1" href="http://www.tamilmirror.lk/184845/ஹ-ர-ய-ன-டன-இந-த-ய-ம-னவர-கள-ம-வர-க-த-UPDATE-">ஹெரோய்னுடன் இந்திய மீனவர்கள் மூவர் கைது (UPDATE)</a>
+						<div class="date">27-10-2016 09:49 AM							<div class="comment">0</div>
+							<div class="views">64</div>
+						</div>
+						<div class="latest-news"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1477554982-1.jpg"> இந்த திடீர் சோதனையின்போது, இந்தியாவிலிருந்து கடத்தப்பட்ட ஹெரோய்ன் போதைபொருள்...
+
+							<div class="addcomment-box"> <a class="addcomment" href="http://www.tamilmirror.lk/184845">மேலும்...</a> 
+							<!--<a class="addcomment" href="">Add New Comment</a>--> </div>
+							<div class="space-bar">............................................................................................................</div>
+						</div>
+					</div>
+						
+											
+					<div class="news-content"> <a class="h1" href="http://www.tamilmirror.lk/184859/ந-ல-வர-க-ல-சந-த-க-நபர-கள-தட-த-த-வ-த-த-வ-ச-ர-க-க-அன-மத-">நால்வர் கொலை: சந்தேக நபர்களை தடுத்து வைத்து விசாரிக்க அனுமதி</a>
+						<div class="date">27-10-2016 09:40 AM							<div class="comment">0</div>
+							<div class="views">33</div>
+						</div>
+						<div class="latest-news"> <img width="120" height="80" src="http://static1.tamilmirror.lk/images/uploads/article_1477545038-Gavel120.jpg"> மட்டக்குளியில் நான்கு பேர் கொலை செய்யப்பட்ட&nbsp; சம்பவத்துடன் தொடர்புடைய 11 சந்தேகநபர்களையும் எதிர்வரும் நவம்பர்...
+
+							<div class="addcomment-box"> <a class="addcomment" href="http://www.tamilmirror.lk/184859">மேலும்...</a> 
+							<!--<a class="addcomment" href="">Add New Comment</a>--> </div>
+							<div class="space-bar">............................................................................................................</div>
+						</div>
+					</div>
+				                    
+                
+				
+				
+				
+				
+				
+				
+			<a class="more-main-news" href="http://www.tamilmirror.lk/news">More News</a> </div>
+		</div>
+		
+	<!--latest-story -->
+		
+	</div>
+	<!--mid end-->
+	
+	
+	<div class="right">
+    
+    <div class="tm-radio" style="width:300px; height:50px; float:left; margin-bottom:10px; overflow:hidden !important"> 
+  <iframe src="http://www.tamilmirror.lk/templates/tmradio/jwnew.html" style="border:0px #FFFFFF none;" name="tmradio" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="50px" width="300px"></iframe>
+    </div> 
+        
+					<div style="width: 310px; height: auto; margin-bottom:10px; float: left;">
+						<div style="margin:5px 0 5px 0;">
+ <iframe  frameborder="0" height="200" scrolling="no" src="http://techkeels.com/creatives/dfcc_ca/banner/tamilmirror_300x200/" width="300"> </iframe>
+</div>
+
+<div style="margin:5px 0 5px 0;">
+<iframe scrolling="no" src="http://dmstuff.wijeyadigital.lk/ads-test-sample/Dominos/" 
+frameborder="0" height="400" width="300"></iframe>
+</div>
+
+<div style="margin:5px 0 5px 0;">
+<IFRAME SRC="https://ad.doubleclick.net/ddm/adi/N7534.931094.TAMILMIRROR/B9105082.133167654;sz=300x200;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" WIDTH=300 HEIGHT=200 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'>
+<SCRIPT language='JavaScript1.1' SRC="https://ad.doubleclick.net/ddm/adj/N7534.931094.TAMILMIRROR/B9105082.133167654;abr=!ie;sz=300x200;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?">
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="https://ad.doubleclick.net/ddm/jump/N7534.931094.TAMILMIRROR/B9105082.133167654;abr=!ie4;abr=!ie5;sz=300x200;ord=[timestamp]?">
+<IMG SRC="https://ad.doubleclick.net/ddm/ad/N7534.931094.TAMILMIRROR/B9105082.133167654;abr=!ie4;abr=!ie5;sz=300x200;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" BORDER=0 WIDTH=300 HEIGHT=200 ALT="Advertisement"></A>
+</NOSCRIPT>
+</IFRAME>
+</div>
+
+<div style="margin:5px 0 5px 0;">
+<div id="cal-dfcc-2016-june-banner-container">
+	<iframe src="https://www.codeartlove.com/clients/dfcc/2016/june/virtual-wallet/300x200/?site_id=tamilmirror&lan=tam" frameborder="0" width="300" height="200" scrolling="no"></iframe>
+	<script src="//www.codeartlove.com/clients/dfcc/2016/june/virtual-wallet/popup-js/?site_id=tamilmirror&lan=tam" type="text/javascript" async></script>
+</div>
+</div>					</div>
+		
+		<!--features-->
+		<div class="panel">
+			<a href="http://www.tamilmirror.lk/features">
+			<div class="header-c"><img style="width:100%;" src="http://www.tamilmirror.lk/templates/images/sirappu-katturai(1).jpg" /></div>
+			</a>
+			<div class="box-frame">
+																			<div class="w-box">
+						<a href="http://www.tamilmirror.lk/184887/க-ஷ-ம-ர-கள-ன-கற-ப-ப-த-த-னம-">
+						<img src="http://static1.tamilmirror.lk/images/uploads/article_1477558155-1.jpg" width="105" height="70" alt=""/> 
+						<div class="headline"> காஷ்மீரிகளின் கறுப்புத்தினம் </div>
+						</a>
+						<div class="text">
+
+ </div>
+					</h2>
+				</div>
+																		<div class="w-box">
+						<a href="http://www.tamilmirror.lk/184848/சர-வத-சக-க-ற-றவ-யல-ந-த-மன-றம-பழ-வ-ங-கப-பட-ம-ஆப-ர-க-க-">
+						<img src="http://static1.tamilmirror.lk/images/uploads/article_1477543264-ddf.jpg" width="105" height="70" alt=""/> 
+						<div class="headline"> சர்வதேசக் குற்றவியல் நீதிமன்றம்: பழிவாங்கப்படும்  ஆபிரிக்கா </div>
+						</a>
+						<div class="text">
+
+&nbsp;
+
+ </div>
+					</h2>
+				</div>
+																		<div class="w-box">
+						<a href="http://www.tamilmirror.lk/184847/-கவனம-க-அண-கப-பட-வ-ண-ட-ய-ம-ணவர-கள-ன-மரண-வ-வக-ரம-">
+						<img src="http://static1.tamilmirror.lk/images/uploads/article_1477542953-ccx.jpg" width="105" height="70" alt=""/> 
+						<div class="headline">  கவனமாக அணுகப்பட வேண்டிய மாணவர்களின் மரண விவகாரம் </div>
+						</a>
+						<div class="text">
+
+&nbsp;
+ </div>
+					</h2>
+				</div>
+																		<div class="w-box">
+						<a href="http://www.tamilmirror.lk/184748/ம-ணவர-கள-பட-க-ல-ந-த-க-க-ன-அட-வ-எங-க-ர-ந-த-ஆரம-ப-க-க-வ-ண-ட-ம-">
+						<img src="http://static1.tamilmirror.lk/images/uploads/article_1477415486-prujoth.jpg" width="105" height="70" alt=""/> 
+						<div class="headline"> மாணவர்கள் படுகொலை; நீதிக்கான அடைவு எங்கிருந்து ஆரம்பிக்க வேண்டும்? </div>
+						</a>
+						<div class="text">
+
+ </div>
+					</h2>
+				</div>
+																		<div class="w-box">
+						<a href="http://www.tamilmirror.lk/184747/ஊழல-க-வ-ட-ட-ஊழல-ஒழ-ப-ப-ப-ப-ர-">
+						<img src="http://static1.tamilmirror.lk/images/uploads/article_1477415361-aube.jpg" width="105" height="70" alt=""/> 
+						<div class="headline"> ஊழலாகிவிட்ட ஊழல் ஒழிப்புப் போர் </div>
+						</a>
+						<div class="text">
+
+ </div>
+					</h2>
+				</div>
+						
+			
+            <a class="more" href="http://www.tamilmirror.lk/features"><div style="color:black;" class="w-box-more">MORE</div></a>
+			</div>
+		</div>
+	<!--features-->
+	<!--right end-->
+	
+	<!--businessanalysis-->
+			<div class="panel">
+			<a href="http://www.tamilmirror.lk/business-analysis">
+			<div class="header-a">Business Analysis</div>
+			</a>
+			<div class="box-frame">
+																			<div class="w-box">
+						<a href="http://www.tamilmirror.lk/173312/ம-லதனச-சந-த-ய-ம-ம-தல-ட-கள-ம-ப-கம-">
+						<img src="http://static1.tamilmirror.lk/images/uploads/article_1464582135-aa.jpg" width="105" height="70" alt=""/> 
+						<div class="headline"> மூலதனச்சந்தையும் முதலீடுகளும் பாகம்-02 </div>
+						</a>
+						<div class="text"> </div>
+					</h2>
+				</div>
+																		<div class="w-box">
+						<a href="http://www.tamilmirror.lk/173311/வ-ள-ள-ச-தங-கள-க-க-க-ப-ப-ற-த-க-க-ட-க-க-ம-">
+						<img src="http://static1.tamilmirror.lk/images/uploads/article_1464581804-aa.jpg" width="105" height="70" alt=""/> 
+						<div class="headline"> வெள்ள சேதங்களுக்கு காப்புறுதி கைகொடுக்கும்? </div>
+						</a>
+						<div class="text"> </div>
+					</h2>
+				</div>
+																		<div class="w-box">
+						<a href="http://www.tamilmirror.lk/173310/மற-ம-க-வர-அறவ-ட-வ-ண-ட-ம-">
+						<img src="http://static1.tamilmirror.lk/images/uploads/article_1464581609-aa.jpg" width="105" height="70" alt=""/> 
+						<div class="headline"> மறைமுக வரி அறவீடு வேண்டாமே </div>
+						</a>
+						<div class="text"> </div>
+					</h2>
+				</div>
+																		<div class="w-box">
+						<a href="http://www.tamilmirror.lk/169730/ம-லதனச-சந-த-ய-ம-ம-தல-ட-கள-ம-">
+						<img src="http://static1.tamilmirror.lk/images/uploads/article_1460002862-aa.jpg" width="105" height="70" alt=""/> 
+						<div class="headline"> மூலதனச் சந்தையும் முதலீடுகளும் </div>
+						</a>
+						<div class="text"> </div>
+					</h2>
+				</div>
+																		<div class="w-box">
+						<a href="http://www.tamilmirror.lk/160133/-ஆம-ஆண-ட-க-க-ன-ப-த-ட-ட-ஆய-வ-">
+						<img src="http://static1.tamilmirror.lk/images/uploads/article_1448687203-2016bbd.jpg" width="105" height="70" alt=""/> 
+						<div class="headline"> 2016ஆம் ஆண்டுக்கான பாதீட்டு ஆய்வு </div>
+						</a>
+						<div class="text"> </div>
+					</h2>
+				</div>
+						
+			
+			<a class="more" href="http://www.tamilmirror.lk/business-analysis"><div style="color:black;" class="w-box-more">MORE</div></a>
+			</div>
+		</div>
+	<!--businessanalysis-->
+
+<!--graphics slide-->
+	<div class="slider-a">
+		<a href="http://www.tamilmirror.lk/graphics">
+		<div class="header-a">GRAPHICS</div>
+		</a>
+				<div class="main-image">
+			<a href="http://www.tamilmirror.lk/182911">
+									<img width="300" height="200" src="http://static1.tamilmirror.lk/images/uploads/article_1475216449-LEAD.jpg">
+			<div class='description'>
+				<a href="http://www.tamilmirror.lk/182911">
+				<p class='description_content'>வரட்சி: 6 மாவட்டங்கள் பெரும் பாதிப்பு</p>
+				</a>
+			</div>
+			</a>
+		</div>
+		
+		<div class="thumb-frame">
+								<a href="http://www.tamilmirror.lk/178040/ம-ண-ட-ச-ர-க-கம-">
+					<div class="thumb-image">
+						<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1469599017-Paradise-Regained-web-version-copy.jpg">
+					</div>
+					</a>
+						
+					<a href="http://www.tamilmirror.lk/175735">
+					<div class="thumb-image" style="margin-right:0px !important">
+						<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1467088700-Postal-servicesm.jpg">
+					</div>
+					</a>
+										<a href="http://www.tamilmirror.lk/173722/-இல-வ-ட-ம-ற-த-னங-கள-">
+					<div class="thumb-image">
+						<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1464868106-Holidays2017.jpg">
+					</div>
+					</a>
+										<a href="http://www.tamilmirror.lk/173429/வ-ட-கள-பக-ர-ந-தள-க-க-ம-வ-தம-">
+					<div class="thumb-image">
+						<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1464670760-The-housing-units-covered-in-each-areassm.jpg">
+					</div>
+					</a>
+									
+		</div>
+	</div>
+<!--graphics slide-->
+
+<!--collapse--> 
+
+<!--proviences-->
+<div class="panel">
+	<div class="header-c"><img style="width:100%;" src="http://www.tamilmirror.lk/templates/images/pirathiya-seithikal.jpg" /></div>
+	
+	<div class="collapse">
+		
+		<div class="accordion_example3 smk_accordion">
+			
+			<!-- jaffna 1 -->
+							<div class="accordion_in  acc_active">
+					<div class="acc_head">யாழ்ப்பாணம்</div>
+					<div class="acc_content">
+													<a href="http://www.tamilmirror.lk/184891/தம-ழ-ல-பத-லள-த-த-ர-க-ர-">
+															
+								<div class="frame">
+									<div class="header">தமிழில் பதிலளித்தார் குரே</div>
+																					<img class="col-image" src="http://static1.tamilmirror.lk/images/uploads/article_1477562385-aa.jpg" width="300" height="150" alt=""/>
+																				<div class="text">யாழ். பல்கலைக்கழக கலைப்பீட மாணவர் ஒன்றியத்துக்கு சிங்களத்தில் அனுப்பிய கடிதத்துக்கு மாற்றீடாக, தமிழில் எழுதிய...
+
+</div>
+									</div>
+									
+																	</a>	
+								
+								
+								
+								
+								
+															<a href="http://www.tamilmirror.lk/184886/-உய-ர-ழந-த-ம-ணவர-கள-க-ட-ம-பத-த-க-க-ம-ல-ல-யன-ர-ப-ய-க-ட-ங-கள-">
+								
+									
+									
+									
+																</a>	
+								
+								
+								
+								
+								
+															<a href="http://www.tamilmirror.lk/184883/-ந-த-த-மத-த-த-ல-அரச-இயந-த-ரம-ம-டக-கப-பட-ம-">
+								
+									
+									
+									
+																</a>	
+								
+								
+								
+								
+								
+															<div class="frame">
+								<div class="header"><a href="http://www.tamilmirror.lk/jaffna">more</a></div>
+							</div>
+						</div>	
+					</div>
+				
+						
+			<!-- Ampara 2 -->
+							<div class="accordion_in">
+					<div class="acc_head">அம்பாறை</div>
+					<div class="acc_content">
+													<a href="http://www.tamilmirror.lk/184862/-ந-ண-கடன-ல-தம-ழர-கள-ன-வ-ழ-வ-ச-ரழ-க-ன-றத-">
+															
+								<div class="frame">
+									<div class="header">'நுண்கடனால் தமிழர்களின் வாழ்வு சீரழிகின்றது'</div>
+																					<img class="col-image" src="http://static1.tamilmirror.lk/images/uploads/article_1477545577-unnamedaaa.jpg" width="300" height="150" alt=""/>
+																				<div class="text">
+
+நுண்கடன் எனும் போர்வையில் செயற்படும் நிதி நிறுவனங்களானது தமிழர் பிரதேசங்களில் கொள்ளை நோய் போல் பரவி, அவர்களின் வாழ்வைச் சீரழித்து ....
+
+</div>
+									</div>
+									
+																	</a>	
+								
+								
+								
+															<a href="http://www.tamilmirror.lk/184856/ச-க-த-ரத-த-ற-க-க-ன-கட-டடங-கள-அம-க-க-க-ண-கள-பற-ற-க-க-ற-">
+								
+									
+									<div class="frame">
+										<div class="header">சுகாதாரத்துறைக்கான கட்டடங்களை அமைக்க காணிகள் பற்றாக்குறை </div>
+									</div>
+									
+																</a>	
+								
+								
+								
+															<a href="http://www.tamilmirror.lk/184843/-வர-த-தக-ந-ல-யங-கள-ல-ச-தன-">
+								
+									
+									<div class="frame">
+										<div class="header">  25 வர்த்தக நிலையங்களில் சோதனை</div>
+									</div>
+									
+																</a>	
+								
+								
+								
+															<div class="frame">
+								<div class="header"><a href="http://www.tamilmirror.lk/ampara">more</a></div>
+							</div>
+						</div>	
+					</div>
+				
+						
+			<!-- Batticaloa 3 -->
+							<div class="accordion_in">
+					<div class="acc_head">மட்டக்களப்பு</div>
+					<div class="acc_content">
+													<a href="http://www.tamilmirror.lk/184876/-ய-த-தம-ம-ச-ன-ம-ய-ம-இலங-க-மக-கள-க-க-சவ-ல-க-ய-ள-ளன-">
+															
+								<div class="frame">
+									<div class="header">'யுத்தமும் சுனாமியும் இலங்கை மக்களுக்கு சவாலாகியுள்ளன'</div>
+																					<img class="col-image" src="http://static1.tamilmirror.lk/images/uploads/article_1477549076-1.jpg" width="300" height="150" alt=""/>
+																				<div class="text">
+
+கடந்த 30 வருடகாலமாக இலங்கையில் இடம்பெற்ற பயங்கரமான யுத்தம் மற்றும் சுனாமியின் தாக்கமும் இலங்கையிலுள்ள மக்களுக்குச் ......
+
+</div>
+									</div>
+									
+																	</a>	
+								
+								
+								
+															<a href="http://www.tamilmirror.lk/184844/ப-ல-ஸ-ர-ன-வ-கனம-ம-ம-ட-ட-ர-ச-க-க-ள-ம-வ-பத-த-இள-ஞன-க-யம-">
+								
+									
+									<div class="frame">
+										<div class="header">பொலிஸாரின் வாகனமும் மோட்டார் சைக்கிளும் விபத்து; இளைஞன் காயம்</div>
+									</div>
+									
+																</a>	
+								
+								
+								
+															<a href="http://www.tamilmirror.lk/184816/கல-வ-க-க-ட-க-எமத-சம-கத-த-வளர-த-த-வர-வ-ண-ட-ம-">
+								
+									
+									<div class="frame">
+										<div class="header">கல்விக்கூடாக எமது சமூகத்தை வளர்த்து வர வேண்டும்</div>
+									</div>
+									
+																</a>	
+								
+								
+								
+															<div class="frame">
+								<div class="header"><a href="http://www.tamilmirror.lk/batticaloa">more</a></div>
+							</div>
+						</div>	
+					</div>
+                    
+								
+				<!-- Trincomalee 4 -->
+									<div class="accordion_in">
+						<div class="acc_head">திருகோணமலை</div>
+						<div class="acc_content">
+															<a href="http://www.tamilmirror.lk/184898/க-ழக-க-ம-க-ணத-த-ல-ஆட-த-த-ழ-ற-ச-ல-கள-">
+																	
+									<div class="frame">
+										<div class="header">கிழக்கு மாகாணத்தில் ஆடைத் தொழிற்சாலைகள்?</div>
+																						<div class="text">கிழக்கு மாகாணத்தில் பிரதேசங்கள் ரீதியாக ஆடைத் தொழிற்சாலைகளை அமைக்கும் திட்டத்தைப்&nbsp; பிரதமர் ரணில் விக்கிரமசிங்கவிடம் சமர்ப்பிக்கவுள்ளதாக....
+
+</div>
+										</div>
+										
+																			</a>	
+									
+									
+									
+																	<a href="http://www.tamilmirror.lk/184889/சட-டத-தரண-ய-ன-வ-ட-ட-ல-க-ள-ள-">
+									
+										
+										<div class="frame">
+											<div class="header">சட்டத்தரணியின் வீட்டில் கொள்ளை</div>
+										</div>
+										
+																		</a>	
+									
+									
+									
+																	<a href="http://www.tamilmirror.lk/184885/-க-ழக-க-க-க-ன-த-ச-ய-ஆச-ர-ய-இடம-ற-றக-க-ள-க-சமர-ப-ப-க-கப-பட-ம-">
+									
+										
+										<div class="frame">
+											<div class="header">'கிழக்குக்கான தேசிய ஆசிரிய இடமாற்றக் கொள்கை சமர்ப்பிக்கப்படும்'</div>
+										</div>
+										
+																		</a>	
+									
+									
+									
+																	<div class="frame">
+									<div class="header"><a href="http://www.tamilmirror.lk/trincomalee">more</a></div>
+								</div>
+							</div>	
+						</div>
+				
+								
+				<!-- Western Province 5 -->
+									<div class="accordion_in">
+						<div class="acc_head">மேல் மாகாணம்</div>
+						<div class="acc_content">
+															<a href="http://www.tamilmirror.lk/184863/ச-னன-க-ட-ட-ஷ-த-ல-ய-ய-கல-ப-ட-பட-டமள-ப-ப-வ-ழ-">
+																	
+									<div class="frame">
+										<div class="header">சீனன் கோட்டை ஷாதுலிய்யா கலாபீட பட்டமளிப்பு விழா - 2016</div>
+																							<img class="col-image" src="http://static1.tamilmirror.lk/images/uploads/article_1477545642-Degree.jpg" width="300" height="150" alt=""/>
+																						<div class="text">பேருவளை, சீனன் கோட்டை அல் ஜாமிஅதுல் பாஸியதுஷ் ஷாதுலிய்யா கலாபீட முதலாவது பட்டமளிப்பு விழா,...
+
+</div>
+										</div>
+										
+																			</a>	
+									
+									
+									
+																	<a href="http://www.tamilmirror.lk/184779/-சட-டம-அரச-யல-க-கப-பட-ட-ள-ளத-">
+									
+										
+										<div class="frame">
+											<div class="header">'சட்டம் அரசியலாக்கப்பட்டுள்ளது'</div>
+										</div>
+										
+																		</a>	
+									
+									
+									
+																	<a href="http://www.tamilmirror.lk/184604/ஐஸ-க-ர-ம-வ-வக-ரம-அரச-யல-வ-த-சரண-">
+									
+										
+										<div class="frame">
+											<div class="header">ஐஸ்கிரீம் விவகாரம்: அரசியல்வாதி சரண்</div>
+										</div>
+										
+																		</a>	
+									
+									
+									
+																	<div class="frame">
+									<div class="header"><a href="http://www.tamilmirror.lk/western">more</a></div>
+								</div>
+							</div>	
+						</div>
+				
+								
+				<!-- Hill country 6 -->
+									<div class="accordion_in">
+						<div class="acc_head">மலையகம்</div>
+						<div class="acc_content">
+															<a href="http://www.tamilmirror.lk/184881/-ம-ணவர-கள-பட-க-ல-கண-ட-த-த-மல-யகத-த-ல-ஆர-ப-ப-ட-டம-">
+																	
+									<div class="frame">
+										<div class="header"> மாணவர்கள் படுகொலை: கண்டித்து மலையகத்தில் ஆர்ப்பாட்டம்</div>
+																							<img class="col-image" src="http://static1.tamilmirror.lk/images/uploads/article_1477552572-1.jpg" width="300" height="150" alt=""/>
+																						<div class="text">
+
+யாழ்ப்பாணம் கொக்குவில் குளப்பிட்டி பகுதியில் கடந்த 21ஆம் திகதி அதிகாலை, சுட்டுக்கொலை செய்யப்பட்ட யாழ்ப்பாணப் பல்கலைக்கழக கலைப்பீட மாணவர்களுக்கு...
+
+</div>
+										</div>
+										
+																			</a>	
+									
+									
+									
+																	<a href="http://www.tamilmirror.lk/184824/மத-த-ய-ம-க-ண-ப-டச-ல-கள-க-க-வ-ட-ம-ற-">
+									
+										
+										<div class="frame">
+											<div class="header">மத்திய மாகாண பாடசாலைகளுக்கு விடுமுறை</div>
+										</div>
+										
+																		</a>	
+									
+									
+									
+																	<a href="http://www.tamilmirror.lk/184769/-க-ட-ட-ப-பந-தத-த-க-க-எத-ர-க-சட-ட-நடவட-க-க-எட-க-க-வ-ண-ட-ம-">
+									
+										
+										<div class="frame">
+											<div class="header">‘கூட்டொப்பந்தத்துக்கு எதிராக சட்ட நடவடிக்கை எடுக்க வேண்டும்’</div>
+										</div>
+										
+																		</a>	
+									
+									
+									
+										
+								<div class="frame">
+									<div class="header"><a href="http://www.tamilmirror.lk/up-country">more</a></div>
+								</div>
+							</div>	
+						</div>
+					
+								
+				<!-- Vanni 7 -->
+									<div class="accordion_in">
+						<div class="acc_head">வன்னி</div>
+						<div class="acc_content">
+															<a href="http://www.tamilmirror.lk/184896/ச-ப-ப-ய-கள-ம-த-த-க-க-தல-வ-வக-ரம-சந-த-கநபர-கள-க-க-ப-ண-">
+																	
+									<div class="frame">
+										<div class="header">சிப்பாய்கள் மீது தாக்குதல் விவகாரம்: சந்தேகநபர்களுக்கு பிணை</div>
+																							<img class="col-image" src="http://static1.tamilmirror.lk/images/uploads/article_1477566501-Gvel 300.jpg" width="300" height="150" alt=""/>
+																						<div class="text">முத்தரிப்புத்துறை பகுதியில், கடற்படை சிப்பாய்கள் மீது தாக்குதல்களை மேற்கொண்டார்கள் என்ற குற்றச்சாட்டில்...
+
+</div>
+										</div>
+										
+																			</a>	
+									
+									
+									
+																	<a href="http://www.tamilmirror.lk/184895/-ம-னவர-கள-க-த-படக-கள-பற-ம-தல-">
+									
+										
+										<div class="frame">
+											<div class="header">71 மீனவர்கள் கைது: 13 படகுகள் பறிமுதல்</div>
+										</div>
+										
+																		</a>	
+									
+									
+									
+																	<a href="http://www.tamilmirror.lk/184893/கடற-பட-ய-ல-க-த-ச-ய-யப-பட-ட-ம-னவர-கள-வ-ட-தல-">
+									
+										
+										<div class="frame">
+											<div class="header">கடற்படையால்  கைது செய்யப்பட்டு மீனவர்கள் விடுதலை</div>
+										</div>
+										
+																		</a>	
+									
+									
+									
+																	<div class="frame">
+									<div class="header"><a href="http://www.tamilmirror.lk/vanni">more</a></div>
+								</div>
+							</div>	
+						</div>
+				
+								
+				<!-- southern 8 -->
+									<div class="accordion_in">
+						<div class="acc_head">தென் மாகாணம்</div>
+						<div class="acc_content">
+															<a href="http://www.tamilmirror.lk/181752/வ-த-த-யச-ல-ய-ன-ஆம-ம-ட-ய-ல-ர-ந-த-வ-ழ-ந-த-வய-த-பர-பல-">
+																	
+									<div class="frame">
+										<div class="header">வைத்தியசாலையின் 3 ஆம் மாடியிலிருந்து விழுந்து வயோதிபர் பலி</div>
+																							<img class="col-image" src="http://static1.tamilmirror.lk/images/uploads/article_1473741309-ss.jpg" width="300" height="150" alt=""/>
+																						<div class="text">
+
+இவர் மனநல குறைபாட்டினால் பாதிக்கப்பட்டிருந்ததாகவும் அதற்கு சிகிச்சைப் பெறுவதற்காக&nbsp; வைத்தியசாலையில் அனுமதிக்கப்பட்டிருந்ததாகவும்...
+
+</div>
+										</div>
+										
+																			</a>	
+									
+									
+									
+																	<a href="http://www.tamilmirror.lk/181591/வ-த-ய-க-கடக-க-ம-ற-பட-ட-ம-த-ட-ட-வ-ன-ல-ம-த-பல-">
+									
+										
+										<div class="frame">
+											<div class="header">வீதியைக் கடக்க முற்பட்ட மூதாட்டி வானில் மோதி பலி</div>
+										</div>
+										
+																		</a>	
+									
+									
+									
+																	<a href="http://www.tamilmirror.lk/181462/ஹ-ட-டல-ல-ம-ர-கக-க-ட-ச-ச-ல-நடத-த-யவர-க-க-அபர-தம-">
+									
+										
+										<div class="frame">
+											<div class="header">ஹொட்டலில் மிருகக்காட்சிசாலை நடத்தியவருக்கு அபராதம்</div>
+										</div>
+										
+																		</a>	
+									
+									
+									
+										
+								<div class="frame">
+									<div class="header"><a href="http://www.tamilmirror.lk/southern">more</a></div>
+								</div>
+							</div>	
+						</div>
+				
+								
+				<!-- vayamba 9 -->
+									<div class="accordion_in">
+						<div class="acc_head">வடமேல் , வடமத்தி</div>
+						<div class="acc_content">
+															<a href="http://www.tamilmirror.lk/184717/ம-ள-கட-ட-ம-ண-பண-கள-ஆரம-பம-">
+																	
+									<div class="frame">
+										<div class="header">மீள்கட்டுமாண பணிகள் ஆரம்பம்</div>
+																							<img class="col-image" src="http://static1.tamilmirror.lk/images/uploads/article_1477391665-aaaaaaaaaaaaa.jpg" width="300" height="150" alt=""/>
+																						<div class="text">
+
+கற்பிட்டி பஸ்தரிப்பு நிலையம் மற்றும் சந்தைக் கட்டடத் தொகுதி என்பவற்றின் மீள்கட்டுமாண பணிகள் மீண்டும் இன்று செவ்வாய்க்கிழமை....
+
+</div>
+										</div>
+										
+																			</a>	
+									
+									
+									
+																	<a href="http://www.tamilmirror.lk/184705/இலவச-வழ-க-ட-டல-கர-த-தரங-க-">
+									
+										
+										<div class="frame">
+											<div class="header">இலவச வழிகாட்டல் கருத்தரங்கு</div>
+										</div>
+										
+																		</a>	
+									
+									
+									
+																	<a href="http://www.tamilmirror.lk/184699/கற-ப-ட-ட-ம-வட-ட-வ-த-த-யச-ல-ய-தரம-யர-த-த-ம-ற-க-ர-க-க-">
+									
+										
+										<div class="frame">
+											<div class="header">கற்பிட்டி மாவட்ட வைத்தியசாலையை தரமுயர்த்துமாறு கோரிக்கை</div>
+										</div>
+										
+																		</a>	
+									
+									
+									
+																	<div class="frame">
+									<div class="header"><a href="http://www.tamilmirror.lk/vayamba">more</a></div>
+								</div>
+							</div>	
+						</div>
+									
+				
+				
+				
+			
+		</div>
+		
+	</div>
+	<!-- collapse -->
+	
+</div>
+<!--proviences-->
+
+	
+<div class="slider-a">
+			<a href="http://www.tamilmirror.lk/tm-stock">
+			<div class="header-a">STOCK WATCH</div>
+			</a>
+								
+					<div class="main-image"><a href="http://www.tamilmirror.lk/174717/Tamil-Mirror-Stock-">
+						<img width="300" height="200" src="http://static1.tamilmirror.lk/images/uploads/article_1465963522-Stock.jpg">
+						<div class='description'>
+							<p class='description_content'>Tamil Mirror Stock 13-06-2016 </p></a>
+						</div>
+					</div>
+					<div class="thumb-frame">
+											
+											<div class="thumb-image">
+							<a  href="http://www.tamilmirror.lk/174099/Tamil-Mirror-Stock-">
+							<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1465270325-Stock04.jpg"/>
+							</a>
+						</div>
+										
+											<div class="thumb-image">
+							<a  href="http://www.tamilmirror.lk/173756/Tamil-Mirror-Stock-">
+							<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1464928858-Stock.jpg"/>
+							</a>
+						</div>
+										
+											<div class="thumb-image">
+							<a  href="http://www.tamilmirror.lk/173678/Tamil-Mirror-Stock-">
+							<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1464857299-Stock2.jpg"/>
+							</a>
+						</div>
+										
+											<div class="thumb-image" style="margin-right:0px !important">
+							<a  href="http://www.tamilmirror.lk/172699/Tamil-Mirror-Stock-">
+							<img width="72" height="48" src="http://static1.tamilmirror.lk/images/uploads/article_1463744301-Stock05.jpg"/>
+							</a>
+						</div>
+											
+								</div>
+			
+		</div>
+<!--right end-->
+
+</div><!--top container end-->
+
+<!--    <hr style="color:#000000; border-bottom:2px solid #000000">
+    <div class="manthree" style="margin-left:-91px; margin-bottom:20px;">
+		<iframe width="1200px" height="620px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="http://www.dailymirror.lk/election2015/html/TM.html">
+        </iframe>
+        
+        <a href="http://www.dailymirror.lk/election_2015/tm" class="read-more" style="font-size:16px; font-weight:bold; color:#000000; float:right; margin-right:10px; margin-top:10px; margin-bottom:0px"> View More </a>
+        
+   </div>
+   <div style="width:960px; float:left">
+    <hr style="color:#000000; border-bottom:2px solid #000000;"> </div>-->
+
+<div class="container-s"> 
+	<div class="slider5">
+						<div class="slide">
+					<a href="http://www.tamilmirror.lk/181513">
+					<img src="http://static1.tamilmirror.lk/images/uploads/article_1473409275-3811F8C500000578-3780998-image-a-30_1473390732158.jpg" width="150" height="100" title="பிணங்களை தோண்டி...">
+					</a>
+				</div>
+				<div class="slide">
+					<a href="http://www.tamilmirror.lk/181151">
+					<img src="http://static1.tamilmirror.lk/images/uploads/article_1473053577-37E4353B00000578-3773019-image-a-57_1472981961226-copy.jpg" width="150" height="100" title="தோழா...">
+					</a>
+				</div>
+				<div class="slide">
+					<a href="http://www.tamilmirror.lk/176730">
+					<img src="http://static1.tamilmirror.lk/images/uploads/article_1468218968-aa.jpg" width="150" height="100" title="விமான வர்ணங்கள்...">
+					</a>
+				</div>
+				<div class="slide">
+					<a href="http://www.tamilmirror.lk/176693">
+					<img src="http://static1.tamilmirror.lk/images/uploads/article_1468156930-sm.jpg" width="150" height="100" title="ஒரு கொலை...">
+					</a>
+				</div>
+				<div class="slide">
+					<a href="http://www.tamilmirror.lk/176083">
+					<img src="http://static1.tamilmirror.lk/images/uploads/article_1467465588-35E0DA3A00000578-0-image-a-65_1467455272617-copy.jpg" width="150" height="100" title="சவாரி...">
+					</a>
+				</div>
+				<div class="slide">
+					<a href="http://www.tamilmirror.lk/169055">
+					<img src="http://static1.tamilmirror.lk/images/uploads/article_1459235768-AA.jpg" width="150" height="100" title="தங்க சுவர் கட்டடம்...">
+					</a>
+				</div>
+	</div>
+</div>
+
+
+
+
+<div class="container-b">
+	<div class="left-sub">
+		
+		
+		<!--cinema-->
+        <div class="panel-sub">
+									<a href="http://www.tamilmirror.lk/cinema">
+			<div class="header-b"><img src="http://static2.tamilmirror.lk/templates/images/cinema.jpg" width="250" height="30" alt=""/></div>
+			</a>
+			<div class="box-frame-b">
+				<a href="http://www.tamilmirror.lk/184825/தண-க-க-ச-ய-யப-பட-ட-ப-ரவ-ட-சர-வ-ள-ய-ட-ட-வ-வரம-">
+				<div class="image"><img src="http://static1.tamilmirror.lk/images/uploads/article_1477499305-1.jpg" width="250" height="400" alt=""/></div>
+				
+				<div class="headline">தணிக்கை செய்யப்பட்ட 'பைரவா' டீசர் வெளியீட்டு விவரம்</div>
+				</a>
+				<div class="text">
+
+</div>
+									<a href="http://www.tamilmirror.lk/184718/வ-வ-கரத-த-க-ர-ன-ர-நட-க-ரம-ப-அத-ர-ச-ச-ய-ல-த-ர-ய-லகம-"><div class="headline-b">விவாகரத்து கோரினார் நடிகை ரம்பா : அதிர்ச்சியில் திரையுலகம்</div></a>
+									<a href="http://www.tamilmirror.lk/184654/க-ட-ப-டல-ட-சர-"><div class="headline-b">கொடி - பாடல் டீசர்</div></a>
+							</div>
+		</div>
+        <!--cinema-->
+        
+        
+		
+        
+        
+		<!-- fashionandbeauty-->
+		<div class="panel-sub">
+									<a href="http://www.tamilmirror.lk/fashion-a-beauty">
+			<div class="header-b"><img src="http://static2.tamilmirror.lk/templates/images/cinema-2.jpg" width="250" height="30" alt=""/></div>
+			</a>
+			<div class="box-frame-b">
+				<a href="http://www.tamilmirror.lk/177139/The-Wedding-Show">
+				<div class="image"><img src="http://static1.tamilmirror.lk/images/uploads/article_1468576650-1.jpg" width="250" height="400" alt=""/></div>
+				
+				<div class="headline">The Wedding Show</div>
+				</a>
+				<div class="text">
+
+</div>
+									<a href="http://www.tamilmirror.lk/175634"><div class="headline-b">நீச்சலுடை வடிவமைப்பு...</div></a>
+									<a href="http://www.tamilmirror.lk/172845"><div class="headline-b">ஆடை அலங்கார  கண்காட்சி</div></a>
+									<a href="http://www.tamilmirror.lk/171859"><div class="headline-b">மேற்கத்தேய ஆடைகளில் அமைச்சர்கள்</div></a>
+									<a href="http://www.tamilmirror.lk/170279"><div class="headline-b"> நுவரெலியாவில்  FASHON SHOW...</div></a>
+							</div>
+		</div>
+        <!-- fashionandbeauty-->
+		
+        
+        <!--tour-->
+					<div class="panel-sub">
+												<a href="http://www.tamilmirror.lk/tour">
+				<div class="header-b"><img src="http://static2.tamilmirror.lk/templates/images/cinema-3.jpg" width="250" height="30" alt=""/></div>
+				</a>
+				<div class="box-frame-b">
+					<a href="http://www.tamilmirror.lk/173661">
+					<div class="image"><img src="http://static1.tamilmirror.lk/images/uploads/article_1464846772-1.jpg" width="250" height="400" alt=""/></div>
+					
+					<div class="headline">கோடை காலத்தில் குளு குளு கொண்டாட்டம்...</div>
+					</a>
+					<div class="text">
+
+</div>
+											<a href="http://www.tamilmirror.lk/166319/ச-ற-ற-ல-வலயம-"><div class="headline-b">சுற்றுலா வலயம்</div></a>
+											<a href="http://www.tamilmirror.lk/162484/ந-ர-வ-ழ-ச-ச-ய-ப-ர-க-க-"><div class="headline-b">நீர் வீழ்ச்சியை பார்க்க...</div></a>
+											<a href="http://www.tamilmirror.lk/159130/உல-ல-சப-பயண-கள-ன-வர-க-அத-கர-ப-ப-"><div class="headline-b">உல்லாசப் பயணிகளின் வருகை அதிகரிப்பு</div></a>
+									</div>
+			</div>
+		        <!--tour--> 
+        
+        
+        <!--temple-->
+        <div class="panel-sub">
+									<a href="http://www.tamilmirror.lk/temple">
+			<div class="header-b"><img src="http://static2.tamilmirror.lk/templates/images/cinema-4.jpg" width="250" height="30" alt=""/></div>
+			</a>
+			<div class="box-frame-b">
+				<a href="http://www.tamilmirror.lk/184810/த-ர-வ-ழ-">
+				<div class="image"><img src="http://static1.tamilmirror.lk/images/uploads/article_1477490259-aaaaaaaaa.jpg" width="250" height="400" alt=""/></div>
+				
+				<div class="headline">திருவிழா</div>
+				</a>
+				<div class="text">
+
+</div>
+									<a href="http://www.tamilmirror.lk/184690/-ஆவத-வர-ட-க-ர-ஜயந-த-"><div class="headline-b">83 ஆவது வருட குருஜயந்தி</div></a>
+									<a href="http://www.tamilmirror.lk/184458/அட-க-கல-ந-ட-ட-ல-"><div class="headline-b">அடிக்கல் நாட்டில்</div></a>
+									<a href="http://www.tamilmirror.lk/184109/ப-ன-த-ச-ச-யப-பர-ஆலயத-த-ன-ஆவத-வர-ட-ந-த-த-ர-வ-ழ-"><div class="headline-b">புனித சூசையப்பர் ஆலயத்தின் 208 ஆவது வருடாந்த திருவிழா</div></a>
+									<a href="http://www.tamilmirror.lk/184105/மத-தளமல-த-ர-க-க-மரன-ஆலயத-த-ல-ப-ரத-ஷ-ட-"><div class="headline-b">மத்தளமலை திருக்குமரன் ஆலயத்தில் பிரதிஷ்டை</div></a>
+							</div>
+		</div>
+        <!--temple-->
+        
+	</div> <!--left end-->
+	
+	<div class="mid-sub">
+		
+		<!--sportsmain-->
+		<div class="cat-box">
+			<a href="http://www.tamilmirror.lk/sports-main">
+				<div class="heading"><img src="http://static2.tamilmirror.lk/templates/images/sports.gif" width="440" height="37" /></div>
+			</a>
+								<div class="left-content">
+						<a href="http://www.tamilmirror.lk/184916/ஊக-கமர-ந-த-ப-ப-வன-ப-ர-ன-பதக-கங-கள-பற-ப-ப-" class="content-heading">ஊக்கமருந்துப் பாவனை: 9 பேரின் பதக்கங்கள் பறிப்பு 						<div class="left-content-image"><img src="http://static1.tamilmirror.lk/images/uploads/article_1477579253-93beDoping-3_27102016_GPI.jpg" width="225" height="140" /></div></a>
+						<div class="content">2008இலும் 2012இலும் இடம்பெற்ற ஒலிம்பிக் போட்டிகளில் ஊக்கமருந்துப்....
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/184915" class="rcontent-heading">2021ஆம் ஆண்டு: இங்கிலாந்தில் றக்பி உலகக்கிண்ணம் </a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">2021ஆம் ஆண்டு இடம்பெறவுள்ள றக்பி உலகக் கிண்ணம், இங்கிலாந்தில்....
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/184912" class="rcontent-heading">ரஹீமோடு முரண்படுகிறார் தமிம் </a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">பங்களாதேஷ், இங்கிலாந்து அணிகளுக்கிடையிலான 2 போட்டிகள் கொண்ட டெஸ்ட்....
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/184914" class="rcontent-heading">வெஸ்ட் ஹாம், செல்சி போட்டியில் இரசிகர்கள் இரகளை</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">வெஸ்ட் ஹாம் யுனைட்டெட், செல்சி ஆகிய அணிகளுக்கிடையில், இரசிகர்களின்....
+
+</div>
+					</div>	
+							</div>
+		
+		<!--international-->
+		<div class="cat-box">
+			<a href="http://www.tamilmirror.lk/international">
+				<div class="heading"><img width="440" height="37" src="http://static2.tamilmirror.lk/templates/images/sub-mid-2.jpg"></div>
+			</a>
+								<div class="left-content">
+						<a href="http://www.tamilmirror.lk/184907/அல-க-ய-த-தல-வர-கள-இலக-க-வ-ப-ப-அம-ர-க-க-" class="content-heading">அல் கொய்தா தலைவர்கள் இலக்கு வைப்பு: அமெரிக்கா						<div class="left-content-image"><img src="http://static1.tamilmirror.lk/images/uploads/article_1477575236-Al-Qaeda.jpg" width="225" height="140" /></div></a>
+						<div class="content">ஆப்கானிஸ்தானிலுள்ள அல்-கொய்தாவின் அதியுயர் சிரேஷ்ட தலைவர்கள் இருவரை....
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/184906" class="rcontent-heading">சிரியாவில் பாடசாலை மீது விமானத் தாக்குதல்: 22 சிறுவர்கள் பலி</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">எதிரணியின் கட்டுப்பாட்டிலுள்ள வடமேற்கு சிரிய மாகாணமான இட்லிப்பிலுள்ள....
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/184904" class="rcontent-heading">கலே முகாமிலிருந்து அகதிகள் அனைவரும் வெளியேற்றம் </a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">பிரான்ஸின் கலே நகரத்துக்கு அண்மையாகக் காணப்படும் சேரி போன்ற கட்டமைப்பைக்..
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/184894" class="rcontent-heading">வெனிசுவேலா ஆர்ப்பாட்டத்தில் பொலிஸ் அதிகாரியொருவர் இறந்தார்</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">வெனிசுவேலா ஜனாதிபதிக்கெதிராக, ஆயிரக்கணக்கான எதிர்க்கட்சி....
+
+</div>
+					</div>	
+							</div>
+		
+		<!--life-->
+		<div class="cat-box">
+			<a href="http://www.tamilmirror.lk/life">
+				<div class="heading"><img width="440" height="37" src="http://static2.tamilmirror.lk/templates/images/sub-mid-3.jpg"></div>
+			</a>
+								<div class="left-content">
+						<a href="http://www.tamilmirror.lk/184773/நல-ல-ம-ற-றங-கள-ப-ற-ற-தல-க-க-ர-யத-" class="content-heading">நல்ல மாற்றங்கள் போற்றுதலுக்குரியதே!						<div class="left-content-image"><img src="http://static1.tamilmirror.lk/images/uploads/article_1477457352-jkgyoll.jpg" width="225" height="140" /></div></a>
+						<div class="content">
+
+எவருமே குறை சொல்லக் கேட்டு வாழ்வதைவிடத் தங்களின் கருமையைக் களைவதே பிரதான...
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/184673/மக-கள-க-க-எத-ர-ன-அர-ஜகப-ப-ர-" class="rcontent-heading">மக்களுக்கு எதிரான அராஜகப் போர்</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">
+
+நேர்மையான வழங்கல்களை மக்களுக்குக் கொடுத்தலே பெரும் இலாபமீட்டுதலுக்கான...
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/184574/க-லம-கட-த-ன-ஓட-ம-" class="rcontent-heading">காலம் கடிதென ஓடும்…</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">
+
+செயலாற்றுபவர்கள் காலநிலை சரியில்லை என எண்ணினால் எதிர்காலம் என்னாவது?...
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/184350/ம-னம-கவ-ஓர-ர-வ-ர-த-த-கள-உத-ர-க-க-ம-ப-ர-வழ-கள-" class="rcontent-heading">மௌனமாகவே ஓரிரு வார்த்தைகளை உதிர்க்கும் பேர்வழிகள்</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">இனிக்க இனிக்கப் பேசியே ஆட்களைக் கவிழ்ப்பவர்கள் என ஏகப்பட்ட குணாம்சங்களுடன் தீயவர்கள்...
+
+</div>
+					</div>	
+								
+		</div>
+		
+		<!--sciencetech-->
+		<div class="cat-box">
+			<a href="http://www.tamilmirror.lk/science-tech">
+				<div class="heading"><img width="440" height="37" src="http://static2.tamilmirror.lk/templates/images/sub-mid-4.jpg"></div>
+			</a>
+								<div class="left-content">
+						<a href="http://www.tamilmirror.lk/184809/ம-ன-ற-வத-க-ல-ண-ட-க-அப-ப-ள-ன-வர-ம-னத-த-ல-வ-ழ-ச-ச-" class="content-heading">மூன்றாவது காலாண்டாக அப்பிளின் வருமானத்தில் வீழ்ச்சி						<div class="left-content-image"><img src="http://static1.tamilmirror.lk/images/uploads/article_1477489679-Apple.jpg" width="225" height="140" /></div></a>
+						<div class="content">கடந்த ஆறு மாதங்களில், அப்பிளின் வருமானம் வீழ்ச்சியடைந்ததுக்கான பிரதான....
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/184807/WhatsApp-இல-க-ண-ள-அழ-ப-ப-கள-" class="rcontent-heading">WhatsApp-இல் காணொளி அழைப்புகள்</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">காணொளி அழைப்புகளுக்கு WhatsApp ஒத்துழைப்பு வழங்குவதற்கான வசதி, விரைவில்..
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/184805/Smartwatch-வ-ற-பன-ய-ல-ப-ர-ய-வ-ழ-ச-ச-" class="rcontent-heading">Smartwatch விற்பனையில் பாரிய வீழ்ச்சி</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">சந்தை ஆய்வாளர்கள் நிறுவனமான IDC-இனால் வெளியிடப்பட்ட புதிய....
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/184302/எத-ர-வர-ம-வ-ய-ழக-க-ழம-வ-ள-ய-க-றத-அப-ப-ள-ன-MacBook-Pro-" class="rcontent-heading">எதிர்வரும் வியாழக்கிழமை வெளியாகிறது அப்பிளின் MacBook Pro? </a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">அப்பிளின் அடுத்த நிகழ்வு, எதிர்வரும் வியாழக்கிழமை நடக்கவுள்ளதாக.....
+
+</div>
+					</div>	
+							</div>
+		
+		<!--business-->
+		<div class="cat-box">
+			<a href="http://www.tamilmirror.lk/business">
+				<div class="heading"><img width="440" height="37" src="http://static2.tamilmirror.lk/templates/images/sub-mid-5.jpg"></div>
+			</a>
+								<div class="left-content">
+						<a href="http://www.tamilmirror.lk/184902/Cash-Bonanza-பர-ச-ழ-ப-ப-ன-வ-ற-ற-ய-ளர-த-ர-க-ணமல-ய-ல-" class="content-heading">Cash Bonanza பரிசிழுப்பின் வெற்றியாளர் திருகோணமலையில்						<div class="left-content-image"><img src="http://static1.tamilmirror.lk/images/uploads/article_1477568475-Mobite1.jpg" width="225" height="140" /></div></a>
+						<div class="content">மொபிடெல் நிறுவனத்தின் 2016 ஆம் ஆண்டுக்கான...
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/184903/MRICH-ஐ-பர-மர-க-க-ம-த-ந-தம-ர-ம-ல-" class="rcontent-heading">MRICH-ஐ பராமரிக்க மாதாந்தம் ரூ. 17 மில்.</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">மத்தளையில் நிறுவப்பட்டுள்ள, மகம்...
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/184804/Art-of-Living-exhibition-க-க-ச-ல-ன-வங-க-அன-சரண-" class="rcontent-heading">Art of Living exhibition 2016க்கு செலான் வங்கி அனுசரணை</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">செலான் வங்கி பிரதான மற்றும் பிரத்தியேக அனுசரணையாளராக....
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/184800/வ-த-ப-ப-த-க-ப-ப-க-க-Caltex-பங-கள-ப-ப-அத-கர-ப-ப-" class="rcontent-heading">வீதிப் பாதுகாப்புக்கு  Caltex பங்களிப்பு அதிகரிப்பு</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">சமூகப் பொருளாதாரத்துக்குத் தாக்கத்தை...
+
+</div>
+					</div>	
+							</div>
+		
+		<!--worldrecords-->
+		<div class="cat-box">
+			<a href="http://www.tamilmirror.lk/world-records">
+				<div class="heading"><img width="440" height="37" src="http://static2.tamilmirror.lk/templates/images/sub-mid-6.jpg"></div>
+			</a>
+								<div class="left-content">
+						<a href="http://www.tamilmirror.lk/161528/உலக-ல-அத-கம-ன-அபர-த-த-க-ய-ச-ல-த-த-ய-நபர-" class="content-heading">உலகில் அதிகமான அபராத தொகையை செலுத்திய நபர்?						<div class="left-content-image"><img src="http://static1.tamilmirror.lk/images/uploads/article_1450153387-1.jpg" width="225" height="140" /></div></a>
+						<div class="content">
+
+பாரிய குற்றங்களுக்காக சிறிய தொகையை அபராதமாக செலுத்தியவர்களே வரலாற்றில்...
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/158103/உட-க-க-ம-ட-ய-த-கடவ-ச-ச-ல-வ-ண-ட-ம-ம-ர-வ-ன-ச-தன-" class="rcontent-heading">உடைக்க முடியாத கடவுச்சொல் வேண்டுமா: மீராவின் சாதனை</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">123456, இதுதான் உலகில் அதிகமாக பயன்படுத்தப்படும் கடவுச்சொல் என்றால் நீங்கள்...
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/152894/இண-ய-தவற-கள-த-தட-க-க-ம-ன-ப-ர-ள-கண-ட-ப-ட-த-த-ச-த-த-த-ம-ணவ-" class="rcontent-heading">இணைய தவறுகளைத் தடுக்க மென்பொருள் கண்டுபிடித்து சாதித்த மாணவி</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">
+
+அமெரிக்காவின், நியூயோர்க்கில், இணையதள தவறுகளை தடுக்கும் வகையிலான மென்பொருளை...
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/148780/அல-ச-சற-க-கல-ல-ச-தன-" class="rcontent-heading">அலைச்சறுக்கலில் சாதனை</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">
+
+அமெரிக்காவின் தெற்கு கலிபோர்னியாவிலுள்ள ஹன்டிங்டன் கடற்கரையில்...
+
+</div>
+					</div>	
+							</div>
+		
+		<!--gossip-->
+		<div class="cat-box">
+			<a href="http://www.tamilmirror.lk/gossip">
+				<div class="heading"><img width="440" height="37" src="http://static2.tamilmirror.lk/templates/images/sub-mid-7.jpg"></div>
+			</a>
+								<div class="left-content">
+						<a href="http://www.tamilmirror.lk/181995/அம-ர-க-க-வ-ல-த-வ-த-தர-" class="content-heading">அமெரிக்காவில் 'தேவ தூதர்'						<div class="left-content-image"><img src="http://static1.tamilmirror.lk/images/uploads/article_1474004894-225.jpg" width="225" height="140" /></div></a>
+						<div class="content">
+
+அமெரிகாவின் உலக வர்த்தக மையம் அமை...
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/181526/உலக-ல-ய-அவலட-சணம-ன-ப-ண-ண-ன-வ-ழ-வ-ல-ஒள-" class="rcontent-heading">உலகிலேயே அவலட்சணமான பெண்ணின் வாழ்வில் ஒளி</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">
+
+17 வயதில் அவரைப் பழிக்கும் வீடியோக்களை ஓன்லைனில் கண்டு...
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/181522/-இல-அச-ட-வ-ச-ச-த-த-க-க-தல-இன-ற-வ-ர-நட-" class="rcontent-heading">2014இல் அசிட் வீச்சுத் தாக்குதல்; இன்று வீர நடை..</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">
+
+அவள் முகத்தில் அசிட் வீச்சுத் தாக்குதல் நடத்தினர். ஆனால், ரெஷ்மா குறேஸி,...
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/181198/க-ட-த-ண-ட-ன-ல-க-ட-" class="rcontent-heading">கோடு தாண்டினால் கோட்?</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">
+
+காரானது, வீதிக்கு நெடுகே இருந்த கோட்டுக்கு அருகே பயணித்துள்ளது. எனினும், அக்கோட்டைத் தாண்டவில்லை...
+
+</div>
+					</div>	
+							</div>
+		
+		<!--popularity-->
+		<div class="cat-box">
+			<a href="http://www.tamilmirror.lk/popularity">
+				<div class="heading"><img width="440" height="37" src="http://static2.tamilmirror.lk/templates/images/sub-mid-8.jpg"></div>
+			</a>
+								<div class="left-content">
+						<a href="http://www.tamilmirror.lk/178921/ப-ரபல-நட-கர-வ-ஜய-நந-தச-ற-க-லம-ன-ர-" class="content-heading">பிரபல நடிகர் விஜய நந்தசிறி காலமானார்						<div class="left-content-image"><img src="http://static1.tamilmirror.lk/images/uploads/article_1470654387-vijaya-nandasiri.jpg" width="225" height="140" /></div></a>
+						<div class="content">இலங்கை சிங்கள சினிமாவின் மூத்த நடிகர் விஜய நந்தசிறி, தனது 72ஆவது வயதில் இன்று திங்கட்கிழமை காலமானார்...
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/177136/தங-கச-சட-ட-த-ழ-லத-பர-அட-த-த-க-க-ல-" class="rcontent-heading">தங்கச் சட்டை தொழிலதிபர் அடித்துக்கொலை</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">
+
+தங்கத்தால் செய்யப்பட்ட சட்டையை அணிந்து பரபரப்பை...
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/176910/மர-க-க-ர-ர-மத-ஸ-க-லம-ன-ர-" class="rcontent-heading">மரிக்கார் ராமதாஸ் காலமானார்</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">இலங்கை கலையுலகின் முன்னணி நகைச்சுவை நடிகரும் நாடாக நடிகர், நாடக ஆசிரியரான மரிக்கார் ராமதாஸ், சென்னையில்...
+
+</div>
+					</div>	
+										<div class="right-content">
+						<a href="http://www.tamilmirror.lk/175629/ச-எஸ-க-ந-த-க-லம-ன-ர-" class="rcontent-heading">சி.எஸ்.காந்தி காலமானார்</a>
+						<div class="rcontent" style="border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #eee;">மலையக இலக்கியவாதியான சி.வி.வேலுப்பிள்ளையின் பேரனும் மலையகத்தின் மூத்த கவிஞரும் ஊடகவியலாளருமான
+
+</div>
+					</div>	
+							</div>
+		
+	</div><!--mid end-->
+		<div class="right-sub">
+		
+		
+		<div class="panel-sub">
+			<a href="http://www.tamilmirror.lk/local-sports">
+			<div class="header-c"><img width="250" height="30" alt="" src="http://static2.tamilmirror.lk/templates/images/h-1.jpg"></div>
+			</a>
+			<div class="box-frame-mini">
+				
+										<div class="w-box-mini"><a href="http://www.tamilmirror.lk/184918/சம-ப-யன-னத-மட-டக-களப-ப-ம-வட-ட-ச-யலகம-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1477580017-Batti---Champions.jpg"> 
+							<div class="headline">சம்பியனானது மட்டக்களப்பு மாவட்ட செயலகம் </div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/184917/-சம-ப-யன-னத-க-ண-ண-ய-த-ர-ல-உல-ம-மக-வ-த-த-ய-லயம-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1477579603-Trinco---Champions.jpg"> 
+							<div class="headline"> சம்பியனானது கிண்ணியா தாருல் உலூம் மகா வித்தியாலயம்</div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/184538/சம-ப-யன-னத-ப-த-தளம-ட-ரகன-ஸ-கழகம-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1477231671-LEAD---Champions.jpg"> 
+							<div class="headline">சம்பியனானது புத்தளம் ட்ரகன்ஸ் கழகம்</div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/184418/மகள-ர-க-ல-பந-த-ட-ட-இற-த-ப-ப-ட-ட-ய-ல-யதன-ச-ட-த-ம-வ-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1476983327-f152Sujitha-Photos_20102016_GPI.jpg"> 
+							<div class="headline">மகளிர் கால்பந்தாட்ட இறுதிப் போட்டியில் யதன்சைட் த.ம.வி </div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/184417/சம-ப-யன-னத-மட-டக-களப-ப-க-ட-டம-ன-வ-க">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1476983131-LEAD-Champions.jpg"> 
+							<div class="headline">சம்பியனானது மட்டக்களப்பு கோட்டமுனை வி.க</div>
+							<div class="text"></div>
+						</a></div>
+											<a href="http://www.tamilmirror.lk/localsports"><div class="w-box-more-mini">MORE</div></a>
+			</div>
+		</div>
+        
+        
+        
+		<div class="panel-sub">
+			<div class="header-c"><img width="250" height="30" src="http://static2.tamilmirror.lk/templates/images/jothidam(1).gif" alt=""></div>
+			<div class="box-frame-mini">
+				
+				
+				<a href="http://www.tamilmirror.lk/astrology-daily"><div class="tvimage"> <img width="80" height="80" src="http://static2.tamilmirror.lk/templates/images/as-today.png" alt=""></div></a>
+				<a href="http://www.tamilmirror.lk/astrology-weekly"><div style="margin-left:5px; margin-right:5px" class="tvimage"> <img width="80" height="80" src="http://static2.tamilmirror.lk/templates/images/as-weekly.png" alt=""> </div></a>
+				<a href="http://www.tamilmirror.lk/astrology-special"><div class="tvimage"> <img width="80" height="80" src="http://static2.tamilmirror.lk/templates/images/as-common.png" alt=""> </div></a>
+			</div>
+		</div>
+        
+        
+        
+        
+		
+        
+        <div class="panel-sub">
+			<a href="http://www.tamilmirror.lk/sports-articles">
+			<div class="header-c"><img width="250" height="30" alt="" src="http://static2.tamilmirror.lk/templates/images/right-sub-2.jpg"></div>
+			</a>
+			<div class="box-frame-mini">
+										<div class="w-box-mini"><a href="http://www.tamilmirror.lk/184562/எங-க-ச-ல-க-றத-க-ர-க-க-ட-சப-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1477244092-TamilSLC-1_23102016_GPI.jpg"> 
+							<div class="headline">எங்கே செல்கிறது கிரிக்கெட் சபை? </div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/184081/இந-த-ய-ந-ய-ச-ல-ந-த-ஒ-ந-ச-ப-த-டர-ம-ன-ன-ட-டம-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1476627044-Tamilxuvfex7r.jpg"> 
+							<div class="headline">இந்தியா, நியூசிலாந்து ஒ.நா.ச.போ தொடர் முன்னோட்டம் </div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/184615/த-ன-ன-ப-ர-க-க-அவ-ஸ-த-ர-ல-ய-ஒ-ந-ச-ப-த-டர-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1477303144-Tamilpcmv0d1b.jpg"> 
+							<div class="headline">தென்னாபிரிக்கா, அவுஸ்திரேலிய ஒ.நா.ச.போ தொடர் </div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/184082/இந-த-ய-ந-ய-ச-ல-ந-த-ட-ஸ-ட-த-டர-ம-ள-ப-ர-வ-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1476635485-Tamil253334.jpg"> 
+							<div class="headline">இந்தியா, நியூசிலாந்து டெஸ்ட் தொடர் மீள் பார்வை</div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/183507/ப-க-ஸ-த-ன-ம-த-வ-கள-ஒ-ந-ச-ப-த-டர-ம-ள-ப-ர-வ-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1475944111-253110.jpg"> 
+							<div class="headline">பாகிஸ்தான்-மே.தீவுகள் ஒ.நா.ச,போ தொடர் மீள்பார்வை </div>
+							<div class="text"></div>
+						</a></div>
+											<a href="http://www.tamilmirror.lk/sportsarticles"><div class="w-box-more-mini">MORE</div></a>
+			</div>
+		</div>
+        
+        
+        <div class="panel-sub">
+			<a href="http://www.tamilmirror.lk/medical">
+			<div class="header-c"><img width="250" height="30" alt="" src="http://static2.tamilmirror.lk/templates/images/right-sub-3.jpg"></div>
+			</a>
+			<div class="box-frame-mini">
+										<div class="w-box-mini"><a href="http://www.tamilmirror.lk/177009/கண-ன-ய-ன-ம-ன-அமர-வத-எப-பட-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1468470334-00.jpg"> 
+							<div class="headline">கணினியின் முன் அமர்வது எப்படி?</div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/172129/ப-த-ப-ப-ஏற-பட-த-த-ம-ஈ-க-ல-கள-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1463115577-1a.jpg"> 
+							<div class="headline">பாதிப்பை ஏற்படுத்தும் ஈ-கோலிகள்</div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/172077/ப-த-ப-ப-ஏற-பட-த-த-ம-ஈ-க-ல-கள-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1463053980-aaaaaaaaaaaaa.jpg"> 
+							<div class="headline">பாதிப்பை ஏற்படுத்தும் ஈ-கோலிகள்</div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/171562/உடற-பய-ற-ச-ய-ன-ம-க-க-யத-த-வம-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1462511195-aaaaaaaaaaa.jpg"> 
+							<div class="headline">உடற் பயிற்சியின் முக்கியத்துவம்</div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/169210/கர-ப-ப-க-லத-த-ல-ஏற-பட-ம-உயர-க-ர-த-அழ-த-தம-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1459398206-1.jpg"> 
+							<div class="headline">கர்ப்ப காலத்தில் ஏற்படும் உயர்குருதி அழுத்தம்</div>
+							<div class="text"></div>
+						</a></div>
+											<a href="http://www.tamilmirror.lk/medical"><div class="w-box-more-mini">MORE</div></a>
+			</div>
+		</div>
+        
+        
+        <div class="panel-sub">
+			<a href="http://www.tamilmirror.lk/art">
+			<div class="header-c"><img width="250" height="30" alt="" src="http://static2.tamilmirror.lk/templates/images/right-sub-4.jpg"></div>
+			</a>
+			<div class="box-frame-mini">
+										<div class="w-box-mini"><a href="http://www.tamilmirror.lk/184870/-ப-ரத-ச-தம-ழ-இலக-க-ய-வ-ழ-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1477546355-4.jpg"> 
+							<div class="headline"> பிரதேச தமிழ் இலக்கிய விழா</div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/184860/ந-ன-வ-ப-ப-ர-ர-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1477545382-a.jpg"> 
+							<div class="headline">நினைவுப் பேருரை</div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/184858/ம-ள-ய-இந-த-இள-ஞர-கள-ன-வ-ண-வ-ழ-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1477544999-1.jpg"> 
+							<div class="headline">மூளாய் இந்து இளைஞர்களின் வாணி விழா</div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/184855/-கண-க-ட-ச-ய-ம-ந-ல-வ-ள-ய-ட-ம-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1477544601-a.jpg"> 
+							<div class="headline">  கண்காட்சியும் நூல் வெளியீடும்</div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/184853/-அக-க-ன-ய-ய-வ-ள-ய-வ-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1477544225-1.jpg"> 
+							<div class="headline"> 'அக்கினியாய்  வெளியே வா'</div>
+							<div class="text"></div>
+						</a></div>
+											<a href="http://www.tamilmirror.lk/art"><div class="w-box-more-mini">MORE</div></a>
+			</div>
+		</div>
+        
+        
+        <div class="panel-sub">
+			<a href="http://www.tamilmirror.lk/artiest">
+			<div class="header-c"><img width="250" height="30" alt="" src="http://static2.tamilmirror.lk/templates/images/right-sub-5.jpg"></div>
+			</a>
+			<div class="box-frame-mini">
+										<div class="w-box-mini"><a href="http://www.tamilmirror.lk/178393/ச-தன-ய-ளர-கள-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1470032624-index.jpg"> 
+							<div class="headline">சாதனையாளர்கள்...</div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/176968/அம-ர-தல-ங-கத-த-ன-ஆவத-ந-ன-வ-த-னம-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1468407478-000.jpg"> 
+							<div class="headline">அமிர்தலிங்கத்தின் 27ஆவது நினைவுதினம்</div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/175275/எத-ர-மன-னச-ங-கம-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1466569252-20.jpg"> 
+							<div class="headline">எதிர்மன்னசிங்கம்</div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/175269/-கவ-த-எழ-த-யதற-க-கவ-கவ-ஞர-கள-க-ல-லப-பட-ட-ர-க-க-ன-றனர-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1466568421-2.jpg"> 
+							<div class="headline">  “கவிதை எழுதியதற்காகவே கவிஞர்கள் கொல்லப்பட்டிருக்கின்றனர்”</div>
+							<div class="text"></div>
+						</a></div>
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/173056/கவ-ஞர-ஹஸன-ர-ஷக-க-ப-க-லம-ன-ர-">
+							<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1464157585-death.jpg"> 
+							<div class="headline">கவிஞர் ஹஸனார் ஷக்காப் காலமானார்</div>
+							<div class="text"></div>
+						</a></div>
+											<a href="http://www.tamilmirror.lk/artiest"><div class="w-box-more-mini">MORE</div></a>
+			</div>
+		</div>
+        
+        			<div class="panel-sub">
+				<a href="http://www.tamilmirror.lk/poem">
+				<div class="header-c"><img width="250" height="30" alt="" src="http://static2.tamilmirror.lk/templates/images/right-sub-6.jpg"></div>
+				</a>
+				<div class="box-frame-mini">
+												<div class="w-box-mini"><a href="http://www.tamilmirror.lk/174359/-கய-ஸ-த-யர-">
+								<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1465535016-8.jpg"> 
+								<div class="headline">'கயாஸ் தியரி'</div>
+								<div class="text">
+
+</div>
+							</a></div>
+														<div class="w-box-mini"><a href="http://www.tamilmirror.lk/172512/-ப-ண-ணல-ல-ந-எனக-க-">
+								<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1463546717-eb2f7987f317f5d38dffbe302b5a6ef7.jpg"> 
+								<div class="headline">'பெண்ணல்ல நீ எனக்கு'</div>
+								<div class="text">
+
+</div>
+							</a></div>
+														<div class="w-box-mini"><a href="http://www.tamilmirror.lk/172145/என-க-தல-">
+								<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1463118167-sss.jpg"> 
+								<div class="headline">என் காதல்...</div>
+								<div class="text">
+
+</div>
+							</a></div>
+														<div class="w-box-mini"><a href="http://www.tamilmirror.lk/172142/த-ய-ம-ந-ன-ம-">
+								<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1463117806-zxzx.jpg"> 
+								<div class="headline">தாயும் நானும்....</div>
+								<div class="text">
+
+</div>
+							</a></div>
+														<div class="w-box-mini"><a href="http://www.tamilmirror.lk/169881/ச-த-தத-த-வ-ன-ற-ட-ம-த-ர-ம-க-ச-த-த-ர-">
+								<img width="90" height="60" alt="" src="http://static1.tamilmirror.lk/images/uploads/article_1460108977-1.jpg"> 
+								<div class="headline">சித்தத்தை வென்றிடும் துர்முகி சித்திரை</div>
+								<div class="text">
+
+
+</div>
+							</a></div>
+													<a href="http://www.tamilmirror.lk/poem"><div class="w-box-more-mini">MORE</div></a>
+				</div>
+			</div>
+				
+        
+		        
+		        
+		
+        
+        		
+		<div class="slider-m">
+          <a href="http://www.tamilmirror.lk/today-history">
+				<div class="header-c"><img src="http://www.tamilmirror.lk/templates/images/varalatril-intru.gif" /></div>
+				</a>
+			
+								
+					  <div class="main-image"><a href="http://www.tamilmirror.lk/184366/வரல-ற-ற-ல-இன-ற-ஒக-ட-பர-"><img width="250" height="200" src="http://static1.tamilmirror.lk/images/uploads/article_1476946522-01.jpg">
+					  </a><div class="descriptionm"><a href="http://www.tamilmirror.lk/184366/வரல-ற-ற-ல-இன-ற-ஒக-ட-பர-">
+								<p class="description_contentm">வரலாற்றில் இன்று: ஒக்டோபர் 20</p></a>
+							  </div>
+					  </div>
+
+          <div class="thumb-frame">
+		  						
+				  <a  href="http://www.tamilmirror.lk/184120/வரல-ற-ற-ல-இன-ற-ஒக-ட-பர-">
+            <div class="thumb-image"><img width="59" height="40" src="http://static1.tamilmirror.lk/images/uploads/article_1476688835-mother-teresa-13.jpg"></div>
+			 </a>
+			
+            
+         
+								
+				  <a  href="http://www.tamilmirror.lk/184021/வரல-ற-ற-ல-இன-ற-ஒக-ட-பர-">
+            <div class="thumb-image"><img width="59" height="40" src="http://static1.tamilmirror.lk/images/uploads/article_1476599869-300.jpg"></div>
+			 </a>
+			
+            
+         
+								
+				  <a  href="http://www.tamilmirror.lk/183908/வரல-ற-ற-ல-இன-ற-ஒக-ட-பர-">
+            <div class="thumb-image"><img width="59" height="40" src="http://static1.tamilmirror.lk/images/uploads/article_1476420883-SL_Independence.jpg"></div>
+			 </a>
+			
+            
+         
+								
+				  <a  href="http://www.tamilmirror.lk/183863/வரல-ற-ற-ல-இன-ற-ஒக-ட-பர-">
+			<div style="margin-right:0px !important" class="thumb-image"><img width="59" height="40" src="http://static1.tamilmirror.lk/images/uploads/article_1476343288-123.jpg"></div>
+		  </a>
+		  						
+				
+		 </div>
+          </div>
+				
+		
+		
+		
+	</div><!--right end-->
+	
+</div><!--bottom container end-->
+
+    
+    
+			<!--footer-->
+			<div class="footer"> 
+				<div class="footer-content">
+					<div class="footer_nav">
+						<div class="footer_nav_text"><a target="_blank" href="http://www.tamilmirror.lk/">HOME</a></div>
+						<div class="footer_nav_text"><a target="_blank" href="http://www.pay.wijeya.lk/Subscribe/index.aspx">HOME DELIVERY</a></div>
+						<!--div class="footer_nav_text"><a href="#">ABOUT US</a></div-->
+						<div class="footer_nav_text"><a target="_blank" href="#">CONTACT US</a></div>
+						<div class="footer_nav_text"><a target="_blank" href="http://banner.wijeya.net/Banners/advertise_with_us/index.htm#tm_section">AD SPECS</a></div>
+						<div class="footer_nav_text"><a target="_blank" href="http://www.wijeyanewspapers.lk/">WNL HOME</a></div>
+						<!--div class="footer_nav_text"><a href="#">ARCHIVES</a></div>
+						<div class="footer_nav_text"><a href="#">FEEDBACK</a></div-->
+						<!--<div class="footer_nav_top"><a href="#"><img src="http://static2.tamilmirror.lk/templates/images/top.gif" /></a></div>-->
+					</div>
+      
+					<div class="footer_link_box">
+						<div class="footer_link_main">Group Sites : </div>
+						<a target="_blank" class="footer_link_sub" rel="nofollow" href="http://www.lankadeepa.lk/">Lankadeepa</a>
+						<a target="_blank" class="footer_link_text"  href="http://www.dailymirror.lk/">Dailymirror</a>
+						<a target="_blank" class="footer_link_text"  href="http://www.ft.lk/">Daily FT</a>
+						<a target="_blank" class="footer_link_text"  href="http://www.sundaytimes.lk/">Sunday times</a>
+						<a target="_blank" class="footer_link_text"  href="http://www.ada.lk/">Ada</a>
+						<a target="_blank" class="footer_link_text"  href="http://hitv.dailymirror.lk/">HI Mag</a>
+						<a target="_blank" class="footer_link_text"  href="http://lw.dailymirror.lk/">Lanka Women</a>
+						<a target="_blank" class="footer_link_text"  href="http://www.wijeyanewspapers.lk/">WNL</a>
+						<a target="_blank" class="footer_link_text"  href="http://www.tamilmirror.lk/">Tamil Mirror</a>
+						<a target="_blank" class="footer_link_text"  href="http://sports.dailymirror.lk/">Mirror Sports</a>
+						<a target="_blank" class="footer_link_text"  href="http://mirrorcitizen.lk/">Mirrorcitizen</a>
+						<a target="_blank" class="footer_link_text"  href="http://tamil.wisdensrilanka.lk/">Wisden</a>
+						<a target="_blank" class="footer_link_text" style="margin-right:10px"  href="http://www.deshaya.lk/">Deshaya</a>
+					</div>
+					<div class="footer_link_box">
+						<div class="footer_link_main2">Services : </div>
+						<a class="footer_link_texts"  href="http://www.pay.wijeya.lk/Subscribe/index.aspx">Home delivery</a>
+						<a class="footer_link_texts"  href="mailto:Pradeep@admin.wnl.lk">Webmaster</a>
+						<a class="footer_link_texts"  href="http://banner.wijeya.net/Banners/advertise_with_us/index.htm#tm_section">Web Ads</a>
+						<a class="footer_link_texts"  href="mailto:dmnews@wijeya.lk">Editorial</a>
+						<a class="footer_link_texts"  href="mailto:helpdesk@wijeya.net">Help Desk</a>
+						<a class="footer_link_texts"  href="https://plus.google.com/+DailymirrorLkdm/posts">Google +</a>
+						<a class="footer_link_texts"  href="http://feeds.feedburner.com/TamilmirrorBreakingNews">News Alerts</a>
+						<a class="footer_link_texts"  href="http://banner.wijeya.net/Banners/advertise_with_us/index.htm#tm_section">Book Print Ads</a>
+						<a class="footer_link_texts"  href="http://content.tamilmirror.lk/tmradio/">Tamil Radio</a>
+						<a class="footer_link_texts"  href="http://print.hitad.lk">Hitad Print</a>
+						<a class="footer_link_texts"  href="http://timesjobs.hitad.lk/">Times Jobs</a>
+						<a class="footer_link_texts"  href="http://www.wijeya.lk/">Wijeya</a>
+						<a class="footer_link_texts"  href="http://educationtimes.lk/">Times Education</a>
+						<a class="footer_link_texts"  href="http://www.wijeyanewspapers.lk/">WNL Home</a>
+					</div>
+
+					<div class="footer_link_box">
+						<div class="footer_link_main4">e-papers  : </div>
+						<a target="_blank" class="footer_link_texts"  href="http://dailylankadeepa.newspaperdirect.com/epaper/viewer.aspx">Lankadeepa</a>
+						<a target="_blank" class="footer_link_texts"  href="http://sundaylankadeepa.newspaperdirect.com/epaper/viewer.aspx">Sunday Lankadeepa</a>
+						<a target="_blank" class="footer_link_texts"  href="http://epaper.dailymirror.lk/epaper/viewer.aspx">Daily Mirror</a>
+						<a target="_blank" class="footer_link_texts"  href="http://epaper.ada.lk/">Ada</a>
+						<a target="_blank" class="footer_link_texts"  href="http://epaper.tamilmirror.lk/">Tamil Mirror</a>
+						<a target="_blank" class="footer_link_texts"  href="http://epaper.ft.lk/">Daily FT</a>
+						<a target="_blank" class="footer_link_texts"  href="http://deshaya.lk/">Deshaya</a>
+						<a target="_blank" class="footer_link_texts"  href="http://epaper.lk/">Wijeya e-paper portal</a>
+					</div>
+
+					<div class="footer_copyright">All the content on this website is copyright protected and can be reproduced only by giving the due courtesy to 'dailymirror.lk'  
+      Copyright © 2012 Wijeya Newspapers Ltd.</div>
+				</div>
+				<!--footer content eng-->
+			</div>
+			<!--footer-->
+    
+		</div>
+		<!--frame-->
+	</div>
+	<!--wrapper-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="http://static2.tamilmirror.lk/templates/js/js/mhgallery.js"></script>
+	<script type="text/javascript" src="http://static2.tamilmirror.lk/templates/js/js/initgallery.js"></script>
+
+	<script type="text/javascript" src="http://static2.tamilmirror.lk/templates/js/smk-accordion.js"></script>
+	<script type="text/javascript">
+		$(".accordion_example3").smk_Accordion({
+			showIcon: false, //boolean
+		});
+	</script>
+    
+	<!-- bxSlider Javascript file -->
+	<script src=" http://static2.tamilmirror.lk/templates/js/jquery.bxslider.min.js"></script>
+ 
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.slider5').bxSlider({
+				slideWidth: 300,
+				minSlides: 6,
+				maxSlides: 6,
+				moveSlides: 1,
+				slideMargin: 10,
+				captions: true,
+				auto:true,
+				pager:false
+			});
+		});
+	</script>
+    
+    <script language="javascript">
+		jQuery(document).ready(function(){ adsBanner(); });
+		jQuery(window).resize(function(){ adsBanner(); });
+		function adsBanner(){
+			var windowWidth = jQuery(window).width();
+			if(windowWidth > 1324) {
+				jQuery(".adsBanner").show();
+				if(windowWidth > 1334) {
+					var positionPx = ((windowWidth - 1334) / 2) + "px";
+					jQuery(".invisible1").css('left',positionPx);
+					jQuery(".invisible2").css('right',positionPx);
+				}
+			}
+			else { jQuery(".adsBanner").hide(); }
+		}
+	</script>
+	<a href="http://whos.amung.us/stats/xsx4tpfpm711/"><img alt="" border="0" height="1" src="http://whos.amung.us/widget/xsx4tpfpm711.png" title="Click to see how many people are online" width="1" /></a>
+	<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-18029962-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</body>
+</html>

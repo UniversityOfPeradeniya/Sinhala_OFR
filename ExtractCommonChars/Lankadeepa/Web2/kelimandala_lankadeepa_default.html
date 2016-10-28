@@ -1,0 +1,1658 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<style>
+                                .invisible1{
+                                    width:150px; 
+                                    height:600px;
+                                    padding: 0px;
+                                    position:fixed;
+                                    display:block;
+                                    float: left;
+                                    top: 0px;
+                                    right: 0px;
+                                    left:20px !important;
+                                    bottom: 0px;
+                                    
+
+                                    margin-top: 0px;
+                                    margin-right: 0px;
+                                    margin-bottom: 0px;
+                                    margin-left: 10px;
+                                }
+                                .invisible2{
+                                    width:150px;
+                                    height:600px;
+                                    position:fixed;
+                                    right:30px !important;
+                                    padding: 0px;
+                                    float: left;
+                                    display:block;
+                                    
+
+                                    margin-top: 0px;
+                                    margin-right: 0px;
+                                    margin-bottom: 0px;
+                                    margin-left: 0px;
+                                }
+								
+								.pop-bt{
+									background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 6px 15px 6px 15px;
+  text-decoration: none;
+  border:none;
+	}
+	.pop-bt:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  border:none;
+}
+.modal-backdrop.in {
+	filter: alpha(opacity=50);
+	opacity: .75
+}
+                            </style>
+                            <script language="javascript">
+			   $s= jQuery.noConflict();
+
+                                $s(document).ready(function(){ adsBanner(); });
+                                $s(window).resize(function(){ adsBanner(); });
+                                function adsBanner(){
+                                    var windowWidth = $s(window).width();
+                                    if(windowWidth > 1324) {
+                                        $s(".adsBanner").show();
+                                        if(windowWidth > 1334) {
+                                            var positionPx = ((windowWidth - 1334) / 2) + "px";
+                                            $s(".invisible1").css('left',positionPx);
+                                            $s(".invisible2").css('right',positionPx);
+                                        }
+                                    }
+                                    else { $s(".adsBanner").hide(); }
+                                }
+                            </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>කෙළිමඬල</title>
+<link rel="shortcut icon" href="favicon.png" type="image/png"/>
+<link rel="stylesheet" type="text/css" href="http://kelimandala.lankadeepa.lk/templates/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="http://kelimandala.lankadeepa.lk/templates/css/coin-slider-styles.css"/>
+<!--Menu bar-->
+<style type="text/css">
+     ul#menu li a:hover {
+            background-color: #5fa904;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            color: #fff;
+        }
+        .menu_wrapper {
+            width: 980px;
+            height: 34px;
+            background: #015e1d;
+            overflow: hidden;
+            font-family: 'Se-GANGA.ttf';
+            font-size: 16px;
+            color: #fff!important;
+        }
+        ul#menu li a {
+            color: #fff!important;
+        }
+    </style>
+<!--Menu bar over-->
+
+<!--tabbed panel scripts-->
+<script src="http://kelimandala.lankadeepa.lk/templates/js/tabbed_panel.js"></script>
+<script>
+$ff= jQuery.noConflict();
+    // When the document loads do everything inside here ...
+    $ff(document).ready(function () {
+
+        // When a link is clicked
+        $ff("a.tab").click(function () {
+
+
+            // switch all tabs off
+            $ff(".active").removeClass("active");
+
+            // switch this tab on
+            $ff(this).addClass("active");
+
+            // slide all content up
+            $ff(".content").slideUp();
+
+            // slide this content up
+            var content_show = $(this).attr("title");
+            $ff("#" + content_show).slideDown();
+
+        });
+
+    });
+</script>
+<!--tabbed panel scripts over-->
+
+    <script type="text/javascript" src="http://static.lankadeepa.lk/js/jquery.min.js"></script>
+<!--kelimadala unusuma slider-->
+<script type="text/javascript" language="javascript" src="http://kelimandala.lankadeepa.lk/templates/js/kelimadala_unusuma2.js"></script>
+<script type="text/javascript" language="javascript" src="http://kelimandala.lankadeepa.lk/templates/js/kelimadala_unusuma1.js"></script>
+
+<script type="text/javascript" src="http://kelimandala.lankadeepa.lk/templates/js/coin-slider.min.js"></script>
+<script type="text/javascript" src="http://kelimandala.lankadeepa.lk/templates/js/jquery.validate.js"></script>
+<script type="text/javascript" language="javascript">
+$ww= jQuery.noConflict();
+    $ww(function () {
+
+        //	Basic carousel, no options
+        $ww('#foo0').carouFredSel();
+
+        //	Basic carousel + timer, using CSS-transitions
+        $ww('#foo1').carouFredSel({
+            auto:{
+                pauseOnHover:'resume',
+                progress:'#timer1'
+            }
+        }, {
+            transition:true
+        });
+
+        //	Scrolled by user interaction
+        $ww('#foo2').carouFredSel({
+            auto:false,
+            prev:'#prev2',
+            next:'#next2',
+            pagination:"#pager2",
+            mousewheel:true,
+            swipe:{
+                onMouse:true,
+                onTouch:true
+            }
+        });
+
+        //	Variable number of visible items with variable sizes
+        $ww('#foo3').carouFredSel({
+            width:360,
+            height:'auto',
+            prev:'#prev3',
+            next:'#next3',
+            auto:false
+        });
+
+        //	Responsive layout, resizing the items
+        $ww('#foo4').carouFredSel({
+            responsive:true,
+            width:'100%',
+            scroll:2,
+            items:{
+                width:400,
+                //	height: '30%',	//	optionally resize item-height
+                visible:{
+                    min:2,
+                    max:6
+                }
+            }
+        });
+
+        //	Fuild layout, centering the items
+        $ww('#foo5').carouFredSel({
+            width:'100%',
+            scroll:2
+        });
+
+    });
+</script>
+
+
+<!--kelimadala unusuma slider over-->
+
+
+<!--main picture slider-->
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        //Execute the slideShow
+        slideShow();
+
+    });
+
+    function slideShow() {
+
+        //Set the opacity of all images to 0
+        $('#gallery a').css({opacity:0.0});
+
+        //Get the first image and display it (set it to full opacity)
+        $('#gallery a:first').css({opacity:1.0});
+
+        //Set the caption background to semi-transparent
+        $('#gallery .caption').css({opacity:1.0});
+
+        //Resize the width of the caption according to the image width
+        $('#gallery .caption').css({width:$('#gallery a').find('img').css('width')});
+
+        //Get the caption of the first image from REL attribute and display it
+        $('#gallery .content5').html($('#gallery a:first').find('img').attr('rel'))
+            .animate({opacity:1.0}, 400);
+
+        //Call the gallery function to run the slideshow, 6000 = change to next image after 6 seconds
+        setInterval('gallery()', 6000);
+
+    }
+
+    function gallery() {
+
+        //if no IMGs have the show class, grab the first image
+        var current = ($('#gallery a.show') ? $('#gallery a.show') : $('#gallery a:first'));
+
+        //Get next image, if it reached the end of the slideshow, rotate it back to the first image
+        var next = ((current.next().length) ? ((current.next().hasClass('caption')) ? $('#gallery a:first') : current.next()) : $('#gallery a:first'));
+
+        //Get next image caption
+        var caption = next.find('img').attr('rel');
+
+        //Set the fade in effect for the next image, show class has higher z-index
+        next.css({opacity:0.0})
+            .addClass('show')
+            .animate({opacity:1.0}, 1000);
+
+        //Hide the current image
+        current.animate({opacity:0.0}, 1000)
+            .removeClass('show');
+
+        //Set the opacity to 0 and height to 1px
+        $('#gallery .caption').animate({opacity:0.0}, { queue:false, duration:0 }).animate({height:'1px'}, { queue:true, duration:300 });
+
+        //Animate the caption, opacity to 0.7 and heigth to 100px, a slide up effect
+        $('#gallery .caption').animate({opacity:1.0}, 0).animate({height:'100px'}, 400);
+
+        //Display the content
+        $('#gallery .content5').html(caption);
+
+
+    }
+
+</script>
+<!--main picture slider over-->
+
+
+<!--bottom lil image gallery script-->
+<script src="http://kelimandala.lankadeepa.lk/templates/js/bottom_image_gallery_lil.js"></script>
+<!--bottom lil image gallery script-->
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42721856-1', 'lankadeepa.lk');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"0SfMe1aoiI002O", domain:"lankadeepa.lk",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=0SfMe1aoiI002O" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->  
+
+<style>
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.0);
+	z-index: 99999;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.opend {
+	opacity : 1;
+	pointer-events: auto;
+}
+.modalDialog:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+		width: 600px;
+		height:600px;
+		position: relative;
+		margin: 5% auto;
+		padding: 5px 20px 13px 20px;
+		border-radius: 10px;
+	<!--background: #fff; -->
+		background: -moz-linear-gradient(#fff, #999);
+	<!--	background: -webkit-linear-gradient(#fff, #999);-->
+		background: -o-linear-gradient(#fff, #999);
+	}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+	background: #00d9ff;
+}
+.navbar  li  a {
+	    padding-right: 10px;
+}
+</style>
+<script>
+
+function setCookie(cname, cvalue, exhours) {
+
+	var d = new Date();
+
+	d.setTime(d.getTime() + (exhours*60*60*1000));
+
+	var expires = "expires="+d.toUTCString();
+
+	document.cookie = cname + "=" + cvalue + "; " + expires;
+//alert("dd");
+}
+
+
+
+
+function getCookie(cname) {
+
+	var name = cname + "=";
+
+	var ca = document.cookie.split(';');
+
+	for(var i=0; i<ca.length; i++) {
+
+		var c = ca[i];
+
+		while (c.charAt(0)==' ') c = c.substring(1);
+
+		if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+
+	}
+
+	return "";
+
+}
+
+
+$p=jQuery.noConflict();	
+
+$p(document).ready(function(){
+
+	$p("#close0").click(function(){
+
+		$p("#openModal0").attr("class", "modalDialog");
+
+		
+
+	});
+
+	$p("#close1").click(function(){
+
+		$p("#openModal1").attr("class", "modalDialog");
+
+	});
+
+	
+
+	if(getCookie("n")=="" ){
+
+		setCookie("n", "0", 3);
+
+		$p("#openModal0").attr("class", "modalDialog opend");
+
+	}
+
+	else if(getCookie("n")=="0" ){
+
+		setCookie("n", "1", 3);
+
+		$p("#openModal1").attr("class", "modalDialog opend");
+
+	}
+
+});
+
+</script>
+
+</head>
+
+
+<body id="home">
+<!-- <div id="openModal0" class="modalDialog">
+  <div> <a id="close0" title="Close" class="close">X</a> 
+    <a href="https://www.flydubai.com/en/offers/sri-lanka-flydubai-sale-feb-2016?utm_medium=display&utm_campaign=201602%7CSALE%7CGLOBAL%7CSRI-LANKA-SELECT%7CYJ%7CUPTO50PCT%7C29FEB-14MAR&utm_source=wijeya%20web%20deal&utm_content=Sinhala_Pop_Up_HP_600x400" target="_blank"> 
+  <img width="600" height="600" src="http://static.ads.dailymirror.lk/wp-content/uploads/2016/03/fz1115_GlobalSale_Online_600x600_Sinhala1.jpg" /> 
+  </a>
+  </div>
+  
+</div> -->
+<!--<div class="adsBanner invisible1 hidden-xs hidden-sm"><a target="_blank" href="http://www.dpmco.com/index.php?cat_id=2&route=product/category&sub=7"> <img src="http://www.kelimandala.lk/templates/images/DMPC-600x135.gif" />
+                                           </a>
+										   </div>
+											<div class="adsBanner invisible2 hidden-xs hidden-sm"> 
+											<a target="_blank" href="http://www.dpmco.com/index.php?cat_id=2&route=product/category&sub=7">
+											<img src="http://www.kelimandala.lk/templates/images/DMPC-600x135-2.gif" /></a>
+                                            </div> -->
+<iframe id="settdecoder" name="settdecoder" src="" frameborder="0" style="margin:0; padding:0; height:0px; width:0px;"  ></iframe><!--script type="text/javascript" src="http://sett-decoder.appspot.com/SettUnicodeDecoder.js"></script-->
+
+<div class="header_black"></div>
+
+<div class="outer_wrapper">
+<div class="search_tab">
+
+        <div class="date">2016 ඔක්තෝබර් මස 27  වැනි බ‍්‍රහස්පතින්දා</div>
+
+        <div class="search_wrapper">
+            <form action="http://kelimandala.lankadeepa.lk/kelimandala/search" method="post">
+                <input type="text" class="search_field" id="search_field"  name="search" value="සොයන්න"
+                   onblur="if (this.value == '') {this.value = 'සොයන්න';}"
+                   onfocus="if (this.value == 'සොයන්න') {this.value = '';}"/>
+
+                <input type="submit" value="" class="searchBTN"/>
+            </form>
+        </div>
+    </div>
+    <!--search bar-->
+
+
+    <a href="http://kelimandala.lankadeepa.lk"><div class="logo_wrapper"></div></a>
+    <div class="menu_wrapper">
+
+
+        <ul id="menu">
+            <li><a href="http://kelimandala.lankadeepa.lk/" id="home" class="active_crick">මුල් පිටුව </a></li>
+            <li><a href="http://sinhala.wisdensrilanka.lk/" id="cricket">ක්‍රිකට් </a></li>
+            <li><a href="http://kelimandala.lankadeepa.lk/athletics" id="Athletics">මලල කී‍්‍රඩා</a></li>
+            <li><a href="http://kelimandala.lankadeepa.lk/football" id="football">පාපන්දු</a></li>
+            <li><a href="http://kelimandala.lankadeepa.lk/vollyball" id="volly_ball">වොලිබෝල්</a></li>
+            <li><a href="http://kelimandala.lankadeepa.lk/rugby" id="badminton">රග්බි </a></li>
+            <li><a href="http://kelimandala.lankadeepa.lk/motorsport" id="motor_sport">මෝටර් කී‍්‍රඩා</a></li>
+            <li><a href="http://kelimandala.lankadeepa.lk/other" id="other">වෙනත් කී‍්‍රඩා</a></li>
+            <li><a href="http://kelimandala.lankadeepa.lk/history" id="history">විශේෂාංග</a></li>
+            <li><a href="http://kelimandala.lankadeepa.lk/records" id="records">වාර්තා පොත</a></li>
+            <li><a href="http://kelimandala.lankadeepa.lk/statistics" id="data">සංඛ්‍යා දත්ත</a></li>
+        </ul>
+
+    </div>
+    <!--menu bar over-->
+    
+    
+    
+    
+<div class="main_wrapper"><!--main wrapper-->
+
+
+
+
+
+    <!--body part-->
+    <!--menu bar over-->
+    <div>    
+	
+	
+<script src="http://kelimandala.lankadeepa.lk/FusionCharts_v3_Enterprise/JSClass/FusionCharts.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://kelimandala.lankadeepa.lk/templates/js/script.js"></script>
+
+<script type="text/javascript" language="javascript">
+$qq= jQuery.noConflict(); 
+    $qq(function() {
+
+        $qq('#games').carouFredSel({
+            auto: {
+                pauseOnHover: 'resume',
+                progress: '#timer1'
+            },
+            prev: '#prev22',
+            next: '#next22',
+            pagination: "#pager2",
+            mousewheel: true,
+            swipe: {
+                onMouse: true,
+                onTouch: true
+
+            }
+        },{
+            transition: true
+        });
+
+
+    });
+</script>
+
+<!--left_main_wrapper-->
+<div class="left_main_wrapper"><!--main_picture-->
+<!--new slider-->
+
+    <div class="main_picture">
+        <div class="picture">
+            <div class="list_carousel_new">
+                    <ul id="games">
+                                                    <li><a href="http://kelimandala.lankadeepa.lk/article/67588/බුවනෙක---තිළිණි-මුල්-තැන්-ගනිති" target="_blank">
+                            <img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/999999999.jpg" width="630px" height="383px"/>
+                            <span style="color:#2c2c2c;">
+                                <b style="font-size:24px">බුවනෙක - තිළිණි මුල් තැන් ගනිති</b><br />
+                                
+                                
+                                 <div class="date_txt_field " style="text-align:left; float:left; text-indent:5px;">2016-10-26 17:38:32 | ශානුක අරවින්ද</div><br />
+                                 
+                                 
+                                
+	
+
+
+
+	ශ්&zwj;රී ලංකා බැඞ්මින්ටන් සංගමය සංවිධානය කරන 64 වැනි ජාතික බැඞ්මින්ටන් ශූරතාවලිය ආරම්භ වන විට පිරිමි කේවල ශ්&zwj;රේණිගත කිරීම්හි පෙරමුණ ගැනීමට බුවනෙක ගුණතිලකද, කාන්තා කේවල ශ්&zwj;රේණිගත ක...                            </span>
+                            </a></li>
+                        
+                                                    <li><a href="http://kelimandala.lankadeepa.lk/article/67543/දක්‍ෂතම-රියැදුරු-ඩැරීන්" target="_blank">
+                            <img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Derin Weerasinghe Leading.JPG" width="630px" height="383px"/>
+                            <span style="color:#2c2c2c;">
+                                <b style="font-size:24px">දක්‍ෂතම රියැදුරු ඩැරීන්</b><br />
+                                
+                                
+                                 <div class="date_txt_field " style="text-align:left; float:left; text-indent:5px;">2016-10-25 18:21:09 | ශානුක අරවින්ද</div><br />
+                                 
+                                 
+                                
+	
+
+
+
+	කළුතර, කටුකුරුන්ද ගුවන් හමුදා ධාවන පථයේදී පැවැති &lsquo;රොදර්හැම්&rsquo; මෝටර් රථ සහ යතුරුපැදි තරගාවලියේ දක්ෂතම රියැදුරා ලෙස සම්මාන දිනාගැනීමට ඩැරීන් වීරසිංහ සමත් විය. එස්. එල්. ජී. ටී. කා...                            </span>
+                            </a></li>
+                        
+                                                    <li><a href="http://kelimandala.lankadeepa.lk/article/67483/-රන්-පදක්කම්-28ක්-දිනූ-ශ්‍රී-ලංකාවට-අනුශූරතාව-" target="_blank">
+                            <img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/TTTTT(1).jpg" width="630px" height="383px"/>
+                            <span style="color:#2c2c2c;">
+                                <b style="font-size:24px"> රන් පදක්කම් 28ක් දිනූ ශ්‍රී ලංකාවට අනුශූරතාව </b><br />
+                                
+                                
+                                 <div class="date_txt_field " style="text-align:left; float:left; text-indent:5px;">2016-10-22 21:10:55 | ශානුක අරවින්ද</div><br />
+                                 
+                                 
+                                
+	
+
+
+
+	
+		
+			
+				
+					බාලිකා - වයස 18 න් පහළ මීටර් 50 නිදහස් ආර ඉසව්වේ&nbsp;රන් පදක්කම් 8ක් දිනාගත් කිමිකෝ රහීම් 
+				
+			
+		
+	
+
+
+
+	කොළඹ සුගතදාස පිහිනුම් තටාකයේදී පැවැති දකුණු ආසිය...                            </span>
+                            </a></li>
+                        
+                                                    <li><a href="http://kelimandala.lankadeepa.lk/article/67476/අනුමැතිය-නොමැතිව-තරගාවලිය-කල්යයි" target="_blank">
+                            <img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/99(4).jpg" width="630px" height="383px"/>
+                            <span style="color:#2c2c2c;">
+                                <b style="font-size:24px">අනුමැතිය නොමැතිව තරගාවලිය කල්යයි</b><br />
+                                
+                                
+                                 <div class="date_txt_field " style="text-align:left; float:left; text-indent:5px;">2016-10-22 16:29:20 | මිලාන් පෙරේරා</div><br />
+                                 
+                                 
+                                
+	
+
+
+
+	ශ්&zwj;රී ලංකා පාසල් රග්බි සංගමය මගින් සංවිධානය කරනු ලබන අන්තර් පාසල් අවුරුදු 18 න් පහළ සත් සාමාජික II වැනි කොටසේ රග්බි තරගාවලිය සඳහා රගර් තරග තීරකවරුන්ගේ සහ විනිසුරුවන්ගේ සේවය නොලැබීම නිස...                            </span>
+                            </a></li>
+                        
+                                                    <li><a href="http://kelimandala.lankadeepa.lk/article/67465/මැතිව්---කිමිකෝ---කයිල්-ශ්‍රී-ලංකාව-රනින්-බබළවති" target="_blank">
+                            <img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/TTTTT.jpg" width="630px" height="383px"/>
+                            <span style="color:#2c2c2c;">
+                                <b style="font-size:24px">මැතිව් - කිමිකෝ - කයිල් ශ්‍රී ලංකාව රනින් බබළවති</b><br />
+                                
+                                
+                                 <div class="date_txt_field " style="text-align:left; float:left; text-indent:5px;">2016-10-21 21:30:21 | ශානුක අරවින්ද</div><br />
+                                 
+                                 
+                                
+	
+
+
+
+	කොළඹ සුගතදාස පිහිනුම් තටාකයේදී පැවැත්වෙන දකුණු ආසියානු ජල ක්&zwj;රීඩා තරගාවලියේ තෙවැනි දිනය වූ අද (21 වැනිදා) සිය 5 වැනි රන් පදක්කමත් දිනාගැනීමට මැතිව් අබේසිංහ, කිමිකෝ රහීම් සහ කයිල් අබේසි...                            </span>
+                            </a></li>
+                        
+                                            </ul>
+                <div class="clearfix"></div>
+                <a id="prev22" class="prev2" href="#"></a>
+                <a id="next22" class="next2" href="#"></a>
+                
+              </div>
+  		</div>
+  </div>
+
+<!--new slider ends-->
+    <!--main_picture over--><!--kelimadala_unsusuma-->
+    <div class="kelimadala_unsusuma">
+        <div class="kelimadala_unsusuma_wrapper">
+            <div class="header_image_kelimadala_unsusuma"></div>
+            <div class="kelimadala_unsusuma_content_wrapper">
+                <div class="list_carousel">
+                    <ul id="foo2"><!--if u wnt to auto slide then give id "foo0"-->
+                                                    <li>
+                                <a href="http://kelimandala.lankadeepa.lk/article/67622/ශා--පීතර-විදුහලට-කඩුලු-10-ක-ජයක්"
+                                   class="lil_container_kelimadala_unsusuma">
+                                    <div class="lil_pic_kelimadala_unsusuma"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/St_Petres College flag logo(12).jpg"/></div>
+                                    <div class="lil_content_kelimadala_unsusuma" style="height:auto !important; color:#999 !important; font-size:10px !important; margin-top:5px !important;"></div>
+                                    <div
+                                        class="lil_content_kelimadala_unsusuma" style="text-align:left !important;">ශා. පීතර විදුහලට කඩුලු 10 ක ජයක්...</div>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://kelimandala.lankadeepa.lk/article/67620/අසාර්-විදුහලට-පළමු-ඉනිමේ-ජයක්"
+                                   class="lil_container_kelimadala_unsusuma">
+                                    <div class="lil_pic_kelimadala_unsusuma"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/U19-school-cricket(1)(300).jpg"/></div>
+                                    <div class="lil_content_kelimadala_unsusuma" style="height:auto !important; color:#999 !important; font-size:10px !important; margin-top:5px !important;"></div>
+                                    <div
+                                        class="lil_content_kelimadala_unsusuma" style="text-align:left !important;">අසාර් විදුහලට පළමු ඉනිමේ ජයක්...</div>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://kelimandala.lankadeepa.lk/article/67618/විද්‍යාලෝක-විදුහලට-ඉනිමක-ජයක්"
+                                   class="lil_container_kelimadala_unsusuma">
+                                    <div class="lil_pic_kelimadala_unsusuma"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Vidyaloka-College---Galle(3).jpg"/></div>
+                                    <div class="lil_content_kelimadala_unsusuma" style="height:auto !important; color:#999 !important; font-size:10px !important; margin-top:5px !important;"></div>
+                                    <div
+                                        class="lil_content_kelimadala_unsusuma" style="text-align:left !important;">විද්‍යාලෝක විදුහලට ඉනිමක ජයක්...</div>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://kelimandala.lankadeepa.lk/article/67613/බණ්ඩාරනායක-මැදි-විදුහලට-ලකුණු-181-ක-ජයක්"
+                                   class="lil_container_kelimadala_unsusuma">
+                                    <div class="lil_pic_kelimadala_unsusuma"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/U19-school-cricket(1)(299).jpg"/></div>
+                                    <div class="lil_content_kelimadala_unsusuma" style="height:auto !important; color:#999 !important; font-size:10px !important; margin-top:5px !important;"></div>
+                                    <div
+                                        class="lil_content_kelimadala_unsusuma" style="text-align:left !important;">බණ්ඩාරනායක මැදි විදුහලට ලකුණු 181 ක...</div>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://kelimandala.lankadeepa.lk/article/67609/කුළරත්න---මැසිනොද්-ලකුණු-සමවෙයි"
+                                   class="lil_container_kelimadala_unsusuma">
+                                    <div class="lil_pic_kelimadala_unsusuma"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Cricket-U-13-Keli-140-95(102).jpg"/></div>
+                                    <div class="lil_content_kelimadala_unsusuma" style="height:auto !important; color:#999 !important; font-size:10px !important; margin-top:5px !important;"></div>
+                                    <div
+                                        class="lil_content_kelimadala_unsusuma" style="text-align:left !important;">කුළරත්න - මැසිනොද් ලකුණු සමවෙයි...</div>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://kelimandala.lankadeepa.lk/article/67607/ශා--පීතර-විදුහලට-පළමු-ඉනිමේ-ජයක්"
+                                   class="lil_container_kelimadala_unsusuma">
+                                    <div class="lil_pic_kelimadala_unsusuma"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/St_Petres College flag logo(11).jpg"/></div>
+                                    <div class="lil_content_kelimadala_unsusuma" style="height:auto !important; color:#999 !important; font-size:10px !important; margin-top:5px !important;"></div>
+                                    <div
+                                        class="lil_content_kelimadala_unsusuma" style="text-align:left !important;">ශා. පීතර විදුහලට පළමු ඉනිමේ ජයක්...</div>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://kelimandala.lankadeepa.lk/article/67605/විසඳුමකින්-තොරව-අවසන්-වෙයි"
+                                   class="lil_container_kelimadala_unsusuma">
+                                    <div class="lil_pic_kelimadala_unsusuma"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Cricket-U-13-Keli-140-95(101).jpg"/></div>
+                                    <div class="lil_content_kelimadala_unsusuma" style="height:auto !important; color:#999 !important; font-size:10px !important; margin-top:5px !important;"></div>
+                                    <div
+                                        class="lil_content_kelimadala_unsusuma" style="text-align:left !important;">විසඳුමකින් තොරව අවසන් වෙයි...</div>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://kelimandala.lankadeepa.lk/article/67603/ශා--ජෝෂප්-විදුහලට-පළමු-ඉනිමේ-ජයක්"
+                                   class="lil_container_kelimadala_unsusuma">
+                                    <div class="lil_pic_kelimadala_unsusuma"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/St_joseph_wattala.jpg"/></div>
+                                    <div class="lil_content_kelimadala_unsusuma" style="height:auto !important; color:#999 !important; font-size:10px !important; margin-top:5px !important;"></div>
+                                    <div
+                                        class="lil_content_kelimadala_unsusuma" style="text-align:left !important;">ශා. ජෝෂප් විදුහලට පළමු ඉනිමේ ජයක්...</div>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://kelimandala.lankadeepa.lk/article/67601/විසඳුමකින්-තොරව-අවසන්-වෙයි"
+                                   class="lil_container_kelimadala_unsusuma">
+                                    <div class="lil_pic_kelimadala_unsusuma"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Cricket-U-13-Keli-140-95(100).jpg"/></div>
+                                    <div class="lil_content_kelimadala_unsusuma" style="height:auto !important; color:#999 !important; font-size:10px !important; margin-top:5px !important;"></div>
+                                    <div
+                                        class="lil_content_kelimadala_unsusuma" style="text-align:left !important;">විසඳුමකින් තොරව අවසන් වෙයි...</div>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://kelimandala.lankadeepa.lk/article/67593/වයස-70-රෙගුලාසියට-එරෙහිව-ගතු-කියති"
+                                   class="lil_container_kelimadala_unsusuma">
+                                    <div class="lil_pic_kelimadala_unsusuma"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Athletic Icon(2).jpg"/></div>
+                                    <div class="lil_content_kelimadala_unsusuma" style="height:auto !important; color:#999 !important; font-size:10px !important; margin-top:5px !important;"></div>
+                                    <div
+                                        class="lil_content_kelimadala_unsusuma" style="text-align:left !important;">වයස 70 රෙගුලාසියට එරෙහිව ගතු කියති...</div>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://kelimandala.lankadeepa.lk/article/67582/ශා--අන්තෝනී-බාලිකාවන්ට-විශිෂ්ට-ජයක්"
+                                   class="lil_container_kelimadala_unsusuma">
+                                    <div class="lil_pic_kelimadala_unsusuma"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/St Anthony Girls College Katugasthota.jpg"/></div>
+                                    <div class="lil_content_kelimadala_unsusuma" style="height:auto !important; color:#999 !important; font-size:10px !important; margin-top:5px !important;"></div>
+                                    <div
+                                        class="lil_content_kelimadala_unsusuma" style="text-align:left !important;">ශා. අන්තෝනී බාලිකාවන්ට විශිෂ්ට ජයක්...</div>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://kelimandala.lankadeepa.lk/article/67576/විසඳුමකින්-තොරව-අවසන්-වෙයි"
+                                   class="lil_container_kelimadala_unsusuma">
+                                    <div class="lil_pic_kelimadala_unsusuma"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Cricket-U-13-Keli-140-95(99).jpg"/></div>
+                                    <div class="lil_content_kelimadala_unsusuma" style="height:auto !important; color:#999 !important; font-size:10px !important; margin-top:5px !important;"></div>
+                                    <div
+                                        class="lil_content_kelimadala_unsusuma" style="text-align:left !important;">විසඳුමකින් තොරව අවසන් වෙයි...</div>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://kelimandala.lankadeepa.lk/article/67573/ඩෙලන්-පීරීස්ගේ-උත්සාහය-අපතේ-යයි"
+                                   class="lil_container_kelimadala_unsusuma">
+                                    <div class="lil_pic_kelimadala_unsusuma"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/St Thomas College  Mt Lavinea Logo(7).jpg"/></div>
+                                    <div class="lil_content_kelimadala_unsusuma" style="height:auto !important; color:#999 !important; font-size:10px !important; margin-top:5px !important;"></div>
+                                    <div
+                                        class="lil_content_kelimadala_unsusuma" style="text-align:left !important;">ඩෙලන් පීරීස්ගේ උත්සාහය අපතේ යයි...</div>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://kelimandala.lankadeepa.lk/article/67570/විසඳුමකින්-තොරව-අවසන්-වෙයි"
+                                   class="lil_container_kelimadala_unsusuma">
+                                    <div class="lil_pic_kelimadala_unsusuma"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Cricket-U-13-Keli-140-95(98).jpg"/></div>
+                                    <div class="lil_content_kelimadala_unsusuma" style="height:auto !important; color:#999 !important; font-size:10px !important; margin-top:5px !important;"></div>
+                                    <div
+                                        class="lil_content_kelimadala_unsusuma" style="text-align:left !important;">විසඳුමකින් තොරව අවසන් වෙයි...</div>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://kelimandala.lankadeepa.lk/article/67567/කරන්දෙණිය-මැදි-විදුහලට-ඉනිමක-ජයක්"
+                                   class="lil_container_kelimadala_unsusuma">
+                                    <div class="lil_pic_kelimadala_unsusuma"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Karandeniya-Cen-College(1).jpg"/></div>
+                                    <div class="lil_content_kelimadala_unsusuma" style="height:auto !important; color:#999 !important; font-size:10px !important; margin-top:5px !important;"></div>
+                                    <div
+                                        class="lil_content_kelimadala_unsusuma" style="text-align:left !important;">කරන්දෙණිය මැදි විදුහලට ඉනිමක ජයක්...</div>
+                                </a>
+                            </li>
+                                                </ul>
+                    <div class="clearfix"><a id="prev2" class="prev" href="#" onclick="return false"></a> <a id="next2"
+                                                                                                             class="next"
+                                                                                                             href="#"
+                                                                                                             onclick="return false"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--kelimadala_unsusuma over--><!--cricket_malala_krida-->
+    <div class="cricket_malala_krida">
+        <div
+           class="cricket_malala_krida_left">
+            <a href="http://kelimandala.lankadeepa.lk/article/64168/ආජන්ටිනියානුවෝ-මෙසීට-ආයාචනා-කරති">
+                        <div class="cricket_malala_krida_left_header">විශේෂාංග</div>
+
+            <div class="cricket_malala_krida_image"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/FFF(14).jpg"/></div>
+            <div
+                class="cricket_malala_krida_text_header">ආජන්ටිනියානුවෝ මෙසීට ආයාචනා කරති...            </div>
+            
+            <div class="date_txt_field " style="text-align:left;">2016-07-03 21:47:53 | </div>
+            
+            <div
+                class="cricket_malala_krida_content">
+	
+
+
+
+	කිසිවකු අපේක්&zwj;ෂා නොකළ මොහොතක, හිට අඩියේම පාපන්දු ක්&zwj;රීඩාවෙන් සමුගැනීමට තීරණය කළ ලයනල් මෙසීට තම තීරණය වෙනස් කරන්න&rsquo;යි ඉල්ලා සිටිමින් දහස් ගණන් පාපන්දු ලෝලීහු ඊයේ (2 වැනිදා) ආර්...            </div>
+                </a>
+            <div class="more_tag_wrapper">
+            <a href="http://kelimandala.lankadeepa.lk/category/getFront/1/විශේෂාංග" class="more_tag"></a>
+            </div>
+        </div>
+        <div
+           class="cricket_malala_krida_right">
+            <a href="http://kelimandala.lankadeepa.lk/article/66719/බොක්සිං-ක්‍රීඩක-මයික්-දිවියෙන්-සමුගනී">
+                        <div class="cricket_malala_krida_right_header">එතෙර කෙළිඹිම</div>
+
+            <div class="cricket_malala_krida_image"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/310(264).jpg"/></div>
+            <div
+                class="cricket_malala_krida_text_header">බොක්සිං ක්‍රීඩක මයික් දිවියෙන් සමුගනී...            </div>
+            
+            <div class="date_txt_field " style="text-align:left;">2016-10-02 10:37:46 | ...</div>
+            
+            <div
+                class="cricket_malala_krida_content">
+	
+
+
+
+	
+		
+			
+				මයික් ටවල් ග්ලැස්ගොව් සටන ආරම්භයේදී ..... 
+			
+		
+	
+
+
+
+	ස්කොට්ලන්තයේ ග්ලැස්ගොව් නුවරදී පැවැති බොක්සිං තරගයකදී මුහුණ දුන් පහර හේතුවෙන් පරාජිතයා වූ මයිකල් ටවල් දිවියෙන් සමුගත්තේය. වේල්සයේ තරග කරුවකු වූ ඬේල් එවන්ස් සමග පසුගිය බ්&...            </div>
+            </a>
+			 <div class="more_tag_wrapper">
+			  <a href="http://kelimandala.lankadeepa.lk/front_2" class="more_tag"></a>
+                 <!--a href="http://kelimandala.lankadeepa.lk/category/getFront/2/විශේෂාංග" class="more_tag"></a-->
+            </div>
+        </div>
+    </div>
+    <!--cricket_malala_krida over-->
+
+    <!--krida_puwath_thawaduratath-->
+    <div class="krida_puwath_thawaduratath">
+        <div class="krida_puwath_thawaduratath_header"></div>
+        <div class="krida_puwath_thawaduratath_inner_wrapper">
+            <!--1st-->
+                        <div class="krida_puwath_thawaduratath_content_wrapper">
+                                <div class="inner_pic"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Athletic Icon(2).jpg"/></div>
+                <a href="http://kelimandala.lankadeepa.lk/article/67593/වයස-70-රෙගුලාසියට-එරෙහිව-ගතු-කියති"
+                   class="krida_puwath_thawaduratath_inner_content_wrapper">
+                    <div class="krida_puwath_thawaduratath_inner_red_heading">..</div>
+              
+                    <div class="krida_puwath_thawaduratath_inner_heading">වයස 70 රෙගුලාසියට එරෙහිව ගතු කියති...    </div>
+                    
+                    
+                                     
+                    
+                     <div class="date_txt_field " style="text-align:right; float:left; line-height:1;">2016-10-26 19:41:28 | නාමල් පතිරගේ</div>
+                    
+                    
+       
+       
+                    <div
+                        class="krida_puwath_thawaduratath_lil_content">
+	නව ක්&zwj;රීඩා රෙගුලාසි පැනවීමේදී වයස 70 ට වැඩි පුද්ගලයන්ට ක්&zwj;රීඩා තනතුරු දැරීම තහනම් කිරීමට එරෙහිව ජාත්&zwj;යන්තරයට පැමිණිලි කිරීමට ක්&zwj;රීඩා ප්&zwj;රවීණයන් රැසක් සූදානම් වන බව වාර්තා වේ. එව...                    </div>
+                </a>
+            </div>
+            
+              
+                        <div class="krida_puwath_thawaduratath_content_wrapper">
+                                <div class="inner_pic"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Badminton-keli-140-95(97).jpg"/></div>
+                <a href="http://kelimandala.lankadeepa.lk/article/67588/බුවනෙක---තිළිණි-මුල්-තැන්-ගනිති"
+                   class="krida_puwath_thawaduratath_inner_content_wrapper">
+                    <div class="krida_puwath_thawaduratath_inner_red_heading">බැඩ්මින්ටන්</div>
+              
+                    <div class="krida_puwath_thawaduratath_inner_heading">බුවනෙක - තිළිණි මුල් තැන් ගනිති...    </div>
+                    
+                    
+                                     
+                    
+                     <div class="date_txt_field " style="text-align:right; float:left; line-height:1;">2016-10-26 17:38:32 | ශානුක අරවින්ද</div>
+                    
+                    
+       
+       
+                    <div
+                        class="krida_puwath_thawaduratath_lil_content">
+	
+
+
+
+	ශ්&zwj;රී ලංකා බැඞ්මින්ටන් සංගමය සංවිධානය කරන 64 වැනි ජාතික බැඞ්මින්ටන් ශූරතාවලිය ආරම්භ වන විට පිරිමි කේවල ශ්&zwj;රේණිගත කිරීම්හි පෙරමුණ ගැනීමට බුවනෙක ගුණතිලකද, කාන්තා කේවල ශ්&zwj;රේණිගත ක...                    </div>
+                </a>
+            </div>
+            
+              
+                        <div class="krida_puwath_thawaduratath_content_wrapper">
+                                <div class="inner_pic"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Basketball-140-95-keli(69).jpg"/></div>
+                <a href="http://kelimandala.lankadeepa.lk/article/67546/මාජිස්-කුසලාන-ශා--බෙනඩික්-විදුහලට"
+                   class="krida_puwath_thawaduratath_inner_content_wrapper">
+                    <div class="krida_puwath_thawaduratath_inner_red_heading">පැසිපන්දු</div>
+              
+                    <div class="krida_puwath_thawaduratath_inner_heading">මාජිස් කුසලාන ශා. බෙනඩික් විදුහලට...    </div>
+                    
+                    
+                                     
+                    
+                     <div class="date_txt_field " style="text-align:right; float:left; line-height:1;">2016-10-25 18:50:03 | .</div>
+                    
+                    
+       
+       
+                    <div
+                        class="krida_puwath_thawaduratath_lil_content">
+	&lsquo;මාජීස්&rsquo; කුසලාන වයස 14 න් පහළ පැසිපන්දු තරගාවලියේ ශූරතාව දිනාගැනීමට කොටහේන ශාන්ත බෙනඩික් විදුහල සමත් විය. අවසන් මහ තරගයේදී මීගමුව මාරිස්ටෙලා විදුහලට එරෙහිව ලකුණු 28/27 ක තියුණු ජයක් අත්...                    </div>
+                </a>
+            </div>
+            
+              
+                        <div class="krida_puwath_thawaduratath_content_wrapper">
+                                <div class="inner_pic"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/South Asian Swimming(4).jpg"/></div>
+                <a href="http://kelimandala.lankadeepa.lk/article/67483/-රන්-පදක්කම්-28ක්-දිනූ-ශ්‍රී-ලංකාවට-අනුශූරතාව-"
+                   class="krida_puwath_thawaduratath_inner_content_wrapper">
+                    <div class="krida_puwath_thawaduratath_inner_red_heading">ජල ක්‍රීඩා</div>
+              
+                    <div class="krida_puwath_thawaduratath_inner_heading"> රන් පදක්කම් 28ක් දිනූ ශ්‍රී ලංකාවට අනුශූරතාව ...    </div>
+                    
+                    
+                                     
+                    
+                     <div class="date_txt_field " style="text-align:right; float:left; line-height:1;">2016-10-22 21:10:55 | ශානුක අරවින්ද</div>
+                    
+                    
+       
+       
+                    <div
+                        class="krida_puwath_thawaduratath_lil_content">
+	
+
+
+
+	
+		
+			
+				
+					බාලිකා - වයස 18 න් පහළ මීටර් 50 නිදහස් ආර ඉසව්වේ&nbsp;රන් පදක්කම් 8ක් දිනාගත් කිමිකෝ රහීම් 
+				
+			
+		
+	
+
+
+
+	කොළඹ සුගතදාස පිහිනුම් තටාකයේදී පැවැති දකුණු ආසිය...                    </div>
+                </a>
+            </div>
+            
+              
+                        <div class="krida_puwath_thawaduratath_content_wrapper">
+                                <div class="inner_pic"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/South Asian Swimming(3).jpg"/></div>
+                <a href="http://kelimandala.lankadeepa.lk/article/67465/මැතිව්---කිමිකෝ---කයිල්-ශ්‍රී-ලංකාව-රනින්-බබළවති"
+                   class="krida_puwath_thawaduratath_inner_content_wrapper">
+                    <div class="krida_puwath_thawaduratath_inner_red_heading">ජල ක්‍රීඩා</div>
+              
+                    <div class="krida_puwath_thawaduratath_inner_heading">මැතිව් - කිමිකෝ - කයිල් ශ්‍රී ලංකාව රනින් බබළවති...    </div>
+                    
+                    
+                                     
+                    
+                     <div class="date_txt_field " style="text-align:right; float:left; line-height:1;">2016-10-21 21:30:21 | ශානුක අරවින්ද</div>
+                    
+                    
+       
+       
+                    <div
+                        class="krida_puwath_thawaduratath_lil_content">
+	
+
+
+
+	කොළඹ සුගතදාස පිහිනුම් තටාකයේදී පැවැත්වෙන දකුණු ආසියානු ජල ක්&zwj;රීඩා තරගාවලියේ තෙවැනි දිනය වූ අද (21 වැනිදා) සිය 5 වැනි රන් පදක්කමත් දිනාගැනීමට මැතිව් අබේසිංහ, කිමිකෝ රහීම් සහ කයිල් අබේසි...                    </div>
+                </a>
+            </div>
+            
+              
+                        <div class="krida_puwath_thawaduratath_content_wrapper">
+                                <div class="inner_pic"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/South Asian Swimming(2).jpg"/></div>
+                <a href="http://kelimandala.lankadeepa.lk/article/67439/ලේකම්ගේ-ලොකුකම්"
+                   class="krida_puwath_thawaduratath_inner_content_wrapper">
+                    <div class="krida_puwath_thawaduratath_inner_red_heading">ජල ක්‍රීඩා</div>
+              
+                    <div class="krida_puwath_thawaduratath_inner_heading">ලේකම්ගේ ලොකුකම්...    </div>
+                    
+                    
+                                     
+                    
+                     <div class="date_txt_field " style="text-align:right; float:left; line-height:1;">2016-10-20 22:16:19 | ශානුක අරවින්ද</div>
+                    
+                    
+       
+       
+                    <div
+                        class="krida_puwath_thawaduratath_lil_content">
+	දකුණු ආසියානු ජල ක්&zwj;රීඩා තරගාවලියේ ආවරණ කටයුතු සඳහා කොළඹ සුගතදාස ක්&zwj;රීඩාංගණයට පැමිණ සිටි මාධ්&zwj;යවේදීන්ට සහ ඡායාරූප ශිල්පීන්ට ඔවුන්ගේ කටයුතු නිසි පරිදි කරගෙන යෑමට බාධා ඇතිවන අයුරින් ශ්&zw...                    </div>
+                </a>
+            </div>
+            
+              
+                        <div class="krida_puwath_thawaduratath_content_wrapper">
+                                <div class="inner_pic"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/South Asian Swimming(1).jpg"/></div>
+                <a href="http://kelimandala.lankadeepa.lk/article/67437/ශ්‍රී-ලංකාවට-තවත්-රන්-පදක්කම්-7-ක්-"
+                   class="krida_puwath_thawaduratath_inner_content_wrapper">
+                    <div class="krida_puwath_thawaduratath_inner_red_heading">ජල ක්‍රීඩා</div>
+              
+                    <div class="krida_puwath_thawaduratath_inner_heading">ශ්‍රී ලංකාවට තවත් රන් පදක්කම් 7 ක් ...    </div>
+                    
+                    
+                                     
+                    
+                     <div class="date_txt_field " style="text-align:right; float:left; line-height:1;">2016-10-20 22:13:46 | ශානුක අරවින්ද</div>
+                    
+                    
+       
+       
+                    <div
+                        class="krida_puwath_thawaduratath_lil_content">
+	
+
+
+
+	කොළඹ සුගතදාස පිහිනුම් තටාකයේදී පැවැත්වෙන දකුණු ආසියානු ජල ක්&zwj;රීඩා තරගාවලියේ දෙවැනි දිනය වූ අද (20 වැනිදා) තවත් රන් පදක්කම් 7 ක්, රිදී පදක්කම් 16 ක් සහ ලෝකඩ පදක්කම් 28 ක් දිනාගැනීමට ශ්&...                    </div>
+                </a>
+            </div>
+            
+              
+                        <div class="krida_puwath_thawaduratath_content_wrapper">
+                                <div class="inner_pic"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Wushu-keli-140-95(19).jpg"/></div>
+                <a href="http://kelimandala.lankadeepa.lk/article/67430/තාඔලු-ශූරතාවත්-නාවික-හමුදාවට-"
+                   class="krida_puwath_thawaduratath_inner_content_wrapper">
+                    <div class="krida_puwath_thawaduratath_inner_red_heading">වුෂූ</div>
+              
+                    <div class="krida_puwath_thawaduratath_inner_heading">තාඔලු ශූරතාවත් නාවික හමුදාවට ...    </div>
+                    
+                    
+                                     
+                    
+                     <div class="date_txt_field " style="text-align:right; float:left; line-height:1;">2016-10-20 21:40:01 | ශානුක අරවින්ද</div>
+                    
+                    
+       
+       
+                    <div
+                        class="krida_puwath_thawaduratath_lil_content">
+	ශ්&zwj;රී ලංකා වුෂූ සම්මේලනය සංවිධානය කළ 15 වැනි ජාතික වුෂූ තරගාවලියේදී තාඔලු අංශයේදී රන් පදක්කම් 12 ක්, රිදී පදක්කම් 8 ක් සහ ලෝකඩ පදක්කම් 7 ක් දිනාගත් නාවික හමුදා ක්&zwj;රීඩකයෝ එම කාණ්ඩයේ ශූරතාව ද...                    </div>
+                </a>
+            </div>
+            
+              
+                        <div class="krida_puwath_thawaduratath_content_wrapper">
+                                <div class="inner_pic"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Wushu-keli-140-95(18).jpg"/></div>
+                <a href="http://kelimandala.lankadeepa.lk/article/67428/සන්දා-ශූරතාව-නාවික-හමුදාවට-"
+                   class="krida_puwath_thawaduratath_inner_content_wrapper">
+                    <div class="krida_puwath_thawaduratath_inner_red_heading">වුෂූ</div>
+              
+                    <div class="krida_puwath_thawaduratath_inner_heading">සන්දා ශූරතාව නාවික හමුදාවට ...    </div>
+                    
+                    
+                                     
+                    
+                     <div class="date_txt_field " style="text-align:right; float:left; line-height:1;">2016-10-20 21:34:39 | ශානුක අරවින්ද</div>
+                    
+                    
+       
+       
+                    <div
+                        class="krida_puwath_thawaduratath_lil_content">
+	
+
+
+
+	ශ්&zwj;රී ලංකා වුෂූ සම්මේලනය සංවිධානය කළ 15 වැනි ජාතික වුෂූ තරගාවලියේ සන්දා අංශයේ&nbsp; ශූරතාව තමන් සතුකරගැනීමට රන් පදක්කම් 13 ක් සහ රිදී පදක්කම් 4 ක් දිනාගත් නාවික හමුදා කණ්ඩායම සමත් විය....                    </div>
+                </a>
+            </div>
+            
+              
+              <div class="more_tag_wrapper">
+            <a href="http://kelimandala.lankadeepa.lk/other" class="more_tag"></a></div>
+            
+            
+            
+        </div>
+      
+    </div>
+    <!--krida_puwath_thawaduratath over--><!--graphics_charts-->
+
+
+    <div class="graphics_charts">
+        <div class="graphics_charts_left">
+            <div class="graphics_charts_left_heading"></div>
+            <div class="picture_space">
+                                <a href="http://kelimandala.lankadeepa.lk/article/65433/උසේන්-බෝල්ට්ගේ-වාර්තා-"><img
+                    src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/12(59).jpg"/></a>
+            </div>
+        </div>
+        <div class="graphics_charts_right">
+            <div class="graphics_charts_right_heading"></div>
+            <div class="Image_gallery_space_space">
+                <ul class="grid cs-style-3" style="width: 290px; margin: 0px 0px 0px 7px; padding: 0px; float:left">
+                                            <li><a
+                            href="http://kelimandala.lankadeepa.lk/gallery/67500/දකුණු-ආසියානු-ජල-ක්‍රීඩා-තරගාවලිය-">
+                                                        <figure><img width="90px" height="70px" src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/33333(6).jpg" alt="img_0">
+                                <figcaption></figcaption>
+                            </figure>
+                        </a>
+                        </li>
+                                                <li><a
+                            href="http://kelimandala.lankadeepa.lk/gallery/66744/16-වැනි-එල්--එස්--ආර්--කොළඹ-ජාත්‍යන්තර-මැරතන්-තරගා">
+                                                        <figure><img width="90px" height="70px" src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/12222222(1).jpg" alt="img_1">
+                                <figcaption></figcaption>
+                            </figure>
+                        </a>
+                        </li>
+                                                <li><a
+                            href="http://kelimandala.lankadeepa.lk/gallery/66602/42-වැනි-ජාතික-මහ-ක්‍රීඩා-උළෙලේ-සමාරම්භක-උත්සවය-">
+                                                        <figure><img width="90px" height="70px" src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/70-90(2).jpg" alt="img_2">
+                                <figcaption></figcaption>
+                            </figure>
+                        </a>
+                        </li>
+                                                <li><a
+                            href="http://kelimandala.lankadeepa.lk/gallery/66275/‘බිහිසුණු-භූමියේ-අභියෝගය’-සිවු-සක-මෝටර්-රථ-තරගාවලි">
+                                                        <figure><img width="90px" height="70px" src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/9070(24).jpg" alt="img_3">
+                                <figcaption></figcaption>
+                            </figure>
+                        </a>
+                        </li>
+                                                <li><a
+                            href="http://kelimandala.lankadeepa.lk/gallery/66264/‘සැපර්ස්-ජිම්පෝ’-යතුරුපැදි-තරගාවලිය">
+                                                        <figure><img width="90px" height="70px" src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/9999(4).jpg" alt="img_4">
+                                <figcaption></figcaption>
+                            </figure>
+                        </a>
+                        </li>
+                                                <li><a
+                            href="http://kelimandala.lankadeepa.lk/gallery/66250/‘සැපර්ස්-4X4-ජිම්පෝ’-සිවු-සක-අභියෝග-මෝටර්-රථ-තරගාව">
+                                                        <figure><img width="90px" height="70px" src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/90 70(3).jpg" alt="img_5">
+                                <figcaption></figcaption>
+                            </figure>
+                        </a>
+                        </li>
+                                                <li><a
+                            href="http://kelimandala.lankadeepa.lk/gallery/66020/දිනේෂ්ගේ-පැරලිම්පික්-පදක්කමක්-">
+                                                        <figure><img width="90px" height="70px" src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/90 70(2).jpg" alt="img_6">
+                                <figcaption></figcaption>
+                            </figure>
+                        </a>
+                        </li>
+                                                <li><a
+                            href="http://kelimandala.lankadeepa.lk/gallery/65962/වලව-සුපර්-ක්‍රොස්-මෝටර්රථ-තරගාවලිය-">
+                                                        <figure><img width="90px" height="70px" src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/sss(7).jpg" alt="img_7">
+                                <figcaption></figcaption>
+                            </figure>
+                        </a>
+                        </li>
+                                                <li><a
+                            href="http://kelimandala.lankadeepa.lk/gallery/65958/වලව-සුපර්-ක්‍රොස්-යතුරු-පැදි-තරගාවලිය-">
+                                                        <figure><img width="90px" height="70px" src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/9070(23).jpg" alt="img_8">
+                                <figcaption></figcaption>
+                            </figure>
+                        </a>
+                        </li>
+                                        </ul>
+            </div>
+        </div>
+    </div>
+    <!--graphics_charts over--><!--mage_mathaya-->
+    
+
+
+    <div class="mage_mathaya_wrapper">
+        <div class="mage_mathaya">
+            <div class="mage_mathaya_header"></div>
+            <div class="mage_mathaya_content_wrapper">
+            
+        
+            
+            <div class="poll_wrapper_inner">
+            
+            <form method="post" id="poll-form" name="poll-form" action="#">
+
+                                        <div class="mage_mathaya_heading">ක්‍රිකට් හැරුණු විට ශ්‍රී ලංකාවේ දෙවැනි ජනප්‍රියම ක්‍රීඩාව වන්නේ                    </div>
+                    
+                        <div class="radiobtn"><input type="radio" name="pollinput"
+                               value="207" checked="checked" /></div><div class="mage_mathaya_options">මලල ක්‍රීඩා</div>
+
+                        
+                        <div class="radiobtn"><input type="radio" name="pollinput"
+                               value="208"  /></div><div class="mage_mathaya_options">රග්බි</div>
+
+                        
+                        <div class="radiobtn"><input type="radio" name="pollinput"
+                               value="209"  /></div><div class="mage_mathaya_options">පාපන්දු</div>
+
+                        
+                        <div class="radiobtn"><input type="radio" name="pollinput"
+                               value="210"  /></div><div class="mage_mathaya_options">වොලිබෝල්</div>
+
+                                            <input type="hidden" value="192.248.40.28, 54.239.188.65" name="pollIP" id="pollIp" />
+                    <input type="hidden" value="66" name="pollId" id="pollId"/>
+                                    
+                </div>
+
+                <input type="button" onclick="getPoll();" class="submit_btn"/>
+                </form>  
+        
+		    </div>
+            <div id="graphs" style="margin: auto;width: 600px;margin-bottom: 10px;">
+                <div id="flashcontent">
+                </div>
+                <script language="javascript">
+                    var chart1 = new FusionCharts("http://kelimandala.lankadeepa.lk/FusionCharts_v3_Enterprise/Charts/Bar2D.swf", "sampleChart", "600", "172", "0", "1");
+                    var csv="<chart bgColor='f9d4e4,f9d4e4' showPercentageValues='1' plotBorderColor='FFFFFF' numberPrefix='' isSmartLineSlanted='0' showValues='1' showLabels='0' showLegend='0' useRoundEdges='2' plotBorderDashLen='2' plotBorderDashGap='2'>";
+                    csv+="<set label='මලල ක්‍රීඩා' value='19' color='ff0000' toolText='මලල ක්‍රීඩා votes'/>";
+csv+="<set label='රග්බි' value='655' color='ff0000' toolText='රග්බි votes'/>";
+csv+="<set label='පාපන්දු' value='421' color='ff0000' toolText='පාපන්දු votes'/>";
+csv+="<set label='වොලිබෝල්' value='10' color='ff0000' toolText='වොලිබෝල් votes'/>";
+
+                    csv+="</chart>";
+                    chart1.setDataXML(csv);
+                    chart1.render("flashcontent");
+                </script>
+            </div>
+            
+         
+            </div>
+            
+        </div>
+    </div>
+    <!--mage_mathaya over--></div><!--left_main_wrapper over--><!--right_main_wrapper-->
+<div class="right_main_wrapper"><!--social_icons-->
+
+
+<!--IFRAME SRC="http://ad.doubleclick.net/ddm/adi/N7534.1921950KELIMANDALA.LANKADE/B8671706.117272974;sz=300x200;ord=[timestamp]?" WIDTH=300 HEIGHT=200 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'>
+<SCRIPT language='JavaScript1.1' SRC="http://ad.doubleclick.net/ddm/adj/N7534.1921950KELIMANDALA.LANKADE/B8671706.117272974;abr=!ie;sz=300x200;ord=[timestamp]?">
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/ddm/jump/N7534.1921950KELIMANDALA.LANKADE/B8671706.117272974;abr=!ie4;abr=!ie5;sz=300x200;ord=[timestamp]?">
+<IMG SRC="http://ad.doubleclick.net/ddm/ad/N7534.1921950KELIMANDALA.LANKADE/B8671706.117272974;abr=!ie4;abr=!ie5;sz=300x200;ord=[timestamp]?" BORDER=0 WIDTH=300 HEIGHT=200 ALT="Advertisement"></A>
+</NOSCRIPT>
+</IFRAME -->
+
+
+
+
+<!--<a href="http://thepapare.com/index.php/rugby-football/51-rugbyschool/4493-the-elite-
+schools-rugby-showdown" target="_blank" class="balls" style=" width:300px; height:200px;"><img src="http://kelimandala.lankadeepa.lk/templates/images/DailyMirror-300X200.gif" width="300" height="200"  alt=""/> </a>-->
+
+    <!--live_scores-->
+  
+  
+<script type="text/javascript">// <![CDATA[
+$(document).ready(function() {
+$.ajaxSetup({ cache: false }); // This part addresses an IE bug.  without it, IE will only load the first number and will never refresh
+setInterval(function() {
+$('#divToRefresh').load('http://kelimandala.lankadeepa.lk/kelimandala/livewidgetload');
+}, 30000); // the "3000" here refers to the time to refresh the div.  it is in milliseconds. 
+});
+// ]]></script>
+    <link href="http://kelimandala.lankadeepa.lk/cric/css/live_score_main.css" rel="stylesheet" type="text/css" />
+ 
+
+
+
+
+
+<iframe frameborder="0" height="250" scrolling="no" src="http://techkeels.com/creatives/nlb/mahajanasampatha/banner/300x250kelimadala/" width="300"> </iframe>
+<!-- <iframe src="http://www.kelimandala.lk/kelimandala/cricketworldcup" width="305" height="323" ></iframe> -->
+<div class="social_icons">
+        <div class="social_wrapper">
+            <a target="_blank" href="https://www.facebook.com/Kelimandala" class="fb_icon"></a>
+            <div class="twitter_icon"></div>
+            <a target="_blank" href="http://kelimandala.lankadeepa.lk/category/rssNews" class="rss_icon"></a>
+            <div class="you_tube_icon"></div>
+        </div>
+    </div>
+	<iframe width="320" height="750" scrolling="no" frameborder="0" src="http://sinhala.wisdensrilanka.lk/widget_1"></iframe>
+	<div style="margin : 20px 0px;">
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/6231952/DLD_HOME_SLOT_4_300_200', [300, 200], 'div-gpt-ad-1457069663697-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<!-- /6231952/DLD_HOME_SLOT_4_300_200 -->
+<div id='div-gpt-ad-1457069663697-0' style='height:200px; width:300px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1457069663697-0'); });
+</script>
+</div>
+</div>
+    <!--social_icons over-->
+	<a href="http://www.kelimandala.lk/big_match_2016" style="margin-top:10px; float: left;"> <img src="http://kelimandala.lankadeepa.lk/templates/images/big_Match_widget.png" width="300" height="100" border="0" />  </a> 
+	<a href="http://www.kelimandala.lk/u_13_cricket" style="margin-top:10px; float: left;"> <img src="http://kelimandala.lankadeepa.lk/images/under13.jpg" width="300" height="100" border="0" />  </a> 
+<a href="http://www.kelimandala.lk/u_15_cricket" style="margin-top:10px; float: left;"> <img src="http://kelimandala.lankadeepa.lk/templates/images/Under 15 Cricket.jpg" width="300" height="100" border="0" />  </a> 
+   <a href="http://www.kelimandala.lk/u_17_cricket" style="margin-top:10px; margin-bottom:10px; float: left;"> <img src="http://kelimandala.lankadeepa.lk/templates/images/Under 17 Cricket.jpg" width="300" height="100" border="0" />  </a>
+ <a href="http://www.kelimandala.lk/u_19_cricket" style="margin-top:10px; float: left;"> <img src="http://kelimandala.lankadeepa.lk/images/under19.jpg" width="300" height="100" border="0" />  </a> 
+<!--   <table style="margin-bottom:5px;" width="280" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="140"><a href="http://kelimandala.lankadeepa.lk/rugby"><img src="http://kelimandala.lankadeepa.lk/templates/images/Dialog-rugby.jpg" width="140" height="60" border="0" /></a></td>
+    <td width="149"><a href="http://kelimandala.lankadeepa.lk/cricket"><img src="http://kelimandala.lankadeepa.lk/templates/images/u19-school-cricket.jpg" width="140" height="60" border="0" /></a></td>
+  </tr>
+  <tr>
+    <td><a href="http://kelimandala.lankadeepa.lk/cricket"><img src="http://kelimandala.lankadeepa.lk/templates/images/MCMatches.jpg" width="140" height="60" border="0" /></a></td>
+    <td><a href="http://kelimandala.lankadeepa.lk/history"><img src="http://kelimandala.lankadeepa.lk/templates/images/records.jpg" width="140" height="60" border="0" /></a></td>
+  </tr>
+</table>-->
+    <!--live_scores over--><!--flash_add-->
+    <!--<div class="flash_add">
+        <div class="flash_add_inner"><img src="http://kelimandala.lankadeepa.lk/templates/images/etel-20130701.jpg"/></div>
+    </div>-->
+    <!--flash_add-->
+    
+
+    
+    
+    <!--tabed_widget-->
+    <div class="tabed_widget">
+        <div class="tabbed_area">
+            <ul class="tabs">
+                <li><a href="#" title="content_1" onclick="return false;" class="tab active">ජනප්‍රිය පුවත් </a></li>
+                <li><a href="#" title="content_2" onclick="return false;" class="tab">ප්‍රතිචාර </a></li>
+            </ul>
+            <!--content page01-->
+            <div id="content_1" class="content">
+                                <a class="inner_tab_wrapper"
+                   href="http://kelimandala.lankadeepa.lk/article/67483/-රන්-පදක්කම්-28ක්-දිනූ-ශ්‍රී-ලංකාවට-අනුශූරතාව-">
+                    <div class="inner_tab_pic">
+                                                <img height="70px" width="90px" src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/South Asian Swimming(4).jpg"/></div>
+                    <div class="inner_tab_heading"> රන් පදක්කම් 28ක් දිනූ ශ්‍රී ලංකාවට අනුශූරතාව ...</div>
+                    <div class="date_txt_field " style="text-align:right; float:left; text-indent:5px;">2016-10-22 21:10:55</div>
+                    <div class="inner_tab_content">
+	
+
+
+
+	
+		
+			
+				
+					බාලිකා - වයස 18 න් පහළ මීටර් 50 නිදහස් ආර ඉසව්වේ&nbsp;රන් පදක්කම් 8ක් දිනාගත් කිමිකෝ රහීම් 
+				
+			
+		
+	
+
+
+...                    </div>
+                </a>
+                                <a class="inner_tab_wrapper"
+                   href="http://kelimandala.lankadeepa.lk/article/67476/අනුමැතිය-නොමැතිව-තරගාවලිය-කල්යයි">
+                    <div class="inner_tab_pic">
+                                                <img height="70px" width="90px" src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Rugby-Keli-140-95(135).jpg"/></div>
+                    <div class="inner_tab_heading">අනුමැතිය නොමැතිව තරගාවලිය කල්යයි...</div>
+                    <div class="date_txt_field " style="text-align:right; float:left; text-indent:5px;">2016-10-22 16:29:20</div>
+                    <div class="inner_tab_content">
+	
+
+
+
+	ශ්&zwj;රී ලංකා පාසල් රග්බි සංගමය මගින් සංවිධානය කරනු ලබන අන්තර් පාසල් අවුරුදු 18 න් පහළ සත් සාමාජික II වැනි කොටසේ රග්බි තරගාවලිය සඳහා රගර්...                    </div>
+                </a>
+                                <a class="inner_tab_wrapper"
+                   href="http://kelimandala.lankadeepa.lk/article/67465/මැතිව්---කිමිකෝ---කයිල්-ශ්‍රී-ලංකාව-රනින්-බබළවති">
+                    <div class="inner_tab_pic">
+                                                <img height="70px" width="90px" src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/South Asian Swimming(3).jpg"/></div>
+                    <div class="inner_tab_heading">මැතිව් - කිමිකෝ - කයිල් ශ්‍රී ලංකාව රනින් බබළවති...</div>
+                    <div class="date_txt_field " style="text-align:right; float:left; text-indent:5px;">2016-10-21 21:30:21</div>
+                    <div class="inner_tab_content">
+	
+
+
+
+	කොළඹ සුගතදාස පිහිනුම් තටාකයේදී පැවැත්වෙන දකුණු ආසියානු ජල ක්&zwj;රීඩා තරගාවලියේ තෙවැනි දිනය වූ අද (21 වැනිදා) සිය 5 වැනි රන් පදක්කමත් දිනා...                    </div>
+                </a>
+                                <a class="inner_tab_wrapper"
+                   href="http://kelimandala.lankadeepa.lk/article/67543/දක්‍ෂතම-රියැදුරු-ඩැරීන්">
+                    <div class="inner_tab_pic">
+                                                <img height="70px" width="90px" src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/Motor Sports Icon (3).jpg"/></div>
+                    <div class="inner_tab_heading">දක්‍ෂතම රියැදුරු ඩැරීන්...</div>
+                    <div class="date_txt_field " style="text-align:right; float:left; text-indent:5px;">2016-10-25 18:21:09</div>
+                    <div class="inner_tab_content">
+	
+
+
+
+	කළුතර, කටුකුරුන්ද ගුවන් හමුදා ධාවන පථයේදී පැවැති &lsquo;රොදර්හැම්&rsquo; මෝටර් රථ සහ යතුරුපැදි තරගාවලියේ දක්ෂතම රියැදුරා ලෙස සම්මාන දිනාගැ...                    </div>
+                </a>
+                            </div>
+            <!--content page01 over-->        <!--content page02-->
+            <div id="content_2" class="content">
+
+                                <a class="inner_tab_wrapper2"
+                   href="http://kelimandala.lankadeepa.lk/article/67149/කොත්මලේ-කුසලාන-පාසල්-පාපන්දු-අවසන්-තරගය-යාපනයේදී-">
+                    <!--                    <div class="inner_tab_pic"><img src="-->
+                        <!--templates/css/images/tab1.jpg"/></div>-->
+                    <div
+                        class="inner_tab_heading2">කොත්මලේ කුසලාන පාසල් පාපන්දු අවසන් තරගය යාපනයේදී ...</div>
+                        <div class="date_txt_field " style="text-align:right; float:left;  width:100% !important; text-indent:5px;"></div>
+                    <div class="inner_tab_content2">ලෝක පාපන්දු කුසලානයට ලංකාව කවද යයිද?...                    </div>
+                </a>
+                                <a class="inner_tab_wrapper2"
+                   href="http://kelimandala.lankadeepa.lk/article/66908/අර්ජුන-රණතුංග">
+                    <!--                    <div class="inner_tab_pic"><img src="-->
+                        <!--templates/css/images/tab1.jpg"/></div>-->
+                    <div
+                        class="inner_tab_heading2">අර්ජුන රණතුංග...</div>
+                        <div class="date_txt_field " style="text-align:right; float:left;  width:100% !important; text-indent:5px;"></div>
+                    <div class="inner_tab_content2">
+	රුපියල් 100,000 ක පඩියක් දීලා අම්මාව වරායට ගත්තේ සල්ලි ඉතුරු කරන්නද ?
+
+...                    </div>
+                </a>
+                                <a class="inner_tab_wrapper2"
+                   href="http://kelimandala.lankadeepa.lk/article/66703/මුල්-දිනයේම-ශ්‍රී-ලංකා-වාර්තා-දෙකක්-">
+                    <!--                    <div class="inner_tab_pic"><img src="-->
+                        <!--templates/css/images/tab1.jpg"/></div>-->
+                    <div
+                        class="inner_tab_heading2">මුල් දිනයේම ශ්‍රී ලංකා වාර්තා දෙකක් ...</div>
+                        <div class="date_txt_field " style="text-align:right; float:left;  width:100% !important; text-indent:5px;"></div>
+                    <div class="inner_tab_content2">වෘත්තීය මට්ටමේ ක්‍රීඩකයි සඳහ ක්‍රියා පද්ධතියක් අවශ්ෂයි. අපි පාසල් යන කලේ ක්‍රීඩාකටයුතු වලට යෙදුනට, අනාගතයේදී ක්‍රීඩාවෙන් ජීවිකාව ගත කල හැකිය කියා කවදා...                    </div>
+                </a>
+                                <a class="inner_tab_wrapper2"
+                   href="http://kelimandala.lankadeepa.lk/article/66606/බස්නාහිර-පළාත-රන්-පදක්කම්-100-අාසන්නයේ">
+                    <!--                    <div class="inner_tab_pic"><img src="-->
+                        <!--templates/css/images/tab1.jpg"/></div>-->
+                    <div
+                        class="inner_tab_heading2">බස්නාහිර පළාත රන් පදක්කම් 100 අාසන්නයේ...</div>
+                        <div class="date_txt_field " style="text-align:right; float:left;  width:100% !important; text-indent:5px;"></div>
+                    <div class="inner_tab_content2">
+	ලංකාවේ දක්ෂ ක්&zwj;රීඩකයින් හදුනාගැනීමට සහ දක්ෂතා වැඩිදියුණු කරගෙන ඔලින්පික් පදක්කම් ලබාගන්නා ජාතියක් වීමට හැකිවේවායි පතමි. ක්&zwj;රීඩක ක්&zwj;රීඩි...                    </div>
+                </a>
+                                <a class="inner_tab_wrapper2"
+                   href="http://kelimandala.lankadeepa.lk/article/66587/කොළඹ-මැරතන්-තරගයට-7500-ක්-">
+                    <!--                    <div class="inner_tab_pic"><img src="-->
+                        <!--templates/css/images/tab1.jpg"/></div>-->
+                    <div
+                        class="inner_tab_heading2">කොළඹ මැරතන් තරගයට 7500 ක් ...</div>
+                        <div class="date_txt_field " style="text-align:right; float:left;  width:100% !important; text-indent:5px;"></div>
+                    <div class="inner_tab_content2">විශ්වවිද්‍යාල මට්ටමේ මැරතන් තරඟාවලියක් සැම වසරක් පාසා පැවැත්විය යුතුයි. එමගින් ලාංකීය ජනතාවෙගේ සමගිය වැඩිදියුණු වෙතැයි සිතමි. විශ්වවිද්‍යාල වල අරගල වල...                    </div>
+                </a>
+                            </div>
+           
+        </div>
+    </div>
+    <!--tabed_widget over-->
+    <!--fb-->
+    <div class="fb">
+        <div class="fb_inner">
+            <div class="fb_header"></div>
+            <div class="fb_inner_part" style="margin-top: 10px;"><iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FKelimandala&amp;width=290&amp;height=258&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;show_border=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:290px; height:258px;" allowTransparency="true"></iframe></div>
+        </div>
+    </div>
+    <!--fb over--><!--ewadan_elasinma-->
+    <div class="ewadan_elasinma">
+        <div class="ewadan_elasinma_inner">
+            <div class="ewadan_elasinma_header"></div>
+
+                        <a href="http://kelimandala.lankadeepa.lk/article/66908/අර්ජුන-රණතුංග"
+               class="ewadan_elasinma_inner_wrapper" style="border-bottom:dotted 1px #666" >
+                <div
+                    class="ewadan_elasinma_inner_header">අර්ජුන රණතුංග...</div>				<div class="date_txt_field " style="text-align:right; float:left; text-indent:8px; padding-bottom:3px;">2016-10-07 22:15:17 | .</div>
+                <div class="ewadan_elasinma_inner_pic_wrapper">
+                    <div class="ewadan_elasinma_inner_pic"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/AAAA(14).jpg"/></div>
+                </div>
+                
+                
+                
+                <div
+                    class="ewadan_elasinma_inner_content">
+	&ldquo;අපි උත්සාහ ගන්නේ රටේ සල්ලි ඉතුරු කරන්න. මේ මුදල් තමයි අපි පරිස්සම් කරලා මේ දරුවන් වෙනුවෙන් යොදවන්න ඕන. එහෙම නැතුව පරිපාලනයට එන්න ඡන්දයට උදව් කළ අයව, අමාත්&zwj;යවරයාගේ රියදුරාව, මාධ්&zwj;ය සම...                </div>
+            </a>
+                        <a href="http://kelimandala.lankadeepa.lk/article/66063/අර්ජුන-රණතුංග"
+               class="ewadan_elasinma_inner_wrapper" >
+                <div
+                    class="ewadan_elasinma_inner_header">අර්ජුන රණතුංග...</div>				<div class="date_txt_field " style="text-align:right; float:left; text-indent:8px; padding-bottom:3px;">2016-09-14 19:29:18 | .</div>
+                <div class="ewadan_elasinma_inner_pic_wrapper">
+                    <div class="ewadan_elasinma_inner_pic"><img src="http://editorial.kelimandala.lankadeepa.lk/wp-content/uploads/file/111(41).jpg"/></div>
+                </div>
+                
+                
+                
+                <div
+                    class="ewadan_elasinma_inner_content">
+	&ldquo;ඇත්තටම මේක ක්&zwj;රීඩා අමාත්&zwj;යංශයේ ලේකම්වරයාගේ ඇසීම තේරුමක් නෑ. මම දන්නේ නෑ. දැන් ඉන්න ලේකම්වරයයි, හිටපු ලේකම්වරයයි අහන ප්&zwj;රශ්නයට නෙවෙයි උත්තර දෙන්නේ. ඒ පිළිබඳව පරීක්&zwj;ෂණයක් කරන්න...                </div>
+            </a>
+              
+             <div class="more_tag_wrapper">
+                    <div class="more_tag"></div>
+             </div>
+        </div>
+       
+    </div>
+    
+    <!--twitter-->
+      <div class="widget">
+    <iframe id="frame1" width="300" scrolling="no" height="610" frameborder="0"  marginwidth="0" src="http://kelimandala.lankadeepa.lk/event-calendar" noresize="" name="f1">
+    </iframe></div>
+     <!--twitter-->
+    
+    
+
+</script><br />
+<script type='text/javascript'>
+$ss= jQuery.noConflict();
+
+$ss(document).ready(function() {
+$ss('img#closed').click(function(){
+$ss('#btm_banner').hide(90);
+});
+});
+</script>
+<style type='text/css'>
+div#btm_banner {
+bottom: 50px;
+position: fixed;
+width: 100%;
+opacity: 0.9;
+left: 0;
+}
+div#btm_banner img{
+border:0;
+cursor:pointer;
+}
+</style>
+    <!--ewadan_elasinma over--><!--kichibichiya-->
+    <div class="kichibichiya">
+        <div class="kichibichiya_inner">
+            <div class="kichibichiya_content" style="overflow: hidden;">
+                <a class="twitter-timeline"  href="https://twitter.com/Kelimandala"  data-widget-id="365807278194061313">Tweets by @Kelimandala</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+        </div>
+    </div>
+  
+    <!--kichibichiya over--></div><!--right_main_wrapper over-->
+</div>
+    <!--footer starting-->
+    <!--right_main_wrapper over--><!--footer starting-->
+     <div class="footer" style="height:132px !important">
+        <div class="footer_inner_top_wrapper">
+            <div class="group_sites">Group Sites :</div>
+            <a class="footer_menulist_container" target="_blank" href="http://www.dailymirror.lk/">Daily Mirror</a>
+            <a class="footer_menulist_container" target="_blank" href="http://www.sundaytimes.lk/">Sunday Times</a>
+            <a class="footer_menulist_container" target="_blank" href="http://www.lankadeepa.lk/">Lankadeepa</a>
+            <a class="footer_menulist_container" target="_blank" href="http://www.ft.lk/">Financial Times</a>
+            <a class="footer_menulist_container" target="_blank" href="http://www.hi.lk/">Hi mag</a>
+            <a class="footer_menulist_container" target="_blank" href="http://www.lw.lk/">Lanka Woman</a>
+            <a class="footer_menulist_container" target="_blank" href="http://www.hitad.lk/">Hit Ad</a>
+            <a class="footer_menulist_container" target="_blank" href="http://www.wijeyanewspapers.lk/">WNL</a>
+            <a class="footer_menulist_container" target="_blank" href="http://www.tamil.dailymirror.lk/">Tamil Mirror</a>
+            <a class="footer_menulist_container" target="_blank" href="http://www.ada.lk//">Ada</a>
+        </div>
+        <div class="footer_innr_bottotm">
+            <div class="footer_innr_bottotm_top">
+<a class="footer_menulist_container2" target="_blank" href="http://kelimandala.lankadeepa.lk/">මුල් පිටුව</a>
+<a class="footer_menulist_container2" target="_blank" href="http://kelimandala.lankadeepa.lk/cricket">ක්‍රිකට්</a>
+<a class="footer_menulist_container2" target="_blank" href="http://kelimandala.lankadeepa.lk/athletics">මලල කී‍්‍රඩා</a>
+<a class="footer_menulist_container2" target="_blank" href="http://kelimandala.lankadeepa.lk/football">පාපන්දු</a>
+<a class="footer_menulist_container2" target="_blank" href="http://kelimandala.lankadeepa.lk/volly-ball">වොලිබෝල්</a>
+<a class="footer_menulist_container2" target="_blank" href="http://kelimandala.lankadeepa.lk/badminton">බැඞ්මින්ටන</a>
+<a class="footer_menulist_container2" target="_blank" href="http://kelimandala.lankadeepa.lk/motor-sport">මෝටර් කී‍්‍රඩා</a>
+<a class="footer_menulist_container2" target="_blank" href="http://kelimandala.lankadeepa.lk/other">වෙනත් කී‍්‍රඩා</a>
+            </div>
+            <div class="copyright_bottom">copyright 2013 Kelimandala.lk</div>
+        </div>
+        
+        
+    </div>
+    <!--footer over-->
+
+
+
+</div>
+</div>
+
+
+
+
+
+<!--main wrapper over-->
+</body>
+</html>

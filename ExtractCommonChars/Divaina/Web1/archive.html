@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Keywords"
+content="sri lanka, newspapers, sri lankan news, upali newspapers, colombo, Divaina, divaina, Island, The Island, daily newspapers, features, politics, business, sports">
+<meta name="description"
+content="The Internet Edition of Divaina, national newspaper in Sri Lanka">
+<title>content</title>
+<script language="JavaScript">
+<!--
+function opencal(pagetoopen,where){
+window.open (pagetoopen,where,'width=275,height=175,top=50,left=50');}
+
+function testdate(){
+var maxfeb;
+var day1=which.day.options[which.day.selectedIndex].value;
+var month1=which.month.options[which.month.selectedIndex].value;
+var year1=which.year.options[which.year.selectedIndex].value;
+var today1=new Date(year1,month1-1,day1);
+var today=new Date();
+var startday = new Date(2000,7,2)
+var DAY=86400000;
+var diff=(today1-today)/DAY;
+var diffst = (today1-startday)/DAY;
+ 
+if (month1 < 10){var month1 = "0" + month1}
+if (day1 < 10){var day1 = "0" + day1}
+
+var toturl = year1+"/"+month1+"/"+day1;
+
+if (year1 % 4 != 0)
+{maxfeb=28}
+else if  (year1 % 400 == 0)
+{maxfeb=29}
+else if (year1 % 100 == 0)
+{maxfeb=28}
+else
+{maxfeb=29}
+
+if (((month1 == 2) && (day1 > maxfeb)) || ((month1 == 4) && (day1 > 30)) || ((month1 == 6) && (day1 > 30)) || ((month1 == 9) && (day1 > 30)) || ((month1 == 11) && (day1 > 30))){
+alert("Date " + day1 + " does not exist in Month " + month1 + " of Year " + year1);
+//return false;
+}
+else if (diff >= -1){
+alert("The Date Selected is a future Date");
+//return false;
+}
+else if (diffst <= 0){
+alert("Archives are avilable Starting Only From 03rd August, 2000");
+//return false;
+}
+else
+{window.open("http://www.divaina.com/"+toturl+"/");}
+//return true;}
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0">
+<table border="0" cellpadding="0" cellspacing="0" height="76">
+  <tr>
+    <td bgcolor="#C0C0C0" width="115" height="52" align="center"><em><small>powered by</small></em><br>
+    <a href="http://www.lankacom.net" target="_blank"><img src="images/lcs.jpg"
+    width="100" height="40" alt="http://www.lankacom.net" border="0"></a></td>
+    <td bgcolor="#FE0002" width="500" height="52"><div align="left"><table border="0"
+    cellpadding="2" cellspacing="0" width="100%">
+      <tr>
+        <td width="60%" rowspan="2"><a href="http://www.divaina.com"><img src="images/ddivaina.jpg" width="144"
+        height="43" alt="Divaina" border="0"></a></td>
+        <td width="25%"><a
+        href="http://europe.oanda.com/converter/classic?user=webteam&amp;lang=en"
+        style="COLOR: rgb(0,0,0); TEXT-DECORATION: none" target="_blank"><strong><small><font
+        face="Arial">currency rates</font></small></strong></a></td>
+        <td width="20%"></td>
+      </tr>
+      <tr>
+        <td width="25%"><a href="http://www.lanka.net/weather/weather.phtml"
+        style="COLOR: rgb(0,0,0); TEXT-DECORATION: none" target="_blank"><font color="#400040"
+        face="Arial"><strong><small>weather</small></strong></font></a></td>
+        <td width="20%"></td>
+      </tr>
+    </table>
+    </div></td>
+    <td align="right" bgcolor="#FE0002" width="8%" height="52"></td>
+    <td align="right" bgcolor="#FF0000" width="10%" height="52"><p align="center"><a
+    href="http://www.info.lk/slword/submit.htm" target="_blank"><img
+    src="images/sin.gif" width="49" height="34"
+    alt="Download Sinhala Fonts to Read 'Divaina'" border="0"></a></td>
+  </tr>
+  <tr>
+    <td align="left" height="24" bgcolor="#C0C0C0" width="115">&nbsp;</td>
+    <td align="left" height="24" bgcolor="#C0C0C0"><font face="Verdana"><b>&nbsp;
+      ARCHIVES</b></font></td>
+    <td align="right" height="24" width="8%" bgcolor="#C0C0C0">&nbsp;</td>
+    <td align="right" width="10%" height="24" bgcolor="#C0C0C0">&nbsp;</td>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="98%">
+  <tr>
+    <td valign="top" rowspan="4"></td>
+    <td valign="top" width="80%">
+    &nbsp;
+    <div align="center">
+      <center>
+      <table border="0" width="75%">
+        <tr>
+          <td width="100%">
+<table border=1 bordercolor="#918AAC" cellpadding=30><tr><td align="center">
+<font color="#000080">
+<font face=verdana size=2><b>Select a Date, Month and Year to retrieve the Issue of that Date</b></font><br></font><br>
+<form name="which">
+
+        <p style="margin-left: 10; margin-top: 10"><script language="JavaScript">
+<!--Developed by Haridharan for LCS 
+today = new Date();
+thismonth = today.getMonth()+1;
+thisyear = today.getYear();
+thisday = today.getDate();
+monthname=new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+/*montharray=new Array(31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);*/
+maxdays=31;
+/*if (thismonth==2) {
+if ((thisyear/4)!=parseInt(thisyear/4)) maxdays=28;
+else maxdays=29;
+}*/
+document.write("<select name=day>");
+for(var i=1; i <= maxdays; i++){
+document.write("<option value =" + i);
+if (i == thisday-1) {document.write(" selected");}
+document.write(">");
+document.write("&nbsp;&nbsp;&nbsp;" + i + "&nbsp;");
+}
+document.write("</select>&nbsp;&nbsp;");
+
+document.write("<select name=month>");
+for(var i=1; i <= 12; i++){
+document.write("<option value =" + i);
+if (i == thismonth) {document.write(" selected");}
+document.write(">");
+document.write("&nbsp;&nbsp;&nbsp;" + monthname[i-1] + "&nbsp;");
+}
+document.write("</select>&nbsp;&nbsp;");
+
+var diffyr = thisyear - 2000;
+var ival = -1*diffyr
+document.write("<select name=year>");
+for(var i=ival; i <= 0; i++){
+document.write("<option value =" + (thisyear+i));
+if (i == 0) {document.write(" selected");}
+document.write(">");
+document.write("&nbsp;&nbsp;&nbsp;" + (thisyear+i) + "&nbsp;");
+}
+document.write("</select><br><br>");
+//-->
+</script>
+        <p style="margin-left: 10; margin-top: 10"><input type="button" value="Retrieve Archive" name="B1" onClick="testdate()" style="background-color: #FF0000; color: #FFFFFF; font-family: Verdana; font-weight: bold">&nbsp;
+
+
+</form>
+</td></tr></table>
+<br>
+<table border=1 bordercolor="#918AAC" cellpadding=10><tr><td>
+<font face="Verdana" size="2" color="#FF0000"><b>For Users who want to retrieve archives from the Calendar</b></font><br><br>
+    <font face="Verdana" size="2"><b>&nbsp;1. Click on the link &quot;Open Calendar&quot;.&nbsp;</b></font>
+      <p align="left" style="margin-left: 5"><font face="Verdana" size="2"><b>2. A Calendar will pop up.</b></font>
+    </p>
+      <p align="left" style="margin-left: 5"><font face="Verdana" size="2"><b>3. Click on a date on the Calendar
+      to retrieve the DIVAINA issue of that date.</b></font>
+    </p>
+      <p align="center" style="margin-left: 5"><b><a href="javascript:opencal('./archive/cal.asp','archive')"; onmouseover="window.status='Open THE ISLAND Archive Calendar';return true;" onmouseout="window.status='';return true;"">Open
+      Calendar</a></b>
+    </p></td>
+        </tr>
+      </table>
+<hr>
+  </td>
+        </tr>
+      </table>
+      </center>
+    </div>
+    <div align="center">
+      <center>
+      <table border="0" width="75%">
+        <tr>
+          <td width="33%" align="center"><a href="http://www.island.lk" target="_blank"><img border="0" src="images/islandlogo.jpg" width="60" height="15"></a></td>
+          <td width="33%" align="center"><a href="http://www.navaliya.com" target="_blank"><img border="0" src="images/navaliyalogo.jpg" width="50" height="15"></a></td>
+          <td width="34%" align="center"><a href="http://www.vidusara.com" target="_blank"><img border="0" src="images/vidusaralogo.jpg" width="45" height="15"></a></td>
+        </tr>
+      </table>
+      </center>
+    </div>
+    </td>
+    <td valign="top" width="120"><p align="center"><br>
+    <a href="http://www.srilankanelections.com" target="_blank"><img
+    src="images/hotnews.gif" width="120" height="65" alt="Hot News Online" border="0"></a></p>
+    <div align="left"><table border="0" cellspacing="1" width="100%">
+      <tr>
+        <td width="100%" valign="middle" align="center"></td>
+      </tr>
+      <tr>
+        <td width="100%" valign="middle" align="center" height="23"></td>
+      </tr>
+      <tr>
+        <td width="100%" valign="middle" align="center" height="11"></td>
+      </tr>
+    </table>
+    </div></td>
+  </tr>
+  <tr>
+    <td width="80%" valign="top"></td>
+    <td width="120" valign="top"></td>
+  </tr>
+  <tr>
+    <td width="80%" align="center" colspan="2">
+      <hr width="80%">
+    <p><font color="#400040"><small>your comments to</small><br>
+    </font><font color="#000080"><a href="mailto:gamini@unl.upali.lk"
+    style="color: rgb(0,0,128)"><small>Editor</small></a></font><font color="#400040"> | </font><font
+    color="#000080"><a href="mailto:webmaster@unl.upali.lk" style="color: rgb(0,0,128)"><small>Webmaster</small></a>
+    | <small><a style="color: rgb(0,0,128)" href="mailto:kithsiri@upali.lk">Manager Internet
+    Operations</a></small></font></p>
+    <p><em><small>powered by</small></em><br>
+    <a href="http://www.lankacom.net" target="_blank"><font face="Arial" color="#0000FF"
+    size="1">LankaCom Services</font></a></p>
+	<hr width="80%">
+    </td>
+  </tr>
+  <tr>
+    <td align="right" colspan="2"><div align="left">
+		<table border="0" cellpadding="0" cellspacing="0"
+    width="100%" height="71">
+      <tr>
+        <td width="100%" align="center"><img src="images/ulogo.jpg"
+        alt="ulogo.jpg (6856 bytes)" width="30" height="32"><font face="kaputadotcom" size="3"
+        color="#400040"><br>
+        </font><font color="#000080" face="Times New Roman" size="2">&#3523;&#3539;&#3512;&#3535;&#3523;&#3524;&#3538;&#3501; 
+		&#3467;&#3508;&#3535;&#3517;&#3538; &#3508;&#3540;&#3520;&#3501;&#3530;&#3508;&#3501;&#3530; &#3523;&#3512;&#3535;&#3484;&#3512;<br>
+		&#3461;&#3458;&#3482; 223, &#3510;&#3530;&#3517;&#3542;&#3512;&#3536;&#3505;&#3530;&#3497;&#3517;&#3530; &#3508;&#3535;&#3515;, &#3482;&#3548;&#3525;&#3513; 13, &#3521;&#3530;&#8205;&#3515;&#3539; &#3517;&#3458;&#3482;&#3535;&#3520;.</font></td>
+      </tr>
+    </table>
+    </div><a href="http://www.kaputa.com/kaputa.ram"><p></a>&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+</html>
