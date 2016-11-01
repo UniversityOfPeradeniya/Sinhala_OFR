@@ -12,12 +12,9 @@ for i=1:numel(files)
     [pathstr, name, ~] = fileparts(fname);
     fpath = [pathstr,'\',name];
     disp(fpath);
-    emptyCenter(fpath,sizeof,pattern);
+    %emptyCenter(fpath,sizeof,pattern);
+    pixelViseCompare(fpath,sizeof,pattern);
     
 end
-
-
-
-
 end
 

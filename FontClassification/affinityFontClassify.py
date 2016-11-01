@@ -12,7 +12,7 @@ newPath = 'RoundFontClassification\\'
 
 n_digits = 5
 algorithm = 'affinity'
-pattern = '-360'
+pattern = '-pixel'
 #list all the txt files in the folder
 
 data = []
@@ -40,8 +40,6 @@ def main():
     npData = np.array(data)
     n_samples, n_features = npData.shape
     af = AffinityPropagation().fit(npData)
-    #kmeans = KMeans(init='random', n_clusters=n_digits, n_init=500)
-    #kmeans.fit(npData)
     list1 = af.labels_
     list2 = fileNames
     print af.labels_
