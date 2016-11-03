@@ -8,11 +8,11 @@ path = 'CharacterGeneration\\charImages\\sa\\'
 newPath = 'characterClassifications\\sa\\'
 
 path = 'SimpleTest\\'
-newPath = 'RoundFontClassification\\'
+newPath = 'WidthClassification\\'
 
 n_digits = 5
 algorithm = 'affinity'
-pattern = '-pixel'
+pattern = '-width'
 #list all the txt files in the folder
 
 data = []

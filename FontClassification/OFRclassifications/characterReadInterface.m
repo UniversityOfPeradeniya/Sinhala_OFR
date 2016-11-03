@@ -13,8 +13,8 @@ for i=1:numel(files)
     fpath = [pathstr,'\',name];
     disp(fpath);
     %emptyCenter(fpath,sizeof,pattern);
-    pixelViseCompare(fpath,sizeof,pattern);
-    
+    %pixelViseCompare(fpath,sizeof,pattern);
+    widthMeasure(fpath,pattern);
 end
 end
 
