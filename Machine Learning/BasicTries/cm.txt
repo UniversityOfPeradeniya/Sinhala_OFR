@@ -1,0 +1,449 @@
+Predicted                0KDBOLIDDA  0KDBOLIDDA - Bold  0KDMANEL  \
+Actual                                                             
+0KDBOLIDDA                        2                  2         2   
+0KDBOLIDDA - Bold                 1                  2         0   
+0KDMANEL                          2                  1         2   
+0KDMANEL - Bold                   3                  1         1   
+0KDNAMAL                          2                  3         1   
+0KDNAMAL - Bold                   1                  0         2   
+0KDSAMAN                          2                  2         2   
+0KDSAMAN - Bold                   2                  1         3   
+4u-Ajantha                        3                  1         3   
+4u-Ajantha - Bold                 4                  0         2   
+4u-Amantha                        2                  1         7   
+4u-Amantha - Bold                 2                  0         1   
+4u-Ananda                         3                  0         3   
+4u-Ananda - Bold                  4                  0         1   
+4u-Anurada                        1                  2         0   
+4u-Anurada - Bold                 0                  0         0   
+4u-Araliya. Warp                  0                  0         0   
+4u-Araliya. Warp - Bold           0                  0         0   
+4u-Arjun                          0                  0         0   
+4u-Arjun - Bold                   0                  0         0   
+4u-Asiri                          0                  0         0   
+4u-Asiri - Bold                   0                  0         0   
+4u-Derana                         0                  0         0   
+4u-Derana - Bold                  0                  0         0   
+4u-Emanee                         0                  0         0   
+4u-Emanee - Bold                  0                  0         0   
+4u-Gemunu                         0                  0         0   
+4u-Gemunu - Bold                  0                  0         0   
+4u-Sawana                         0                  0         0   
+4u-Sawana - Bold                  0                  0         0   
+...                             ...                ...       ...   
+A Manel X - Bold                  0                  0         0   
+A araliya                         0                  0         0   
+A araliya - Bold                  0                  0         0   
+Br-Hansika                        0                  0         0   
+Br-Hansika. - Bold                0                  0         0   
+CPS 142                           0                  0         0   
+CPS 142 - Bold                    0                  0         0   
+CPS 144                           0                  0         0   
+CPS 144 - Bold                    0                  0         0   
+CPS 149                           0                  0         0   
+CPS 149 - Bold                    0                  0         0   
+CPS 42                            0                  0         0   
+CPS 42 - Bold                     0                  0         0   
+DL-kotu                           0                  0         0   
+DL-kotu - Bold                    0                  0         0   
+DS-DAYA-D                         0                  0         0   
+DS-DAYA-D - Bold                  0                  0         0   
+DS-bursh                          0                  0         0   
+DS-bursh - Bold                   0                  0         0   
+Dharmavathy                       0                  0         0   
+Dharmavathy - Bold                0                  0         0   
+SARA-JANAKEE-NEW                  0                  0         0   
+SARA-JANAKEE-NEW - Bold           0                  0         0   
+Wijeya                            0                  0         0   
+Wijeya - Bold                     0                  0         0   
+amsPanhinda                       0                  0         0   
+amsPanhinda - Bold                0                  0         0   
+amsSupun                          0                  0         0   
+amsSupun - Bold                   0                  0         0   
+__all__                          34                 16        30   
+
+Predicted                0KDMANEL - Bold  0KDNAMAL  0KDNAMAL - Bold  0KDSAMAN  \
+Actual                                                                          
+0KDBOLIDDA                             1         1                2         2   
+0KDBOLIDDA - Bold                      1         1                3         2   
+0KDMANEL                               2         3                3         1   
+0KDMANEL - Bold                        0         1                6         3   
+0KDNAMAL                               0         4                4         4   
+0KDNAMAL - Bold                        0         4                3         3   
+0KDSAMAN                               2         2                3         2   
+0KDSAMAN - Bold                        3         4                2         3   
+4u-Ajantha                             4         2                1         2   
+4u-Ajantha - Bold                      1         1                0         1   
+4u-Amantha                             2         3                2         2   
+4u-Amantha - Bold                      2         2                1         1   
+4u-Ananda                              2         2                4         2   
+4u-Ananda - Bold                       1         3                0         2   
+4u-Anurada                             1         4                2         3   
+4u-Anurada - Bold                      0         0                1         0   
+4u-Araliya. Warp                       0         0                0         0   
+4u-Araliya. Warp - Bold                0         0                0         0   
+4u-Arjun                               0         0                0         0   
+4u-Arjun - Bold                        0         0                0         0   
+4u-Asiri                               0         0                0         0   
+4u-Asiri - Bold                        0         0                0         0   
+4u-Derana                              0         0                0         0   
+4u-Derana - Bold                       0         0                0         0   
+4u-Emanee                              0         0                0         0   
+4u-Emanee - Bold                       0         0                0         0   
+4u-Gemunu                              0         0                0         0   
+4u-Gemunu - Bold                       0         0                0         0   
+4u-Sawana                              0         0                0         0   
+4u-Sawana - Bold                       0         0                0         0   
+...                                  ...       ...              ...       ...   
+A Manel X - Bold                       0         0                0         0   
+A araliya                              0         0                0         0   
+A araliya - Bold                       0         0                0         0   
+Br-Hansika                             0         0                0         0   
+Br-Hansika. - Bold                     0         0                0         0   
+CPS 142                                0         0                0         0   
+CPS 142 - Bold                         0         0                0         0   
+CPS 144                                0         0                0         0   
+CPS 144 - Bold                         0         0                0         0   
+CPS 149                                0         0                0         0   
+CPS 149 - Bold                         0         0                0         0   
+CPS 42                                 0         0                0         0   
+CPS 42 - Bold                          0         0                0         0   
+DL-kotu                                0         0                0         0   
+DL-kotu - Bold                         0         0                0         0   
+DS-DAYA-D                              0         0                0         0   
+DS-DAYA-D - Bold                       0         0                0         0   
+DS-bursh                               0         0                0         0   
+DS-bursh - Bold                        0         0                0         0   
+Dharmavathy                            0         0                0         0   
+Dharmavathy - Bold                     0         0                0         0   
+SARA-JANAKEE-NEW                       0         0                0         0   
+SARA-JANAKEE-NEW - Bold                0         0                0         0   
+Wijeya                                 0         0                0         0   
+Wijeya - Bold                          0         0                0         0   
+amsPanhinda                            0         0                0         0   
+amsPanhinda - Bold                     0         0                0         0   
+amsSupun                               0         0                0         0   
+amsSupun - Bold                        0         0                0         0   
+__all__                               22        37               37        33   
+
+Predicted                0KDSAMAN - Bold  4u-Ajantha  4u-Ajantha - Bold  \
+Actual                                                                    
+0KDBOLIDDA                             0           2                  2   
+0KDBOLIDDA - Bold                      1           4                  3   
+0KDMANEL                               2           0                  0   
+0KDMANEL - Bold                        0           1                  1   
+0KDNAMAL                               5           1                  0   
+0KDNAMAL - Bold                        6           1                  3   
+0KDSAMAN                               0           1                  0   
+0KDSAMAN - Bold                        0           0                  1   
+4u-Ajantha                             2           0                  0   
+4u-Ajantha - Bold                      2           0                  0   
+4u-Amantha                             3           3                  1   
+4u-Amantha - Bold                      1           3                  3   
+4u-Ananda                              2           3                  1   
+4u-Ananda - Bold                       2           3                  2   
+4u-Anurada                             2           1                  0   
+4u-Anurada - Bold                      2           0                  0   
+4u-Araliya. Warp                       0           0                  0   
+4u-Araliya. Warp - Bold                0           0                  0   
+4u-Arjun                               0           0                  0   
+4u-Arjun - Bold                        0           0                  0   
+4u-Asiri                               0           0                  0   
+4u-Asiri - Bold                        0           0                  0   
+4u-Derana                              0           0                  0   
+4u-Derana - Bold                       0           0                  0   
+4u-Emanee                              0           0                  0   
+4u-Emanee - Bold                       0           0                  0   
+4u-Gemunu                              0           0                  0   
+4u-Gemunu - Bold                       0           0                  0   
+4u-Sawana                              0           0                  0   
+4u-Sawana - Bold                       0           0                  0   
+...                                  ...         ...                ...   
+A Manel X - Bold                       0           0                  0   
+A araliya                              0           0                  0   
+A araliya - Bold                       0           0                  0   
+Br-Hansika                             0           0                  0   
+Br-Hansika. - Bold                     0           0                  0   
+CPS 142                                0           0                  0   
+CPS 142 - Bold                         0           0                  0   
+CPS 144                                0           0                  0   
+CPS 144 - Bold                         0           0                  0   
+CPS 149                                0           0                  0   
+CPS 149 - Bold                         0           0                  0   
+CPS 42                                 0           0                  0   
+CPS 42 - Bold                          0           0                  0   
+DL-kotu                                0           0                  0   
+DL-kotu - Bold                         0           0                  0   
+DS-DAYA-D                              0           0                  0   
+DS-DAYA-D - Bold                       0           0                  0   
+DS-bursh                               0           0                  0   
+DS-bursh - Bold                        0           0                  0   
+Dharmavathy                            0           0                  0   
+Dharmavathy - Bold                     0           0                  0   
+SARA-JANAKEE-NEW                       0           0                  0   
+SARA-JANAKEE-NEW - Bold                0           0                  0   
+Wijeya                                 0           0                  0   
+Wijeya - Bold                          0           0                  0   
+amsPanhinda                            0           0                  0   
+amsPanhinda - Bold                     0           0                  0   
+amsSupun                               0           0                  0   
+amsSupun - Bold                        0           0                  0   
+__all__                               30          23                 17   
+
+Predicted                 ...     Dharmavathy - Bold  SARA-JANAKEE-NEW  \
+Actual                    ...                                            
+0KDBOLIDDA                ...                      0                 0   
+0KDBOLIDDA - Bold         ...                      0                 1   
+0KDMANEL                  ...                      1                 1   
+0KDMANEL - Bold           ...                      0                 1   
+0KDNAMAL                  ...                      0                 0   
+0KDNAMAL - Bold           ...                      0                 1   
+0KDSAMAN                  ...                      0                 0   
+0KDSAMAN - Bold           ...                      0                 0   
+4u-Ajantha                ...                      1                 0   
+4u-Ajantha - Bold         ...                      0                 0   
+4u-Amantha                ...                      0                 1   
+4u-Amantha - Bold         ...                      0                 0   
+4u-Ananda                 ...                      0                 0   
+4u-Ananda - Bold          ...                      0                 2   
+4u-Anurada                ...                      0                 0   
+4u-Anurada - Bold         ...                      0                 0   
+4u-Araliya. Warp          ...                      0                 0   
+4u-Araliya. Warp - Bold   ...                      0                 0   
+4u-Arjun                  ...                      0                 0   
+4u-Arjun - Bold           ...                      0                 0   
+4u-Asiri                  ...                      0                 0   
+4u-Asiri - Bold           ...                      0                 0   
+4u-Derana                 ...                      0                 0   
+4u-Derana - Bold          ...                      0                 0   
+4u-Emanee                 ...                      0                 0   
+4u-Emanee - Bold          ...                      0                 0   
+4u-Gemunu                 ...                      0                 0   
+4u-Gemunu - Bold          ...                      0                 0   
+4u-Sawana                 ...                      0                 0   
+4u-Sawana - Bold          ...                      0                 0   
+...                       ...                    ...               ...   
+A Manel X - Bold          ...                      0                 0   
+A araliya                 ...                      0                 0   
+A araliya - Bold          ...                      0                 0   
+Br-Hansika                ...                      0                 0   
+Br-Hansika. - Bold        ...                      0                 0   
+CPS 142                   ...                      0                 0   
+CPS 142 - Bold            ...                      0                 0   
+CPS 144                   ...                      0                 0   
+CPS 144 - Bold            ...                      0                 0   
+CPS 149                   ...                      0                 0   
+CPS 149 - Bold            ...                      0                 0   
+CPS 42                    ...                      0                 0   
+CPS 42 - Bold             ...                      0                 0   
+DL-kotu                   ...                      0                 0   
+DL-kotu - Bold            ...                      0                 0   
+DS-DAYA-D                 ...                      0                 0   
+DS-DAYA-D - Bold          ...                      0                 0   
+DS-bursh                  ...                      0                 0   
+DS-bursh - Bold           ...                      0                 0   
+Dharmavathy               ...                      0                 0   
+Dharmavathy - Bold        ...                      0                 0   
+SARA-JANAKEE-NEW          ...                      0                 0   
+SARA-JANAKEE-NEW - Bold   ...                      0                 0   
+Wijeya                    ...                      0                 0   
+Wijeya - Bold             ...                      0                 0   
+amsPanhinda               ...                      0                 0   
+amsPanhinda - Bold        ...                      0                 0   
+amsSupun                  ...                      0                 0   
+amsSupun - Bold           ...                      0                 0   
+__all__                   ...                      2                 7   
+
+Predicted                SARA-JANAKEE-NEW - Bold  Wijeya  Wijeya - Bold  \
+Actual                                                                    
+0KDBOLIDDA                                     1       1              0   
+0KDBOLIDDA - Bold                              1       0              0   
+0KDMANEL                                       1       1              0   
+0KDMANEL - Bold                                0       3              1   
+0KDNAMAL                                       0       3              2   
+0KDNAMAL - Bold                                0       0              0   
+0KDSAMAN                                       1       3              0   
+0KDSAMAN - Bold                                1       2              1   
+4u-Ajantha                                     1       0              0   
+4u-Ajantha - Bold                              0       1              0   
+4u-Amantha                                     0       1              1   
+4u-Amantha - Bold                              0       2              1   
+4u-Ananda                                      0       1              1   
+4u-Ananda - Bold                               0       1              0   
+4u-Anurada                                     1       1              1   
+4u-Anurada - Bold                              0       1              0   
+4u-Araliya. Warp                               0       0              0   
+4u-Araliya. Warp - Bold                        0       0              0   
+4u-Arjun                                       0       0              0   
+4u-Arjun - Bold                                0       0              0   
+4u-Asiri                                       0       0              0   
+4u-Asiri - Bold                                0       0              0   
+4u-Derana                                      0       0              0   
+4u-Derana - Bold                               0       0              0   
+4u-Emanee                                      0       0              0   
+4u-Emanee - Bold                               0       0              0   
+4u-Gemunu                                      0       0              0   
+4u-Gemunu - Bold                               0       0              0   
+4u-Sawana                                      0       0              0   
+4u-Sawana - Bold                               0       0              0   
+...                                          ...     ...            ...   
+A Manel X - Bold                               0       0              0   
+A araliya                                      0       0              0   
+A araliya - Bold                               0       0              0   
+Br-Hansika                                     0       0              0   
+Br-Hansika. - Bold                             0       0              0   
+CPS 142                                        0       0              0   
+CPS 142 - Bold                                 0       0              0   
+CPS 144                                        0       0              0   
+CPS 144 - Bold                                 0       0              0   
+CPS 149                                        0       0              0   
+CPS 149 - Bold                                 0       0              0   
+CPS 42                                         0       0              0   
+CPS 42 - Bold                                  0       0              0   
+DL-kotu                                        0       0              0   
+DL-kotu - Bold                                 0       0              0   
+DS-DAYA-D                                      0       0              0   
+DS-DAYA-D - Bold                               0       0              0   
+DS-bursh                                       0       0              0   
+DS-bursh - Bold                                0       0              0   
+Dharmavathy                                    0       0              0   
+Dharmavathy - Bold                             0       0              0   
+SARA-JANAKEE-NEW                               0       0              0   
+SARA-JANAKEE-NEW - Bold                        0       0              0   
+Wijeya                                         0       0              0   
+Wijeya - Bold                                  0       0              0   
+amsPanhinda                                    0       0              0   
+amsPanhinda - Bold                             0       0              0   
+amsSupun                                       0       0              0   
+amsSupun - Bold                                0       0              0   
+__all__                                        7      21              8   
+
+Predicted                amsPanhinda  amsPanhinda - Bold  amsSupun  \
+Actual                                                               
+0KDBOLIDDA                         1                   0         0   
+0KDBOLIDDA - Bold                  0                   0         2   
+0KDMANEL                           2                   0         0   
+0KDMANEL - Bold                    0                   0         0   
+0KDNAMAL                           0                   0         1   
+0KDNAMAL - Bold                    0                   0         0   
+0KDSAMAN                           2                   0         1   
+0KDSAMAN - Bold                    1                   0         0   
+4u-Ajantha                         0                   0         0   
+4u-Ajantha - Bold                  0                   0         0   
+4u-Amantha                         0                   1         1   
+4u-Amantha - Bold                  0                   1         0   
+4u-Ananda                          0                   0         0   
+4u-Ananda - Bold                   1                   0         0   
+4u-Anurada                         0                   0         0   
+4u-Anurada - Bold                  0                   0         0   
+4u-Araliya. Warp                   0                   0         0   
+4u-Araliya. Warp - Bold            0                   0         0   
+4u-Arjun                           0                   0         0   
+4u-Arjun - Bold                    0                   0         0   
+4u-Asiri                           0                   0         0   
+4u-Asiri - Bold                    0                   0         0   
+4u-Derana                          0                   0         0   
+4u-Derana - Bold                   0                   0         0   
+4u-Emanee                          0                   0         0   
+4u-Emanee - Bold                   0                   0         0   
+4u-Gemunu                          0                   0         0   
+4u-Gemunu - Bold                   0                   0         0   
+4u-Sawana                          0                   0         0   
+4u-Sawana - Bold                   0                   0         0   
+...                              ...                 ...       ...   
+A Manel X - Bold                   0                   0         0   
+A araliya                          0                   0         0   
+A araliya - Bold                   0                   0         0   
+Br-Hansika                         0                   0         0   
+Br-Hansika. - Bold                 0                   0         0   
+CPS 142                            0                   0         0   
+CPS 142 - Bold                     0                   0         0   
+CPS 144                            0                   0         0   
+CPS 144 - Bold                     0                   0         0   
+CPS 149                            0                   0         0   
+CPS 149 - Bold                     0                   0         0   
+CPS 42                             0                   0         0   
+CPS 42 - Bold                      0                   0         0   
+DL-kotu                            0                   0         0   
+DL-kotu - Bold                     0                   0         0   
+DS-DAYA-D                          0                   0         0   
+DS-DAYA-D - Bold                   0                   0         0   
+DS-bursh                           0                   0         0   
+DS-bursh - Bold                    0                   0         0   
+Dharmavathy                        0                   0         0   
+Dharmavathy - Bold                 0                   0         0   
+SARA-JANAKEE-NEW                   0                   0         0   
+SARA-JANAKEE-NEW - Bold            0                   0         0   
+Wijeya                             0                   0         0   
+Wijeya - Bold                      0                   0         0   
+amsPanhinda                        0                   0         0   
+amsPanhinda - Bold                 0                   0         0   
+amsSupun                           0                   0         0   
+amsSupun - Bold                    0                   0         0   
+__all__                            7                   2         5   
+
+Predicted                amsSupun - Bold  __all__  
+Actual                                             
+0KDBOLIDDA                             1       67  
+0KDBOLIDDA - Bold                      0       45  
+0KDMANEL                               0       78  
+0KDMANEL - Bold                        0       63  
+0KDNAMAL                               0       64  
+0KDNAMAL - Bold                        0       73  
+0KDSAMAN                               0       64  
+0KDSAMAN - Bold                        0       70  
+4u-Ajantha                             0       65  
+4u-Ajantha - Bold                      0       51  
+4u-Amantha                             0       77  
+4u-Amantha - Bold                      0       70  
+4u-Ananda                              0       52  
+4u-Ananda - Bold                       0       71  
+4u-Anurada                             0       65  
+4u-Anurada - Bold                      0       13  
+4u-Araliya. Warp                       0        0  
+4u-Araliya. Warp - Bold                0        0  
+4u-Arjun                               0        0  
+4u-Arjun - Bold                        0        0  
+4u-Asiri                               0        0  
+4u-Asiri - Bold                        0        0  
+4u-Derana                              0        0  
+4u-Derana - Bold                       0        0  
+4u-Emanee                              0        0  
+4u-Emanee - Bold                       0        0  
+4u-Gemunu                              0        0  
+4u-Gemunu - Bold                       0        0  
+4u-Sawana                              0        0  
+4u-Sawana - Bold                       0        0  
+...                                  ...      ...  
+A Manel X - Bold                       0        0  
+A araliya                              0        0  
+A araliya - Bold                       0        0  
+Br-Hansika                             0        0  
+Br-Hansika. - Bold                     0        0  
+CPS 142                                0        0  
+CPS 142 - Bold                         0        0  
+CPS 144                                0        0  
+CPS 144 - Bold                         0        0  
+CPS 149                                0        0  
+CPS 149 - Bold                         0        0  
+CPS 42                                 0        0  
+CPS 42 - Bold                          0        0  
+DL-kotu                                0        0  
+DL-kotu - Bold                         0        0  
+DS-DAYA-D                              0        0  
+DS-DAYA-D - Bold                       0        0  
+DS-bursh                               0        0  
+DS-bursh - Bold                        0        0  
+Dharmavathy                            0        0  
+Dharmavathy - Bold                     0        0  
+SARA-JANAKEE-NEW                       0        0  
+SARA-JANAKEE-NEW - Bold                0        0  
+Wijeya                                 0        0  
+Wijeya - Bold                          0        0  
+amsPanhinda                            0        0  
+amsPanhinda - Bold                     0        0  
+amsSupun                               0        0  
+amsSupun - Bold                        0        0  
+__all__                                1      988  
+
+[61 rows x 61 columns]

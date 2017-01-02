@@ -1,6 +1,6 @@
 function[]= segment(inputImage,PageAndRow)
 
-folderPath = 'output/';
+folderPath = 'parOutput/';
 
 
 rotatedImage = imrotate(inputImage,-90);

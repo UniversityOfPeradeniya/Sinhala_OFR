@@ -8,7 +8,7 @@ files = {files.name}';                      % file names
 data = cell(numel(files),1);                % store file contents
 for i=1:numel(files)
     fname = fullfile(dirName,files{i});     % full path to file
-    main(fname,targetDir);        % run main
+    main(files{i},fname,targetDir);        % run main
     close all;
     %disp(fname);
 end

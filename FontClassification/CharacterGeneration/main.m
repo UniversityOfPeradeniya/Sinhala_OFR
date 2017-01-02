@@ -1,5 +1,5 @@
 
-function[] = main (fileName,targetDir)
+function[] = main (singlefile,fileName,targetDir)
 close all;
 clc;
 
@@ -53,7 +53,7 @@ idx = 1;
 lines = [];
 image = [];
 started = false;
-count = strrep(fileName, '.png', ''); %convert filename into number
+count = strrep(singlefile, '.png', ''); %convert filename into number
 passCounter = 0;
 while idx<length(windows)
     

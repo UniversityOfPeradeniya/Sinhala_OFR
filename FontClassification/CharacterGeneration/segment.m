@@ -1,6 +1,8 @@
 function[]= segment(a,lineNumber,targetDir)
 
 folder = [targetDir,'/'];
+disp(folder);
+%return;
 
 %a = imread('sample.png');
 %imshow(a);

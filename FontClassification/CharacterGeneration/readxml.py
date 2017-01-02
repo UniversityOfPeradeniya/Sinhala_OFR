@@ -5,7 +5,7 @@ import os
 
 #list fonts directory
 
-fontfile = 'text-2.txt'
+fontfile = 'font-30.txt'
 
 '''
 fontCollection = []
@@ -27,7 +27,7 @@ for i in range(0,len(fonts)):
     fonts[i]= fonts[i].strip('\n')
 
 
-tree = ET.parse('sa.xml')
+tree = ET.parse('ga-30.xml')
 root = tree.getroot()
 pkg = '{http://schemas.microsoft.com/office/2006/xmlPackage}'
 w='{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
@@ -85,7 +85,7 @@ for r in range(0,len(rows)):
 
 doc = ET.ElementTree(root)
 
-outFile = open('sa_.xml', 'w')
+outFile = open('ga30_.xml', 'w')
 doc.write(outFile, encoding='utf-8') 
 outFile.close()
 
